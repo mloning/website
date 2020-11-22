@@ -4,8 +4,5 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+I'm a PhD student at [UCL](https://www.ucl.ac.uk) and [The Alan Turing
+  Institute](https://turing.ac.uk). My research focuses on machine learning with time series and software development.  
