@@ -188,7 +188,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">PROJECT_ID</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="c1"># add Google BigQuery project-id</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">PROJECT_ID</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="c1"># add Google BigQuery project-id</span>
 
 <span class="c1"># projects to analyse</span>
 <span class="n">projects</span> <span class="o">=</span> <span class="p">(</span>
@@ -242,7 +242,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
 <span class="n">file</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;pypi-download-data-</span><span class="si">{</span><span class="n">today</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="si">}</span><span class="s2">.csv&quot;</span>
 
-<span class="c1"># load from disk when downloaded data exists for current month</span>
+<span class="c1"># load from disk when downloaded data exists for current month</span>
 <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Loading file from disk ... &quot;</span><span class="p">)</span>
     <span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
