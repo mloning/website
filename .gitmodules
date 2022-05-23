@@ -1,3 +1,4 @@
 [submodule "themes/ezhil"]
 	path = themes/ezhil
-	url = https://github.com/mloning/ezhil
+	url = git@github.com:mloning/ezhil
+	branch = master
