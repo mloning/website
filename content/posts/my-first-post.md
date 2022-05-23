@@ -1,6 +1,7 @@
 ---
 title: "My First Post"
-date: 2022-05-23T16:10:57+02:00
+date: 2022-05-22T16:10:57+02:00
+lastmod: 2022-05-23T16:10:57+02:00
 draft: false
 ---
 
