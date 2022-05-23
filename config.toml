@@ -2,6 +2,7 @@ baseURL =  "http://example.org/ "
 languageCode =  "en-us "
 title =  "Markus Löning"
 theme =  "ezhil"
+copyright = "Copyright © 2022 Markus Löning"
 
 # Enable syntax highlighting.
 pygmentsstyle = "solarized-dark"
