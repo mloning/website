@@ -5,6 +5,8 @@ on:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -26,7 +28,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main' # only on main
+        # if: github.ref == 'refs/heads/main' # only on main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
