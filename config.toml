@@ -2,7 +2,7 @@ baseURL =  "https://mloning.github.io/website/"
 languageCode =  "en-us"
 title =  "Markus Löning"
 theme =  "ezhil"
-copyright = "Copyright © 2022 Markus Löning"
+copyright = "Copyright © 2023 Markus Löning"
 
 # Enable syntax highlighting.
 pygmentsstyle = "solarized-dark"
@@ -19,7 +19,7 @@ summaryLength = 20
 
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
-    subtitle = "Software engineering, machine learning and time series."
+    subtitle = "Machine learning engineer."
 
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
