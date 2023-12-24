@@ -1,9 +1,9 @@
 # My website
 
-My personal website built with [Hugo] and a modified [ezhil] theme.
+My personal website built with [Hugo] and a modified [Ezhil] theme.
 
 [Hugo]: https://gohugo.io
-[ezhil]: https://github.com/mloning/ezhil
+[Ezhil]: https://github.com/mloning/ezhil
 
 ## Local development
 
