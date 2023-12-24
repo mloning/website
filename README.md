@@ -7,7 +7,8 @@ My personal website built with [Hugo] and a modified [ezhil] theme.
 
 ## Local development
 
-* `git submodule update --init --recursive` to update the theme as a [git submodule]
+* `gh repo clone https://github.com/mloning/website . -- --recurse-submodules` to clone the repo with the theme as a [git submodule]
+* `git submodule update --init --recursive` to update the theme from the git submodule
 * `hugo server --verbose --buildDrafts --buildFuture --navigateToChanged` to start the Hugo server with hot reloading
 * `hugo new posts/<name>.md` to create a new draft in `content/posts/`
 
@@ -15,6 +16,7 @@ My personal website built with [Hugo] and a modified [ezhil] theme.
 
 ## Deploy 
 
-Deployed to GitHub Pages using GitHub Actions.
+Pushing changes to the `main` branch will trigger a deployment to [GitHub Pages] using a [GitHub Action].
 
-
+[GitHub Pages]: https://mloning.github.io/website/
+[GitHub Action]: https://github.com/mloning/website/actions/workflows/deploy.yaml 

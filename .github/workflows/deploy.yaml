@@ -1,5 +1,5 @@
 # Workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy
 
 on:
   workflow_dispatch:
