@@ -19,7 +19,7 @@ summaryLength = 20
 
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
-    subtitle = "Machine learning engineer."
+    subtitle = "Software Engineering & Machine Learning"
 
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
