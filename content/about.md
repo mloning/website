@@ -9,7 +9,7 @@ Hi, I'm Markus.
 
 I'm a machine learning engineer interested in building end-to-end applications. 
 
-I'm passionate in time series modelling, software engineering and open source. 
+I'm passionate about time series modelling, software engineering and open source. 
 During my PhD at [UCL] and [The Alan Turing Institute], I co-created [sktime], an open-source library for machine learning with time series (also see [aeon]).
 
 I enjoy mentoring less-experienced developers and mentored for [Google Summer of Code], [Outreachy], [Major League Hacking] and [Nuffield Research Placements].
