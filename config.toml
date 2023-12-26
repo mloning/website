@@ -3,6 +3,7 @@ languageCode =  "en-us"
 title =  "Markus Löning"
 theme =  "ezhil"
 copyright = "Copyright © 2023 Markus Löning"
+enableEmoji=true
 
 # Enable syntax highlighting.
 pygmentsstyle = "vs"
