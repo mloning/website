@@ -1,7 +1,7 @@
 ---
 title: "Run pre-commit retrospectively on all changed files in a PR"
 date: 2020-10-02T16:10:57+02:00
-lastmod: 2023-12-25T16:10:57+02:00
+last_modified: .Lastmod
 draft: false
 ---
 
