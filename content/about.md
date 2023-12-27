@@ -5,8 +5,6 @@ last_modified: .Lastmod
 draft: false
 ---
 
-Hi, I'm Markus. 
-
 I'm a machine learning engineer interested in building end-to-end applications. 
 
 I'm passionate about time series modelling, software engineering and open source. 
@@ -14,7 +12,7 @@ During my PhD at [UCL] and [The Alan Turing Institute], I co-created [sktime], a
 
 I enjoy mentoring less-experienced developers and mentored for [Google Summer of Code], [Outreachy], [Major League Hacking] and [Nuffield Research Placements].
 
-In the past, I studied [Philosophy & Economics] at [Bayreuth University], a small but excellent program where I learnt a lot, worked with leading economists and [published] my thesis on climate policy.
+In the past, I studied [Philosophy & Economics] at [Bayreuth University].
 
 I read on [Goodreads]. I like to listen to music on [byte.fm] and watch films on [Mubi].
 
