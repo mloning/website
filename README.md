@@ -16,14 +16,12 @@ My personal website built with [Hugo] and a modified [Ezhil] theme.
 
 ## Deploy 
 
-Pushing changes to the `main` branch will trigger a deployment using a [GitHub Action] and [GitHub Pages].
+Pushing changes to the `main` branch will trigger a deployment using a GitHub Action [workflow] and GitHub Pages.
 
-[GitHub Pages]: https://mloning.github.io/website/
-[GitHub Action]: https://github.com/mloning/website/actions/workflows/deploy.yaml 
+[workflow]: https://github.com/mloning/website/actions/workflows/deploy.yaml 
 
-## Configure a custom domain
+## Configure custom domain
 
-Check out the GitHub Pages docs for [configuring a custom domain] and this [blog post]. 
+Check out my blog post on [how to configure a custom domain with GitHub Pages and Squarespace].
 
-[configuring a custom domain]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
-[blog post]: https://emilymdubois.medium.com/using-a-squarespace-domain-with-github-pages-438951d4f5b7
+[how to configure a custom domain with GitHub Pages and Squarespace]: https://www.mloning.com/posts/configuring-custom-domain-with-github-pages-and-squarespace/
