@@ -27,25 +27,25 @@ To point our Squarespace domain to our GitHub Pages site, make these changes to 
 
 For more details, see the Squarespace docs on [pointing to a non-Squarespace site]. 
 
+It can take up to 24 hours for your new configuration to take effect.
+You can check that the DNS check is successful on the GitHub Pages page of your repository settings.
+Once your changes have propagated, you should be able to navigate to your custom domain and see your `<user>.github.io content`.
+
 [pointing to a non-Squarespace site]: https://support.squarespace.com/hc/en-us/articles/215744668#toc-point-to-a-non-squarespace-site
 
 ## 3. Verify custom domain for GitHub Pages 
 
-To secure custom domain from takeovers, you need to add a TXT record.
+To secure your custom domain from takeovers, you need to add a TXT record.
 
 To generate the TXT hostname and value, follow the GitHub Pages docs for [verifying a custom domain].
-Then add the TXT record to the Squarespace DNS settings.
 
+Then add the TXT record to the Squarespace DNS settings.
 For details, see the Squarespace docs on [adding a TXT record].
+
+Again, it can take up to 24 hours for the new DNS configuration to take effect.
+Once the changes have been propagated, you can complete the domain verification on GitHub.
 
 [adding a TXT record]: https://support.squarespace.com/hc/en-us/articles/360002101888#toc-txt-records
 [verifying a custom domain]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
 
-## 4. Final checks
-
-It can take up to 24 hours for your new configuration to take effect.
-
-You can also check that the DNS check is successful on the GitHub Pages page of your repository settings.
-
-Once your changes have propagated, you should be able to navigate to your custom domain and see your `<user>.github.io content`.
 
