@@ -7,7 +7,20 @@ IFS=$'\n\t'
 
 # Run server for local development
 server () { 
-  hugo server --verbose --buildDrafts --buildFuture --navigateToChanged
+  port="1313"
+
+  # open browser in background, sleep to wait for Hugo server to start
+  directory="${PWD##*/}"
+  url="http://localhost:$port/$directory/"
+  ( sleep 1 && open "$url" ) & 
+
+  # start Hugo server with hot reloading
+  hugo server \
+    --logLevel "info" \
+    --port "$port" \
+    --buildDrafts \
+    --buildFuture \
+    --navigateToChanged
 }
 
 # Add new post
