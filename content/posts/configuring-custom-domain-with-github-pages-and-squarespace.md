@@ -1,5 +1,5 @@
 ---
-title: "Configuring Custom Domain With Github Pages and Squarespace"
+title: "Configuring a custom domain with Github Pages and Squarespace"
 date: 2023-12-28T11:52:52+01:00
 last_modified: .Lastmod
 draft: false
@@ -18,7 +18,7 @@ Follow the Github Pages docs for [configuring a custom domain].
 
 [configuring a custom domain]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
 
-## 2. Configure Squarespace DNS provider settings for GitHub Pages 
+## 2. Configure Squarespace DNS settings for GitHub Pages 
 
 To point our Squarespace domain to our GitHub Pages site, make these changes to the Squarespace DNS settings:
 
