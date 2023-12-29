@@ -9,7 +9,7 @@ A friend of mine recently implemented the card game [Uno] as a programming exerc
 
 You can find my implementation [here].
 
-I largely followed a object-oriented approach, with the following classes to handle the different pieces of the game state:
+I largely followed an object-oriented approach, with the following classes to handle the different pieces of the game state:
 
 * a playing card to represent the different cards of the game,
 * a player to represent each player, their possible actions (play or draw a card) and their state (their hand), 
