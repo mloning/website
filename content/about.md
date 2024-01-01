@@ -12,7 +12,7 @@ During my PhD at [UCL] and [The Alan Turing Institute], I co-created [sktime], a
 
 I enjoy mentoring less-experienced developers and mentored for [Google Summer of Code], [Outreachy], [Major League Hacking] and [Nuffield Research Placements].
 
-In the past, I studied [Philosophy & Economics] at [Bayreuth University].
+In the past, I studied [Philosophy & Economics] at [Bayreuth University] and worked on [empirical models, international trade and climate policy].
 
 I read on [Goodreads]. I like to listen to music on [byte.fm] and watch films on [Mubi].
 
@@ -24,7 +24,7 @@ I read on [Goodreads]. I like to listen to music on [byte.fm] and watch films on
 [Outreachy]: https://www.outreachy.org/
 [Major League Hacking]: https://mlh.io/
 [Nuffield Research Placements]: https://www.nuffieldresearchplacements.org/
-[published]: https://www.sciencedirect.com/science/article/abs/pii/S0921800917316075
+[empirical models, international trade and climate policy]: https://www.sciencedirect.com/science/article/abs/pii/S0921800917316075
 [Philosophy & Economics]: https://www.uni-bayreuth.de/en/master/philosophy-economics
 [Bayreuth University]: https://www.uni-bayreuth.de/en
 [Goodreads]: https://www.goodreads.com/mloning
