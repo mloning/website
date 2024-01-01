@@ -22,8 +22,8 @@ Follow the Github Pages docs for [configuring a custom domain].
 
 To point our Squarespace domain to our GitHub Pages site, make these changes to the Squarespace DNS settings:
 
-* Add a CNAME record with host "www" and `<user>.github.io`, for example, in my case `mloning.github.com`.
-* Add an A record with host "@" for each GitHub Pages IP address. Use the `dig <user>.github.io` command to get this list. At the time of writing, the IP addresses are: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153.
+* Add a CNAME record with host `www` and `<user>.github.io`, in my case `mloning.github.com`.
+* Add an A record with host `@` for each GitHub Pages IP address. At the time of writing, the IP addresses are: `186.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. Use the `dig <user>.github.io` command to get this list. 
 
 For more details, see the Squarespace docs on [pointing to a non-Squarespace site]. 
 
@@ -39,14 +39,13 @@ You can also check that the DNS check on the GitHub Pages page of your repositor
 
 ## 3. Verify custom domain for GitHub Pages 
 
-To secure your custom domain from takeovers, you need to add a TXT record.
+To secure your custom domain from takeovers, you can add a TXT record.
 
 To generate the TXT host name and value, follow the GitHub Pages docs for [verifying a custom domain].
-
 Then add the TXT record to the Squarespace DNS settings, using the host name and value provided during the GitHub Pages verification process.
 
-The host name does not include your domain name. 
-For example, in my case, the host name is "_github-pages-challenge-mloning", and not "_github-pages-challenge-mloning.mloning.com".
+Note that the host name does not include your domain name. 
+In my case, the host name is `_github-pages-challenge-mloning`, without the `mloning.com` domain name.
 For details, see the Squarespace docs on [adding a TXT record].
 
 Again, it can take up to 72 hours for the new DNS configuration to take effect.
