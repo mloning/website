@@ -41,9 +41,12 @@ You can also check that the DNS check on the GitHub Pages page of your repositor
 
 To secure your custom domain from takeovers, you need to add a TXT record.
 
-To generate the TXT hostname and value, follow the GitHub Pages docs for [verifying a custom domain].
+To generate the TXT host name and value, follow the GitHub Pages docs for [verifying a custom domain].
 
-Then add the TXT record to the Squarespace DNS settings.
+Then add the TXT record to the Squarespace DNS settings, using the host name and value provided during the GitHub Pages verification process.
+
+The host name does not include your domain name. 
+For example, in my case, the host name is "_github-pages-challenge-mloning", and not "_github-pages-challenge-mloning.mloning.com".
 For details, see the Squarespace docs on [adding a TXT record].
 
 Again, it can take up to 72 hours for the new DNS configuration to take effect.
