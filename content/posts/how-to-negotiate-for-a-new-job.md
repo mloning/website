@@ -35,4 +35,6 @@ where
 ## Links
 
 * https://payne.org/startup-equity-for-employees
-* https://money.stackexchange.com/a/26370/127647 
+* https://money.stackexchange.com/a/26370/127647
+* https://a16z.com/how-startup-options-and-ownership-works/
+* https://haseebq.com/how-not-to-bomb-your-offer-negotiation/ (section Brief Primer on Equity)
