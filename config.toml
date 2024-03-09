@@ -2,7 +2,7 @@ baseURL =  "https://mloning.github.io/website/"
 languageCode =  "en-us"
 title =  "Markus Löning"
 theme =  "ezhil"
-copyright = "Copyright © 2023 Markus Löning"
+copyright = "Copyright © 2024 Markus Löning"
 enableEmoji=true
 
 # Enable syntax highlighting.
