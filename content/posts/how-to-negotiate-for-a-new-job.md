@@ -5,8 +5,6 @@ last_modified: .Lastmod
 draft: true
 ---
 
-# How to Negotiate for a New Job
-
 ## Startup equity 
 
 ### Example 
