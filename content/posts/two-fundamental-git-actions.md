@@ -21,9 +21,11 @@ It combines: git switch + git commit + gh pr create
 
 usage: `git submit [-m, --message ..., -a, --all] [FILES]`
 
-* if on default branch (i.e. main), switch to new branch using message as branch name (`git switch -c ...`)
+* if on default branch (e.g. `main`), switch to new branch using message as branch name (`git switch -c ...`)
 * `git commit` all or selected files with message as commit message
-* `gh pr create` create remote branch with same name as local branch if remote branch doesn't exist, point to default branch
+* if remote branch does not exist, create remote branch
+* push to remote branch
+* if PR does not exist, create PR using `gh pr create` pointing to default branch
 
 ## Sync 
 
