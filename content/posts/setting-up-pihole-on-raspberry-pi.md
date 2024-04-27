@@ -1,6 +1,6 @@
 ---
 title: "Setting Up Pihole on Raspberry Pi"
-date: 2024-04-27T*:59:05+02:00
+date: 2024-04-27T23:59:05+02:00
 last_modified: .Lastmod
 draft: false
 ---
