@@ -5,8 +5,10 @@ last_modified: .Lastmod
 draft: false
 ---
 
-I'm a Machine Learning Engineer, interested in building end-to-end products. 
-I'm passionate about time series modelling, software engineering and open source. 
+Currently working as a Machine Learning Engineer, I enjoy building end-to-end products and working in cross-functional teams. 
+I'm particularly interested in time series modelling and open source. 
+
+I see much of my website and blog as living document: I treat most posts as a collection of thoughts and ideas on a particular topic, which I will grow, restructure and trim as I learn more about them, much like a [digital garden](https://nicolasbouliane.com/blog/digital-gardening).
 
 I completed my PhD at [UCL] and [The Alan Turing Institute]. 
 During my PhD, I co-created [sktime] (now also forked into [aeon]), a popular open-source Python library that provides a unified framework for machine learning with time series. 
