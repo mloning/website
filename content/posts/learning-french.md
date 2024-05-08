@@ -31,7 +31,7 @@ There are of course numerous excellent French films and series. Here are some I'
 * [Anatomie d'une chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
 * [Le Monde du Silence](https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film))
 
-## Studying
+## Study
 
 * [Anki] vocab flashcards with the mobile app and this basic [community deck] 
 * [Leo trainer] for words I look up and want to remember in my daily interactions
