@@ -8,14 +8,14 @@ draft: false
 Currently working as a Machine Learning Engineer, I enjoy building end-to-end products and working in cross-functional teams. 
 I'm particularly interested in time series modelling and open source. 
 
-I see much of my website and blog as living document: I treat most posts as a collection of thoughts and ideas on a particular topic, which I will grow, restructure and trim as I learn more about them, much like a [digital garden](https://nicolasbouliane.com/blog/digital-gardening).
+I see much of my website as a living document: I treat most posts as a collection of thoughts and ideas on a particular topic, which I cultivate, shape and prune as I learn more, much like a [digital garden](https://nicolasbouliane.com/blog/digital-gardening).
 
 I completed my PhD at [UCL] and [The Alan Turing Institute]. 
-During my PhD, I co-created [sktime] (now also forked into [aeon]), a popular open-source Python library that provides a unified framework for machine learning with time series. 
+During my PhD, I co-created [sktime] (now also forked into [aeon]), a popular open-source Python library that provides a unified framework for machine learning with time series.
+
+Previously, I studied [Philosophy & Economics] at [Bayreuth University], and worked on [empirical economics, international trade and climate policy]. Previously, I completed my undergraduate degree at [Lancaster University].
 
 I enjoy mentoring less-experienced developers and mentored for [Google Summer of Code], [Outreachy], [Major League Hacking] and [Nuffield Research Placements].
-
-In the past, I studied [Philosophy & Economics] at [Bayreuth University], and worked on [empirical economics, international trade and climate policy]. Previously, I completed my undergraduate degree at [Lancaster University].
 
 I read on [Goodreads]. I like to listen to music on [byte.fm] and watch films on [Mubi].
 
