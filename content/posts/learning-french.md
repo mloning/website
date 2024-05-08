@@ -9,10 +9,12 @@ I've started learning French. Here are some resources I found useful.
 
 ## Listen
 
-* Radio: [France Inter], [France Info]
+* [Radio France], different radio stations and podcasts (e.g. [France Inter], [France Info] or [France Culture])
 
-[France Inter]: https://www.radiofrance.fr/franceinter/direct
+[Radio France]: https://www.radiofrance.fr/
+[France Inter]: https://www.radiofrance.fr/franceinter
 [France Info]: https://www.francetvinfo.fr/en-direct/radio.html
+[France Culture]: https://www.radiofrance.fr/franceculture
 
 ## Read
 
