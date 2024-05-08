@@ -1,5 +1,5 @@
 ---
-title: "Implementing the Uno Card Game in Rust"
+title: "Implementing the Uno card game in Rust"
 date: 2024-03-09T00:06:13+01:00
 last_modified: .Lastmod
 draft: false
