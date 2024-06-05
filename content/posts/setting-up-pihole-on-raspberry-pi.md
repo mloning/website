@@ -49,9 +49,9 @@ Host anon
   AddKeysToAgent yes
 ```
 
-These settings are for MacOS; they may be different for other operating systems.
-
 You should now be able to simply run: `ssh anon`.
+
+To log out, simply run: `exit`.
 
 ## Assigning a static IP address to the Raspberry Pi
 
@@ -108,4 +108,8 @@ Finally, verify that Pi-hole is working:
 
 * Check out: https://adblock-tester.com/
 * Visually check ads are being displayed on websites when on your local network
+
+## Update Pi-hole
+
+To update Pi-hole, run: `pihole -up`.
 
