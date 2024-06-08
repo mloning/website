@@ -106,8 +106,10 @@ You may want to restart your router afterwards. On your computer, you can also t
 
 Finally, verify that Pi-hole is working:
 
-* Check out: https://adblock-tester.com/
-* Visually check ads are being displayed on websites when on your local network
+* Visually check ads are being displayed on websites when on your local network. For example, you may see empty white or grayed out spaces in which previously ads were displayed.
+* Check out: https://adblock-tester.com/. Note that Pi-hole cannot block all ads. Pi-hole only sees DNS requests, so any ad being served from the same domain as the content cannot be blocked (e.g. YouTube), even when browser-based ad blockers like [uBlock Origin] can block some of these ads.
+
+[uBlock Origin]: https://ublockorigin.com/
 
 ## Update Pi-hole
 
