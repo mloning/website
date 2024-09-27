@@ -1,12 +1,12 @@
 ---
-title: "Setup my new MacOS laptop"
+title: "Set up my new macOS laptop"
 date: 2024-09-27T13:49:57+02:00
 last_modified: .Lastmod
 draft: false
 ---
 
-I recently had to set up my new MacOS laptop and wanted to take some notes that I can use the next time I have to set up my laptop.
-I also found this [blog post](https://simoncw.com/posts/dev-setup-mac-python-rust/) useful.
+I recently had to set up my new macOS laptop and wanted to take some notes so that I can do it more quickly the next time.
+This [blog post](https://simoncw.com/posts/dev-setup-mac-python-rust/) was very useful.
 
 ## Manual configuration
 
