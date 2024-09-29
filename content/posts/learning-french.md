@@ -10,11 +10,14 @@ I've started learning French. Here are some resources I found useful.
 ## Listen
 
 * [Radio France], different radio stations and podcasts (e.g. [France Inter], [France Info] or [France Culture])
+* [ByteFM] program [France, en confidance] about French music (narrated in German)
 
 [Radio France]: https://www.radiofrance.fr/
 [France Inter]: https://www.radiofrance.fr/franceinter
 [France Info]: https://www.francetvinfo.fr/en-direct/radio.html
 [France Culture]: https://www.radiofrance.fr/franceculture
+[France, en confidance]: https://www.byte.fm/sendungen/la-france-en-confidence/
+[ByteFM]: https://www.byte.fm/
 
 ## Read
 
@@ -39,3 +42,16 @@ There are of course numerous excellent French films and series. Here are some I'
 [Anki]: https://apps.ankiweb.net/index.html
 [community deck]: https://ankiweb.net/shared/info/893324022
 [Leo trainer]: https://dict.leo.org/trainer/index.php
+
+### Language courses
+
+Mostly in Paris:
+
+* Language courses by the Paris municipalty: https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915
+* https://ligueo.ligueparis.org/
+* https://campuslangues.com/programme/francais/
+* https://ilcf.icp.fr/
+* https://www.fle.fr/
+* https://www.alliancefr.org/en/
+* Conversation groups in Paris' public libraries https://bibliotheques.paris.fr/atelier-de-conversation.aspx
+
