@@ -7,55 +7,53 @@ draft: true
 
 ## Cultural-fit interview
 
-- [https://phauer.com/2022/leveling-up-job-interviews/](https://phauer.com/2022/leveling-up-job-interviews/)
-- [https://www.lennysnewsletter.com/p/how-to-pass-any-first-round-interview](https://www.lennysnewsletter.com/p/how-to-pass-any-first-round-interview)
-- [https://www.thebalancemoney.com/what-is-the-star-interview-response-technique-2061629](https://www.thebalancemoney.com/what-is-the-star-interview-response-technique-2061629)
+Typical questions include:
 
-Types of behavioural questions:
-
-1. **Pure** — “Tell me about a time when ...”
-2. **Situational** — “Put yourself in this situation; what would you do?”
-3. **Theoretical** — “What’s your general approach to doing X?”
+- "Tell me about a time when ..."
+- "Put yourself in this situation; what would you do?"
+- "What’s your general approach to doing X?"
 
 ### Discuss specific examples
 
-Similar to CV or cover letter, ideally, give a concrete example for every skill you try to demonstrate.
+Similar to how you would write your CV or cover letter, you want to ideally give a concrete example for every skill you try to demonstrate.
 
 #### How to pick examples
 
 Pick examples that are:
 
-- **Recent**, ideally within last 3 years
-- **Large in scope** (important to the business, strategic, involves lots of stakeholders, significant revenue or user impact)
-- **Complex** (in terms of the stakeholders, core team, tech, timeline, resources, etc.)
-- **Significant** in terms of personal involvement/contribution
+- _Recent_, ideally within last 3 years
+- _Large in scope_, important to the business, strategic, involves lots of stakeholders, significant revenue or user impact
+- _Complex_, in terms of the stakeholders, core team, tech, timeline, resources, etc.
+- _Significant_, in terms of personal involvement/contribution
 
-#### Use STAR++
+#### How to discuss examples: STAR++
 
-**Situation** - what was the situation you had to deal with
+Use the STAR++ structure in your answer (situation, task, action, result, learning, evolution):
+
+##### Situation - what was the situation you had to deal with
 
 - the strategic driving factors for the project - unlocking TAM, opening new markets, improving COGS, driving user success, other?
 - how you got involved - did you come up with the project? get tapped on the shoulder? pick it up when it was a flaming hot mess?
 - who was involved - leaders, stakeholders, customers, core team members
 
-**Task** what was the task you were given to do
+##### Task - what was the task you were given to do
 
 - success criteria - how was success defined? This is a great time to establish how impossibly complex the project was (which sets you up to be the hero in your stories)
 - why was it complex - new tech? huge scope? tight timeline? massive team? powerful stakeholders? major financial impact?
 
-**Action** - what action did you take
+##### Action - what action did you take
 
 - what you did to drive success - specific actions you took
 - issues that came up - people, tech, implementation, partners, infra, etc
 - conflict that arose - executive sponsors, team members, your boss?
 
-**Result** what happened as a result of your action
+##### Result - what happened as a result of your action
 
 - this should include final outcomes for the stated success criteria as well as longer-term success and strategic / business impact
 
-**(+) Learning** what you learned
+##### (+) Learning - what you learned
 
-**(+) Evolution** how you evolved your approach and incorporated learnings in a future situation
+##### (+) Evolution - how you evolved your approach and incorporated learnings in a future situation
 
 ### Example questions to prepare
 
@@ -69,7 +67,7 @@ Pick examples that are:
 - What was a recent personal conflict and how did you manage it?
 - Why do you want to change your job now?
 
-I outline my thoughts and resources on some of these questions below:
+I outline answers and resources for some of these questions below.
 
 ### Question: How do I share feedback?
 
@@ -88,11 +86,11 @@ I outline my thoughts and resources on some of these questions below:
 #### Give feedback
 
 - Depends on relationship and trust with person I want to give feedback to
-- Usually private, especially if personal or no little trust with other person (“criticise in private, praise in public”)
+- Usually private, especially if personal or no little trust with other person ("criticise in private, praise in public")
 - Give feedback quickly, ideally immediately after the situation
 - Give feedback frequently
 - Be objective and specific: situation, observed action, impact; clear instructions on how to do better
-- “Show, don’t tell” – show concrete examples
+- "Show, don’t tell" – show concrete examples
 - Find help for person if something bigger to learn
 - Check if person understood and received feedback constructively, otherwise listen, understand and iterate
 
@@ -133,6 +131,12 @@ I outline my thoughts and resources on some of these questions below:
 4. Retrospective
    1. What would you change if you could start over again?
    2. What would you optimise going forward?
+
+### Resources
+
+- [https://phauer.com/2022/leveling-up-job-interviews/](https://phauer.com/2022/leveling-up-job-interviews/)
+- [https://www.lennysnewsletter.com/p/how-to-pass-any-first-round-interview](https://www.lennysnewsletter.com/p/how-to-pass-any-first-round-interview)
+- [https://www.thebalancemoney.com/what-is-the-star-interview-response-technique-2061629](https://www.thebalancemoney.com/what-is-the-star-interview-response-technique-2061629)
 
 ## System design interview
 
@@ -433,11 +437,11 @@ Be curious about the other side. Try to understand why employers think the way t
 
 Everything significant you discuss should have some kind of a paper trail. Often, the company won’t even send you an official offer letter until a deal is finalised. So it falls to you to confirm all of the important details in subsequent emails.
 
-After getting the first offer, send a follow-up email confirming all of the details you discussed with your recruiter so you have a paper trail. Just say “_just wanted to confirm I had all the details right._“
+After getting the first offer, send a follow-up email confirming all of the details you discussed with your recruiter so you have a paper trail. Just say "_just wanted to confirm I had all the details right._"
 
 #### 2. Always keep the door open
 
-Your recruiter will now say something along the lines of “_so what do you think?_“
+Your recruiter will now say something along the lines of "_so what do you think?_"
 
 This seems innocuous, but your reply here is critical, because there’s a lot you can say to weaken your position. This is your first decision point.
 
@@ -453,9 +457,9 @@ To protect your power in the negotiation, you must protect information as much a
 
 In many situations, the only reason why you have any negotiating power at all is because the employer doesn’t actually know what you’re thinking. They might not know how good your other offers are, or how much you were making in your last job, or how you weigh salary vs equity, or even how rational you are as a decision-maker. You want them to be uncertain on exactly what it would take to sign you.
 
-A corollary of this rule is that you should not reveal to companies what you’re currently making. There are some exceptions, but as a rule you should assume this. If you must divulge what you’re making, you should be liberal in noting the total value of your package (incorporate bonuses, unvested stock, nearness to promotion etc.), and always mention it in a context like “_\[XYZ\] is what I’m currently making, and I’m definitely looking for a step up in my career for my next role._“
+A corollary of this rule is that you should not reveal to companies what you’re currently making. There are some exceptions, but as a rule you should assume this. If you must divulge what you’re making, you should be liberal in noting the total value of your package (incorporate bonuses, unvested stock, nearness to promotion etc.), and always mention it in a context like "_\[XYZ\] is what I’m currently making, and I’m definitely looking for a step up in my career for my next role._"
 
-Reply to first offer: “_Yeah, \[COMPANY_NAME\] sounds great\! I really thought this was a good fit, and I’m glad that you guys agree. Right now I’m talking with a few other companies so I can’t speak to the specific details of the offer until I’m done with the process and get closer to making a decision. But I’m sure we’ll be able to find a package that we’re both happy with, because I really would love to be a part of the team._“
+Reply to first offer: "_Yeah, \[COMPANY_NAME\] sounds great\! I really thought this was a good fit, and I’m glad that you guys agree. Right now I’m talking with a few other companies so I can’t speak to the specific details of the offer until I’m done with the process and get closer to making a decision. But I’m sure we’ll be able to find a package that we’re both happy with, because I really would love to be a part of the team._"
 
 #### 4. Always be positive
 
@@ -465,9 +469,9 @@ So despite whatever is happening in the negotiation, give the company the impres
 
 #### 5. Don’t be the decision maker
 
-Say: “I’ll look over some of these details and discuss it with my \[FAMILY/CLOSE_FRIENDS/SIGNIFICANT_OTHER\]. I’ll reach out to you if I have any questions. Thanks so much for sharing the good news with me, and I’ll be in touch\!”
+Say: "I’ll look over some of these details and discuss it with my \[FAMILY/CLOSE_FRIENDS/SIGNIFICANT_OTHER\]. I’ll reach out to you if I have any questions. Thanks so much for sharing the good news with me, and I’ll be in touch\!"
 
-Even if you don’t particularly care what your friends/family/husband/mother thinks, by mentioning them, you’re no longer the only person the recruiter needs to win over. There’s no point in them trying to bully and intimidate you; the “true decision-maker” is beyond their reach.
+Even if you don’t particularly care what your friends/family/husband/mother thinks, by mentioning them, you’re no longer the only person the recruiter needs to win over. There’s no point in them trying to bully and intimidate you; the "true decision-maker" is beyond their reach.
 
 #### 6. Have alternatives
 
@@ -481,7 +485,7 @@ If you’re already in the pipeline with other companies (which you should be if
 > Since my timeline is now compressed, is there anything you can do to expedite the process?
 >
 > Looking forward to hearing back from you,
-> ”
+> "
 
 Either way, send out a letter like this to every single company you’re talking to. No matter how hopeless or pointless you think your application is, you want to send this signal to everyone who is considering you in the market.
 
@@ -497,7 +501,7 @@ I like the term BATNA a lot, mostly because it sounds like a gadget Batman would
 
 So what’s your BATNA if you don’t have other offers? Do you even have one?
 
-Of course you do. Your best alternative might be “interview at more companies” or “go to grad school” or “stay at your current job” or “go on sabbatical in Morocco for a few months” (as it was for a friend of mine who was deliberating between joining a startup and gallivanting through North Africa).
+Of course you do. Your best alternative might be "interview at more companies" or "go to grad school" or "stay at your current job" or "go on sabbatical in Morocco for a few months" (as it was for a friend of mine who was deliberating between joining a startup and gallivanting through North Africa).
 
 The point is, you don’t need to have another offer to have a strong BATNA. _Your BATNA’s strength comes from 1\) how strong the other side perceives it to be, and 2\) how strong you perceive it to be._
 
@@ -640,7 +644,7 @@ Depending on your leverage (other offers, BATNA), you have two options:
 - [https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start](https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start)
 - [https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
 
-Until you’re ready to negotiate, your default mode should be “passive information gathering.”
+Until you’re ready to negotiate, your default mode should be "passive information gathering."
 
 - Be polite and gracious to a fault. If it’s an offer call, thank them for the work they did to put your offer together and for advocating for you. If it’s earlier in the process, thank them for their help so far.
 - Express genuine enthusiasm. If it’s an early call, express excitement about the company or the interview process if there’s something idiosyncratically cool about it. If it’s an offer call, express excitement for the team, the projects, the hiring manager, whatever it is. And be genuine. Every offer will have something exciting about it.
@@ -667,7 +671,7 @@ You won’t see this much at big companies, but they’re becoming increasingly 
 
 Exploding offers are a natural weapon for employers to combat a strong hiring market for tech workers. Companies know exactly what they’re doing with exploding offers—they play on fear and limit your ability to seek out counteroffers.
 
-In a sense, it’s unsurprising that if startups have more difficulty attracting and securing talent, they’d resort to this practice. What I don’t like is the dishonesty about it. Employers often justify this by saying “_If you need more time than this, then that’s a sign you’re not the kind of person we’re looking for._“
+In a sense, it’s unsurprising that if startups have more difficulty attracting and securing talent, they’d resort to this practice. What I don’t like is the dishonesty about it. Employers often justify this by saying "_If you need more time than this, then that’s a sign you’re not the kind of person we’re looking for._"
 
 So what should you do if you receive an exploding offer?
 
