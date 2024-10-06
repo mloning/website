@@ -16,6 +16,8 @@ After installation:
 3. Navigate into mounted folder: `C:`
 4. Launch the game: `S2.EXE`
 
+You can press `Option-Enter` to enter full-screen mode, press it again to switch back to windowed mode.
+
 You can also configure DOSBox to automatically mount folders on start-up.
 In the `[autoexec]` section of the DOSBox settings file `/Library/Preferences/DOSBox 0.74-3-3 Preferences`, add: 
 
