@@ -1,5 +1,5 @@
 ---
-title: "Set up my new macOS laptop"
+title: "Setting up my new macOS laptop"
 date: 2024-09-27T13:49:57+02:00
 last_modified: .Lastmod
 draft: false
