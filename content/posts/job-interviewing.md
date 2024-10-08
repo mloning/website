@@ -142,6 +142,7 @@ I outline answers and resources for some of these questions below.
 
 ### Resources
 
+- [Designing Data-Intesive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications)
 - [https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/)
 - Google Software Engineering Guide: [https://abseil.io/resources/swe-book/html/toc.html](https://abseil.io/resources/swe-book/html/toc.html)
 - [https://bytebytego.com/](https://bytebytego.com/)
@@ -209,11 +210,14 @@ I outline answers and resources for some of these questions below.
 
 ## Coding interview
 
-[https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/)
+### Resources
+
+- [Leetcode](https://leetcode.com/)
+- [https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/)
+- https://cp-algorithms.com/index.html
 
 ### Practice
 
-Leetcode  
 Simulate interview situation as closely as possible
 
 ### Approach
