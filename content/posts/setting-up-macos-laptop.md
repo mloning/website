@@ -55,7 +55,8 @@ brew install \
   node \
   htop \
   tree \
-  ripgrep
+  ripgrep \
+  jq
 ```
 
 ## Install oh-my-zsh with powerlevel10k
