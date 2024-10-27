@@ -19,7 +19,7 @@ After installation:
 You can press `Option-Enter` to enter full-screen mode, press it again to switch back to windowed mode.
 
 You can also configure DOSBox to automatically mount folders on start-up.
-In the `[autoexec]` section of the DOSBox settings file `/Library/Preferences/DOSBox 0.74-3-3 Preferences`, add: 
+In the `[autoexec]` section of the DOSBox settings file `/Library/Preferences/DOSBox 0.74-3-3 Preferences`, add:
 
 ```bash
 mount C ~/Applications/Siedler2/
@@ -27,7 +27,9 @@ mount C ~/Applications/Siedler2/
 
 For more details, see the DOSBox [wiki].
 
+There is also a community-developed addon, called [Return To The Roots], including new game settings, maps and buildings.
+
 [DOSBox]: https://www.dosbox.com/
 [The Settlers 2]: https://settlers2.net/
 [wiki]: https://www.dosbox.com/wiki/DOSBox_and_Mac_OS_X
-
+[Return To The Roots]: https://www.siedler25.org/
