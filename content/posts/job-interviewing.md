@@ -72,7 +72,9 @@ I outline answers and resources for some of these questions below.
 ### Question: How do I share feedback?
 
 - [https://www.grahammann.net/book-notes/radical-candor-kim-scott](https://www.grahammann.net/book-notes/radical-candor-kim-scott)
-- [https://hellojames.co.uk/writing/better-feedback/](https://hellojames.co.uk/writing/better-feedback/?utm_source=pocket_reader)
+- [https://hellojames.co.uk/writing/better-feedback/](https://hellojames.co.uk/writing/better-feedback/)
+- https://candost.blog/importance-of-the-feedback/
+- https://candost.blog/the-must-have-skill-for-every-leader-listening-with-empathy/
 
 #### Create the environment
 
