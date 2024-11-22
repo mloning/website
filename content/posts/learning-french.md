@@ -36,6 +36,9 @@ There are of course numerous excellent French films and series. Here are some I'
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
 - [Anatomie d'une Chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
 - [Le Monde du Silence](<https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film)>)
+- Le Dîner de Cons
+- Les Trois Frères
+- La Vérité si je mens !
 
 ## Study
 
