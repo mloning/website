@@ -1,5 +1,5 @@
 ---
-title: "Reading Pdfs on Kindle"
+title: "Reading PDFs on the Kindle"
 date: 2024-11-10T16:51:58+01:00
 last_modified: .Lastmod
 draft: false
