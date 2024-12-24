@@ -60,3 +60,10 @@ Mostly in Paris:
 - https://www.fle.fr/
 - https://www.alliancefr.org/en/
 - Conversation groups in Paris' public libraries https://bibliotheques.paris.fr/atelier-de-conversation.aspx
+
+## Explore Paris
+
+- https://www.104.fr/
+- Fondation Cartier pour l'art contemporain
+- Institut du monde arabe
+- Musée Cernuschi
