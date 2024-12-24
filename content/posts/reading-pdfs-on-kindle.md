@@ -5,7 +5,7 @@ last_modified: .Lastmod
 draft: false
 ---
 
-While sending a PDF file to your Kindle is easy, depending on the PDF format, being able to read it well in the Kindle format can be a challenge.
+While [sending a PDF file to your Kindle](https://www.amazon.com/sendtokindle) is easy, depending on the PDF format, being able to read it well in the Kindle format can be a challenge.
 
 Fortunately, there is a command-line tool called [k2pdfopt] which allows to reformat a PDF file into a more Kindle-friendly format.
 
