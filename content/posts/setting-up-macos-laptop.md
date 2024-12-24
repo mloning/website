@@ -71,7 +71,7 @@ git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/pl
 omz reload
 ```
 
-In addition, I install the [powerlevel10k] them:
+In addition, I install the [powerlevel10k] theme:
 
 - Install fonts: https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#manual-font-installation
 - Install powerlevel10k: https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#oh-my-zsh
@@ -85,7 +85,11 @@ Next, I add my configuration files from my [dotfiles repo](https://github.com/ml
 
 ```bash
 mv ~/.zshrc ~/.zshrc.bak
-mkdir ~/Dev/projects && cd ~/Dev/projects && git clone https://github.com/mloning/dotfiles.git && cd dotfiles && make create
+mkdir ~/Dev/projects
+cd ~/Dev/projects
+git clone https://github.com/mloning/dotfiles.git
+cd dotfiles
+make create
 omz reload
 ```
 
@@ -95,7 +99,7 @@ omz reload
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-To install the plugins, open a tmux session and press: tmux prefix + `I`.
+To install the plugins, open a tmux session and press: tmux prefix (`C-a`) + `I`.
 
 ## Install Python
 
