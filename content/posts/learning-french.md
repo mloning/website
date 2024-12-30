@@ -44,10 +44,16 @@ There are of course numerous excellent French films and series. Here are some I'
 
 - [Anki] vocab flashcards with the mobile app and this basic [community deck], but nothing is better than creating your own flashcards
 - [Leo trainer] for words I look up and want to remember in my daily interactions
+- [Bescherelle grammar book], concise description of French grammar, without any exercises
+- [Bescherelle verb conjugation book]
+- [kwiziq], online learning platform
 
 [Anki]: https://apps.ankiweb.net/index.html
 [community deck]: https://ankiweb.net/shared/info/893324022
 [Leo trainer]: https://dict.leo.org/trainer/index.php
+[Bescherelle grammar book]: https://www.amazon.com/gp/product/2218952009/
+[Bescherelle verb conjugation book]: https://www.amazon.com/Bescherelle-Conjugaison-pour-tous-French/dp/2401052356
+[kwiziq]: https://french.kwiziq.com/
 
 ### Language courses
 
@@ -67,3 +73,4 @@ Mostly in Paris:
 - Fondation Cartier pour l'art contemporain
 - Institut du monde arabe
 - Musée Cernuschi
+- [Musée Bourdelle](https://www.bourdelle.paris.fr/)
