@@ -1,5 +1,5 @@
 ---
-title: "Cleaning Up Storage on Macos"
+title: "Cleaning up storage on macOS"
 date: 2024-12-20T16:58:20+01:00
 last_modified: .Lastmod
 draft: true
@@ -8,7 +8,7 @@ draft: true
 ## Using macOS storage manager
 
 - Go to System Settings, Storage
-  – Click on the info circle to further investigate each category and remove applications or files that you no longer need
+- Click on the info circle to further investigate each category and remove applications or files that you no longer need
 
 ## Clearing cache from developer tools
 
@@ -24,4 +24,4 @@ draft: true
 Directories to focus on:
 
 - `/Library/`
-- `~/`, particularly `~/Library/ApplicationSupport/` for application cache (e.g. Slack, Zoom, etc)
+- `~/`, particularly `~/Library/ApplicationSupport/` for application cache (e.g. Slack, Zoom)
