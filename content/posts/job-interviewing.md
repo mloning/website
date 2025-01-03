@@ -642,7 +642,7 @@ Depending on your leverage (other offers, BATNA), you have two options:
 - Commuter expenses
 - Dedicated open-source time
 - Dedicated learning time
-- Budget for conferences
+- Budget for conferences or learning courses (e.g. foreign language or programming language)
 - Charity donation matching
 
 ## How to handle recruiters
