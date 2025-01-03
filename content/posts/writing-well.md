@@ -5,8 +5,9 @@ last_modified: .Lastmod
 draft: true
 ---
 
-In my writing, I try to be as concise as possible, keeping setences short and avoiding all words that are not necessary for conveying the meaning.
-If the text lacks fluidity, I then build it back up by combining some sentences and adding words to add emphasis.
+In my writing, I first try to be as concise as possible.
+I try to keep sentences short and avoid all words that don't convey any meaning.
+In a second iteration, I can then add words or combine sentences if the text feels too dry or lacks fluidity.
 
 ## Resources
 
@@ -23,3 +24,7 @@ Writing technical docs
 - https://www.industrialempathy.com/posts/design-docs-at-google/
 - https://github.com/joelparkerhenderson/architecture-decision-record/
 - https://surfingcomplexity.blog/2022/11/24/writing-docs-well-why-should-a-software-engineer-care/
+
+Writing tutorials
+
+- https://refactoringenglish.com/chapters/rules-for-software-tutorials/
