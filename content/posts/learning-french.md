@@ -42,6 +42,8 @@ There are of course numerous excellent French films and series. Here are some I'
 
 ## Study
 
+### Resources
+
 - [Anki] vocab flashcards with the mobile app and this basic [community deck], but nothing is better than creating your own flashcards
 - [Leo trainer] for words I look up and want to remember in my daily interactions
 - [Bescherelle grammar book], concise description of French grammar, without any exercises
@@ -59,13 +61,16 @@ There are of course numerous excellent French films and series. Here are some I'
 
 Mostly in Paris:
 
-- Language courses by the Paris municipalty: https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915
+- Language courses by the Paris municipalty https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915
+- Conversation groups in Paris' public libraries https://bibliotheques.paris.fr/atelier-de-conversation.aspx
+- https://elfe-paris.com/
+- https://latelier9.com/
+- https://www.learnfrance.net/
+- https://www.alliancefr.org/en/
 - https://ligueo.ligueparis.org/
 - https://campuslangues.com/programme/francais/
 - https://ilcf.icp.fr/
 - https://www.fle.fr/
-- https://www.alliancefr.org/en/
-- Conversation groups in Paris' public libraries https://bibliotheques.paris.fr/atelier-de-conversation.aspx
 
 ## Explore Paris
 
