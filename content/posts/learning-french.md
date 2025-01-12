@@ -28,6 +28,8 @@ I've started learning French. Here are some resources I found useful.
 [The Petit Nicolas]: https://www.petitnicolas.com/
 [L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
 
+I've also really enjoyed reading and listening to the audio book at the same time.
+
 ## Watch
 
 There are of course numerous excellent French films and series. Here are some I've enjoyed watching:
