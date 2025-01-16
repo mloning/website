@@ -9,8 +9,8 @@ In software engineering and machine learning, we often want to name things to re
 
 Naturally, we would like to give a descriptive name, so that the name expresses the nature of the thing.
 
-But in many cases it's hard to succintly express the nature, especially when we want to distinguish it from other closely related things, for example, variations of the same prototype or experiment) at the same time.
-What's more, the nature of these things tend to evolve over time, and so, names that once described the thing very accurately become meaningless, or worse, confusing.
+But in many cases it's hard to succintly express the nature, especially when we also need to distinguish it from other related things, for example, variations of the same model or experiment.
+What's more, the nature of these things often evolves over time, and so, names that once described the thing very accurately become meaningless, or worse, confusing.
 
 In these cases, it's better to [choose a cute name] (see [Hackernews discussion](https://news.ycombinator.com/item?id=34320517)), or follow the naming criteria laid out in this Request for Comment on [how to name your computer].
 
