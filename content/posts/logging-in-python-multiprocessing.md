@@ -19,10 +19,11 @@ Some complications are that
 [don't propagate loggers]: https://github.com/joblib/joblib/issues/1017#issuecomment-711723073
 
 Below is a hacky but simple solution, which uses a context manager to resets the root logger to an initial, empty state before launching each child process, so that each process can separately reconfigure the logger and then restores the root logger when exiting the context.
+
 This is hacky because it makes certain assumptions about what constitutes the state of the root logger and changes that state without using the common interfaces to configure loggers.
+The idea was suggested [here](https://github.com/joblib/joblib/issues/1017#issuecomment-711723073).
 
-When running this from a [Python file](https://github.com/mloning/website/tree/main/scripts/logging-in-python-multiprocessing.py), this gives me the desired results for both single and multiple processes.
-
+Running this from a [Python file](https://github.com/mloning/website/tree/main/scripts/logging-in-python-multiprocessing.py) gives me the desired results for both single and multiple processes.
 For a single process:
 
 ```bash
@@ -61,13 +62,16 @@ python scripts/logging-in-python-multiprocessing.py --n-jobs=3
 > 2024-12-24 14:04:39,029 DEBUG LokyProcess-3 1720 root process=3 Done.  
 > 2024-12-24 14:04:39,036 INFO MainProcess 1715 root process=main Done.
 
-There are less hacky, more complicated solutions which may be preferred depending on the application, for example using a `multiprocessing.Queue`, as described [here](https://docs.python.org/3/howto/logging-cookbook.html#logging-to-a-single-file-from-multiple-processes).
-
-Note that this solution also slightly abuses the `logging.Filter` interface. Filters are meant to drop messages before they are being emitted, not change the message itself.
-However, this use of filters is also suggested in the Python [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html#adding-contextual-information-to-your-logging-output).
-
 For more discussions on how to implement logging in multiprocessing with [joblib], see their [issue #1017](https://github.com/joblib/joblib/issues/1017).
 An alternative to the context manager would be to change how [joblib] initializes each child process, but this isn't exposed through a public interface, see e.g. [issue #381](https://github.com/joblib/joblib/issues/381).
+
+Note that this solution also slightly abuses the `logging.Filter` interface.
+Filters are meant to drop messages before they are being emitted, not change the message itself.
+However, this use of filters is also suggested in the Python [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html#adding-contextual-information-to-your-logging-output).
+
+When logging to a file from multiple processes, we also have to be careful to not try writing to the same file at the same time, even though in practice this rarely seems to be an problem.
+
+There are less hacky, more complicated solutions which may be preferred depending on the application, for example using a `multiprocessing.Queue`, as described [here](https://docs.python.org/3/howto/logging-cookbook.html#logging-to-a-single-file-from-multiple-processes).
 
 ```python
 import argparse
