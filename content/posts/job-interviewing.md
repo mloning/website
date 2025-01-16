@@ -602,6 +602,8 @@ Better to not give the first number, but if unavoidable, appeal to an objective 
 
 I know that the average software engineer in Silicon Valley makes roughly 120K a year salary. So I think that’s a good place to start.
 
+For reference salaries, see e.g. https://www.levels.fyi
+
 ### How to ask for more
 
 Always state a reason why you’re asking for more (see above)
