@@ -12,3 +12,4 @@ draft: true
 - https://github.com/lukemathwalker/zero-to-production (book)
 - https://en.wikipedia.org/wiki/Dining_philosophers_problem
 - Gossip Gloomers Distributed Systems Challenge
+- implement signal processing filters in Rust

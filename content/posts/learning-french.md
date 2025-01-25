@@ -32,7 +32,7 @@ I've also really enjoyed reading and listening to the audio book at the same tim
 
 ## Watch
 
-There are of course numerous excellent French films and series. Here are some I've enjoyed watching:
+There are numerous excellent French films and series. Here are some I've enjoyed watching:
 
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
@@ -46,7 +46,7 @@ There are of course numerous excellent French films and series. Here are some I'
 
 ### Resources
 
-- [Anki] vocab flashcards with the mobile app and this basic [community deck], but nothing is better than creating your own flashcards
+- [Anki] vocab flashcards with the mobile app and this basic [community deck], but nothing beats creating your own flashcards
 - [Leo trainer] for words I look up and want to remember in my daily interactions
 - [Bescherelle grammar book], concise description of French grammar, without any exercises
 - [Bescherelle verb conjugation book]
