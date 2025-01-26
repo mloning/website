@@ -14,7 +14,7 @@ draft: true
 ## Project ideas
 
 - https://github.com/kyclark/command-line-rust (book)
-- https://github.com/lukemathwalker/zero-to-production (book)
+- https://github.com/lukemathwalker/zero-to-production (book, [free sample](https://www.zero2prod.com/assets/sample_zero2prod.pdf))
 - https://en.wikipedia.org/wiki/Dining_philosophers_problem
 - Gossip Gloomers Distributed Systems Challenge
 - Implement signal processing filters in Rust
