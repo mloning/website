@@ -18,6 +18,7 @@ draft: true
 - https://en.wikipedia.org/wiki/Dining_philosophers_problem
 - Gossip Gloomers Distributed Systems Challenge
 - Implement signal processing filters in Rust
+- Online multi-player game (e.g. https://github.com/sgoedecke/socket-io-game/)
 
 ## Debugging
 
