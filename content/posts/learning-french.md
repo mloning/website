@@ -24,18 +24,26 @@ I've started learning French. Here are some resources I found useful.
 
 - [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it stereotypical)
 - [L'Étranger] by Albert Camus, relatively easy-to-read
+- [Jacaranda] by Gaël Faye ([interview](https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570))
 
 [The Petit Nicolas]: https://www.petitnicolas.com/
 [L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
+[Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 
-I've also really enjoyed reading and listening to the audio book at the same time.
+I've also enjoyed reading a book and listening to the audio book at the same time.
 
 ## Watch
 
 There are numerous excellent French films and series. Here are some I've enjoyed watching:
 
+Series:
+
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
+- [Le Bureau des légendes](https://fr.wikipedia.org/wiki/Le_Bureau_des_l%C3%A9gendes)
+
+Films:
+
 - [Anatomie d'une Chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
 - [Le Monde du Silence](<https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film)>)
 - Le Dîner de Cons
@@ -65,9 +73,9 @@ Mostly in Paris:
 
 - Language courses by the Paris municipalty https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915
 - Conversation groups in Paris' public libraries https://bibliotheques.paris.fr/atelier-de-conversation.aspx
-- https://elfe-paris.com/
 - https://latelier9.com/
 - https://www.learnfrance.net/
+- https://elfe-paris.com/
 - https://www.alliancefr.org/en/
 - https://ligueo.ligueparis.org/
 - https://campuslangues.com/programme/francais/
@@ -76,8 +84,10 @@ Mostly in Paris:
 
 ## Explore Paris
 
-- https://www.104.fr/
+- [104](https://www.104.fr), cultural space
 - Fondation Cartier pour l'art contemporain
 - Institut du monde arabe
 - Musée Cernuschi
-- [Musée Bourdelle](https://www.bourdelle.paris.fr/)
+- [Theatre du Soleil](https://theatre-du-soleil.fr)
+- [Musée Bourdelle](https://www.bourdelle.paris.fr)
+- [Luxor cinema](https://www.cinemalouxor.fr), excellect selection films, usually in original language

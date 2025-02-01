@@ -5,16 +5,20 @@ last_modified: .Lastmod
 draft: true
 ---
 
+## Resources
+
+- [Programming Rust: Fast, Safe Systems Development](https://www.goodreads.com/book/show/25550614-programming-rust)
+
 ## Projects
 
-- https://github.com/mloning/first-steps-in-rust (based on free book)
+- https://github.com/mloning/first-steps-in-rust (based on free [book](https://doc.rust-lang.org/book/))
 - https://github.com/mloning/uno-rs
 - https://github.com/mloning/rocket-rs
+- https://github.com/mloning/zero2prod-rs (based on [book](https://www.zero2prod.com))
 
-## Project ideas
+## Ideas for projects
 
 - https://github.com/kyclark/command-line-rust (book)
-- https://github.com/lukemathwalker/zero-to-production (book, [free sample](https://www.zero2prod.com/assets/sample_zero2prod.pdf))
 - https://en.wikipedia.org/wiki/Dining_philosophers_problem
 - Gossip Gloomers Distributed Systems Challenge
 - Implement signal processing filters in Rust
