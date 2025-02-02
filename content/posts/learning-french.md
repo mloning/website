@@ -10,7 +10,7 @@ I've started learning French. Here are some resources I found useful.
 ## Listen
 
 - [Radio France], different radio stations and podcasts (e.g. [France Inter], [France Info] or [France Culture]); for French-only music, see [Fip - Sacré Français]
-- [ByteFM] program [France, en confidance] about French music, but moderated in German
+- [ByteFM] program [France, en confidance] about French music, moderated in German
 
 [Radio France]: https://www.radiofrance.fr/
 [France Inter]: https://www.radiofrance.fr/franceinter
@@ -22,13 +22,21 @@ I've started learning French. Here are some resources I found useful.
 
 ## Read
 
+Beginner-friendly books:
+
 - [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it stereotypical)
 - [L'Étranger] by Albert Camus, relatively easy-to-read
-- [Jacaranda] by Gaël Faye ([interview](https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570))
 
 [The Petit Nicolas]: https://www.petitnicolas.com/
 [L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
+
+More advanced books I enjoyed reading:
+
+- [Jacaranda] by Gaël Faye ([interview], [Kwibuka song])
+
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
+[interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
+[Kwibuka song]: https://open.spotify.com/track/7JklXqyFfw59LqyeloWmNC
 
 I've also enjoyed reading a book and listening to the audio book at the same time.
 
@@ -84,10 +92,13 @@ Mostly in Paris:
 
 ## Explore Paris
 
+Museums in Paris are free the first Sunday of every month.
+
 - [104](https://www.104.fr), cultural space
 - Fondation Cartier pour l'art contemporain
 - Institut du monde arabe
 - Musée Cernuschi
+- Cinémathèque française
 - [Theatre du Soleil](https://theatre-du-soleil.fr)
 - [Musée Bourdelle](https://www.bourdelle.paris.fr)
-- [Luxor cinema](https://www.cinemalouxor.fr), excellect selection films, usually in original language
+- [Luxor cinema](https://www.cinemalouxor.fr), excellect selection of original-language films
