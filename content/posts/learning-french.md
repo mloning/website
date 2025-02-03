@@ -24,7 +24,7 @@ I've started learning French. Here are some resources I found useful.
 
 Beginner-friendly books:
 
-- [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it stereotypical)
+- [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it dated and stereotypical)
 - [L'Étranger] by Albert Camus, relatively easy-to-read
 
 [The Petit Nicolas]: https://www.petitnicolas.com/
@@ -32,11 +32,13 @@ Beginner-friendly books:
 
 More advanced books I enjoyed reading:
 
-- [Jacaranda] by Gaël Faye ([interview], [Kwibuka song])
+- [Jacaranda] by Gaël Faye ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
-[interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
+[Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
+[L'interview de 9h20 podcast]: https://www.radiofrance.fr/franceinter/podcasts/l-interview-de-9h20/l-itw-de-9h20-du-lundi-26-aout-2024-5320509
 [Kwibuka song]: https://open.spotify.com/track/7JklXqyFfw59LqyeloWmNC
+[Butare song]: https://open.spotify.com/track/79KGGIlt8A6ZsOjmdM0LsX
 
 I've also enjoyed reading a book and listening to the audio book at the same time.
 
