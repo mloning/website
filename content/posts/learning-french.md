@@ -30,9 +30,11 @@ Beginner-friendly books:
 [The Petit Nicolas]: https://www.petitnicolas.com/
 [L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
 
+I've also enjoyed reading a book and listening to the audio book at the same time.
+
 More advanced books I enjoyed reading:
 
-- [Jacaranda] by Gaël Faye ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
+- [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
@@ -40,7 +42,21 @@ More advanced books I enjoyed reading:
 [Kwibuka song]: https://open.spotify.com/track/7JklXqyFfw59LqyeloWmNC
 [Butare song]: https://open.spotify.com/track/79KGGIlt8A6ZsOjmdM0LsX
 
-I've also enjoyed reading a book and listening to the audio book at the same time.
+When trying to pick a new book to read, I look at the recent winners of French literary awards, for example:
+
+- [Prix Goncourt] (and [Prix Goncourt des Lycéens])
+- [Prix Renaudot]
+- [Prix Femina]
+- Le Grand Prix du roman de l'Académie française
+- Le Prix Médicis
+- Le Prix Interallié
+
+That makes it easy to find related materials, like reviews, interviews, podcasts and audiobooks.
+
+[Prix Femina]: https://fr.wikipedia.org/wiki/Prix_Femina
+[Prix Renaudot]: https://fr.wikipedia.org/wiki/Prix_Renaudot
+[Prix Goncourt]: https://fr.wikipedia.org/wiki/Prix_Goncourt
+[Prix Goncourt des Lycéens]: https://en.wikipedia.org/wiki/Prix_Goncourt_des_Lyc%C3%A9ens
 
 ## Watch
 
@@ -48,9 +64,9 @@ There are numerous excellent French films and series. Here are some I've enjoyed
 
 Series:
 
+- [Le Bureau des légendes](https://fr.wikipedia.org/wiki/Le_Bureau_des_l%C3%A9gendes)
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
-- [Le Bureau des légendes](https://fr.wikipedia.org/wiki/Le_Bureau_des_l%C3%A9gendes)
 
 Films:
 

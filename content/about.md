@@ -5,20 +5,22 @@ last_modified: .Lastmod
 draft: false
 ---
 
-Currently working as a Machine Learning Engineer, I enjoy building end-to-end products and working in cross-functional teams. 
-I'm particularly interested in time series modelling and open source. 
+I am a Machine Learning Engineer.
+I'm particularly interested in time series.
+I co-created [sktime] (now also forked into [aeon]), an open-source Python library that provides a unified framework for machine learning with time series.
 
-I see much of my website as a living document: I treat most posts as a collection of thoughts and ideas on a particular topic, which I cultivate, shape and prune as I learn more, much like a [digital garden](https://nicolasbouliane.com/blog/digital-gardening).
+I treat my website like a living document: most posts describe ideas on a particular topic which I grow and cultivate, like a [digital garden](https://nicolasbouliane.com/blog/digital-gardening).
+I also like the idea of [link blog], sharing interesting links with commentary or examples.
 
-I completed my PhD at [UCL] and [The Alan Turing Institute]. 
-During my PhD, I co-created [sktime] (now also forked into [aeon]), a popular open-source Python library that provides a unified framework for machine learning with time series.
-
+I completed my PhD at [UCL] and [The Alan Turing Institute].
+During my PhD, I worked on the design and implementation of [sktime].
 Previously, I studied [Philosophy & Economics] at [Bayreuth University], and worked on [empirical economics, international trade and climate policy]. Previously, I completed my undergraduate degree at [Lancaster University].
 
-I enjoy mentoring less-experienced developers and mentored for [Google Summer of Code], [Outreachy], [Major League Hacking] and [Nuffield Research Placements].
+I enjoy mentoring less-experienced developers, and have mentored for [Google Summer of Code], [Outreachy], [Major League Hacking] and [Nuffield Research Placements].
 
 I read on [Goodreads]. I like to listen to music on [byte.fm] and watch films on [Mubi].
 
+[link blog]: https://simonwillison.net/2024/Dec/22/link-blog/
 [UCL]: https://www.ucl.ac.uk/
 [The Alan Turing Institute]: https://www.turing.ac.uk/
 [sktime]: https://github.com/sktime/sktime

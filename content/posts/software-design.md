@@ -15,3 +15,5 @@ from https://www.tedinski.com/2018/12/05/types-as-design-tool.html:
 >
 > I think design is about everything that’s leftover after we remove all the function bodies.
 > It worth taking a moment to think about what that looks like.
+
+Developer philosophy: https://qntm.org/devphilo

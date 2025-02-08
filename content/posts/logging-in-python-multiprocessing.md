@@ -73,6 +73,10 @@ When logging to a file from multiple processes, we also have to be careful to no
 
 There are less hacky, more complicated solutions which may be preferred depending on the application, for example using a `multiprocessing.Queue`, as described [here](https://docs.python.org/3/howto/logging-cookbook.html#logging-to-a-single-file-from-multiple-processes).
 
+Another solution for handling contexts would be to use [structlog].
+
+[structlog]: https://www.structlog.org
+
 ```python
 import argparse
 import logging
