@@ -12,3 +12,8 @@ Fortunately, there is a command-line tool called [k2pdfopt] which allows to refo
 Check out the documentation [here](https://www.willus.com/k2pdfopt/help/mac.shtml).
 
 [k2pdfopt]: https://www.willus.com/k2pdfopt/
+
+More recently, I discovered on [Hackernews](https://news.ycombinator.com/item?id=43073969) some alternatives to using a Kindle:
+
+- [KOReader](https://koreader.rocks/)
+- [Kobo](https://fr.kobobooks.com/collections/ereaders)
