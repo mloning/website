@@ -5,9 +5,11 @@ last_modified: .Lastmod
 draft: true
 ---
 
-Bayreuth teacher
-UCL teacher
-Bordeaux
+- Shambu Alex Spitzl ([Yoga Vidya Bayreuth])
+- Mayan Patel (UCL teacher)
+- Lucie Chea (Yoga Pop in Bordeaux)
+
+[Yoga Vidya Bayreuth]: https://www.yoga-vidya-bayreuth.de
 
 poses
 
@@ -15,8 +17,6 @@ poses
 - crow on crossed lower leg
 - handstand
 - forearm stand
-- one-arm crow, one-arm forearm stand
+- Eka Pada Bakasana (one-arm crow, one-arm forearm stand)
 - scorpion
 - tree balance
-
-flows

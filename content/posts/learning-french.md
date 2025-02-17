@@ -110,9 +110,14 @@ Mostly in Paris:
 
 ## Explore Paris
 
-Museums in Paris are free the first Sunday of every month.
+Most museums in Paris are free the first Sunday of every month.
 
 - [104](https://www.104.fr), cultural space
+- Musée Rodin
+- Jeu de Paume
+- Maison Européenne de la Photographie
+- Musée de Cluny
+- Crypte Archéologique de l'İle de la Cité
 - Fondation Cartier pour l'art contemporain
 - Institut du monde arabe
 - Musée Cernuschi
