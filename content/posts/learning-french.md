@@ -32,15 +32,17 @@ Beginner-friendly books:
 
 I've also enjoyed reading a book and listening to the audio book at the same time.
 
-More advanced books I enjoyed reading:
+Other books I enjoyed reading:
 
 - [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
+- [Rue des boutiques obscures] by Patrick Modiano, 2014 winner of the Nobel Prize in Literature
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
 [L'interview de 9h20 podcast]: https://www.radiofrance.fr/franceinter/podcasts/l-interview-de-9h20/l-itw-de-9h20-du-lundi-26-aout-2024-5320509
 [Kwibuka song]: https://open.spotify.com/track/7JklXqyFfw59LqyeloWmNC
 [Butare song]: https://open.spotify.com/track/79KGGIlt8A6ZsOjmdM0LsX
+[Rue des boutiques obscures]: https://www.goodreads.com/book/show/192377.Rue_des_boutiques_obscures
 
 When trying to pick a new book to read, I look at the recent winners of French literary awards, for example:
 
@@ -67,6 +69,7 @@ Series:
 - [Le Bureau des légendes](https://fr.wikipedia.org/wiki/Le_Bureau_des_l%C3%A9gendes)
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
+- [Loups Garous](<https://fr.wikipedia.org/wiki/Loups-garous_(%C3%A9mission_de_t%C3%A9l%C3%A9vision)>), reality-TV game show for the [Werewolf game](https://en.wikipedia.org/wiki/The_Werewolves_of_Millers_Hollow)
 
 Films:
 
@@ -121,7 +124,18 @@ Most museums in Paris are free the first Sunday of every month.
 - Fondation Cartier pour l'art contemporain
 - Institut du monde arabe
 - Musée Cernuschi
+- L'institut Giacometti
+- Musée Zadkine
 - Cinémathèque française
 - [Theatre du Soleil](https://theatre-du-soleil.fr)
 - [Musée Bourdelle](https://www.bourdelle.paris.fr)
 - [Luxor cinema](https://www.cinemalouxor.fr), excellect selection of original-language films
+
+## Interesting things
+
+Some things I stumbled upon while learning French:
+
+- [h aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais)
+- fin de semaine, the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
+- [huitante](https://en.wiktionary.org/wiki/huitante), the more logical version of quatre-vingts
+- pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
