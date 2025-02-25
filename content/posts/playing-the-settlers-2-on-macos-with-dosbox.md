@@ -5,7 +5,7 @@ last_modified: .Lastmod
 draft: false
 ---
 
-[DOSBox] emulates an old Intel x86 PC for running many old MS-DOS games – including the original [The Settlers 2], the first computer game I ever played, but which unfortunately no longer runs on modern computers and operating systems.
+[DOSBox] emulates an old Intel x86 PC for running many old MS-DOS games – including the original [The Settlers 2], the first computer game I've ever played, but which unfortunately no longer runs on modern computers and operating systems.
 
 The German edition of The Settlers 2 is freely available [here](https://www.chip.de/downloads/Die-Siedler-2-Gold-Edition_116251848.html).
 Simply download and extract the content into a folder, for example: `/Applications/Siedler2/`.
