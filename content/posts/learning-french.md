@@ -135,7 +135,6 @@ Most museums in Paris are free the first Sunday of every month.
 
 Some things I stumbled upon while learning French:
 
-- Crypte Archéologique de l'İle de la Cité
 - [h aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais), which stops the usual vowel contraction and liaison
 - fin de semaine, the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
 - septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
