@@ -36,6 +36,7 @@ Other books I enjoyed reading:
 
 - [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
 - [Rue des boutiques obscures] by Patrick Modiano, 2014 winner of the Nobel Prize in Literature
+- [Triste Tigre] by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
@@ -140,4 +141,4 @@ Some things I stumbled upon while learning French:
 - fin de semaine, the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
 - septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
 - pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
-- complément d'object direct (COD), complément d'object indirect (COI) and other complément and closely related, but different concepts like complément de mesure
+- complément d'object direct (COD), complément d'object indirect (COI) and other related, but different complements like complément de mesure
