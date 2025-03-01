@@ -142,3 +142,4 @@ Some things I stumbled upon while learning French:
 - septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
 - pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
 - complément d'object direct (COD), complément d'object indirect (COI) and other related, but different complements like complément de mesure
+- [talkie-walkie](https://fr.wikipedia.org/wiki/Talkie-walkie) instead of walkie-talkie
