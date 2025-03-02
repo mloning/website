@@ -7,7 +7,9 @@ draft: true
 
 ## Resources
 
+- https://doc.rust-lang.org/book/
 - [Programming Rust: Fast, Safe Systems Development](https://www.goodreads.com/book/show/25550614-programming-rust)
+- [Effective Rust](https://www.lurklurk.org/effective-rust/title-page.html)
 
 ## Projects
 
@@ -18,7 +20,7 @@ draft: true
 
 ## Ideas for projects
 
-- https://github.com/kyclark/command-line-rust (book)
+- [Command-line Rust](https://github.com/kyclark/command-line-rust)
 - https://en.wikipedia.org/wiki/Dining_philosophers_problem
 - Gossip Gloomers Distributed Systems Challenge
 - Implement signal processing filters in Rust
