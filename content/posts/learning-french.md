@@ -36,6 +36,7 @@ Other books I enjoyed reading:
 
 - [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
 - [Rue des boutiques obscures] by Patrick Modiano, 2014 winner of the Nobel Prize in Literature
+- [Triste Tigre] by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
@@ -75,6 +76,7 @@ Films:
 
 - [Anatomie d'une Chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
 - [Le Monde du Silence](<https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film)>)
+- [Notre Corps](https://fr.wikipedia.org/wiki/Notre_corps)
 - Le Dîner de Cons
 - Les Trois Frères
 - La Vérité si je mens !
@@ -135,9 +137,9 @@ Most museums in Paris are free the first Sunday of every month.
 
 Some things I stumbled upon while learning French:
 
-- Crypte Archéologique de l'İle de la Cité
 - [h aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais), which stops the usual vowel contraction and liaison
 - fin de semaine, the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
 - septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
 - pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
-- complément d'object direct (COD), complément d'object indirect (COI) and other complément and closely related, but different concepts like complément de mesure
+- complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
+- [talkie-walkie](https://fr.wikipedia.org/wiki/Talkie-walkie) instead of walkie-talkie
