@@ -20,6 +20,7 @@ Here are some resources for writing well.
 - https://www.industrialempathy.com/posts/design-docs-at-google/
 - https://github.com/joelparkerhenderson/architecture-decision-record/
 - https://surfingcomplexity.blog/2022/11/24/writing-docs-well-why-should-a-software-engineer-care/
+- https://stevelosh.com/blog/2013/09/teach-dont-tell/
 
 ## Tutorials
 
