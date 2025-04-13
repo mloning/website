@@ -416,11 +416,16 @@ Example message:
 
 ## Negotiation
 
+### Equity
+
+https://github.com/jlevy/og-equity-compensation
+
 ### Negotiating mindset
 
 - [https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
 
-Do not fall into the trap of valuing companies solely along one dimension. That means don’t just value companies based on salary, equity, or even on prestige.
+Do not fall into the trap of valuing companies solely along one dimension.
+That means don’t just value companies based on salary, equity, or even on prestige.
 
 Those are all important dimensions, but so are cultural fit, the challenge of the work, learning potential, later career options, quality of life, growth potential, and just overall happiness. There are many dimensions in a job negotiation: salary, signing bonus, stock, a year-end or performance bonus, commuter benefits, relocation expenses, equipment, an educational stipend, a child care stipend, extra vacation time, a later start date, getting a dedicated hour a day to work out or study or meditate or play solitaire. You could choose which team you’re assigned to, what your first project will be, what technologies you’ll be working with, and sometimes even choose your title. All of these things matter, and your decision should be genuinely multi-dimensional.
 
@@ -461,7 +466,9 @@ This means your job is to traverse as many of these decision points as possible 
 
 To protect your power in the negotiation, you must protect information as much as possible.
 
-In many situations, the only reason why you have any negotiating power at all is because the employer doesn’t actually know what you’re thinking. They might not know how good your other offers are, or how much you were making in your last job, or how you weigh salary vs equity, or even how rational you are as a decision-maker. You want them to be uncertain on exactly what it would take to sign you.
+In many situations, the only reason why you have any negotiating power at all is because the employer doesn’t actually know what you’re thinking.
+They might not know how good your other offers are, or how much you were making in your last job, or how you weigh salary vs equity, or even how rational you are as a decision-maker.
+You want them to be uncertain on exactly what it would take to sign you.
 
 A corollary of this rule is that you should not reveal to companies what you’re currently making. There are some exceptions, but as a rule you should assume this. If you must divulge what you’re making, you should be liberal in noting the total value of your package (incorporate bonuses, unvested stock, nearness to promotion etc.), and always mention it in a context like "_\[XYZ\] is what I’m currently making, and I’m definitely looking for a step up in my career for my next role._"
 
