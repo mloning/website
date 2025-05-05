@@ -119,4 +119,9 @@ Finally, verify that Pi-hole is working:
 
 ## Update Pi-hole
 
-To update Pi-hole, run: `pihole -up`.
+Updating Pi-hole requires root privileges.
+Run: `sudo pihole -up`.
+
+## Related resources
+
+- https://den.dev/blog/pihole/
