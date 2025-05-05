@@ -125,3 +125,4 @@ Run: `sudo pihole -up`.
 ## Related resources
 
 - https://den.dev/blog/pihole/
+- https://firebog.net/ for a collection of blocklists
