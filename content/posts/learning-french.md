@@ -132,6 +132,7 @@ Most museums in Paris are free on the first Sunday of every month.
 - [Theatre du Soleil](https://theatre-du-soleil.fr)
 - [Musée Bourdelle](https://www.bourdelle.paris.fr)
 - [Luxor cinema](https://www.cinemalouxor.fr), excellent selection of original-language films
+- [Palais de la Porte Dorée](https://www.palais-portedoree.fr/)
 
 ## Interesting things
 
