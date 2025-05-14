@@ -56,6 +56,7 @@ brew install \
   htop \
   tree \
   ripgrep \
+  bitwarden \
   jq
 ```
 
