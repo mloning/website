@@ -35,7 +35,7 @@ I've also enjoyed reading a book and listening to the audio book at the same tim
 Other books I enjoyed reading:
 
 - [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
-- [Rue des boutiques obscures] by Patrick Modiano, 2014 winner of the Nobel Prize in Literature
+- [Rue des boutiques obscures] by Patrick Modiano, 2014 winner of the Literature Nobel Prize
 - [Triste Tigre] by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
@@ -115,7 +115,7 @@ Mostly in Paris:
 
 ## Explore Paris
 
-Most museums in Paris are free the first Sunday of every month.
+Most museums in Paris are free on the first Sunday of every month.
 
 - [104](https://www.104.fr), cultural space
 - Musée Rodin
@@ -131,7 +131,8 @@ Most museums in Paris are free the first Sunday of every month.
 - Cinémathèque française
 - [Theatre du Soleil](https://theatre-du-soleil.fr)
 - [Musée Bourdelle](https://www.bourdelle.paris.fr)
-- [Luxor cinema](https://www.cinemalouxor.fr), excellect selection of original-language films
+- [Luxor cinema](https://www.cinemalouxor.fr), excellent selection of original-language films
+- [Palais de la Porte Dorée](https://www.palais-portedoree.fr/)
 
 ## Interesting things
 
@@ -143,3 +144,4 @@ Some things I stumbled upon while learning French:
 - pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
 - complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
 - [talkie-walkie](https://fr.wikipedia.org/wiki/Talkie-walkie) instead of walkie-talkie
+- [ne pas casser trois pattes à un canard](https://fr.wiktionary.org/wiki/ne_pas_casser_trois_pattes_%C3%A0_un_canard)
