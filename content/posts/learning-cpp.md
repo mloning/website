@@ -15,6 +15,7 @@ Learning resources:
   - linking process: https://youtu.be/dOfucXtyEsU?si=shOVX7xs0KzOYWQA
 - working with legacy C++ code base: https://news.ycombinator.com/item?id=39549486
 - low-latency C++ patterns: https://news.ycombinator.com/item?id=40908273
+- videos from CppCon: https://www.youtube.com/@CppCon/videos
 
 Discussions on C++, its problems and future
 
