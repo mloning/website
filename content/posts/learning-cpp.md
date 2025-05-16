@@ -14,6 +14,7 @@ Learning resources:
 - C++ build process: https://github.com/green7ea/blog/blob/master/cpp-build-process/README.md; discussion: https://news.ycombinator.com/item?id=18454140
   - linking process: https://youtu.be/dOfucXtyEsU?si=shOVX7xs0KzOYWQA
 - working with legacy C++ code base: https://news.ycombinator.com/item?id=39549486
+  - ignoring large formatting changes in git blame using https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revltrevgt (see [blog](https://medium.com/@ramunarasinga/git-blame-ignore-revs-to-ignore-bulk-formatting-changes-f20ac23e6155)
 - low-latency C++ patterns: https://news.ycombinator.com/item?id=40908273
 
 Discussions on C++, its problems and future
