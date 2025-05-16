@@ -16,6 +16,7 @@ Learning resources:
 - working with legacy C++ code base: https://news.ycombinator.com/item?id=39549486
   - ignoring large formatting changes in git blame using https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revltrevgt (see [blog](https://medium.com/@ramunarasinga/git-blame-ignore-revs-to-ignore-bulk-formatting-changes-f20ac23e6155)
 - low-latency C++ patterns: https://news.ycombinator.com/item?id=40908273
+- videos from CppCon: https://www.youtube.com/@CppCon/videos
 
 Discussions on C++, its problems and future
 
