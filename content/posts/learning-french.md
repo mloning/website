@@ -7,6 +7,8 @@ draft: false
 
 I've started learning French. Here are some resources I found useful.
 
+Also see my post on [exploring Paris](https://www.mloning.com/posts/exploring-paris/).
+
 ## Listen
 
 - [Radio France], different radio stations and podcasts (e.g. [France Inter], [France Info] or [France Culture]); for French-only music, see [Fip - Sacré Français]
@@ -63,7 +65,8 @@ That makes it easy to find related materials, like reviews, interviews, podcasts
 
 ## Watch
 
-There are numerous excellent French films and series. Here are some I've enjoyed watching:
+There are numerous excellent French films and series.
+Here are some I've enjoyed watching:
 
 Series:
 
@@ -102,46 +105,31 @@ Films:
 
 Mostly in Paris:
 
-- Language courses by the Paris municipalty https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915
-- Conversation groups in Paris' public libraries https://bibliotheques.paris.fr/atelier-de-conversation.aspx
-- https://latelier9.com/
-- https://www.learnfrance.net/
-- https://elfe-paris.com/
+- Language courses by the Paris municipalty ([website](https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915)) -- very cheap but high demand
+- Conversation groups in Paris' public libraries ([website](https://bibliotheques.paris.fr/atelier-de-conversation.aspx))
+- https://latelier9.com/ -- relatively cheap, small groups, very casual
+- https://languageteams.com/ -- [Qualiopi]-certified, relatively expensive
 - https://www.alliancefr.org/en/
-- https://ligueo.ligueparis.org/
-- https://campuslangues.com/programme/francais/
-- https://ilcf.icp.fr/
-- https://www.fle.fr/
 
-## Explore Paris
+There is [Qualiopi], a national quality certificate for organisations that teach or offer services related to professional development.
+In my case, choosing a Qualiop-certified school was a requirement for getting my language course reimbursed by my employer.
 
-Most museums in Paris are free on the first Sunday of every month.
+[Qualiopi]: https://travail-emploi.gouv.fr/qualiopi-marque-de-certification-qualite-des-prestataires-de-formation
 
-- [104](https://www.104.fr), cultural space
-- Musée Rodin
-- Jeu de Paume
-- Maison Européenne de la Photographie
-- Musée de Cluny
-- Crypte Archéologique de l'İle de la Cité
-- Fondation Cartier pour l'art contemporain
-- Institut du monde arabe
-- Musée Cernuschi
-- L'institut Giacometti
-- Musée Zadkine
-- Cinémathèque française
-- [Theatre du Soleil](https://theatre-du-soleil.fr)
-- [Musée Bourdelle](https://www.bourdelle.paris.fr)
-- [Luxor cinema](https://www.cinemalouxor.fr), excellent selection of original-language films
-- [Palais de la Porte Dorée](https://www.palais-portedoree.fr/)
+## Complications
+
+The French language has lots of concepts and rules that make it complicated, here are some I struggled with.
+
+- [h aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais), which stops the usual vowel contraction and liaison
+- additional pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
+- passe compose with etre and avoir
+- complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
 
 ## Interesting things
 
 Some things I stumbled upon while learning French:
 
-- [h aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais), which stops the usual vowel contraction and liaison
-- fin de semaine, the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
+- fin de semaine –– the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
 - septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
-- pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
-- complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
 - [talkie-walkie](https://fr.wikipedia.org/wiki/Talkie-walkie) instead of walkie-talkie
 - [ne pas casser trois pattes à un canard](https://fr.wiktionary.org/wiki/ne_pas_casser_trois_pattes_%C3%A0_un_canard)
