@@ -57,6 +57,7 @@ brew install \
   tree \
   ripgrep \
   bitwarden \
+  llvm \
   jq
 ```
 
