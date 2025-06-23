@@ -416,6 +416,8 @@ Example message:
 
 ## Negotiation
 
+https://www.complexsystemspodcast.com/episodes/how-to-negotiate-your-salary-package/
+
 ### Equity
 
 https://github.com/jlevy/og-equity-compensation
@@ -427,17 +429,22 @@ https://github.com/jlevy/og-equity-compensation
 Do not fall into the trap of valuing companies solely along one dimension.
 That means don’t just value companies based on salary, equity, or even on prestige.
 
-Those are all important dimensions, but so are cultural fit, the challenge of the work, learning potential, later career options, quality of life, growth potential, and just overall happiness. There are many dimensions in a job negotiation: salary, signing bonus, stock, a year-end or performance bonus, commuter benefits, relocation expenses, equipment, an educational stipend, a child care stipend, extra vacation time, a later start date, getting a dedicated hour a day to work out or study or meditate or play solitaire. You could choose which team you’re assigned to, what your first project will be, what technologies you’ll be working with, and sometimes even choose your title. All of these things matter, and your decision should be genuinely multi-dimensional.
+Those are all important dimensions, but so are cultural fit, the challenge of the work, learning potential, later career options, quality of life, growth potential, and just overall happiness.
+There are many dimensions in a job negotiation: salary, signing bonus, stock, a year-end or performance bonus, commuter benefits, relocation expenses, equipment, an educational stipend, a child care stipend, extra vacation time, a later start date, getting a dedicated hour a day to work out or study or meditate or play solitaire. You could choose which team you’re assigned to, what your first project will be, what technologies you’ll be working with, and sometimes even choose your title. All of these things matter, and your decision should be genuinely multi-dimensional.
 
 Be open to being surprised as you explore different companies.
 
-It’s also important to understand that companies don’t all value you along the same dimension either. That is, different companies are genuinely looking for different skills, and there are some companies at which you will be more and less valuable.
+It’s also important to understand that companies don’t all value you along the same dimension either.
+That is, different companies are genuinely looking for different skills, and there are some companies at which you will be more and less valuable.
 
-The more companies you talk to, the more likely you are to find a company to which you are significantly more valuable than the rest. Chances are this is where you’ll be able to negotiate your strongest offer. Remember that a job search is a 2-sided process.
+The more companies you talk to, the more likely you are to find a company to which you are significantly more valuable than the rest.
+Chances are this is where you’ll be able to negotiate your strongest offer. Remember that a job search is a 2-sided process.
 
-One of the most valuable things you can do for yourself in this process is to really try to understand how employers think and what motivates them. Understanding your interlocutor is extremely important in negotiation.
+One of the most valuable things you can do for yourself in this process is to really try to understand how employers think and what motivates them.
+Understanding your interlocutor is extremely important in negotiation.
 
-Be curious about the other side. Try to understand why employers think the way they do. Be sympathetic toward them. Care about what they want and help them try to get it. Adopting this mindset will make you a much stronger negotiator, and accordingly, a much better employee and team member.
+Be curious about the other side.
+Try to understand why employers think the way they do. Be sympathetic toward them. Care about what they want and help them try to get it. Adopting this mindset will make you a much stronger negotiator, and accordingly, a much better employee and team member.
 
 ### Ten rules of job negotiation
 
