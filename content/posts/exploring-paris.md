@@ -8,7 +8,7 @@ draft: false
 ## Cinemas
 
 - [Luxor cinema](https://www.cinemalouxor.fr), excellent selection of original-language films, well curated
-- Grand Rex, biggest theatre in Europe, venue for premieres and film festivales
+- Grand Rex, apparently biggest theatre in Europe, venue for premieres and film festivales, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/)
 
 ## Museums
 
@@ -33,8 +33,12 @@ Most museums in Paris are free for some occassions, including:
 - [Journées européennes du patrimoine](https://journeesdupatrimoine.culture.gouv.fr/)
 - [Nuit blanche](https://www.paris.fr/nuit-blanche-2025)
 
-## Other spaces
+## Other cultural spaces
 
 - [Fête de la musique](https://fetedelamusique.culture.gouv.fr/)
 - [Theatre du Soleil](https://theatre-du-soleil.fr)
 - [104](https://www.104.fr), cultural space
+
+## Shops
+
+- [Tonton Outdoor](https://www.tonton-outdoor.com/), not quite as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but similarly well curated and with knowlegeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7)
