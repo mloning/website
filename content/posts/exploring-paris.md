@@ -25,8 +25,10 @@ draft: false
 - Musée de Cluny
 - [Musée Bourdelle](https://www.bourdelle.paris.fr)
 - [Palais de la Porte Dorée](https://www.palais-portedoree.fr/)
+- Maison Gainsbourg
+- Maison La Roche de Le Corbusier
 
-Most museums in Paris are free for some occassions, including:
+Most museums in Paris are free on some occasions, including:
 
 - on the first Sunday of every month
 - [Nuit européenne des musées](https://nuitdesmusees.culture.gouv.fr/)
