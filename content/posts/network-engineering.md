@@ -11,8 +11,9 @@ Books and guides
 
 - Networking for System Administrators (intro level)
 - https://beej.us/guide/bgnet/ (intro level)
-- TCP/IP Illustrated: The Protocols, Volume 1 (classic text for programmers writing network code) or The Illustrated Network: How TCP/IP Works in a Modern Network (modern adaption)
-- Computer Networking: A Top-Down Approach (standard textbook)
+- Computer Networking: A Top-Down Approach by James Kurose (standard textbook)
+- TCP/IP Illustrated: The Protocols, Volume 1 (classic text)
+- The Illustrated Network: How TCP/IP Works in a Modern Network (modern adaptation)
 
 For more recommendations, see this [Hacker News discussion](https://news.ycombinator.com/item?id=38918418).
 
