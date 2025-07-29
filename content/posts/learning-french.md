@@ -88,7 +88,7 @@ Films:
 
 ### Resources
 
-- [Anki] vocab flashcards with the mobile app and this basic [community deck], but nothing beats creating your own flashcards
+- [Anki] vocab flashcards with the mobile app and this basic [community deck], but nothing beats creating your own flashcards; also check out [Mochi](https://mochi.cards/)
 - [Leo trainer] for words I look up and want to remember in my daily interactions
 - [Bescherelle grammar book], concise description of French grammar, without any exercises
 - [Bescherelle verb conjugation book]
