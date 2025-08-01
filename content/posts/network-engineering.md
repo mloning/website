@@ -90,13 +90,13 @@ Monitoring and diagnostics:
 
 - `ipconfig getifaddr en0` to see your IP address for the `en0` network interface
 
-#### Private IP addresses and Network Address Translation (NAT)
+### Private IP addresses and Network Address Translation (NAT)
 
 - 3 subnets reserved for private networks, cannot be used on the public internet:
   - `10.0.0.0/8`
   - `172.16.0.0/12`
   - `192.168.0.0/16`
-- NAT allows multiple devices on a private network to share a single public IP address on the internet
+- NAT allows multiple devices on a private network to share a single public IP address on the internet, and to hide internal network topologies
 - the NAT device (usually a router) rewrites the source IP address and port of outgoing packets to its own public IP and keeps track of the mapping, so responses can be sent back to the correct device, e.g. at home your laptop (`192.168.0.2`) and phone (`192.168.0.3`) both connect to the internet through your router which uses NAT to translate their private IPs to its public IP (e.g. `203.0.113.5`), so websites only see requests coming from the router’s public address.
 - proxy accepts requests for internet resources on behalf of a client
 - firewalls usually involve some combination of proxy and NAT
@@ -112,7 +112,7 @@ Monitoring and diagnostics:
 ### Internet control message protocol (ICMP)
 
 - used for routing, network control, probing of availability and status, and error reporting, e.g. `ping` or `traceroute` (e.g. "destination unreachable")
-- not used for trasmitting application data
+- not used for transmitting application data
 
 ## Transport layer
 
@@ -162,10 +162,10 @@ Monitoring and diagnostics:
 
 > If the subnet mask is like the street name or zip code and the IP address like the house number, then the port is like a room number.
 
-- logical address to identify multiple, simultaneuous connections on the same host
+- logical address to identify multiple, simultaneous connections on the same host
 - 16-bit number, ranging from 0 to 65535, total of 65536 ports
 - reserved port number ranges (see Internet Assigned Number Authority (IANA))
-  - widely used services (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
+  - well-known ports (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
   - other services (1024 - 49151)
   - dynamically assigned ports for user applications/connections (49152 - 65535)
 - every connection (or packet) goes from a source address (both IP and port) to a destination address
@@ -178,7 +178,7 @@ Monitoring and diagnostics:
 
 ### Sockets
 
-- virtual, low-level programming abstraction representing an instance of a communication endpoint defined by an domain (e.g. `AF_INET` for IPv4), IP address, port number, and transport protocol (e.g. `SOCK_DGRAM` for UDP)
+- virtual, low-level programming abstraction representing an instance of a communication endpoint defined by a domain (e.g. `AF_INET` for IPv4), IP address, port number, and transport protocol (e.g. `SOCK_DGRAM` for UDP)
 - defined by socket API (e.g. `socket()`, `connect()`, `listen()`, `accept()`, `send()`, `receive()`)
 - used to implement higher-level protocols (e.g. TCP or UDP)
 - exposed in high-level languages, e.g. see [Python socket guide]
@@ -197,7 +197,7 @@ Monitoring and diagnostics:
 ### Domain name system (DNS)
 
 - maps human-readable domain names (e.g. `www.google.com`) to an IP address
-- authorative lists, recursive by zone, cached (changes take time to propagate)
+- authoritative lists, recursive by zone, cached (changes take time to propagate)
 - local `/etc/hosts` file
 - types of records
   - `A`: maps a domain name to an IP address
