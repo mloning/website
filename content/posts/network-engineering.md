@@ -12,30 +12,34 @@ Here are my notes.
 
 ## Overview
 
-[Open System Interconnection] (OSI) layer model:
+Five-layer version of [Open System Interconnection] (OSI) model:
 
-| Layer          | Protocol Data Unit (PDU) | Function                                                                                                                                            | Diagnostic tools                          |
-| -------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| 7 Application  | Data                     | High-level protocols such as for resource sharing or remote file access (e.g. HTTP, SMTP, LDAP, DNS)                                                | logging, debugging                        |
-| 6 Presentation | Data                     | Translation of data between a networking service and an application; including character encoding, data compression, and encryption/decryption      | logging, debugging                        |
-| 5 Session      | Data                     | Managing communication sessions, i.e. continuous information exchange in the form of multiple back-and-forth transmissions between two nodes        | logging, debugging                        |
-| 4 Transport    | Segment                  | Reliable transmission of data segments between points on a network, including segmentation, acknowledgement, and multiplexing (e.g. TCP, UDP, ICMP) | `netstat`, `nc` (netcat), `tcpdump`       |
-| 3 Network      | Packet, Datagram         | Multi-node network communication, including addressing, routing, and traffic control (IPv4, IPv6, ICMP)                                             | `ifconfig`, `route`, `ping`, `traceroute` |
-| 2 Data link    | Frame                    | Transmission of data frames between two nodes connected by a physical layer (e.g. Ethernet)                                                         | `arp`, `ndp`, `tcpdump`                   |
-| 1 Physical     | Bit, Symbol              | Transmission and reception of raw streams over a physical medium (e.g. copper/fibre wires, WiFi/radio waves)                                        | Link status, hardware lights, `ifconfig`  |
+| Layer         | Protocol Data Unit (PDU) | Function                                                                                                                              | Diagnostic tools                          |
+| ------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| 5 Application | Data                     | High-level protocols such as for continuous data exchange, resource sharing, or remote file access (e.g. HTTP, SMTP, LDAP, DNS)       | Loggers, debuggers                        |
+| 4 Transport   | Segment                  | Reliable transmission of data segments between nodes, including segmentation, acknowledgement, and multiplexing (e.g. TCP, UDP, ICMP) | `netstat`, `nc` (netcat), `tcpdump`       |
+| 3 Network     | Packet, Datagram         | Multi-node network communication, including addressing, routing, and traffic control (IPv4, IPv6, ICMP)                               | `ifconfig`, `route`, `ping`, `traceroute` |
+| 2 Data link   | Frame                    | Transmission of data frames between two nodes connected by a physical layer (e.g. Ethernet, WiFi)                                     | `arp`, `ndp`, `tcpdump`                   |
+| 1 Physical    | Bit, Symbol              | Transmission and reception of raw streams over a physical medium (e.g. copper/fibre wires, WiFi/radio waves)                          | Hardware status lights, `ifconfig`        |
 
-For a high-level understanding, the differences between layers 5 - 7 are not critical, they all concern the application.
+Level 5 can be broken down further, but for a high-level understanding, the differences are not critical; they all concern the application.
 
-Like a postal system, each layer wraps the lower-level data in its own envelope, adding additional layer-specific information.
+Like a postal system, each layer passes its message (payload) down to the next lower layer, which wraps it in its own envelope, adding its own layer-specific information (headers) (see [encapsulation]).
+At reception, the reverse happens.
+Starting from the physical layer, each layer unwraps the message using the headers and passes it up to the next layer.
 
 [Open System Interconnection]: https://en.wikipedia.org/wiki/OSI_model
 
-## Physical layer (hardware)
+[protocol stack]:
+[encapsulation]: https://en.wikipedia.org/wiki/Encapsulation_(networking)
+
+## Physical layer
 
 ### Network interface
 
 - a device (e.g. Ethernet cards or WiFi adapters) that connect a device to a network
 - each interface has a unique MAC address and can be physical (e.g. an Ethernet card) or virtual (e.g. an interface for VMs)
+- a host can have multiple interfaces
 
 ### Switch
 
@@ -164,7 +168,7 @@ Monitoring and diagnostics:
 
 - logical address to identify multiple, simultaneous connections on the same host
 - 16-bit number, ranging from 0 to 65535, total of 65536 ports
-- reserved port number ranges (see Internet Assigned Number Authority (IANA))
+- reserved port number ranges (see Internet Assigned Number Authority ([IANA]))
   - well-known ports (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
   - other services (1024 - 49151)
   - dynamically assigned ports for user applications/connections (49152 - 65535)
@@ -176,18 +180,21 @@ Monitoring and diagnostics:
 - `netstat -n -a` (disable DNS lookup, filter active ports)
 - `lsof -n -i` (disable DNS lookup, filter network ports)
 
+[IANA]: https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority
+
 ### Sockets
 
 - virtual, low-level programming abstraction representing an instance of a communication endpoint defined by a domain (e.g. `AF_INET` for IPv4), IP address, port number, and transport protocol (e.g. `SOCK_DGRAM` for UDP)
-- defined by socket API (e.g. `socket()`, `connect()`, `listen()`, `accept()`, `send()`, `receive()`)
+- defined by a [socket API] (e.g. `socket()`, `connect()`, `listen()`, `accept()`, `send()`, `receive()`)
 - used to implement higher-level protocols (e.g. TCP or UDP)
-- exposed in high-level languages, e.g. see [Python socket guide]
+- exposed in higher-level languages, e.g. see [Python socket guide]
 - a process can open multiple sockets
 - a socket can accept multiple connections (as long as they are unique in terms of source and destination IP address and port number)
 - sockets are non-competing consumers, when creating multiple socket instances on the same host and port number, each socket will receive a copy of the message sent to that port
 - besides network sockets, Unix Domain sockets (`AF_UNIX` or `AF_LOCAL`) are used for inter-process communication using the file system, bypassing the network stack
 
 [Python socket guide]: https://docs.python.org/3.13/howto/sockets.html
+[socket API]: https://en.wikipedia.org/wiki/Berkeley_sockets
 
 #### Bind (server) and connect (client)
 
