@@ -21,6 +21,8 @@ Here are some resources for writing well.
 - https://github.com/joelparkerhenderson/architecture-decision-record/
 - https://surfingcomplexity.blog/2022/11/24/writing-docs-well-why-should-a-software-engineer-care/
 - https://stevelosh.com/blog/2013/09/teach-dont-tell/
+- https://medium.com/@apappascs/write-like-an-amazonian-14-tips-for-clear-and-persuasive-communication-e2a11afc7362
+- https://grantslatton.com/how-to-design-document
 
 ## Tutorials
 
