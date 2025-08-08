@@ -7,8 +7,11 @@ draft: false
 
 ## Intro
 
-I've recently had to think more about network engineering.
-Here are my notes.
+I recently had to think more about network engineering.
+Here are my notes from reading [Beej's Guide to Network Programming] and [Computer Networking: A Top-Down Approach].
+
+[Beej's Guide to Network Programming]: https://beej.us/guide/bgnet/
+[Computer Networking: A Top-Down Approach]: https://gaia.cs.umass.edu/kurose_ross/
 
 ## Overview
 
@@ -24,13 +27,19 @@ Five-layer version of [Open System Interconnection] (OSI) model:
 
 Level 5 can be broken down further, but for a high-level understanding, the differences are not critical; they all concern the application.
 
-Like a postal system, each layer passes its message (payload) down to the next lower layer, which wraps it in its own envelope, adding its own layer-specific information (headers) (see [encapsulation]).
+Like a postal system, each layer passes its message (payload) down to the next layer, which wraps it in its own envelope, adding its own layer-specific information (headers) (see [encapsulation]).
 At reception, the reverse happens.
-Starting from the physical layer, each layer unwraps the message using the headers and passes it up to the next layer.
+Starting from the physical layer, each layer unwraps the message using the headers and passes it up to the next layer (de-encapsulation).
+Each layer only acts on its layer-specific headers, leaving the rest untouched.
+In practice, encapsulation and de-encapsulation is more complex because a message may be split up into multiple segments, which are then split up into multiple datagrams.
+
+Most complexity is designed to be in the network-edge devices (end systems), including the application and transport layer.
+Network-core devices, including everything from the network layer and below, are designed to be simple (complexity on edges).
+
+Upper layers are constrained by services provided by lower layers (e.g. physical limitations like bandwith or transmission delay), but can build services on top to remedy lower-level limitations (e.g. TCP provides reliable data transfer on the transport layer even with IPv4 as an unreliable network layer protocol).
 
 [Open System Interconnection]: https://en.wikipedia.org/wiki/OSI_model
-
-[protocol stack]:
+[protocol stack]: https://en.wikipedia.org/wiki/Protocol_stack
 [encapsulation]: https://en.wikipedia.org/wiki/Encapsulation_(networking)
 
 ## Physical layer
@@ -46,24 +55,23 @@ Starting from the physical layer, each layer unwraps the message using the heade
 - a device that connects multiple devices within a local network, forwarding data only to the device intended to receive it
 - operate at the data link layer but are part of the physical infrastructure
 
-### Router
-
-- a device that converts one physical layer into another, e.g. home Ethernet to internet service provider (ISP) fibre cable
-- send traffic from one IP subset to another
-- default gateway for sending traffic to hosts outside LAN, e.g. when your host wants to reach hosts on the internet, it sends traffic to the router’s IP
-
 ## Data link layer
+
+### Local area network (LAN)
+
+- [LAN] is a network of trusted hosts
+
+[LAN]: https://en.wikipedia.org/wiki/Local_area_network
 
 ### Ethernet
 
-- [Local area network] (LAN) protocol
+- LAN protocol
 - broadcast protocol: any frame transmitted can go to any other host in the LAN (broadcast domain)
 - every network interface has a unique identifier called the media access control (MAC) address
 - maximum transmission unit (MTU), typically 1.5 Kb including headers, e.g. for a UDP datagram to fit into a single frame it should be smaller than 1.4 Kb
 - if a frame exceeds the MTU, it may be fragmented into smaller pieces or dropped, depending on the protocol and device configuration, fragmentation increases the overhead
 - [Address Resolution Protocol] (ARP): mapping MAC addresses to IP addresses in LAN, used when a device wants to communicate with another device on the same LAN and only knows its IP
 
-[Local area network]: https://en.wikipedia.org/wiki/Local_area_network
 [Address Resolution Protocol]: https://en.wikipedia.org/wiki/Address_Resolution_Protocol
 
 ### Virtual LAN (VLAN)
@@ -78,6 +86,23 @@ Starting from the physical layer, each layer unwraps the message using the heade
 
 ## Network layer
 
+- logical communication between network hosts
+
+### Internet Protocol (IP)
+
+- unreliable, best-effort protocol
+  - no packet delivery guarantee
+  - no in-order delivery
+  - potential packet loss
+  - potential packet error (corruption)
+- every network host has at least one IP address
+
+### Router
+
+- a device that converts one physical layer into another, e.g. home Ethernet to internet service provider (ISP) fibre cable
+- send traffic from one IP subset to another
+- default gateway for sending traffic to hosts outside LAN, e.g. when your host wants to reach hosts on the internet, it sends traffic to the router’s IP
+
 ### IPv4
 
 - 32-bit address, consisting of 4 dot-separated groups of a single byte (i.e. 3 decimals ranging from 0 - 255), e.g. `203.0.113.84`, omitting leading zeros, allowing a total of 2^32 distinct addresses from `0.0.0.0` to `255.255.255.255` (represented as all ones in binary)
@@ -88,20 +113,28 @@ Starting from the physical layer, each layer unwraps the message using the heade
 - hosts can only communicate directly with hosts on the same IP subnet, otherwise they need to go through a router, e.g. if host A is on `192.168.1.x` and host B is on `192.168.2.x`, their subnet masks `255.255.255.0` mean they’re in different subnets, so their traffic must be go through a router
 - to communicate with hosts on a different subnet, hosts must go through a router, even if they are on the same Ethernet
 - last IP address in a subnet is reserved for broadcasting (i.e. `255.255.255.255`)
-- every host has a logical loopback interface (not hardware) with IP address `127.0.0.1` (`localhost`), e.g. used for testing network software locally
+- every host has a logical loopback interface with IP address `127.0.0.1` (`localhost`), e.g. used for testing network software locally
 
 Monitoring and diagnostics:
 
 - `ipconfig getifaddr en0` to see your IP address for the `en0` network interface
 
-### Private IP addresses and Network Address Translation (NAT)
+### Private IP addresses
 
 - 3 subnets reserved for private networks, cannot be used on the public internet:
   - `10.0.0.0/8`
   - `172.16.0.0/12`
   - `192.168.0.0/16`
+
+### Network Address Translation (NAT) and Server Name Indication (SNI)
+
+- publicly available IPv4 addresses are exhausted and IPv6 has not been fully adapted
 - NAT allows multiple devices on a private network to share a single public IP address on the internet, and to hide internal network topologies
 - the NAT device (usually a router) rewrites the source IP address and port of outgoing packets to its own public IP and keeps track of the mapping, so responses can be sent back to the correct device, e.g. at home your laptop (`192.168.0.2`) and phone (`192.168.0.3`) both connect to the internet through your router which uses NAT to translate their private IPs to its public IP (e.g. `203.0.113.5`), so websites only see requests coming from the router’s public address.
+- SNI lets a client tell the server which host it is trying to reach during the TLS handshake, allowing multiple TLS-secured domains to share an IP address
+
+### Proxies and firewalls
+
 - proxy accepts requests for internet resources on behalf of a client
 - firewalls usually involve some combination of proxy and NAT
 
@@ -120,21 +153,37 @@ Monitoring and diagnostics:
 
 ## Transport layer
 
+- logical communication between processes (on different network hosts)
+- extend host-to-host communication (network layer) to process-to-process communication (multiplexing)
+
+### Principles for choosing transport layer protocols
+
+- reliability (reliable data transfer)
+- throughput guarantees: bandwith-sensitive vs adaptive applications
+- timing guarantees (latency, transmission delay)
+- security
+
 ### TCP/IP
 
-- encompasses protocols like user datagram protocol (UDP), transmission control protocol (TCP), and ICMP
 - a single chunk of data, called a segment, is wrapped in a IPv4 or IPv6 packet for transmission which add source and destination IP address, which in turn is wrapped in a data link frame (i.e. "envelopes in envelopes")
+- encompasses common protocols including:
+  - Internet control message protocol (ICMP)
+  - User Datagram Protocol (UDP)
+  - Transmission Control Protocol (TCP), with security via [Transport Layer Security] (TLS)
 
-#### UDP
+[Transport Layer Security]: https://en.wikipedia.org/wiki/Transport_Layer_Security
 
-- connectionless, no connection is established for transmitting packets
+### UDP
+
+- connectionless: no connection is established for transmitting packets
+- UDP packet is fully identified by its 2-tuple of destination IP address and port
 - each packet is considered a discrete entity and has no relationship to other packets
 - unreliable
-  - no packet ordering (packets may not arrive in the order they were sent)
+  - no in-order delivery (packets may not arrive in the order they were sent)
   - potential packet loss
-  - error detection using checksums but no automatic error correction
-- low overhead due to simplicity (compare TCP)
-- used when speed is more important than reliability, e.g. DNS, DHCP, voice over IP or real-time streaming (video, audio, gaming)
+  - error detection using checksums, but no automatic error correction
+- low overhead due to simplicity (compared to TCP)
+- used when speed is more important than reliability, e.g. in application tolerant to packet loss including DNS, DHCP, voice over IP or real-time streaming (video, audio, gaming)
 - UDP packets are usually filtered out at the network boundary due to security concerns (e.g. [IP address spoofing])
 - Ethernet frame fragmentation can occur if UDP packets exceed the MTU, potentially leading to packet loss and application issues
 - supports unicast, broadcast and [multicast] messaging
@@ -142,14 +191,16 @@ Monitoring and diagnostics:
 [IP address spoofing]: https://en.wikipedia.org/wiki/IP_address_spoofing
 [multicast]: https://en.wikipedia.org/wiki/Multicast
 
-#### TCP
+### TCP
 
-- connection-oriented, a connection is established between a sender and receiver for transmitting data
+- connection-oriented: a connection is established between a sender and receiver for transmitting data
+- TCP packet is fully identified by its 4-tuple of source and destination IP address and port
+- two-way communication (duplex connection)
 - reliable ("every packet is tracked and assembled"):
   - receiver acknowledges every packet it receives and checks packet integrity using checksum
   - sender re-sends packets that are not acknowledged
   - packet ordering is guaranteed at reception using packet numbering (the packet sequence may be scrambled during transmission is restored at reception)
-- controls and adapts to network congestion
+- network congestion control, matching sender and receiver speed
 - 3-way handshake to establish a connection (one SYN and ACK in each direction)
   - A: Send SYN - A (client) sends a request to initiate a connection to Host B (server), sent from a randomly assigned local port to the server's specific listening port.
   - B: Send SYN-ACK - B receives the SYN packet and, if it accepts the connection, responds to A with a packet containing both SYN and ACK flags.
@@ -161,12 +212,13 @@ Monitoring and diagnostics:
   - SMTP (Simple Mail Transfer Protocol): transmitting emails between servers
   - FTP (File Transfer Protocol): transferring files between network hosts
   - other data messaging and streaming protocols (e.g. ZMQ)
+- security via [TLS]
 
 ### Ports
 
 > If the subnet mask is like the street name or zip code and the IP address like the house number, then the port is like a room number.
 
-- logical address to identify multiple, simultaneous connections on the same host
+- logical address to identify a (receiving or sending) process on a host, and to enable multiple, simultaneous connections on the same host
 - 16-bit number, ranging from 0 to 65535, total of 65536 ports
 - reserved port number ranges (see Internet Assigned Number Authority ([IANA]))
   - well-known ports (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
@@ -182,15 +234,43 @@ Monitoring and diagnostics:
 
 [IANA]: https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority
 
+## Application layer
+
+### Network application design
+
+#### Client-server
+
+- Client: host process initiating the communication
+- Server: host process waiting to begin communication with a client
+
+Server is
+
+- always on
+- fixed IP known to the client(s)
+- no client-to-client communication
+
+For example, HTTP web servers.
+
+#### Peer-to-peer (P2P)
+
+- intermittently connected hosts
+- no central server with fixed IP, peers discover and connect to each other
+- direct client-to-client communication
+
+For example, [BitTorrent].
+
+[BitTorrent]: https://en.wikipedia.org/wiki/BitTorrent
+
 ### Sockets
 
+- software interface between application and transport layer
 - virtual, low-level programming abstraction representing an instance of a communication endpoint defined by a domain (e.g. `AF_INET` for IPv4), IP address, port number, and transport protocol (e.g. `SOCK_DGRAM` for UDP)
-- defined by a [socket API] (e.g. `socket()`, `connect()`, `listen()`, `accept()`, `send()`, `receive()`)
+- defined by the [socket API] (e.g. `socket()`, `connect()`, `listen()`, `accept()`, `send()`, `receive()`)
 - used to implement higher-level protocols (e.g. TCP or UDP)
 - exposed in higher-level languages, e.g. see [Python socket guide]
 - a process can open multiple sockets
 - a socket can accept multiple connections (as long as they are unique in terms of source and destination IP address and port number)
-- sockets are non-competing consumers, when creating multiple socket instances on the same host and port number, each socket will receive a copy of the message sent to that port
+- sockets are non-competing consumers of broadcast messages, when creating multiple socket instances on the same host and port number, each socket will receive a copy of the broadcast message sent to that port
 - besides network sockets, Unix Domain sockets (`AF_UNIX` or `AF_LOCAL`) are used for inter-process communication using the file system, bypassing the network stack
 
 [Python socket guide]: https://docs.python.org/3.13/howto/sockets.html
@@ -216,6 +296,31 @@ Monitoring and diagnostics:
 
 - `host <name>`
 - `dig`
+
+### Hypertext Transfer Protocol (HTTP)
+
+- based on TCP
+- stateless: no persistent information about clients, but use of cookies to identify returning clients
+- persistent (default) or non-persistent connections
+
+### MPEG-DASH
+
+- adaptive streaming over HTTP
+
+### QUIC-HTTP/2
+
+- TODO
+
+### Content Distribution Network (CDN)
+
+- TODO
+
+## Security
+
+- put malware into a host
+- disrupt servers and network infrastructure (denial of service, or distributed denial of service attacks)
+- sniff packets
+- IP spoofing
 
 ## Monitoring, diagnostics and debugging
 
@@ -277,6 +382,7 @@ Alternatively, use `Wireshark`.
 - `host`
 - `dig`
 - `drill`
+- `nmap` - port scanning, sends TCP SYN requests to find ports with listening processes
 
 ### Linux
 
@@ -287,16 +393,10 @@ Many of the above macOS tools are also available on Linux.
 
 ## Resources
 
-Books and guides
-
-- Networking for System Administrators (intro level)
-- https://beej.us/guide/bgnet/ (intro level)
-- Computer Networking: A Top-Down Approach by James Kurose (standard textbook)
-- TCP/IP Illustrated: The Protocols, Volume 1 (classic text)
-- The Illustrated Network: How TCP/IP Works in a Modern Network (modern adaptation)
-
-For more recommendations, see this (https://news.ycombinator.com/item?id=38918418).
-
-Courses
-
+- [Beej's Guide to Network Programming] (intro level)
+- [Computer Networking: A Top-Down Approach] by James Kurose and Keith Ross (standard textbook)
+- Networking for System Administrators by Michael Lucas (intro level)
+- TCP/IP Illustrated: The Protocols, Volume 1 (classic text), or The Illustrated Network: How TCP/IP Works in a Modern Network (modern adaptation)
 - CS 144: Introduction to Computer Networking ([current course](https://cs144.github.io/), [website](https://online.stanford.edu/courses/cs144-introduction-computer-networking))
+
+For more recommendations, see this [HackerNews thread](https://news.ycombinator.com/item?id=38918418).
