@@ -388,6 +388,7 @@ Alternatively, use `Wireshark`.
 
 Many of the above macOS tools are also available on Linux.
 
+- `ss` - modern version of `netstat` for displaying socket statistics
 - `ip`
 - `ethtool`
 
