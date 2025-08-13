@@ -44,3 +44,13 @@ Most museums in Paris are free on some occasions, including:
 ## Shops
 
 - [Tonton Outdoor](https://www.tonton-outdoor.com/), not quite as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but similarly well curated and with knowlegeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7)
+
+## Swimming pools
+
+- Piscine Georges Hermant (50m)
+- Piscine Georges Vallerey (50m)
+- Piscine Keller (50m)
+- Piscine de la Butte aux Cailles (33m)
+- Piscine Pailleron (33m)
+- Piscine Pontoise (33m)
+- Molitor Hotel piscine (only accessible through hotel)
