@@ -50,6 +50,7 @@ Most museums in Paris are free on some occasions, including:
 - Piscine Georges Hermant (50m)
 - Piscine Georges Vallerey (50m)
 - Piscine Keller (50m)
+- Centre Aquatique Olympique (50m, in Saint-Denis)
 - Piscine de la Butte aux Cailles (33m)
 - Piscine Pailleron (33m)
 - Piscine Pontoise (33m)
