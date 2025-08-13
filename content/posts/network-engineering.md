@@ -68,7 +68,7 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 - LAN protocol
 - broadcast protocol: any frame transmitted can go to any other host in the LAN (broadcast domain)
 - every network interface has a unique identifier called the media access control (MAC) address
-- maximum transmission unit (MTU), typically 1.5 Kb including headers, e.g. for a UDP datagram to fit into a single frame it should be smaller than 1.4 Kb
+- maximum transmission unit (MTU), typically 1.5 Kb including headers
 - if a frame exceeds the MTU, it may be fragmented into smaller pieces or dropped, depending on the protocol and device configuration, fragmentation increases the overhead
 - [Address Resolution Protocol] (ARP): mapping MAC addresses to IP addresses in LAN, used when a device wants to communicate with another device on the same LAN and only knows its IP
 
@@ -175,6 +175,7 @@ Monitoring and diagnostics:
 
 ### UDP
 
+- thin wrapper around Internet Protocol (IP)
 - connectionless: no connection is established for transmitting packets
 - UDP packet is fully identified by its 2-tuple of destination IP address and port
 - each packet is considered a discrete entity and has no relationship to other packets
@@ -187,20 +188,51 @@ Monitoring and diagnostics:
 - UDP packets are usually filtered out at the network boundary due to security concerns (e.g. [IP address spoofing])
 - Ethernet frame fragmentation can occur if UDP packets exceed the MTU, potentially leading to packet loss and application issues
 - supports unicast, broadcast and [multicast] messaging
+- also see [QUIC] protocol based on UDP
+- when a host receives an unexpected packet, i.e. when no receiver or server is running on the destination port, the host replies with a special packet (RST flat for TCP, ICMP datagram for UDP)
+
+[QUIC]: https://en.wikipedia.org/wiki/QUIC
+
+#### Segment structure
+
+- 5 fields: 4 headers with 2 bytes each (8 bytes in total) + payload
+  - source port (for sending unicast replies)
+  - destination port (multiplexing)
+  - length (in bytes, headers and payload)
+  - checksum (for end-to-end transmission error checking for corruption during transmission by noise or while being stored/queued in router)
+  - payload (application-layer data)
+- maximum segment size (MSS) to fit into a single Ethernet frame: 1480 (payload) + 20 (headers) = 1500 bytes
 
 [IP address spoofing]: https://en.wikipedia.org/wiki/IP_address_spoofing
 [multicast]: https://en.wikipedia.org/wiki/Multicast
 
+### Reliable data transfer
+
+Essential components include:
+
+- error detection (e.g. checksum)
+- receiver feedback to sender (e.g. acknowledgement message (ACK) for received packets)
+- re-transmission of lost packets (go-back-N or selective repeat)
+
+which require the following features:
+
+- packet sequence numbers
+- timers (e.g. timeouts for ACK reception before re-transmission)
+- pipelining (sending multiple packets) (compare with inefficient stop-and-wait technique, waiting for ACK before sending next packet)
+- maximum assumed lifetime of packet in transit before re-using sequence number to avoid duplicate sequence numbers
+
 ### TCP
 
-- connection-oriented: a connection is established between a sender and receiver for transmitting data
+- connection-oriented: a logical connection is established between a sender and receiver for transmitting data
+  - logical connection maintained by state in endpoints (stateful)
+  - simultaneous two-way connection (duplex)
+  - single sender, single receiver (point-to-point)
 - TCP packet is fully identified by its 4-tuple of source and destination IP address and port
-- two-way communication (duplex connection)
 - reliable ("every packet is tracked and assembled"):
   - receiver acknowledges every packet it receives and checks packet integrity using checksum
   - sender re-sends packets that are not acknowledged
   - packet ordering is guaranteed at reception using packet numbering (the packet sequence may be scrambled during transmission is restored at reception)
-- network congestion control, matching sender and receiver speed
+- network congestion control, matching sender and receiver speed to preempt router queue overflow and packet drops/re-transmission
 - 3-way handshake to establish a connection (one SYN and ACK in each direction)
   - A: Send SYN - A (client) sends a request to initiate a connection to Host B (server), sent from a randomly assigned local port to the server's specific listening port.
   - B: Send SYN-ACK - B receives the SYN packet and, if it accepts the connection, responds to A with a packet containing both SYN and ACK flags.
@@ -214,16 +246,46 @@ Monitoring and diagnostics:
   - other data messaging and streaming protocols (e.g. ZMQ)
 - security via [TLS]
 
+#### Segment structure
+
+- fields include headers (usually 40 bytes) and payload, extending fields used in UDP
+  - source port (2 bytes)
+  - destination port (2 bytes)
+  - checksum (2 bytes)
+  - sequence numbers (4 bytes, max 2^32 unique sequence numbers, reliability/re-transmission)
+  - receive window (2 bytes, flow/congestion control)
+  - header length (4 bytes, in bytes)
+  - acknowledgement number (4 bytes, reliability)
+  - options field (usually empty)
+  - flat field (e.g. ACK, SYN)
+- maximum segment size (MSS) to fit into a single Ethernet frame: 1460 (payload) + 40 (headers) = 1500 bytes
+
+### Network congestion control
+
+Costs of congested networks
+
+- large queuing delays in routers
+- re-transmission for dropped packets due to router queue overflow
+- unnecessary re-transmissions due to timeouts for acknowledgement messages (ACK)
+- wasted transmission capacity in previous links/router when a packet is dropped at a later stage
+
+Control strategies
+
+- end-to-end congestion control (e.g. TCP using timeouts as congestion indicators and optimization algorithms for adjusting transmission speed)
+- network-assisted congestion control, with routers provide feedback regarding congestion state, even before packet loss occurs
+  - direct feedback to sender
+  - mark packets in router, which are sent on to the receiver, which then informs the sender
+
 ### Ports
 
 > If the subnet mask is like the street name or zip code and the IP address like the house number, then the port is like a room number.
 
-- logical address to identify a (receiving or sending) process on a host, and to enable multiple, simultaneous connections on the same host
+- logical address to identify a (receiving or sending) process on a host, and to enable multiple, simultaneous connections on the same host (multiplexing)
 - 16-bit number, ranging from 0 to 65535, total of 65536 ports
 - reserved port number ranges (see Internet Assigned Number Authority ([IANA]))
   - well-known ports (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
   - other services (1024 - 49151)
-  - dynamically assigned ports for user applications/connections (49152 - 65535)
+  - dynamically assigned (ephemeral) ports for user applications/connections (49152 - 65535)
 - every connection (or packet) goes from a source address (both IP and port) to a destination address
 - source and destination address uniquely identify connections
 
@@ -307,7 +369,7 @@ Monitoring and diagnostics:
 
 - adaptive streaming over HTTP
 
-### QUIC-HTTP/2
+### Quick UDP Internet Connections (QUIC)-HTTP/2
 
 - TODO
 
@@ -388,6 +450,7 @@ Alternatively, use `Wireshark`.
 
 Many of the above macOS tools are also available on Linux.
 
+- `ss` - modern version of `netstat` for displaying socket statistics
 - `ip`
 - `ethtool`
 
