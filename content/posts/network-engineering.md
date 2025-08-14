@@ -57,6 +57,10 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 
 ## Data link layer
 
+### Data link switches
+
+- link-layer devices forwarding packets based on link-layer information
+
 ### Local area network (LAN)
 
 - [LAN] is a network of trusted hosts
@@ -87,21 +91,90 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 ## Network layer
 
 - logical communication between network hosts
+- network management
+  - control vs data plane
+  - destination-based vs generalized forwarding
+  - software defined networking (SDN)
+- network devices (e.g. router)
+  - "match-plus-action" pattern (e.g. router matching a packet's destination IP address and forwarding it along the right path)
 
-### Internet Protocol (IP)
+### Control vs data plane
 
-- unreliable, best-effort protocol
-  - no packet delivery guarantee
-  - no in-order delivery
-  - potential packet loss
-  - potential packet error (corruption)
-- every network host has at least one IP address
+- control plane
+  - coordinate end-to-end routing, based on routing protocols
+  - compute forwarding tables using routing algorithms to determine optimal routing paths
+  - implemented in softare
+  - network-wide process
+- data plane
+  - pre-router packet forwarding from (physical) input links to output links
+  - using forwarding tables provided by control plane
+  - implemented in hardware
+  - local to each router
 
 ### Router
 
+- network-layer device using network-layer information to forward packets, compare with link-layer switches
 - a device that converts one physical layer into another, e.g. home Ethernet to internet service provider (ISP) fibre cable
 - send traffic from one IP subset to another
 - default gateway for sending traffic to hosts outside LAN, e.g. when your host wants to reach hosts on the internet, it sends traffic to the router’s IP
+
+#### Components
+
+- Physical input port
+- Switching fabric
+- Physical output port
+- routing processor (control-plane functions, e.g. router client for communicating with central control-plane server, or computing per-router forwarding tables)
+- implemented in hardware (operating on nanoseconds scale), e.g. assuming 100 Gbps throughput, the router only has 5.12 nanoseconds to process a 64-bytes IP datagram before the next one arrives
+- physical input/output ports are not to be confused with process-related port described as part of the transport layer
+
+#### Input port processing (destination-based forwarding)
+
+- selecting packet from input queue
+- physical and link-layer functions (de-encapsulation)
+- look up output port in forwarding table based on destination IP address, where the forwarding table is computed locally in the router using the router processor, or received from a remote central controller
+  - prefix matching of destination IP address (longest-prefix matching rule)
+  - look up performed in hardware, e.g. Ternary [Content Addressable Memory](https://en.wikipedia.org/wiki/Content-addressable_memory) (TCAM)
+
+#### Switching
+
+- connecting input and output ports
+- forward packets from input port to output port
+- switching methods (via memory, bus, interconnected network)
+
+#### Output port processing
+
+- selecting packets from output queue for transmission (scheduling)
+- physical and link-layer functions (encapsulation)
+
+#### Queuing
+
+- queuing occurs at input and output ports
+- packet loss will occur as queues exhaust router memory
+- input queuing means fabric switching not fast enough (head-of-line blocking)
+- output queuing means transmission rate not fast enough
+- queue management protocols
+  - drop arriving packets if queue is full ("drop tail")
+  - active queue management algorithms (e.g. Random Early Detection (RED), or [Explicit Congestion Notification](https://en.wikipedia.org/wiki/Explicit_Congestion_Notification) marking packet headers for TCP congestion control)
+- buffer sizing problem to find optimal buffer size (e.g. RFC 3439)
+  - larger buffer means less packet loss but longer delays
+- selecting packets from queue (scheduling)
+  - "first in, first out" (FIFO)
+  - priority queuing: categorizing packets according to priority depending on purpose identified by source and destination IP address and port, keeping separate FIFO queues for each category; mechanism to give certain companies priority access (jeopardizing net neutrality)
+  - weighted-fair queuing (WFQ) based on priority classes (round robin)
+
+### Internet Protocol (IP)
+
+- unreliable, "best-effort" protocol
+  - potential packet loss (no delivery guarantee)
+  - no guaranteed in-order delivery
+  - potential packet error (corruption)
+  - no bandwith guarantee
+  - no guaranteed (maximum) end-to-end delay for packet delivery
+- every network host has at least one IP address
+
+#### Monitoring and diagnostics
+
+- `ipconfig getifaddr en0` to see your IP address for the `en0` network interface
 
 ### IPv4
 
@@ -115,9 +188,21 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 - last IP address in a subnet is reserved for broadcasting (i.e. `255.255.255.255`)
 - every host has a logical loopback interface with IP address `127.0.0.1` (`localhost`), e.g. used for testing network software locally
 
-Monitoring and diagnostics:
+#### Datagram
 
-- `ipconfig getifaddr en0` to see your IP address for the `en0` network interface
+- version, e.g. 4 or 6
+- header length (to handle variable number of options)
+- type of service (TOS), e.g. real-time application traffic (for prioritization)
+- datagram length (headers and payload)
+- identifier, flags, fragmentation offset (IPv6 no longer allows for fragmentation)
+- time-to-live (TTL), decreased by 1 each time the datagram is processed by a router to avoid ever-living packets due to routing loops
+- protocol, e.g. 6 (TCP) or 17 (UDP), connecting network layer with transport layer (similar to how a port number connects the transport layer with the application layer)
+- header checksum, used to detect errors, routers drop erroneous datagrams using error detection algorithms (RFC 1071), repeated error detection at both transport and network layer
+- source and destination IP address, destination IP address often determined by DNS lookup
+- options (removed in IPv6 for performance reasons)
+- payload, e.g. transport-layer UDP/TCP segment
+
+total of 20 bytes IPv4 headers + 20 bytes TCP headers
 
 ### Private IP addresses
 
@@ -288,6 +373,7 @@ Control strategies
   - dynamically assigned (ephemeral) ports for user applications/connections (49152 - 65535)
 - every connection (or packet) goes from a source address (both IP and port) to a destination address
 - source and destination address uniquely identify connections
+- connects transport layer with application layer
 
 Monitoring and diagnostics:
 
