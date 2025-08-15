@@ -5,10 +5,18 @@ last_modified: .Lastmod
 draft: false
 ---
 
+## Festivals
+
+- Fête de la musique
+- Ganesha festival (Temple of Sri Manicka Vinayakar Alayam)
+- Fête National (Bastille Day)
+- Bal des Pompiers
+
 ## Cinemas
 
 - [Luxor cinema](https://www.cinemalouxor.fr), excellent selection of original-language films, well curated
 - Grand Rex, apparently biggest theatre in Europe, venue for premieres and film festivales, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/)
+- Cinéma en plein air dans le Parc de la Villette
 
 ## Museums
 
