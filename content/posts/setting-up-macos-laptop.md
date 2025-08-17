@@ -58,7 +58,8 @@ brew install \
   ripgrep \
   bitwarden \
   llvm \
-  jq
+  jq \
+  tldr
 ```
 
 ## Install oh-my-zsh with powerlevel10k
