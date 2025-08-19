@@ -178,15 +178,10 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 
 ### IPv4
 
-- 32-bit address, consisting of 4 dot-separated groups of a single byte (i.e. 3 decimals ranging from 0 - 255), e.g. `203.0.113.84`, omitting leading zeros, allowing a total of 2^32 distinct addresses from `0.0.0.0` to `255.255.255.255` (represented as all ones in binary)
-- dynamic host configuration protocol (DHCP) automatically assigns IP addresses to devices on a network
-- to connect a host to a network, it needs a valid IP address and a subnet mask
-- subnet mask example: `255.255.255.0` means the first three numbers identify the network, and the last number identifies the host within that network (e.g. `192.168.1.42` is host `42` on network `192.168.1.0`)
-- to communicate beyond the LAN, it needs a default gateway
-- hosts can only communicate directly with hosts on the same IP subnet, otherwise they need to go through a router, e.g. if host A is on `192.168.1.x` and host B is on `192.168.2.x`, their subnet masks `255.255.255.0` mean they’re in different subnets, so their traffic must be go through a router
-- to communicate with hosts on a different subnet, hosts must go through a router, even if they are on the same Ethernet
-- last IP address in a subnet is reserved for broadcasting (i.e. `255.255.255.255`)
-- every host has a logical loopback interface with IP address `127.0.0.1` (`localhost`), e.g. used for testing network software locally
+- IP address format
+  - 32-bit address
+  - dotted-decimal notation, consisting of 4 dot-separated groups of a single byte (i.e. 3 decimals ranging from 0 - 255), e.g. `203.0.113.84`, omitting leading zeros
+  - allowing a total of 2^32 distinct addresses from `0.0.0.0` to `255.255.255.255` (represented as all ones in binary)
 
 #### Datagram
 
@@ -204,6 +199,44 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 
 total of 20 bytes IPv4 headers + 20 bytes TCP headers
 
+### Addresing
+
+- to connect a host to a network, it needs a valid IP address and a subnet mask
+- technically, an IP address is associated with a network interface rather than a host (or router) containing that interface, where a network interface is the boundary between the host and the physical link
+- each interface on every device (e.g. host, router) in the global internet must have an IP address that is globally unique
+- to communicate beyond the LAN, a host needs a default gateway
+- hosts can only communicate directly with hosts on the same IP subnet, otherwise they need to go through a router, e.g. if host A is on `192.168.1.x` and host B is on `192.168.2.x`, their subnet masks `255.255.255.0` mean they’re in different subnets, so their traffic must be go through a router
+- to communicate with hosts on a different subnet, hosts must go through a router, even if they are on the same Ethernet
+- last IP address in a subnet is reserved for broadcasting (i.e. `255.255.255.255`), a message sent to the broadcast address is delivered to all hosts on the same subnet
+- every host has a logical loopback interface with IP address `127.0.0.1` (`localhost`), e.g. used for testing network software locally
+- classful addressing
+  - `a.b.c.d/x` (32-bit) where `x` can be 8 (class A), 16 (class B) or 24 (class C) but inefficient allocation for smaller organisations
+    indicates the number of bits in the network prefix, with the remaining bits indicating the device inside the organisation
+  - subnet mask addressing, a subnet mask `255.255.255.0` (24-bits) means the first three numbers identify the network (network prefix), and the last number identifies the device inside that network (e.g. `192.168.1.42` is host `42` on network `192.168.1.0`)
+- Classless Interdomain Routing (CIDR) generalizes subnet addressing
+  - `a.b.c.d/x` (32-bit) where `x` indicates the number of bits in the network prefix, with the remaining bits indicating the device inside the organisation
+  - organisations are typically assigned block of continuous IP addresses, i.e. a common network prefix
+  - routers outside of organisation only consider leading `x` bits of address (network prefix) during routing, reducing the size of the routing tables since a single entry for an entire organisation will be sufficient
+
+### IP address assignment
+
+- Internet Cooperation for Assigned Names and Numbers (ICANN) responsible for allocating blocks of IP addresses and managing DNS root servers
+- assigned block of IP addresses configured into router
+
+### Dynamic Host Configuration Protocol (DHCP)
+
+- client-server protocol
+- automatically assigns temporary IP addresses to devices on a network, or same address for returning devices
+- mechanism to renew lease
+- cannot maintain IP address when connecting to a new subnet, e.g. cannot maintain a TCP connection in mobile applications
+
+protocol flow for assigning an IP address to a new host:
+
+1. a new host send a UDP broadcast discovery message to `255.255.255.255:67` (port `67` is reserved for DHCP)
+2. server(s) respond with UDP broadcast offer message, containing proposed address, lease time and ID of the discovery message
+3. client sends request message choosing from received offer(s)
+4. server responds with acknowledgement
+
 ### Private IP addresses
 
 - 3 subnets reserved for private networks, cannot be used on the public internet:
@@ -215,7 +248,11 @@ total of 20 bytes IPv4 headers + 20 bytes TCP headers
 
 - publicly available IPv4 addresses are exhausted and IPv6 has not been fully adapted
 - NAT allows multiple devices on a private network to share a single public IP address on the internet, and to hide internal network topologies
-- the NAT device (usually a router) rewrites the source IP address and port of outgoing packets to its own public IP and keeps track of the mapping, so responses can be sent back to the correct device, e.g. at home your laptop (`192.168.0.2`) and phone (`192.168.0.3`) both connect to the internet through your router which uses NAT to translate their private IPs to its public IP (e.g. `203.0.113.5`), so websites only see requests coming from the router’s public address.
+- private addresses in LAN allocated by DHCP server in router
+- single public WAN (wide-arean network) IP address allocated by Internet Service Provider DHCP server to gateway router
+- the NAT device (e.g. a router) rewrites the source IP address and port of outgoing packets to its own public IP and keeps track of the mapping between LAN-side and WAN-side source IP address and port, so responses can be sent back to the correct device, e.g. at home your laptop (`192.168.0.2`) and phone (`192.168.0.3`) both connect to the internet through your router which uses NAT to translate their private IPs to its public IP (e.g. `203.0.113.5`), so websites only see requests coming from the router’s public address.
+- 16-bit port number means ca 60K simultaneous entries in NAT table for a single WAN-side IP address
+- NAT transversal
 - SNI lets a client tell the server which host it is trying to reach during the TLS handshake, allowing multiple TLS-secured domains to share an IP address
 
 ### Proxies and firewalls
@@ -226,10 +263,29 @@ total of 20 bytes IPv4 headers + 20 bytes TCP headers
 ### IPv6
 
 - not enough available public addresses under IPv4
-- 128-bit address, consisting of 8 colon-separated groups of 4 hexadecimal characters, omitting leading zeros (e.g. `2001:0db8:85a3:0000:0000:8a2e:0370:7334` or shortened to `2001:db8:85a3::8a2e:370:7334`)
+- IP address format
+  - 128-bit address, consisting of 8 colon-separated groups of 4 hexadecimal characters, omitting leading zeros (e.g. `2001:0db8:85a3:0000:0000:8a2e:0370:7334` or shortened to `2001:db8:85a3::8a2e:370:7334`)
 - uses neighbor discovery (ND) instead of ARP
 - ND is a set of protocols used in IPv6 to discover other devices on the same network, determine their link-layer addresses, find routers, and automatically configure addresses
 - `::1` (`localhost`) for logical loopback interface (equivalent to `127.0.0.1` in IPv4)
+- anycast address
+- flow labelling (e.g. for prioritizing realtime streaming)
+- unlike IPv4, IPv6 does not allow for fragmentation and reassembly at intermediate routers ("Packet too big" ICMP error message)
+- checksum error checking removed since it was redundant with transport-layer checking (e.g. UDP, TCP)
+- transition from IPv4 to IPv6 via tunneling, sending IPv6 datagram in payload of IPv4 datagram (RFC 4213)
+
+#### Datagram
+
+fields:
+
+- version (4 bit)
+- traffic class (8 bit)
+- flow label (20 bit)
+- payload length (16 bit)
+- next header (like protocol in IPv4)
+- hop limit (decremented by 1 by each router that forward the datagram)
+- source and destination IPv6 address
+- payload
 
 ### Internet control message protocol (ICMP)
 
