@@ -12,6 +12,7 @@ Also see my post on [exploring Paris](https://www.mloning.com/posts/exploring-pa
 ## Listen
 
 - [Radio France], different radio stations and podcasts (e.g. [France Inter], [France Info] or [France Culture]); for French-only music, see [Fip - Sacré Français]
+- [Radio France Internationale](https://www.rfi.fr/fr/), e.g. [Journal en français facile](https://francaisfacile.rfi.fr/fr/podcasts/journal-en-fran%C3%A7ais-facile/)
 - [ByteFM] program [France, en confidance] about French music, moderated in German
 
 [Radio France]: https://www.radiofrance.fr/
