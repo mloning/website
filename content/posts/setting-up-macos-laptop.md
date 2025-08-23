@@ -8,7 +8,7 @@ draft: false
 I recently had to set up a new macOS laptop and wanted to take some notes so that I can do it more quickly the next time.
 This [blog post](https://simoncw.com/posts/dev-setup-mac-python-rust/) was very useful.
 
-## Manual configuration
+## Configure macOS
 
 Some things I configure manually, even though they could be automated:
 
@@ -17,7 +17,7 @@ Some things I configure manually, even though they could be automated:
 - Set trackpad "click on tap"
 - `defaults write -g ApplePressAndHoldEnabled -bool false`
 
-## Install command-line tools
+## Install macOS command-line tools
 
 ```bash
 xcode-select --install
@@ -25,7 +25,7 @@ xcode-select --install
 
 ## Install homebrew
 
-Install homebrew:
+Install Homebrew:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -42,24 +42,24 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ```bash
 brew install \
-  neovim \
-  tmux \
   alacritty \
-  eza \
-  stow \
   bat \
-  fzf \
+  bitwarden \
+  eza \
   fd \
+  fzf \
   gh \
   gpg \
-  node \
   htop \
-  tree \
-  ripgrep \
-  bitwarden \
-  llvm \
   jq \
-  tldr
+  llvm \
+  neovim \
+  node \
+  ripgrep \
+  stow \
+  tldr \
+  tmux \
+  tree
 ```
 
 ## Install oh-my-zsh with powerlevel10k
@@ -88,8 +88,8 @@ Next, I add my configuration files from my [dotfiles repo](https://github.com/ml
 
 ```bash
 mv ~/.zshrc ~/.zshrc.bak
-mkdir ~/Dev/projects
-cd ~/Dev/projects
+mkdir ~/projects
+cd ~/projects
 git clone https://github.com/mloning/dotfiles.git
 cd dotfiles
 make create
