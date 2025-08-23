@@ -88,7 +88,7 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 - set up by network engineers on switches
 - useful for isolating network traffic for security (e.g. separating guest WiFi from internal company network)
 
-## Network layer
+## Network layer: data plane
 
 - logical communication between network hosts
 - network management
@@ -286,6 +286,112 @@ fields:
 - hop limit (decremented by 1 by each router that forward the datagram)
 - source and destination IPv6 address
 - payload
+
+### Generalized forwarding and software defined networking (SDN)
+
+- traditionally, data and control plane functionality has been implemented monolithically in a router, but SDN introduces distinction between data and control plane (separate remote control service)
+- packet switches (rather than routers) making forwarding decision based on network-layer and link-layer packet headers
+- remote controller updates match-plus-action tables (e.g. OpenFlow protocol)
+
+OpenFlow protocol
+
+- packet forwarding based on matching via flow table
+  - set of transport, network and link layer header field values for which an incoming packet will be matched
+  - set of counters that are updated as packets are matched to entries
+  - set of actions taken when a packet matches an entry
+    - drop packet
+    - forward packet to a (physical) output port
+    - copy packet and send to multiple output ports (broadcast/multicast)
+    - rewrite selected packet header fields
+- packet not matching any entry will be dropped, or sent to remote controller for further processing
+- use cases
+  - simple forwarding
+  - load balancing
+  - firewall
+
+### Middle boxes
+
+- a middle box is any intermediate device performing functions apart from standard functions of an IP router on the data path between source and desitination host
+- NAT translation
+- security
+  - deep packet inspection (DPI)
+  - Intrusion Detection System (IDS)
+  - firewall filtering based on packet headers
+- network performance enhancements
+  - packet compression
+  - caching
+  - load balancing
+- network function virtualization (NFV)
+- operate on data from all layers, e.g. NAT rewrites network-layer IP address and transport-layer port number, in-network firewalls blocks traffic using application, transport and network layer headers
+
+## Network layer: control plane
+
+- centralized vs per-router control
+  - per-router control (router communication with other routers to compute forwarding table, e.g. OSPF, BGP)
+  - logically centralized control for network-wide logic for packet routing (e.g. update flow table) and network-layer service configuration and management
+
+### Routing algorithms
+
+- goal is to determine sequence of routers from sender to receiver that minimizes costs (e.g. physical length, link speed, monetory costs)
+- mathematically expressed as cost optimization problem using graph with nodes representing routers and edges routers having varying costs
+- algorithm properties
+  - centralized: using complete, global information about the network graph, its connectivity and costs (e.g. link-state algorithm)
+  - decentralized: using incomplete, local information about neighbor nodes, each node iteratively estimates least-cost routes and shares its informations with neighbors (e.g. distance-vector algorithm)
+  - static: no (or slow) route changes (e.g. manually setting link/edge cost informtaion)
+  - dynamic: recomputed periodically or upon network graph change
+  - load-sensitive: cost vary dynamically based on congestion
+
+#### Link-state broadcast algorithms (centralized)
+
+- each node broadcasts link state packets to all other notes containing the identities and costs associated with each of its attached links/edges
+- all nodes end up with identical and complete information about all other nodes and their associated costs
+- e.g. Dijkstra's algorithm (also called Prim's algorithm), computing least-cost route for each destination in network
+
+#### Distance-vector algorithms (decentralized)
+
+- each node receives information from neighboring nodes, computes routes and re-distributes new information with neighbors (distributed)
+- algorithm run until no more information is exchanged between nodes (iterative)
+- does not require all nodes to operate in lock step (asynchronous)
+- Bellman-Ford equation
+- e.g. used in BGP, ISO IDRP, Novell IPX
+
+### Autonomous systems (AS) and intra-AS routing protocol
+
+- an AS is a group of routers under the same administrative control, with administrative autonomy from other ASs
+- all routers in AS run the same routing protocol and have information about each other
+- breaks internet into smaller scales to manage overhead of communicating, computing and storing routing information
+- handles destinations within the same AS, with entries in forwarding table determined by intra-AS routing protocol
+
+#### Open-Shortest Path First (OSPF) protocol
+
+- widely used in Internet (also see IS-IS protocol)
+- publicly available protocol (open) (RFC 2328)
+- link-state protocol, based on Dijkstra's least-cost algorithm
+- link/edge weights can be set to 1 (equivalent to minimum-hop routing) or reflect link capacity
+- messages carried over IP
+- secure (e.g. MD5 authentification to prevent malicious updates of routing tables)
+- supports splitting traffic between multiple same-cost paths
+- integrated unicast and multicast routing (Multicast OSPF)
+
+### Inter-AS routing (among Internet Service Providers)
+
+> glues together thousands of Internet Service Providers in the Internet
+
+Border Gateway Protocol (BGP)
+
+- obtains prefix reachability information from neighboring ASs
+- determines best route(s) to a specific prefix (BGP router selection algorithm)
+  - hot-potato-routing
+- handles destination outside of AS
+- as important for the Internet as IP itself
+- decentralized
+- asynchronous, similar to distance-vector algorithm
+- external gateway routers (eBGP connections)
+  - connected to other ASs
+  - exchange information over TCP (port 179) with other external routers, sending messages to advertize their AS (prefix), including `AS_PATH` information containing the path taken by the message and `NEXT_HOP`
+  - propagate incoming messages to internal routers
+- internal routers (iBGP connections)
+  - propagate information inside AS
 
 ### Internet control message protocol (ICMP)
 
