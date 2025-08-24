@@ -21,7 +21,7 @@ Five-layer version of [Open System Interconnection] (OSI) model:
 | ------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | 5 Application | Data                     | High-level protocols such as for continuous data exchange, resource sharing, or remote file access (e.g. HTTP, SMTP, LDAP, DNS)       | Loggers, debuggers                        |
 | 4 Transport   | Segment                  | Reliable transmission of data segments between nodes, including segmentation, acknowledgement, and multiplexing (e.g. TCP, UDP, ICMP) | `netstat`, `nc` (netcat), `tcpdump`       |
-| 3 Network     | Packet, Datagram         | Multi-node network communication, including addressing, routing, and traffic control (IPv4, IPv6, ICMP)                               | `ifconfig`, `route`, `ping`, `traceroute` |
+| 3 Network     | Packet, Datagram         | Multi-node network communication, including addressing, routing, and traffic control (e.g. IPv4, IPv6, ICMP)                          | `ifconfig`, `route`, `ping`, `traceroute` |
 | 2 Data link   | Frame                    | Transmission of data frames between two nodes connected by a physical layer (e.g. Ethernet, WiFi)                                     | `arp`, `ndp`, `tcpdump`                   |
 | 1 Physical    | Bit, Symbol              | Transmission and reception of raw streams over a physical medium (e.g. copper/fibre wires, WiFi/radio waves)                          | Hardware status lights, `ifconfig`        |
 
@@ -55,28 +55,134 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 - a device that connects multiple devices within a local network, forwarding data only to the device intended to receive it
 - operate at the data link layer but are part of the physical infrastructure
 
-## Data link layer
+## Link layer (data link layer)
 
-### Data link switches
+- implemented on chip called network adapter or network interface controller (NIC)
+- mostly implemented in hardware (sending, receiving) with software components for assembling addressing information, activating network adapter hardware and communication with network layer (encapsulation/de-encapsulation)
+- 2 types of link-layer channels
+  - broadcast (connecting multiple hosts)
+  - point-to-point (e.g. connecting single laptop to nearby Ethernet switch)
+
+### Services
+
+services provided by link layer:
+
+- framing (encapsulation/de-encapsulation) based on link-layer protocols
+- link access (MAC protocol) to coordinate frame transmission
+- reliable data transfer depending on protocol
+- error detection and correction due to signal attenuation or electromagnetic noise (corruption of transmitted bits)
+
+### Error detection and correction
+
+- error detection and correction bits (EDC)
+- challenge is to detect errors in received data D', relative to originally sent data D and EDC, given that we only have received D' and EDC', both of which may be corrupted due to in-transit bit flips
+- no perfect solution, but goal is to minimize probability of undetected erors for acceptable overhead
+- forward error correction (FEC) at receiver side avoiding re-transmission and related delays
+- parity checks
+  - extra parity bit to denote whether number of 1s in payload is even or odd
+  - but weak against multiple errors (cancelling each other out)
+  - two-dimensional row and column parity to detect and correct errors, can correct single but not multiple errors
+- checksum methods
+  - internet checksum (RFC 1071)
+  - used in IP/TCP/UDP
+  - simple and fast compared to cyclical redundancy checks (CRC)
+- cyclical reduncancy checks (CRC)
+  - polynomial codes
+
+### Multiple acccess links and protocols
+
+- point-to-point link (single sender and receiver), e.g. HDLC or PPP protocol
+- broadcast link (multiple senders and receivers), e.g. Ethernet/LAN
+- multiple access problem
+  - coordinate transmission of frames to not send frame at the same time (to avoid frame colliding and becoming inextricably tangled together)
+- desirable properties of solutions
+  - if one one node transmits data, the node has full throughput rate R bps
+  - if M nodes transmit data simultaneously, each node has roughly throughput rate R/M bps
+- 3 categories of mutiple access protocols
+  - channel partitioning
+  - random access
+  - taking turns
+
+#### Channel partitioning protocols
+
+- time-division multiplexing (TDM)
+- frequency-division multiplexing (FDM)
+- code division multiple access (CDMA)
+
+#### Random access protocols
+
+- e.g. ALOHA, or slotted ALOHA
+- carrier sense multiple access (CSMA) with collision detection (CSMA/CD), e.g. Ethernet
+  - listen for active transmission and wait for free transmission slot
+  - stop transmission if collision detected and wait for some duration before re-trying transmission
+  - random wait duration or determiend by some algorithm (e.g. binary exponential backoff algorithm)
+
+#### Taking turns protocols
+
+- polling protocol
+- master node coordinating turns (e.g. round robin)
+- token-passing protocol
+- e.g. DOCSIS
+
+### Switched LAN
 
 - link-layer devices forwarding packets based on link-layer information
+- link-layer switches operate on link-layer frames, rather than network-layer address and routing algorithms (e.g. OSPF)
+
+#### Link layer addressing
+
+- each host or router interface (network adapter) has a globally unique link-layer address in addition to its IP address
+- link-layer switches do not have link-layer address associated with their interface
+- MAC address
+  - 6 bytes, 2^48 possible MAC addresses
+  - hexadecimal notation, with each byte a pair of hexadecimal numbers
+  - managed by IEEE and allocated to network adapter manufacturers
+  - address fixed for adapter, no matter where the adapter is moved
+  - flat address structure unlike hierarchical IP address (network prefix vs host)
+- sending adapter inserts its MAC address into link-layer frame before transmission
+- receiving adapter may receive frames not addressed to its own MAC address, which will be discarded without passing it up to the network-layer and interrupting the host
+- last address in 6-bytes space is broadcast MAC address consisting of 48 consecutive 1s, i.e. `FF-FF-FF-FF-FF-FF`
+- link-layer addressing work independently of network-layer addressing
+  - support for arbitrary network-layer protocol, not just IP (e.g. IPX or DECnet)
+  - operating without having to pass up frames to network layer and interrupt hosts
+
+#### [Address Resolution Protocol] (ARP)
+
+- maps LAN network-layer IP addresses to link-layer MAC addresses
+- similar to DNS mapping global application-layer host name to network-layer IP addresses
+- used when a device wants to communicate with another device on the same LAN and only knows its IP
+- only host/router interfaces in same IP subnet
+- each host or router has an ARP table mapping IP address to MAC address including time-to-live (TTL)
+- message protocol to update tables if table has no entry for IP address
+  - query packet with source and destination IP and MAC address sent to all hosts and routers on the same subnet via broadcast MAC address
+  - response packets if query a host's or router's MAC address matches with desired mapping
+
+[Address Resolution Protocol]: https://en.wikipedia.org/wiki/Address_Resolution_Protocol
+
+#### Ethernet
+
+- LAN protocol using ARP protocol
+- broadcast protocol: any frame transmitted can go to any other host in the LAN (broadcast domain)
+- every network interface has a unique identifier called the media access control (MAC) address
+- provides connectionless transmission service for network layer
+- unreliable data transfer as frames failing cyclical reduncancy checks (CRC) are dropped without acknowledgements or re-transmission mechanisms
+- Ethernet frame, 6 fields
+  - data: IP datagram, between 46 - 1500 bytes
+  - destination MAC address (6 bytes)
+  - source MAC address (6 bytes)
+  - type, e.g. IP protocol, ARP (like protocol field in IP datagram, used for de-encapsulation) (2 bytes)
+  - cyclic redundancy check (CRC) (4 bytes)
+  - preamble (8 bytes)
+- data smaller than 46 bytes is "stuffed", and "unstuffed" or decoded based on IP datagram length field
+- maximum transmission unit (MTU), typically 1500 bytes including headers
+- if a frame exceeds the MTU, it may be fragmented into multiple frames or dropped, depending on the protocol and device configuration, fragmentation increases the overhead
+- different Ethernet flavours (e.g. 10BASE-T)
 
 ### Local area network (LAN)
 
 - [LAN] is a network of trusted hosts
 
 [LAN]: https://en.wikipedia.org/wiki/Local_area_network
-
-### Ethernet
-
-- LAN protocol
-- broadcast protocol: any frame transmitted can go to any other host in the LAN (broadcast domain)
-- every network interface has a unique identifier called the media access control (MAC) address
-- maximum transmission unit (MTU), typically 1.5 Kb including headers
-- if a frame exceeds the MTU, it may be fragmented into smaller pieces or dropped, depending on the protocol and device configuration, fragmentation increases the overhead
-- [Address Resolution Protocol] (ARP): mapping MAC addresses to IP addresses in LAN, used when a device wants to communicate with another device on the same LAN and only knows its IP
-
-[Address Resolution Protocol]: https://en.wikipedia.org/wiki/Address_Resolution_Protocol
 
 ### Virtual LAN (VLAN)
 
@@ -393,10 +499,75 @@ Border Gateway Protocol (BGP)
 - internal routers (iBGP connections)
   - propagate information inside AS
 
+### IP Anycast
+
+- replicate same content on different servers in different geographical locations
+- have each user access content from the closest server
+
+example:
+
+- 13 IP addresses for DNS root servers but multiple servers corresponding to each address, with DNS assigning same IP address to many of its servers
+- uses BGP to advertize this address from each server
+- BGP router treats multiple adverts as providing different paths to the same location when in fact they are adverts for different paths to different locations
+- BGP selects least-cost route as defined in BGP route selection algorithm, i.e. usually the closest server
+
+### Control plane
+
+- simple but fast switches (routers) executing match-plus-action (data plane)
+- servers and software determine and manage switches and their forwarding/flow tables
+- decouples network functionality from hardware, previously bundled together monolithically and embedded in switches/routers by vendor
+- now rich, open ecosystem of hardware, software and network control applications
+
+components
+
+- SDN controller (logically centralized but physically distributed and scalable) maintains network-wide state information through APIs
+- SDN network control applications using controller API to specify and control SDN-enabled data-plane network devices (e.g. executing routing algorithms)
+
+#### Controller
+
+- operates as communication layer between controller and SND-enabled devices ("southboud interface"), e.g. OpenFlow
+- network-wide state management
+- interface to network control applications ("northbound interface")
+  - read/write network state and flow tables in state-management layer so that they can act upon in response to events sent by devices
+- e.g. ONOS, OpenDaylight
+
+#### OpenFlow API
+
+- message protocols based on TCP based (port 6653)
+
+controller -> switch:
+
+- set/query switch configuration parameters
+- modify-state: modify switch flow table entries
+- read-state: get statistics and counters from switch flow table entries
+- send-packet: send packet out of a specific port at the controlled switch
+
+switch -> controller:
+
+- port-status: inform (physical) port status change
+- packet-in: send packet not matching any flow table entry to controller for further processing
+- flow-removed: confirm that flow table entry has been removed (e.g. due to timeout or as the result of a modify-state message)
+
 ### Internet control message protocol (ICMP)
 
-- used for routing, network control, probing of availability and status, and error reporting, e.g. `ping` or `traceroute` (e.g. "destination unreachable")
+- based on IP (like TCP/UDP), ICMP messages are carried in IP datagram payload
+- fields
+  - type
+  - code
+- e.g. ping send (type: 8, code: 0), ping reply (type: 0, code: 0)
+- used for routing, network control, probing of availability and status, and error reporting, e.g. `ping` or `traceroute` (e.g. "port unreachable", "host unreachable")
 - not used for transmitting application data
+
+### Network management
+
+- manage network servers for configuring, monitoring, controlling network devices
+- manged devices (e.g. host, router, switch) with operational state (Management Information Base)
+- data
+  - configuration
+  - operational (e.g. list of neighbors)
+  - device statistics
+- network management agent (client) running in managed devices
+- network management protocol (e.g. application-layer Simple Network Management Protocol (SNMP v3), NETCONF/YANG)
 
 ## Transport layer
 
