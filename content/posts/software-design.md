@@ -5,6 +5,10 @@ last_modified: .Lastmod
 draft: true
 ---
 
+> every piece of software should be a black box with a pin-hole for input and an even smaller pin-hole for output
+
+---
+
 from https://www.tedinski.com/2018/12/05/types-as-design-tool.html:
 
 > A function is the quintessential abstraction boundary.

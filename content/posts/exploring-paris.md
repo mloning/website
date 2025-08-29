@@ -20,6 +20,7 @@ draft: false
 
 ## Museums
 
+- Atelier des Lumières (immersive digital experiences)
 - Cinémathèque française
 - Crypte Archéologique de l'İle de la Cité
 - Fondation Cartier pour l'art contemporain
