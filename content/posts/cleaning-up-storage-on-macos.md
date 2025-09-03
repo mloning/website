@@ -2,7 +2,7 @@
 title: "Cleaning up storage on macOS"
 date: 2024-12-20T16:58:20+01:00
 last_modified: .Lastmod
-draft: true
+draft: false
 ---
 
 ## Using macOS storage manager
@@ -18,7 +18,7 @@ draft: true
 
 ## Manually searching for large directories and files
 
-- set "Calculate all sizes" in Finder - Show Wiew Options
+- set "Calculate all sizes" in Finder - Show View Options
 - run: `defaults write com.apple.finder AppleShowAllFiles yes` to show hidden files
 
 Directories to focus on:
