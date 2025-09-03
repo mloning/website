@@ -2,7 +2,7 @@
 title: "Signing git commits"
 date: 2025-01-14T20:50:10+01:00
 last_modified: .Lastmod
-draft: true
+draft: false
 ---
 
 https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html
