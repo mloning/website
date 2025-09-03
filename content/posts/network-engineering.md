@@ -238,7 +238,7 @@ services provided by link layer:
 - selecting packet from input queue
 - physical and link-layer functions (de-encapsulation)
 - look up output port in forwarding table based on destination IP address, where the forwarding table is computed locally in the router using the router processor, or received from a remote central controller
-  - prefix matching of destination IP address (longest-prefix matching rule)
+  - prefix matching of destination IP address (longest-prefix matching rule, i.e. most specific route that matches)
   - look up performed in hardware, e.g. Ternary [Content Addressable Memory](https://en.wikipedia.org/wiki/Content-addressable_memory) (TCAM)
 
 #### Switching
@@ -320,7 +320,7 @@ total of 20 bytes IPv4 headers + 20 bytes TCP headers
     indicates the number of bits in the network prefix, with the remaining bits indicating the device inside the organisation
   - subnet mask addressing, a subnet mask `255.255.255.0` (24-bits) means the first three numbers identify the network (network prefix), and the last number identifies the device inside that network (e.g. `192.168.1.42` is host `42` on network `192.168.1.0`)
 - Classless Interdomain Routing (CIDR) generalizes subnet addressing
-  - `a.b.c.d/x` (32-bit) where `x` indicates the number of bits in the network prefix, with the remaining bits indicating the device inside the organisation
+  - `a.b.c.d/x` (32-bit) where `x` indicates the number of bits in the network prefix, with the remaining bits indicating the device inside the organisation (CIDR notation)
   - organisations are typically assigned block of continuous IP addresses, i.e. a common network prefix
   - routers outside of organisation only consider leading `x` bits of address (network prefix) during routing, reducing the size of the routing tables since a single entry for an entire organisation will be sufficient
 
@@ -880,5 +880,6 @@ Many of the above macOS tools are also available on Linux.
 - Networking for System Administrators by Michael Lucas (intro level)
 - TCP/IP Illustrated: The Protocols, Volume 1 (classic text), or The Illustrated Network: How TCP/IP Works in a Modern Network (modern adaptation)
 - CS 144: Introduction to Computer Networking ([current course](https://cs144.github.io/), [website](https://online.stanford.edu/courses/cs144-introduction-computer-networking))
+- https://www.ducktyped.org/p/why-is-it-called-a-cloud-if-its-not (blog post series on AWS networking and virtual private cloud)
 
 For more recommendations, see this [HackerNews thread](https://news.ycombinator.com/item?id=38918418).
