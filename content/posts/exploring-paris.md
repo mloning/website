@@ -7,16 +7,17 @@ draft: false
 
 ## Festivals
 
-- Fête de la musique
+- [Fête de la musique](https://fetedelamusique.culture.gouv.fr/)
 - Ganesha festival (Temple of Sri Manicka Vinayakar Alayam)
 - Fête National (Bastille Day)
 - Bal des Pompiers
 
 ## Cinemas
 
-- [Luxor cinema](https://www.cinemalouxor.fr), excellent selection of original-language films, well curated
-- Grand Rex, apparently biggest theatre in Europe, venue for premieres and film festivales, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/)
+- [Louxor cinema](https://www.cinemalouxor.fr) (excellent selection of original-language films, well curated, nice roof-top bar)
+- Grand Rex (apparently biggest theatre in Europe, venue for premieres and film festivales, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/))
 - Cinéma en plein air dans le Parc de la Villette
+- Cinéma Pathé Palace (very comfortable but expensive)
 
 ## Museums
 
@@ -44,15 +45,24 @@ Most museums in Paris are free on some occasions, including:
 - [Journées européennes du patrimoine](https://journeesdupatrimoine.culture.gouv.fr/)
 - [Nuit blanche](https://www.paris.fr/nuit-blanche-2025)
 
+## Theatres
+
+- [Theatre du Soleil](https://theatre-du-soleil.fr)
+- Théâtre de la Ville
+- Théâtre des Bouffes du Nord
+- Théâtre du Châtelet
+- L'Étoile du Nord
+- Théâtre Paris-Villette
+- L'Essaïon
+
 ## Other cultural spaces
 
-- [Fête de la musique](https://fetedelamusique.culture.gouv.fr/)
-- [Theatre du Soleil](https://theatre-du-soleil.fr)
-- [104](https://www.104.fr), cultural space
+- [104](https://www.104.fr) (open cultural space, expositions)
+- Le Lucernaire (theatre, cinema)
 
 ## Shops
 
-- [Tonton Outdoor](https://www.tonton-outdoor.com/), not quite as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but similarly well curated and with knowlegeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7)
+- [Tonton Outdoor](https://www.tonton-outdoor.com/) (not quite as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but good selection and with knowlegeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7))
 
 ## Swimming pools
 
@@ -64,3 +74,7 @@ Most museums in Paris are free on some occasions, including:
 - Piscine Pailleron (33m)
 - Piscine Pontoise (33m)
 - Molitor Hotel piscine (only accessible through hotel)
+
+## Other resources
+
+- https://www.paris.fr/quefaire
