@@ -59,7 +59,8 @@ brew install \
   stow \
   tldr \
   tmux \
-  tree
+  tree \
+  zoxide
 ```
 
 ## Install oh-my-zsh with powerlevel10k
