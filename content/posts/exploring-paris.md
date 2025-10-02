@@ -11,6 +11,7 @@ draft: false
 - Ganesha festival (Temple of Sri Manicka Vinayakar Alayam)
 - Fête National (Bastille Day)
 - Bal des Pompiers
+- Fête de la Lune
 
 ## Cinemas
 
@@ -18,6 +19,11 @@ draft: false
 - Grand Rex (apparently biggest theatre in Europe, venue for premieres and film festivales, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/))
 - Cinéma en plein air dans le Parc de la Villette
 - Cinéma Pathé Palace (very comfortable but expensive)
+
+## Monuments
+
+- Sainte Chapelle
+- Notre Dame
 
 ## Museums
 
@@ -47,13 +53,13 @@ Most museums in Paris are free on some occasions, including:
 
 ## Theatres
 
-- [Theatre du Soleil](https://theatre-du-soleil.fr)
 - Théâtre de la Ville
 - Théâtre des Bouffes du Nord
 - Théâtre du Châtelet
 - L'Étoile du Nord
 - Théâtre Paris-Villette
 - L'Essaïon
+- [Theatre du Soleil](https://theatre-du-soleil.fr)
 
 ## Other cultural spaces
 
@@ -62,7 +68,7 @@ Most museums in Paris are free on some occasions, including:
 
 ## Shops
 
-- [Tonton Outdoor](https://www.tonton-outdoor.com/) (not quite as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but good selection and with knowlegeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7))
+- [Tonton Outdoor](https://www.tonton-outdoor.com/) (not as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but good selection and knowlegeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7))
 
 ## Swimming pools
 
