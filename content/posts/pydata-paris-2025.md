@@ -11,5 +11,6 @@ draft: true
 - met tslearn maintainer (@charavelg)
 - communities in Paris: PyData Paris, PyLadies Paris, Paris Women in Machine Learning & Data Science, AI Alliance
 - :probable team (based in Paris)
+- conflict-free replicated data type (CRDT) for lock-free concurrent read/write access, they don't need locks because they accept conflicts but define rules ("merge" operations) that resolve conflicts (e.g. used collaborative text editors like Google Docs)
 - videos online
 - next year maybe EuroScipy or EuroPython (see https://hugovk.dev/blog/2025/europython-2025-a-roundup-of-writeups/)
