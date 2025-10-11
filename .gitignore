@@ -54,4 +54,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Obsidian 
+.obsidian/
+.trash/
+
 # End of https://www.gitignore.io/api/hugo,linux,macos
