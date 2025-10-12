@@ -81,6 +81,14 @@ Most museums in Paris are free on some occasions, including:
 - Piscine Pontoise (33m)
 - Molitor Hotel piscine (only accessible through hotel)
 
+## Meetups and interest groups
+
+- PyData Paris (meetups and annual conference)
+- PyLadies Paris (meetups)
+- Paris Women in Machine Learning & Data Science (meetups)
+- AI Alliance (meetups)
+- Rust Paris (meetups)
+
 ## Other resources
 
 - https://www.paris.fr/quefaire
