@@ -29,3 +29,5 @@ I attended my first Rust conference, [EuroRust 2025](https://eurorust.eu/2025/) 
     - frequent inserts, updates, deletes, and fetching full records (e.g. banking transactions, user profiles)
     - row-based format (e.g. PostgreSQL)
     - document-based/NoSQL databases (e.g. MongoDB), better for complex entities to avoid complicated SQL joins
+
+Videos will be available at: https://www.youtube.com/@eurorust.
