@@ -1,10 +1,9 @@
 ---
-title: "Learning Cpp"
+title: Learning C++
 date: 2025-05-14T08:47:02+02:00
 last_modified: .Lastmod
-draft: true
+draft: false
 ---
-
 ## Learning resources
 
 For discussions, see: https://news.ycombinator.com/item?id=16535886, https://www.reddit.com/r/cpp_questions/comments/rxx0z5/best_resources_to_learn_c/
@@ -35,3 +34,4 @@ For discussions, see: https://news.ycombinator.com/item?id=16535886, https://www
 - https://news.ycombinator.com/item?id=32905885; original post: https://x.com/markrussinovich/status/1571995117233504257
 - https://www.babaei.net/blog/rust-devs-think-we-are-hopeless-lets-prove-them-wrong-with-cpp-memory-leaks/
 - https://m.youtube.com/watch?v=7DCO-IISBnc
+- Comparing with Rust: "In my experience, C++ is a much more complicated language. The 8 ways to initialize something, the 5 types of values (xvalues etc.), inconsistent formatting conventions, inconsistent naming conventions, the rule of 5, exceptions, always remembering to check `this != other` when doing a move assignment operator, perfect forwarding, SFINAE, workarounds for not having a great equivalent to traits, etc. Part of knowing the language is also knowing the conventions on top that are necessary in order to write it more safely and faster (if your move constructor is not noexcept it'll cause copies to occur when growing a vector of that object), and learning the many non-ideal competing ways that people do things, like error handling." https://news.ycombinator.com/item?id=45606560
