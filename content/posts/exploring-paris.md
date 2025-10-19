@@ -63,6 +63,7 @@ Most museums in Paris are free on some occasions, including:
 
 ## Other cultural spaces
 
+- La Cigale (concerts, theatre)
 - [104](https://www.104.fr) (open cultural space, expositions)
 - Le Lucernaire (theatre, cinema)
 
