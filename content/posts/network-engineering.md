@@ -17,26 +17,27 @@ Here are my notes from reading [Beej's Guide to Network Programming] and [Comput
 
 Five-layer version of [Open System Interconnection] (OSI) model:
 
-| Layer         | Protocol Data Unit (PDU) | Function                                                                                                                              | Diagnostic tools                          |
-| ------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| 5 Application | Data                     | High-level protocols such as for continuous data exchange, resource sharing, or remote file access (e.g. HTTP, SMTP, LDAP, DNS)       | Loggers, debuggers                        |
-| 4 Transport   | Segment                  | Reliable transmission of data segments between nodes, including segmentation, acknowledgement, and multiplexing (e.g. TCP, UDP, ICMP) | `netstat`, `nc` (netcat), `tcpdump`       |
-| 3 Network     | Packet, Datagram         | Multi-node network communication, including addressing, routing, and traffic control (e.g. IPv4, IPv6, ICMP)                          | `ifconfig`, `route`, `ping`, `traceroute` |
-| 2 Data link   | Frame                    | Transmission of data frames between two nodes connected by a physical layer (e.g. Ethernet, WiFi)                                     | `arp`, `ndp`, `tcpdump`                   |
-| 1 Physical    | Bit, Symbol              | Transmission and reception of raw streams over a physical medium (e.g. copper/fibre wires, WiFi/radio waves)                          | Hardware status lights, `ifconfig`        |
+| Layer | Name        | Data Unit (PDU)  | Function                                                                                                                              | Tools                                     |
+| ----- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| 5     | Application | Data             | High-level protocols such as for continuous data exchange, resource sharing, or remote file access (e.g. HTTP, SMTP, LDAP, DNS)       | Loggers, debuggers                        |
+| 4     | Transport   | Segment          | Reliable transmission of data segments between nodes, including segmentation, acknowledgement, and multiplexing (e.g. TCP, UDP, ICMP) | `netstat`, `nc` (netcat), `tcpdump`       |
+| 3     | Network     | Packet, Datagram | Multi-node network communication, including addressing, routing, and traffic control (e.g. IPv4, IPv6, ICMP)                          | `ifconfig`, `route`, `ping`, `traceroute` |
+| 2     | Data link   | Frame            | Transmission of data frames between two nodes connected by a physical layer (e.g. Ethernet, WiFi)                                     | `arp`, `ndp`, `tcpdump`                   |
+| 1     | Physical    | Bit, Symbol      | Transmission and reception of raw streams over a physical medium (e.g. copper/fibre wires, WiFi/radio waves)                          | Hardware status lights, `ifconfig`        |
 
-Level 5 can be broken down further, but for a high-level understanding, the differences are not critical; they all concern the application.
+Level 5 is sometimes broken down further (7-layer model), but for a high-level understanding, the differences are not critical; they all concern the application.
 
-Like a postal system, each layer passes its message (payload) down to the next layer, which wraps it in its own envelope, adding its own layer-specific information (headers) (see [encapsulation]).
+Intuitively, the layers work Like a postal system.
+When sending a message, each layer passes its message (payload) down to the next layer, which wraps it in its own envelope, adding its own layer-specific information (headers) (see [encapsulation]).
 At reception, the reverse happens.
-Starting from the physical layer, each layer unwraps the message using the headers and passes it up to the next layer (de-encapsulation).
+Starting from the physical layer, each layer unwraps the message using the information in the headers and passes it up to the next layer (de-encapsulation).
 Each layer only acts on its layer-specific headers, leaving the rest untouched.
-In practice, encapsulation and de-encapsulation is more complex because a message may be split up into multiple segments, which are then split up into multiple datagrams.
+In practice, encapsulation and de-encapsulation is more complex: a message may be split up into multiple segments, which in turn are split up into multiple datagrams.
 
 Most complexity is designed to be in the network-edge devices (end systems), including the application and transport layer.
-Network-core devices, including everything from the network layer and below, are designed to be simple (complexity on edges).
+Network-core devices, including everything from the network layer and below, are designed to be simple.
 
-Upper layers are constrained by services provided by lower layers (e.g. physical limitations like bandwith or transmission delay), but can build services on top to remedy lower-level limitations (e.g. TCP provides reliable data transfer on the transport layer even with IPv4 as an unreliable network layer protocol).
+Upper layers are constrained by services provided by lower layers (e.g. physical limitations like bandwith or transmission delay), but can build services on top to remedy lower-level limitations (e.g. TCP provides reliable data transfer on the transport layer on top of the unreliable network layer IPv4 protocol).
 
 [Open System Interconnection]: https://en.wikipedia.org/wiki/OSI_model
 [protocol stack]: https://en.wikipedia.org/wiki/Protocol_stack
@@ -587,9 +588,9 @@ switch -> controller:
 - encompasses common protocols including:
   - Internet control message protocol (ICMP)
   - User Datagram Protocol (UDP)
-  - Transmission Control Protocol (TCP), with security via [Transport Layer Security] (TLS)
+  - Transmission Control Protocol (TCP), with security via Transport Layer Security ([TLS])
 
-[Transport Layer Security]: https://en.wikipedia.org/wiki/Transport_Layer_Security
+[TLS]: https://en.wikipedia.org/wiki/Transport_Layer_Security
 
 ### UDP
 
@@ -637,7 +638,7 @@ which require the following features:
 - packet sequence numbers
 - timers (e.g. timeouts for ACK reception before re-transmission)
 - pipelining (sending multiple packets) (compare with inefficient stop-and-wait technique, waiting for ACK before sending next packet)
-- maximum assumed lifetime of packet in transit before re-using sequence number to avoid duplicate sequence numbers
+- maximum segment lifetime (MSL) of a segment in transit to prevent the re-use of sequence numbers within a segment's assumed network lifetime, thereby avoiding ambiguity from old, duplicate segments.
 
 ### TCP
 
@@ -649,8 +650,9 @@ which require the following features:
 - reliable ("every packet is tracked and assembled"):
   - receiver acknowledges every packet it receives and checks packet integrity using checksum
   - sender re-sends packets that are not acknowledged
-  - packet ordering is guaranteed at reception using packet numbering (the packet sequence may be scrambled during transmission is restored at reception)
-- network congestion control, matching sender and receiver speed to preempt router queue overflow and packet drops/re-transmission
+  - packet ordering is guaranteed at reception using packet numbering (the packet sequence may be scrambled during transmission is restored at reception using sequence numbers)
+- network congestion control, dynamically matching sender and receiver speed to preempt router queue overflow and packet drops/re-transmission
+- flow control, matching sender and receiver speed to prevent a faster sender from overwhelming a slow receiver by limiting the amount of unacknowledged data the sender can transmit (see [Network congestion control])
 - 3-way handshake to establish a connection (one SYN and ACK in each direction)
   - A: Send SYN - A (client) sends a request to initiate a connection to Host B (server), sent from a randomly assigned local port to the server's specific listening port.
   - B: Send SYN-ACK - B receives the SYN packet and, if it accepts the connection, responds to A with a packet containing both SYN and ACK flags.
@@ -666,17 +668,17 @@ which require the following features:
 
 #### Segment structure
 
-- fields include headers (usually 40 bytes) and payload, extending fields used in UDP
+- fields include headers (usually 20 bytes, maximum 40 bytes including all options) and payload, extending the fields used in UDP
   - source port (2 bytes)
   - destination port (2 bytes)
   - checksum (2 bytes)
   - sequence numbers (4 bytes, max 2^32 unique sequence numbers, reliability/re-transmission)
-  - receive window (2 bytes, flow/congestion control)
-  - header length (4 bytes, in bytes)
+  - receive window (2 bytes, flow control)
+  - data offset (4 bits, header lengths in bytes)
   - acknowledgement number (4 bytes, reliability)
   - options field (usually empty)
-  - flat field (e.g. ACK, SYN)
-- maximum segment size (MSS) to fit into a single Ethernet frame: 1460 (payload) + 40 (headers) = 1500 bytes
+  - flags (e.g. ACK, SYN)
+- maximum segment size (MSS) for payload to fit into a single Ethernet frame: 1460 (payload) + 20 (TCP headers) + 20 (IPv4 headers) = 1500 bytes
 
 ### Network congestion control
 
@@ -696,7 +698,7 @@ Control strategies
 
 ### Ports
 
-> If the subnet mask is like the street name or zip code and the IP address like the house number, then the port is like a room number.
+> If the subnet mask is like the stream name and the IP address like the house number, then the port is like a room number.
 
 - logical address to identify a (receiving or sending) process on a host, and to enable multiple, simultaneous connections on the same host (multiplexing)
 - 16-bit number, ranging from 0 to 65535, total of 65536 ports
@@ -704,8 +706,8 @@ Control strategies
   - well-known ports (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
   - other services (1024 - 49151)
   - dynamically assigned (ephemeral) ports for user applications/connections (49152 - 65535)
-- every connection (or packet) goes from a source address (both IP and port) to a destination address
-- source and destination address uniquely identify connections
+- every connection (or packet) goes from a source address (IP and port) to a destination address
+- source and destination address together uniquely identify connections
 - connects transport layer with application layer
 
 Monitoring and diagnostics:
@@ -717,9 +719,9 @@ Monitoring and diagnostics:
 
 ## Application layer
 
-### Network application design
+### High-level design of network applications
 
-#### Client-server
+#### Client/server
 
 - Client: host process initiating the communication
 - Server: host process waiting to begin communication with a client
@@ -752,7 +754,7 @@ For example, [BitTorrent].
 - a process can open multiple sockets
 - a socket can accept multiple connections (as long as they are unique in terms of source and destination IP address and port number)
 - sockets are non-competing consumers of broadcast messages, when creating multiple socket instances on the same host and port number, each socket will receive a copy of the broadcast message sent to that port
-- besides network sockets, Unix Domain sockets (`AF_UNIX` or `AF_LOCAL`) are used for inter-process communication using the file system, bypassing the network stack
+- besides network sockets, there are other sockets for inter-process communication called Unix Domain sockets (`AF_UNIX` or `AF_LOCAL`) which bypass the network stack
 
 [Python socket guide]: https://docs.python.org/3.13/howto/sockets.html
 [socket API]: https://en.wikipedia.org/wiki/Berkeley_sockets
@@ -801,7 +803,7 @@ Monitoring and diagnostics:
 - put malware into a host
 - disrupt servers and network infrastructure (denial of service, or distributed denial of service attacks)
 - sniff packets
-- IP spoofing
+- IP spoofing (identifying as another person or program by falsifying network data)
 
 ## Monitoring, diagnostics and debugging
 
