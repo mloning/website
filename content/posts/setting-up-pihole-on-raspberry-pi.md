@@ -11,13 +11,6 @@ draft: false
 
 I've finally had some time to set up [Pi-hole] on my [Raspberry Pi].
 For most parts, I followed the excellent [tutorial] on the Raspberry Pi website – more details below.
-
-More recently, I came across this [Hackernews thread] which mentions some interesting alternatives, including [AdGuard Home] and [NextDNS].
-
-[Hackernews thread]: https://news.ycombinator.com/item?id=41970318
-[AdGuard Home]: https://adguard.com/en/adguard-home/overview.html
-[NextDNS]: https://nextdns.io/
-
 ## Set up Raspberry Pi
 
 - On your usual computer, install an operating system onto the microSD card. For the installer, I used the [Raspberry Pi Imager](https://www.raspberrypi.com/documentation/computers/getting-started.html#install-an-operating-system). For the OS, I picked the Debian-based Raspberry Pi OS Lite (64 bit) which comes without the desktop environment.
@@ -124,5 +117,12 @@ Run: `sudo pihole -up`.
 
 ## Related resources
 
+More recently, I came across this [Hackernews thread] which mentions some interesting alternatives, including [AdGuard Home] and [NextDNS]. 
+
+For a more comprehensive setup, see [this blog post](https://psyonik.tech/posts/a-guide-for-wireguard-vpn-setup-with-pi-hole-adblock-and-unbound-dns/)
+
+[Hackernews thread]: https://news.ycombinator.com/item?id=41970318
+[AdGuard Home]: https://adguard.com/en/adguard-home/overview.html
+[NextDNS]: https://nextdns.io/
 - https://den.dev/blog/pihole/
 - https://firebog.net/ for a collection of blocklists
