@@ -27,7 +27,7 @@ Five-layer version of [Open System Interconnection] (OSI) model:
 
 Level 5 is sometimes broken down further (7-layer model), but for a high-level understanding, the differences are not critical; they all concern the application.
 
-Intuitively, the layers work Like a postal system.
+Intuitively, the layers works like a postal system.
 When sending a message, each layer passes its message (payload) down to the next layer, which wraps it in its own envelope, adding its own layer-specific information (headers) (see [encapsulation]).
 At reception, the reverse happens.
 Starting from the physical layer, each layer unwraps the message using the information in the headers and passes it up to the next layer (de-encapsulation).
