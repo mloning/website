@@ -17,13 +17,13 @@ Here are my notes from reading [Beej's Guide to Network Programming] and [Comput
 
 Five-layer version of [Open System Interconnection] (OSI) model:
 
-| Layer | Name        | Data Unit (PDU)  | Function                                                                                                                              | Tools                                     |
-| ----- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| 5     | Application | Data             | High-level protocols such as for continuous data exchange, resource sharing, or remote file access (e.g. HTTP, SMTP, LDAP, DNS)       | Loggers, debuggers                        |
-| 4     | Transport   | Segment          | Reliable transmission of data segments between nodes, including segmentation, acknowledgement, and multiplexing (e.g. TCP, UDP, ICMP) | `netstat`, `nc` (netcat), `tcpdump`       |
-| 3     | Network     | Packet, Datagram | Multi-node network communication, including addressing, routing, and traffic control (e.g. IPv4, IPv6, ICMP)                          | `ifconfig`, `route`, `ping`, `traceroute` |
-| 2     | Data link   | Frame            | Transmission of data frames between two nodes connected by a physical layer (e.g. Ethernet, WiFi)                                     | `arp`, `ndp`, `tcpdump`                   |
-| 1     | Physical    | Bit, Symbol      | Transmission and reception of raw streams over a physical medium (e.g. copper/fibre wires, WiFi/radio waves)                          | Hardware status lights, `ifconfig`        |
+| Layer | Name        | Protocol Data Unit | Function                                                                                                                              | Diagnostic Tools                          |
+| ----- | ----------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| 5     | Application | Data               | High-level protocols such as for continuous data exchange, resource sharing, or remote file access (e.g. HTTP, SMTP, LDAP, DNS)       | Loggers, debuggers                        |
+| 4     | Transport   | Segment            | Reliable transmission of data segments between nodes, including segmentation, acknowledgement, and multiplexing (e.g. TCP, UDP, ICMP) | `netstat`, `nc` (netcat), `tcpdump`       |
+| 3     | Network     | Packet, Datagram   | Multi-node network communication, including addressing, routing, and traffic control (e.g. IPv4, IPv6, ICMP)                          | `ifconfig`, `route`, `ping`, `traceroute` |
+| 2     | Data link   | Frame              | Transmission of data frames between two nodes connected by a physical layer (e.g. Ethernet, WiFi)                                     | `arp`, `ndp`, `tcpdump`                   |
+| 1     | Physical    | Bit, Symbol        | Transmission and reception of raw streams over a physical medium (e.g. copper/fibre wires, WiFi/radio waves)                          | Hardware status lights, `ifconfig`        |
 
 Level 5 is sometimes broken down further (7-layer model), but for a high-level understanding, the differences are not critical; they all concern the application.
 
