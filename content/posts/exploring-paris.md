@@ -13,6 +13,11 @@ draft: false
 - Bal des Pompiers
 - Fête de la Lune
 
+## Restaurants
+
+- [Le Petit Budlo](https://www.gillespudlowski.com/388513/livres/le-petit-pudlo-des-bistrots-2024-25) (bistro guide)
+- [Les Pieds dans le Plat](https://www.gillespudlowski.com/) (gastronomic blog)
+
 ## Cinemas
 
 - [Louxor cinema](https://www.cinemalouxor.fr) (excellent selection of original-language films, well curated, nice roof-top bar)
