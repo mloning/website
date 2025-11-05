@@ -21,3 +21,11 @@ from https://www.tedinski.com/2018/12/05/types-as-design-tool.html:
 > It worth taking a moment to think about what that looks like.
 
 Developer philosophy: https://qntm.org/devphilo
+
+On project scoping and objectives:
+
+> positioning your project as an alternative implementation of something is a losing proposition
+
+> don't go trying to create a subset of Python [...] Do your own thing. That way, you can evolve your system at your own pace and in your own direction, without being chained by expectations that your language should have to match the performance, feature set, or library ecosystem of another implementation.
+
+https://pointersgonewild.com/2024/04/20/the-alternative-implementation-problem/
