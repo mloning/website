@@ -5,4 +5,6 @@ last_modified: .Lastmod
 draft: true
 ---
 
-- Boyhood, also [Adolescentes](<https://en.wikipedia.org/wiki/Adolescents_(film)>)
+- Boyhood
+- The Silence of Others
+- Inland Empire
