@@ -799,6 +799,13 @@ Monitoring and diagnostics:
 
 - TODO
 
+### Let's Encrypt
+
+- certification for HTTPS servers
+- HTTP-01 challenge
+- DNS-01 challenge
+- ACME protocol
+
 ## Security
 
 - put malware into a host
