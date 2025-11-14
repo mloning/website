@@ -23,6 +23,11 @@ Also see my post on [exploring Paris](https://www.mloning.com/posts/exploring-pa
 [ByteFM]: https://www.byte.fm/
 [Fip - Sacré Français]: https://www.radiofrance.fr/fip/radio-sacre-francais
 
+For example, here a two Radio France podcasts on the French Revolution:
+
+- [La Revolution Française](https://www.radiofrance.fr/franceinter/podcasts/serie-la-revolution-francaise)
+- [Vivre durant la Révolution française](https://www.radiofrance.fr/franceinter/podcasts/serie-vivre-durant-la-revolution-francaise)
+
 ## Read
 
 Beginner-friendly books:
@@ -125,6 +130,7 @@ The French language has lots of concepts and rules that make it complicated, her
 - additional pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
 - passe compose with etre and avoir
 - complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
+-
 
 ## Interesting things
 
