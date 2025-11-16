@@ -84,10 +84,10 @@ I outline answers for some of them below.
 **Create the environment**
 
 - State that you invite and welcome feedback
-- Repeatedly ask for and insist on you getting critical feedback
+- Repeatedly ask for critical feedback
 - Build personal relationships and trust
 - Start new relationships by giving positive feedback
-- State intentions why you give feedback, i.e. to learn, to help other become better and to create a cultural in which we can exchange feedback constructively, so that everyone can learn from direct feedback
+- State intentions why you give feedback: to learn, to help other become better and to create a culture in which everyone can exchange feedback constructively
 - In some situations, state intentions why you give feedback in a certain way (e.g. if public feedback, not to shame or embarrass others but so that everyone can learn and discuss)
 - Clarify how people want to receive feedback, positive and negative/redirecting
 
@@ -153,7 +153,7 @@ I found these resources helpful when preparing for the cultural-fit interview.
 
 ### Resources
 
-- [Designing Data-Intesive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications)
+- [Designing Data-Intensive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications)
 - [https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/)
 - Google Software Engineering Guide: [https://abseil.io/resources/swe-book/html/toc.html](https://abseil.io/resources/swe-book/html/toc.html)
 - [https://bytebytego.com/](https://bytebytego.com/)
@@ -226,7 +226,7 @@ It usually depends on your area of expertise.
 
 ## Coding interview
 
-Here are some general tipps for the live coding interview.
+Here are some general tips for the live coding interview.
 
 ### Practice
 
@@ -280,7 +280,7 @@ Here are some general tipps for the live coding interview.
 ## Questions to ask
 
 After each interview you will usually have some time to ask questions of your own. 
-Asking questions helps you demonstrates your genuine interest anad assess whether the role is right for you.
+Asking questions demonstrates your genuine interest and assesses whether the role is right for you.
 
 I outline generic topics below, but do prior research to tailor your questions to the role and company.
 
@@ -419,7 +419,7 @@ Some considerations on what to say:
 - Express excitement about opportunity and willingness to learn
 - Show critical self-reflection and self-awareness of areas where to improve
 - Describe how opportunity aligns with your career goals
-- Potential risk to reveal weaknesses which they had not noticed
+- Risk of revealing weaknesses they hadn't noticed
 
 Example message:
 
@@ -592,15 +592,16 @@ If you already have a job, staying where you are is often your BATNA.
 This means if you tell your interlocutor that you hate your job, then they know your BATNA sucks, and have no incentive to negotiate with you (on top of potentially thinking that you're a negative person).
 Always emphasize the pros of your current company, your seniority, your impact, and whatever else you like about where you currently work.
 
-You should make your decision seem genuinely close for it to be a strong BATNA.
+Make your decision seem genuinely close for a strong BATNA.
 
 **7. Proclaim reasons for everything**
 
-Stating a reason makes any request feel important and understandable, both for yourself and for your negotiating partner. For example, you're not just being greedy, it's you trying to fulfil your goals.
+Stating a reason makes any request feel important and understandable, both for yourself and for your negotiating partner.
+For example, you're not just being greedy; you're trying to fulfil your goals.
 
 The more unobjectionable and sympathetic your reason, the better.
 
-- I'm earning to give, so since I'm donating 10% of my income to charity, I have to negotiate aggressively to leave myself enough to live off (https://www.givingwhatwecan.org/pledge)
+- I'm earning to give, so I need to negotiate aggressively to leave myself enough to live on (https://www.givingwhatwecan.org/pledge)
 - I need to take care of my brother and mother who live on a low income
 - I really want to buy a house in Paris within the next year; what can we do to improve the salary?
 
@@ -742,7 +743,7 @@ You want your recruiter to like you, understand you, empathise with you, and wan
 However, if you don't have confidence in your negotiation skills, you should try to push the negotiation to email. 
 Written, asynchronous communication will give you more time to strategize and make it easier to say uncomfortable things without being pressured by a recruiter.
 
-If you want to stick to email, you just be honest and ask for what you want. 
+If you want to stick to email, be honest and ask for what you want. 
 
 > As to your previous email, I'd prefer to discuss the details of the offer over email. 
 > I sometimes get nervous during important phone calls, so discussing the offer over email helps me to keep a clear head and communicate more clearly. 
@@ -764,7 +765,7 @@ Employers often justify this by saying: "If you need more time than this, then t
 So what should you do if you receive an exploding offer?
 
 Exploding offers are anathema to your ability to effectively navigate the labour market. 
-Thus, there is only one thing to do. 
+Thus, do the following. 
 Treat the offer as a non-offer unless the expiration window is widened. 
 In no uncertain terms, convey that if the offer is exploding, it's useless to you.
 
@@ -791,7 +792,7 @@ If they persist, don't be afraid to walk away.
 
 **For questions about compensation expectations at the beginning of the process**
 
-Explain your curious mindset to the interviewing process:
+Reply by explaining your curious mindset during the interview process:
 
 > At this point, I don't feel equipped to throw out a number because I'd like to find out more about the opportunity first – right now, I simply don't have the data to be able to say something concrete. 
 > If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works. I promise not to accept other offers until I have a chance to discuss them with you.
