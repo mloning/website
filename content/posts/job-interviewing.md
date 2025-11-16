@@ -1,13 +1,13 @@
 ---
 title: "Job interviewing"
-date: 2024-09-27T17:15:09+02:00
+date: 2025-11-16T14:15:09+02:00
 last_modified: .Lastmod
 draft: false
 ---
 
 Here are some notes from my experience searching for new jobs and interviewing with various companies.
 
-It's largely a summary of books, blog posts and conversations I had, some of it copied directly from there (see the extra resources I link in each section).
+It's largely a summary of books, blog posts and conversations I've had, some of it copied directly from there (see the extra resources I link in each section).
 
 ## Cultural-fit interview
 
