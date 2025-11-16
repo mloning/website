@@ -11,7 +11,7 @@ It's largely a summary of books, blog posts and conversations I had, some of it 
 
 ## Cultural-fit interview
 
-The cultural fit interview assesses whether you align with the company's values and how you work with teams: your soft skills, communication, collaboration, and approach to problem solving. 
+The cultural fit interview assesses whether you align with the company's values and how you work with teams: your soft skills, communication, collaboration, and approach to problem solving.
 Typical questions include:
 
 - "Tell me about a time when ..."
@@ -43,7 +43,7 @@ Situation - what was the situation you had to deal with
 
 Task - what was the task you were given to do
 
-- success criteria - how was success defined? explain how complex the project was 
+- success criteria - how was success defined? explain how complex the project was
 - why was it complex - new tech? huge scope? tight timeline? massive team? powerful stakeholders? financial impact?
 
 Action - what action did you take
@@ -129,18 +129,6 @@ I outline answers for some of them below.
 - convey what you bring to the role (the compelling ones for the employer)
 - explain how this role will accelerate your career (the strategic reasons), give 2-3 specific reasons
 
-### Question: Present your current project
-
-1. High-level overview
-   1. Business goals
-   2. Users
-   3. Technical challenge
-2. Ways of working
-3. Results
-4. Retrospective
-   1. What would you change if you could start over again?
-   2. What would you optimise going forward?
-
 ### Resources
 
 I found these resources helpful when preparing for the cultural-fit interview.
@@ -220,7 +208,7 @@ For a system-design interview, follow this structure:
 ## Machine learning interview
 
 For the ML interview, I have not found many general resources on interviewing.
-It usually depends on your area of expertise. 
+It usually depends on your area of expertise.
 
 - [https://huyenchip.com/ml-interviews-book/](https://huyenchip.com/ml-interviews-book/)
 
@@ -251,7 +239,7 @@ Here are some general tips for the live coding interview.
 - Add type annotations for key types if skeleton classes/functions are provided
 - Write skeleton classes/functions if not provided
 - Focus on data structure (e.g. array, hashmap, hashset, list)
-- Add TODO comments in skeleton code
+- Add `TODO` comments in skeleton code
 
 **Implement**
 
@@ -279,7 +267,7 @@ Here are some general tips for the live coding interview.
 
 ## Questions to ask
 
-After each interview you will usually have some time to ask questions of your own. 
+After each interview you will usually have some time to ask questions of your own.
 Asking questions demonstrates your genuine interest and assesses whether the role is right for you.
 
 I outline generic topics below, but do prior research to tailor your questions to the role and company.
@@ -316,10 +304,10 @@ I outline generic topics below, but do prior research to tailor your questions t
 
 ### What's the culture like?
 
-* What are the company values, and why? Can you give me some specific ways you've followed them?
-* Who decides what to build?
-* What are the things or behaviours that would cause a person in this role to fail/succeed?
-* Please list all the ways you are monitoring your employees during work hours. For example, state whether you have a mandatory web proxy that everyone must use and enumerate all pieces of security and tracking software you have installed on employees' computers. Do you require all employees to assign all work hours to projects? If yes, what granularity? 
+- What are the company values, and why? Can you give me some specific ways you've followed them?
+- Who decides what to build?
+- What are the things or behaviours that would cause a person in this role to fail/succeed?
+- Please list all the ways you are monitoring your employees during work hours. For example, state whether you have a mandatory web proxy that everyone must use and enumerate all pieces of security and tracking software you have installed on employees' computers. Do you require all employees to assign all work hours to projects? If yes, what granularity?
 
 Also see [https://blog.pragmaticengineer.com/the-developer-culture-test/](https://blog.pragmaticengineer.com/the-developer-culture-test/).
 
@@ -333,8 +321,8 @@ Also see [https://blog.pragmaticengineer.com/the-developer-culture-test/](https:
 
 If you want to learn in this role ask yourself: do you believe this company is able to attract people who are as good as or better than you?
 
-You are trying to understand if they view engineering as a cost centre. 
-Thoughtful answers to how to hire and pay people indicate this is prioritised. 
+You are trying to understand if they view engineering as a cost centre.
+Thoughtful answers to how to hire and pay people indicate this is prioritised.
 Sharing more information rather than less shows trust and partnership with employees.
 
 ### What's the vision of the project and team?
@@ -442,7 +430,7 @@ Do not fall into the trap of valuing companies solely along one dimension.
 That means don't just value companies based on salary, equity or even on prestige.
 
 Those are all important dimensions, but so are cultural fit, the challenge of the work, learning potential, later career options, quality of life, growth potential, and just overall happiness.
-There are many dimensions in a job negotiation: salary, signing bonus, stock, a year-end or performance bonus, commuter benefits, relocation expenses, equipment, an educational stipend, a child care stipend, extra vacation time, a later start date, getting a dedicated hour a day to work out or study or meditate or play solitaire. 
+There are many dimensions in a job negotiation: salary, signing bonus, stock, a year-end or performance bonus, commuter benefits, relocation expenses, equipment, an educational stipend, a child care stipend, extra vacation time, a later start date, getting a dedicated hour a day to work out or study or meditate or play solitaire.
 You could choose which team you're assigned to, what your first project will be, what technologies you'll be working with, and sometimes even choose your title.
 All of these things matter, and your decision should be genuinely multi-dimensional.
 
@@ -452,27 +440,27 @@ It's also important to understand that companies don't all value you along the s
 That is, different companies are genuinely looking for different skills, and there are some companies at which you will be more and less valuable.
 
 The more companies you talk to, the more likely you are to find a company to which you are significantly more valuable than the rest.
-Chances are this is where you'll be able to negotiate your strongest offer. 
+Chances are this is where you'll be able to negotiate your strongest offer.
 Remember that a job search is a 2-sided process.
 
 One of the most valuable things you can do for yourself in this process is to really try to understand how employers think and what motivates them.
 Understanding your interlocutor is extremely important in negotiation.
 
 Be curious about the other side.
-Try to understand why employers think the way they do. 
-Be sympathetic toward them. 
-Care about what they want and help them try to get it. 
+Try to understand why employers think the way they do.
+Be sympathetic toward them.
+Care about what they want and help them try to get it.
 Adopting this mindset will make you a much stronger negotiator, and accordingly, a much better employee and team member.
 
 ### Ten rules of job negotiation
 
 **1. Get everything in writing**
 
-Everything significant you discuss should have some kind of a paper trail. 
-Often, the company won't even send you an official offer letter until a deal is finalised. 
+Everything significant you discuss should have some kind of a paper trail.
+Often, the company won't even send you an official offer letter until a deal is finalised.
 So it falls to you to confirm all of the important details in subsequent emails.
 
-After getting the first offer, send a follow-up email confirming all of the details you discussed with your recruiter so you have a paper trail. 
+After getting the first offer, send a follow-up email confirming all of the details you discussed with your recruiter so you have a paper trail.
 Just say:
 
 > "... just wanted to confirm I had all the details right."
@@ -481,13 +469,13 @@ Just say:
 
 Your recruiter will now say something along the lines of "so what do you think?"
 
-This seems innocuous, but your reply here is critical, because there's a lot you can say to weaken your position. 
+This seems innocuous, but your reply here is critical, because there's a lot you can say to weaken your position.
 This is your first decision point.
 
-A decision point is a moment in the negotiation where your interlocutor wants to compel you to make a decision. 
+A decision point is a moment in the negotiation where your interlocutor wants to compel you to make a decision.
 If they succeed in tying you to a position, they will close the door on further negotiating.
 
-Avoid premature commitment, always keep the door open. 
+Avoid premature commitment, always keep the door open.
 Never give up your negotiating power until you're absolutely ready to make an informed, deliberate final decision.
 
 This means your job is to traverse as many of these decision points as possible without giving up the power to continue negotiating.
@@ -500,44 +488,44 @@ In many situations, the only reason why you have any negotiating power at all is
 They might not know how good your other offers are, or how much you were making in your last job, or how you weigh salary vs equity, or even how rational you are as a decision-maker.
 You want them to be uncertain on exactly what it would take to sign you.
 
-A corollary of this rule is that you should not reveal to companies what you're currently making. 
-There are some exceptions, but as a rule you should assume this. 
+A corollary of this rule is that you should not reveal to companies what you're currently making.
+There are some exceptions, but as a rule you should assume this.
 
-If you must divulge what you're making, you should be liberal in noting the total value of your package (incorporate bonuses, unvested stock, nearness to promotion etc.), and always mention it in a context like: 
+If you must divulge what you're making, you should be liberal in noting the total value of your package (incorporate bonuses, unvested stock, nearness to promotion etc.), and always mention it in a context like:
 
 > XYZ is what I'm currently making, and I'm definitely looking for a step up in my career for my next role.
 
-Example reply to first offer: 
+Example reply to first offer:
 
-> Yeah, \[COMPANY_NAME\] sounds great\! 
-> I really thought this was a good fit, and I'm glad that you guys agree. 
-> Right now I'm talking with a few other companies so I can't speak to the specific details of the offer until I'm done with the process and get closer to making a decision. 
+> Yeah, \[COMPANY_NAME\] sounds great\!
+> I really thought this was a good fit, and I'm glad that you guys agree.
+> Right now I'm talking with a few other companies so I can't speak to the specific details of the offer until I'm done with the process and get closer to making a decision.
 > But I'm sure we'll be able to find a package that we're both happy with, because I really would love to be a part of the team.
 
 **4. Always be positive**
 
-Even if the offer is unattractive, it's important to remain positive and excited about the company. 
-This is because your excitement is one of your most valuable assets in a negotiation. 
+Even if the offer is unattractive, it's important to remain positive and excited about the company.
+This is because your excitement is one of your most valuable assets in a negotiation.
 If you lose your excitement for the company during the interview process, then they'll lose confidence that you'll actually want to work hard or stay there for a long time.
 
-So despite whatever is happening in the negotiation, give the company the impression that (1) you still like the company, and that (2) you're still excited to work there, even if the numbers or the money or the timing is not working out. 
+So despite whatever is happening in the negotiation, give the company the impression that (1) you still like the company, and that (2) you're still excited to work there, even if the numbers or the money or the timing is not working out.
 
 Generally the most convincing thing to signal this is to reiterate you love the mission, the team, or the problem they're working on, and really want to see things work out.
 
 **5. Don't be the decision maker**
 
-Say: 
+Say:
 
-> I'll look over some of these details and discuss it with my [FAMILY/CLOSE_FRIENDS/SIGNIFICANT_OTHER]. 
-> I'll reach out to you if I have any questions. 
+> I'll look over some of these details and discuss it with my [FAMILY/CLOSE_FRIENDS/SIGNIFICANT_OTHER].
+> I'll reach out to you if I have any questions.
 > Thanks so much for sharing the good news with me, and I'll be in touch!"
 
-Even if you don't particularly care what your friends/family/husband/mother thinks, by mentioning them, you're no longer the only person the recruiter needs to win over. 
+Even if you don't particularly care what your friends/family/husband/mother thinks, by mentioning them, you're no longer the only person the recruiter needs to win over.
 There's no point in them trying to bully and intimidate you; the "true decision-maker" is beyond their reach.
 
 **6. Have alternatives**
 
-If you're already in the pipeline with other companies (which you should be if you're doing it right), you should proactively reach out and let them know that you've just received an offer. 
+If you're already in the pipeline with other companies (which you should be if you're doing it right), you should proactively reach out and let them know that you've just received an offer.
 Try to build a sense of urgency.
 
 > I wanted to update you on my own progress.
@@ -545,40 +533,40 @@ Try to build a sense of urgency.
 > That said, I'm genuinely excited about [COMPANY] and really want to see if we can make it work.
 > Since my timeline is now compressed, is there anything you can do to expedite the process?
 
-Either way, send out a letter like this to every single company you're talking to. 
+Either way, send out a letter like this to every single company you're talking to.
 No matter how hopeless or pointless you think your application is, you want to send this signal to everyone who is considering you in the market.
 
 Second, if there are any other companies you are looking to apply to (whether through referral or cold application), or even companies at which you've already applied but haven't heard back, I would also follow up with a similar email.
 
-Companies have only weak information about the candidate from the hiring process, screening, interviews, test scores. 
-Offers from other companies give the hiring company additional weak signals that the candidate is a strong choice. 
+Companies have only weak information about the candidate from the hiring process, screening, interviews, test scores.
+Offers from other companies give the hiring company additional weak signals that the candidate is a strong choice.
 A candidate having multiple offers means that they have multiple weak signals in their favour. Combined, these converge into a much stronger signal than any single interview.
 
-This effect is strengthened if you get an offer from a prestigious company. 
+This effect is strengthened if you get an offer from a prestigious company.
 And the effect goes through the roof if you have an offer from a company's primary competitor
 
-In negotiation theory, your best alternative is often referred to as your [BATNA] (Best Alternative To a Negotiated Agreement). 
+In negotiation theory, your best alternative is often referred to as your [BATNA] (Best Alternative To a Negotiated Agreement).
 Basically, it's what you'd do if you walked away.
 
 [BATNA]: https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement
 
 I like the term BATNA a lot, mostly because it sounds like a gadget Batman would lob at bad guys.
 
-So what's your BATNA if you don't have other offers? 
+So what's your BATNA if you don't have other offers?
 Do you even have one?
 
-Of course you do. 
+Of course you do.
 Your best alternative might be "interview at more companies" or "go to grad school" or "stay at your current job" or "go on sabbatical in Morocco for a few months" (as it was for a friend of mine who was deliberating between joining a startup and gallivanting through North Africa).
 
-The point is, you don't need to have another offer to have a strong BATNA. 
+The point is, you don't need to have another offer to have a strong BATNA.
 Your BATNA's strength comes from (1) how strong the other side perceives it to be, and (2) how strong you perceive it to be.
 
 If your recruiter thinks that going to grad school is an awesome thing to do, then they'll see you as having a very strong alternative, and the stakes of the negotiation will be raised.
 
 But even if they think grad school is ridiculous, if you convince them that you'd be totally happy to go to grad school, then the burden is on them to make this deal more attractive to you than going to grad school.
 
-Thus, you need to communicate your BATNA. 
-This doesn't need to be ham-fisted, but you need to make it a background to the negotiation. 
+Thus, you need to communicate your BATNA.
+This doesn't need to be ham-fisted, but you need to make it a background to the negotiation.
 (Note: usually whenever you signal your BATNA, you should also re-emphasize your interest in reaching an agreement).
 
 Examples:
@@ -586,7 +574,6 @@ Examples:
 > I've received another offer from [COMPANY] that's very compelling on salary, but I really love the mission of [YOUR COMPANY] and think that it would overall be a better fit for me.
 
 > I'm also considering going back to grad school and getting a [DEGREE]. I'm excited about [YOUR COMPANY] though and would love to join the team, but the package has to make sense if I'm going to forgo a life of ironic hatmaking.
-
 
 If you already have a job, staying where you are is often your BATNA.
 This means if you tell your interlocutor that you hate your job, then they know your BATNA sucks, and have no incentive to negotiate with you (on top of potentially thinking that you're a negative person).
@@ -642,18 +629,18 @@ Avoid any on-the-spot decision points or premature promises.
 
 Make companies aware of your deadline; this raises stakes and galvanises negotiations as the deadline approaches.
 
-Basically: "I want to see the strongest offer your company can muster. 
+Basically: "I want to see the strongest offer your company can muster.
 Then I will go into my cave, meditate for 10 days, and when I emerge I will have decided in my heart which company to join."
 
 Always wait until the last day to sign your offer.
 
 Play your trump card: "If you can do X, I will sign".
 
-> I've been thinking it over and it's genuinely a really tough decision for me. I loved everyone at [COMPANY] but the one thing that makes it hard for me is the salary. 
-> As you know I'm trying to pay off my student loans so salary is really important to me right now. 
+> I've been thinking it over and it's genuinely a really tough decision for me. I loved everyone at [COMPANY] but the one thing that makes it hard for me is the salary.
+> As you know I'm trying to pay off my student loans so salary is really important to me right now.
 > If you can improve the salary by 10K a year, then I'll be totally ready to sign.
 
-Finally, tell all of the other parties that you've made your final decision. 
+Finally, tell all of the other parties that you've made your final decision.
 Thank them for the negotiation.
 
 > After careful deliberation, I've decided not to proceed with the opportunity at [COMPANY].
@@ -662,11 +649,11 @@ Thank them for the negotiation.
 > Thank you for the chance to interview with you.
 > I have really appreciated your time and consideration throughout the process.
 
-### Negotiating compensation 
+### Negotiating compensation
 
 **How to give the first number**
 
-It's better to not give the first number. 
+It's better to not give the first number.
 If unavoidable, appeal to an objective metric, such as industry standard, and emphasise that this is a starting point:
 
 > I know that the average software engineer in Silicon Valley makes roughly 120K a year salary, so I think that's a good place to start.
@@ -716,38 +703,38 @@ Here are a few more tips on how to handle recruiters throughout the interviewing
 
 Until you're ready to negotiate, your default mode should be "passive information gathering".
 
-**Be polite and gracious to a fault.**
+**Be polite and gracious to a fault**
 
-If it's an offer call, thank them for the work they did to put your offer together and for advocating for you. 
+If it's an offer call, thank them for the work they did to put your offer together and for advocating for you.
 If it's earlier in the process, thank them for their help so far.
 
-**Express genuine enthusiasm.** 
+**Express genuine enthusiasm**
 
-If it's an early call, express excitement about the company or the interview process if there's something idiosyncratically cool about it. 
-If it's an offer call, express excitement for the team, the projects, the hiring manager, whatever it is. 
-And be genuine. 
+If it's an early call, express excitement about the company or the interview process if there's something idiosyncratically cool about it.
+If it's an offer call, express excitement for the team, the projects, the hiring manager, whatever it is.
+And be genuine.
 Every offer will have something exciting about it.
 
-If the recruiter is making an offer, express enthusiasm and say that you need some time to process and/or talk to your family or partner. 
+If the recruiter is making an offer, express enthusiasm and say that you need some time to process and/or talk to your family or partner.
 No one is realistically expecting you to react to major life decisions on the fly!
-
-Use email, not phone when possible; don't text message.
-This is less casual and gives you more time to think/plan, and puts you on a more level playing field due to your lack of experience in conversations compared to a recruiter.
 
 **Email vs phone**
 
-Talking on the phone not only signals confidence, but more importantly, it allows you to build a strong relationship with your recruiter. 
-Talking on the phone enables building a connection. 
+Talking on the phone not only signals confidence, but more importantly, it allows you to build a strong relationship with your recruiter.
+Talking on the phone enables building a connection.
 You want your recruiter to like you, understand you, empathise with you, and want you to succeed.
 
-However, if you don't have confidence in your negotiation skills, you should try to push the negotiation to email. 
+owever, if you don't have confidence in your negotiation skills, you should try to push the negotiation to email.
 Written, asynchronous communication will give you more time to strategize and make it easier to say uncomfortable things without being pressured by a recruiter.
 
-If you want to stick to email, be honest and ask for what you want. 
+If you want to stick to email, be honest and ask for what you want.
 
-> As to your previous email, I'd prefer to discuss the details of the offer over email. 
-> I sometimes get nervous during important phone calls, so discussing the offer over email helps me to keep a clear head and communicate more clearly. 
+> As to your previous email, I'd prefer to discuss the details of the offer over email.
+> I sometimes get nervous during important phone calls, so discussing the offer over email helps me to keep a clear head and communicate more clearly.
 > I hope this is okay with you.
+
+For negotiating offer, don't use the phone or text messages, use email.
+This is less casual and gives you more time to think/plan, and puts you on a more level playing field due to your lack of experience in conversations compared to a recruiter.
 
 **Handling exploding offers**
 
@@ -755,71 +742,71 @@ Exploding offers are offers that expire within 24-72 hours.
 
 You won't see this much at big companies, but they're becoming increasingly common among startups and mid-sized companies.
 
-Exploding offers are a natural weapon for employers to combat a strong hiring market for tech workers. 
+Exploding offers are a natural weapon for employers to combat a strong hiring market for tech workers.
 Companies know exactly what they're doing with exploding offers—they play on fear and limit your ability to seek out counter-offers.
 
-In a sense, it's unsurprising that if startups have more difficulty attracting and securing talent, they'd resort to this practice. 
-What I don't like is the dishonesty about it. 
+In a sense, it's unsurprising that if startups have more difficulty attracting and securing talent, they'd resort to this practice.
+What I don't like is the dishonesty about it.
 Employers often justify this by saying: "If you need more time than this, then that's a sign you're not the kind of person we're looking for."
 
 So what should you do if you receive an exploding offer?
 
-Exploding offers are anathema to your ability to effectively navigate the labour market. 
-Thus, do the following. 
-Treat the offer as a non-offer unless the expiration window is widened. 
+Exploding offers are anathema to your ability to effectively navigate the labour market.
+Thus, do the following.
+Treat the offer as a non-offer unless the expiration window is widened.
 In no uncertain terms, convey that if the offer is exploding, it's useless to you.
 
 Example conversation:
 
-> I have one big concern. 
-> You mentioned that this offer explodes in 48 hours. 
-> I'm afraid this doesn't work at all for me. 
-> There's no way that I can make a decision on this offer within a 48 hour window. 
-> I'm currently wrapping up my interview process at a few other companies, which is likely to take me another week or so. 
+> I have one big concern.
+> You mentioned that this offer explodes in 48 hours.
+> I'm afraid this doesn't work at all for me.
+> There's no way that I can make a decision on this offer within a 48 hour window.
+> I'm currently wrapping up my interview process at a few other companies, which is likely to take me another week or so.
 > So I'm going to need more time to make an informed decision.
 
 If they push back and say this is the best they can do, then politely reply:
 
-> That's really unfortunate. 
-> I like [COMPANY] and was really excited about the team, but like I said, there's no way I can consider this offer. 
-> 48 hours is just too unreasonable of a window. 
-> The next company I join will be a big life decision for me, and I take my commitments very seriously, so I want to be sure I'm making a well-considered decision. 
-> I also need to consult with my [EXTERNAL_DECISION_MAKER]. 
+> That's really unfortunate.
+> I like [COMPANY] and was really excited about the team, but like I said, there's no way I can consider this offer.
+> 48 hours is just too unreasonable of a window.
+> The next company I join will be a big life decision for me, and I take my commitments very seriously, so I want to be sure I'm making a well-considered decision.
+> I also need to consult with my [EXTERNAL_DECISION_MAKER].
 > There's no way that I can make a decision I'm comfortable with in this short amount of time.
 
-Most companies will relent at this point. 
+Most companies will relent at this point.
 If they persist, don't be afraid to walk away.
 
 **For questions about compensation expectations at the beginning of the process**
 
 Reply by explaining your curious mindset during the interview process:
 
-> At this point, I don't feel equipped to throw out a number because I'd like to find out more about the opportunity first – right now, I simply don't have the data to be able to say something concrete. 
+> At this point, I don't feel equipped to throw out a number because I'd like to find out more about the opportunity first – right now, I simply don't have the data to be able to say something concrete.
 > If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works. I promise not to accept other offers until I have a chance to discuss them with you.
 
-> I don't have any particular numbers in mind. 
-> I'm more interested in learning whether this will be a good mutual fit. 
+> I don't have any particular numbers in mind.
+> I'm more interested in learning whether this will be a good mutual fit.
 > If it is, I'm open to exploring any offer so long as it's competitive.
 
 **For when a recruiter provides you a salary range and asks you to comment on it at the beginning of the process**
 
-> Thank you for sharing that with me. 
-> Right now, I don't know enough about the opportunity to value it concretely. 
-> If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works. 
+> Thank you for sharing that with me.
+> Right now, I don't know enough about the opportunity to value it concretely.
+> If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works.
 > I promise not to accept other offers until I have a chance to discuss them with you.
 
 **For questions about compensation expectations at the end of the process**
 
-> It sounds like there's an offer coming, and I'm really excited about it. 
-> I'm not sure exactly what number I'm looking for, but if you'd be able to share what an offer package might look like, then I will gladly iterate on it with you if needed and figure out something that works. 
+> It sounds like there's an offer coming, and I'm really excited about it.
+> I'm not sure exactly what number I'm looking for, but if you'd be able to share what an offer package might look like, then I will gladly iterate on it with you if needed and figure out something that works.
 > I promise not to accept other offers until I have a chance to discuss them with you.
 
 **For questions about where else you're interviewing at the beginning of the process**
 
-> I'm currently speaking with a few other companies and am at various stages with them. 
+> I'm currently speaking with a few other companies and am at various stages with them.
 > I'll let you know if I get to the point where I have an exploding offer, and I promise not to accept other offers until I have a chance to discuss them with you.
 
 **For questions about where else you're interviewing at the end of the process**
 
-> I'm wrapping things up with a few companies and in process with a few more. 
+> I'm wrapping things up with a few companies and in process with a few more.
 > I promise to keep you in the loop, and I promise not to accept other offers until I have a chance to discuss them with you.
