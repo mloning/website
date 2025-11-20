@@ -30,6 +30,11 @@ For example, here a two Radio France podcasts on the French Revolution:
 
 ## Read
 
+Newspaper:
+
+- [Brut](https://www.brut.media/fr) (trendy, progressive, social media)
+- [Mediapart](https://www.mediapart.fr/) (independent and investigative journalism, behind paywall)
+
 Beginner-friendly books:
 
 - [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it dated and stereotypical)
