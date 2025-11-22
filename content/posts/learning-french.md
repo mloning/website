@@ -13,7 +13,7 @@ Also see my post on [exploring Paris](https://www.mloning.com/posts/exploring-pa
 
 - [Radio France], different radio stations and podcasts (e.g. [France Inter], [France Info] or [France Culture]); for French-only music, see [Fip - Sacré Français]
 - [Radio France Internationale](https://www.rfi.fr/fr/), e.g. [Journal en français facile](https://francaisfacile.rfi.fr/fr/podcasts/journal-en-fran%C3%A7ais-facile/)
-- [ByteFM] program [France, en confidance] about French music, moderated in German
+- [ByteFM] programs [France, en confidance] and [What the France] about French music, moderated in German
 
 [Radio France]: https://www.radiofrance.fr/
 [France Inter]: https://www.radiofrance.fr/franceinter
@@ -22,6 +22,7 @@ Also see my post on [exploring Paris](https://www.mloning.com/posts/exploring-pa
 [France, en confidance]: https://www.byte.fm/sendungen/la-france-en-confidence/
 [ByteFM]: https://www.byte.fm/
 [Fip - Sacré Français]: https://www.radiofrance.fr/fip/radio-sacre-francais
+[What the France]: https://www.byte.fm/sendungen/what-the-france/
 
 For example, here a two Radio France podcasts on the French Revolution:
 
@@ -30,7 +31,7 @@ For example, here a two Radio France podcasts on the French Revolution:
 
 ## Read
 
-Newspaper:
+Newspapers:
 
 - [Brut](https://www.brut.media/fr) (trendy, progressive, social media)
 - [Mediapart](https://www.mediapart.fr/) (independent and investigative journalism, behind paywall)
@@ -38,12 +39,12 @@ Newspaper:
 Beginner-friendly books:
 
 - [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it dated and stereotypical)
-- [L'Étranger] by Albert Camus, relatively easy-to-read
+- [L'Étranger] by Albert Camus, relatively easy to read
 
 [The Petit Nicolas]: https://www.petitnicolas.com/
 [L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
 
-I've also enjoyed reading a book and listening to the audio book at the same time.
+I've also enjoyed listening to the audio book while reading the book at the same time.
 
 Other books I enjoyed reading:
 
@@ -67,7 +68,7 @@ When trying to pick a new book to read, I look at the recent winners of French l
 - Le Prix Médicis
 - Le Prix Interallié
 
-That makes it easy to find related materials, like reviews, interviews, podcasts and audiobooks.
+For these books it's easy to find related materials, like reviews, interviews, podcasts and audiobooks.
 
 [Prix Femina]: https://fr.wikipedia.org/wiki/Prix_Femina
 [Prix Renaudot]: https://fr.wikipedia.org/wiki/Prix_Renaudot
@@ -77,7 +78,7 @@ That makes it easy to find related materials, like reviews, interviews, podcasts
 ## Watch
 
 There are numerous excellent French films and series.
-Here are some I've enjoyed watching:
+Here are some I've enjoyed watching or that were recommended to me:
 
 Series:
 
@@ -85,6 +86,7 @@ Series:
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
 - [Loups Garous](<https://fr.wikipedia.org/wiki/Loups-garous_(%C3%A9mission_de_t%C3%A9l%C3%A9vision)>), reality-TV game show for the [Werewolf game](https://en.wikipedia.org/wiki/The_Werewolves_of_Millers_Hollow)
+- [Engrenages](https://fr.wikipedia.org/wiki/Engrenages_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e))
 
 Films:
 
@@ -94,6 +96,7 @@ Films:
 - Le Dîner de Cons
 - Les Trois Frères
 - La Vérité si je mens !
+- La Haine
 
 ## Study
 
@@ -118,7 +121,7 @@ Mostly in Paris:
 
 - Language courses by the Paris municipalty ([website](https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915)) -- very cheap but high demand
 - Conversation groups in Paris' public libraries ([website](https://bibliotheques.paris.fr/atelier-de-conversation.aspx))
-- https://latelier9.com/ -- relatively cheap, small groups, very casual
+- https://latelier9.com/ -- relatively cheap, small groups, casual
 - https://languageteams.com/ -- [Qualiopi]-certified, relatively expensive
 - https://www.alliancefr.org/en/
 
@@ -135,7 +138,7 @@ The French language has lots of concepts and rules that make it complicated, her
 - additional pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
 - passe compose with etre and avoir
 - complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
--
+- que le participe passé ne s'accord pas avec le COD, sauf dans les [exceptions](https://www.linkedin.com/posts/alexandrelebrun_je-suis-venu-ici-sur-linkedin-pour-parler-activity-7388107867372888064-w0wu) 
 
 ## Interesting things
 
