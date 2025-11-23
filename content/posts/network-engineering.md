@@ -59,7 +59,8 @@ Responsible for transmitting raw bits over a communication channel.
   - Microwaves: Line-of-sight communication
   - Infrared: Short-range
 
-Real-world wireless transmission speed is typically lower due to interference, distance, and shared bandwidth; wired connections offer more consistent speeds and lower latency.
+Real-world wireless transmission speed is typically lower due to interference, distance and shared bandwidth. 
+Wired connections offer more consistent speeds and lower latency.
 
 ### Signal encoding
 
@@ -699,8 +700,10 @@ which require the following features:
   - HTTP/HTTPS (Hypertext Transfer Protocol): transferring web pages and resources, HTTPS adds encryption for security
   - SMTP (Simple Mail Transfer Protocol): transmitting emails between servers
   - FTP (File Transfer Protocol): transferring files between network hosts
-  - other data messaging and streaming protocols (e.g. ZMQ)
+  - other data messaging and streaming protocols (e.g. [ZeroMQ])
 - security via [TLS]
+
+[ZeroMQ]: https://zeromq.org/
 
 #### Segment structure
 
@@ -788,7 +791,7 @@ For example, HTTP web servers.
 - No central server with fixed IP, peers discover and connect to each other
 - Direct client-to-client communication
 
-For example, [BitTorrent] or Skype (VoIP).
+For example, [BitTorrent], Skype (VoIP), brokerless messaging systems (e.g. [ZeroMQ]).
 
 [BitTorrent]: https://en.wikipedia.org/wiki/BitTorrent
 
@@ -812,14 +815,29 @@ For example, [BitTorrent] or Skype (VoIP).
 - a server binds to a particular port to specify where it will listen for incoming client connections (`bind()`), making its service available for clients under a specific address; after binding, it will listen for incoming connection requests (`listen()`)
 - a client connects to a server using the server's IP address and bound port (`connect()`)
 
+### Messaging systems
+
+Network messaging systems can be categorized by architecture (centralized vs. decentralized) and data model (transient queues vs. persistent logs).
+
+- Brokerless (P2P): direct producer-to-consumer communication for speed and low latency (e.g. [ZeroMQ])
+- Brokered: central broker manages message routing, retries and distribution (smart broker/dumb consumer) (e.g. RabbitMQ, MQTT)
+- Log-based: high-volume data pipelines with append-only, persistent log storage (dumb broker/smart consumer) (e.g. Apache Kafka)
+- Cloud-native serverless queues: managed services via HTTP APIs with no infrastructure management (e.g. AWS SQS, Azure Service Bus)
+
+Why use messaging systems instead of direct HTTP calls?
+
+- Asynchronous "fire and forget" processing; producer continues immediately while consumer processes when ready, avoiding failures when services are busy or down
+- Queue buffers traffic spikes, allowing consumers to process at constant sustainable rate instead of being overwhelmed
+- Horizontal scaling with multiple workers sharing workload without load balancer 
+
 ### Domain name system (DNS)
 
 - maps human-readable domain names (e.g. `www.google.com`) to an IP address
-- Hierarchical structure: Root servers (.) -> Top-Level Domain (TLD) servers (.com, .org) -> Authoritative name servers (google.com)
+- Hierarchical structure: Root servers -> Top-Level Domain (TLD) servers (.com, .org) -> Authoritative name servers (google.com)
 - Query resolution:
-  - Recursive: Resolver asks server to do the work and return the final answer
-  - Iterative: Server returns the address of the next server to ask
-- Caching: Responses are cached at various levels (browser, OS, ISP) to improve performance (TTL determines cache duration); changes can take up to 48 hours to propagate across the internet
+  - Recursive: resolver asks server to do the work and return the final answer
+  - Iterative: server returns the address of the next server to ask
+- Caching: responses are cached at various levels (browser, OS, ISP) to improve performance (TTL determines cache duration); changes can take up to 48 hours to propagate across the internet
 - Usually uses UDP on port 53
 - Local `/etc/hosts` file overrides DNS lookups
 - Types of records:
@@ -878,12 +896,16 @@ Monitoring and diagnostics:
 - provides security features like DDoS protection
 - popular providers: Cloudflare, Akamai, Amazon CloudFront, Fastly
 
-### Let's Encrypt
+### [Let's Encrypt](https://letsencrypt.org/)
 
-- certification for HTTPS servers
-- HTTP-01 challenge
-- DNS-01 challenge
-- ACME protocol
+- A free, automated and open certificate authority (CA) run by the nonprofit Internet Security Research Group (ISRG) to replace costly, manual CAs and enable widespread HTTPS adoption
+- Provides free TLS/SSL certificates to enable HTTPS on websites
+- Issues short-lived certificates (90 days) that encourage automation and regular renewal
+- ACME Protocol for automated certificate issuance and management
+- Domain validation challenges; to prove you control a domain, Let's Encrypt requires completing one of these challenges:
+   - HTTP-01: Let's Encrypt provides a token that must be served at a specific HTTP URL on your domain which Let's Encrypt queries to verify the token (`http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`)
+   - DNS-01: Let's Encrypt provides a token that must be placed in a DNS TXT record which Let's Encrypt verifies via a DNS query
+- Certificate lifecycle; after domain validation, Let's Encrypt issues a certificate; ACME client automatically installs the certificate on your web server
 
 ## Security
 
