@@ -34,6 +34,7 @@ Starting from the physical layer, each layer unwraps the message using the infor
 Each layer only acts on its layer-specific headers, leaving the rest untouched.
 In practice, encapsulation and de-encapsulation is more complex: a message may be split up into multiple segments, which in turn are split up into multiple datagrams.
 
+The network edge consists of end systems (hosts) like computers and servers where applications run, while the network core is the mesh of routers and switches that interconnects them.
 Most complexity is designed to be in the network-edge devices (end systems), including the application and transport layer.
 Network-core devices, including everything from the network layer and below, are designed to be simple.
 
@@ -354,7 +355,7 @@ protocol flow for assigning an IP address to a new host:
 ### Network Address Translation (NAT) and Server Name Indication (SNI)
 
 - publicly available IPv4 addresses are exhausted and IPv6 has not been fully adapted
-- NAT allows multiple devices on a private network to share a single public IP address on the internet, and to hide internal network topologies
+- NAT allows multiple devices on a private network to share a single public IP address on the internet, thereby hiding internal network topologies
 - private addresses in LAN allocated by DHCP server in router
 - single public WAN (wide-arean network) IP address allocated by Internet Service Provider DHCP server to gateway router
 - the NAT device (e.g. a router) rewrites the source IP address and port of outgoing packets to its own public IP and keeps track of the mapping between LAN-side and WAN-side source IP address and port, so responses can be sent back to the correct device, e.g. at home your laptop (`192.168.0.2`) and phone (`192.168.0.3`) both connect to the internet through your router which uses NAT to translate their private IPs to its public IP (e.g. `203.0.113.5`), so websites only see requests coming from the router’s public address.
@@ -585,8 +586,9 @@ switch -> controller:
 
 ### TCP/IP protocol stack
 
-- a single chunk of data, called a segment, is wrapped in a IPv4 or IPv6 packet for transmission which add source and destination IP address, which in turn is wrapped in a data link frame (i.e. "envelopes in envelopes")
-- encompasses common protocols including:
+A single chunk of data, called a segment, is wrapped in a IPv4 or IPv6 packet for transmission which add source and destination IP address, which in turn is wrapped in a data link frame (i.e. "envelopes in envelopes")
+
+The stack encompasses common protocols including:
   - Internet control message protocol (ICMP)
   - User Datagram Protocol (UDP)
   - Transmission Control Protocol (TCP), with security via Transport Layer Security ([TLS])
@@ -609,7 +611,7 @@ switch -> controller:
 - Ethernet frame fragmentation can occur if UDP packets exceed the MTU, potentially leading to packet loss and application issues
 - supports unicast, broadcast and [multicast] messaging
 - also see [QUIC] protocol based on UDP
-- when a host receives an unexpected packet, i.e. when no receiver or server is running on the destination port, the host replies with a special packet (RST flat for TCP, ICMP datagram for UDP)
+- when a host receives an unexpected packet, i.e. when no receiver or server is running on the destination port, the host replies with a special packet (RST flag for TCP, ICMP datagram for UDP)
 
 [QUIC]: https://en.wikipedia.org/wiki/QUIC
 
@@ -621,14 +623,14 @@ switch -> controller:
   - length (in bytes, headers and payload)
   - checksum (for end-to-end transmission error checking for corruption during transmission by noise or while being stored/queued in router)
   - payload (application-layer data)
-- maximum segment size (MSS) to fit into a single Ethernet frame: 1480 (payload) + 20 (headers) = 1500 bytes
+- maximum segment size (MSS) to fit into a single Ethernet frame: 1472 (payload) + 8 (UDP headers) + 20 (IP headers) = 1500 bytes
 
 [IP address spoofing]: https://en.wikipedia.org/wiki/IP_address_spoofing
 [multicast]: https://en.wikipedia.org/wiki/Multicast
 
 ### Reliable data transfer
 
-Essential components include:
+To achieve reliable data transfer, essential aspects include:
 
 - error detection (e.g. checksum)
 - receiver feedback to sender (e.g. acknowledgement message (ACK) for received packets)
@@ -692,7 +694,7 @@ Costs of congested networks
 
 Control strategies
 
-- end-to-end congestion control (e.g. TCP using timeouts as congestion indicators and optimization algorithms for adjusting transmission speed)
+- end-to-end congestion control, e.g. TCP using timeouts as congestion indicators and optimization algorithms for adjusting transmission speed (e.g. Reno, Cubic, BBR)
 - network-assisted congestion control, with routers provide feedback regarding congestion state, even before packet loss occurs
   - direct feedback to sender
   - mark packets in router, which are sent on to the receiver, which then informs the sender
@@ -718,9 +720,21 @@ Monitoring and diagnostics:
 
 [IANA]: https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority
 
+### Quick UDP Internet Connections (QUIC) (HTTP/3)
+
+- transport layer network protocol designed by Google
+- built on top of UDP rather than TCP
+- reduces latency compared to TCP by reducing round-trip times (RTT) during connection setup (0-RTT handshakes)
+- solves the head-of-line blocking problem present in TCP/HTTP2; in TCP, if one packet is lost, all subsequent packets are delayed until the lost packet is retransmitted, even if they belong to different streams; QUIC allows independent streams, so a lost packet only affects the stream it belongs to
+- used as the underlying transport for HTTP/3
+- includes built-in encryption (TLS 1.3) by default
+
 ## Application layer
 
-### High-level design of network applications
+### High-level network application design
+
+There are two main types of network applications, client/server and peer-to-peer (P2P). 
+Many applications combine elements of both types.
 
 #### Client/server
 
@@ -729,19 +743,19 @@ Monitoring and diagnostics:
 
 Server is
 
-- always on
-- fixed IP known to the client(s)
-- no client-to-client communication
+- Always on
+- Fixed IP known to the client(s)
+- No client-to-client communication
 
 For example, HTTP web servers.
 
 #### Peer-to-peer (P2P)
 
-- intermittently connected hosts
-- no central server with fixed IP, peers discover and connect to each other
-- direct client-to-client communication
+- Intermittently connected hosts
+- No central server with fixed IP, peers discover and connect to each other
+- Direct client-to-client communication
 
-For example, [BitTorrent].
+For example, [BitTorrent] or Skype (VoIP).
 
 [BitTorrent]: https://en.wikipedia.org/wiki/BitTorrent
 
@@ -768,36 +782,68 @@ For example, [BitTorrent].
 ### Domain name system (DNS)
 
 - maps human-readable domain names (e.g. `www.google.com`) to an IP address
-- authoritative lists, recursive by zone, cached (changes take time to propagate)
-- local `/etc/hosts` file
-- types of records
-  - `A`: maps a domain name to an IP address
-  - `CNAME`: maps a domain name to an alias domain name
-  - `PTR`: maps an IP address to a domain name (reverse of an `A` record)
-- usually uses UDP
+- Hierarchical structure: Root servers (.) -> Top-Level Domain (TLD) servers (.com, .org) -> Authoritative name servers (google.com)
+- Query resolution:
+    - Recursive: Resolver asks server to do the work and return the final answer
+    - Iterative: Server returns the address of the next server to ask
+- Caching: Responses are cached at various levels (browser, OS, ISP) to improve performance (TTL determines cache duration); changes can take up to 48 hours to propagate across the internet
+- Usually uses UDP on port 53
+- Local `/etc/hosts` file overrides DNS lookups
+- Types of records:
+  - `A`: maps a domain name to an IPv4 address
+  - `AAAA`: maps a domain name to an IPv6 address
+  - `CNAME`: maps a domain name to an alias domain name (canonical name)
+  - `PTR`: maps an IP address to a domain name (reverse lookup)
+  - `MX`: specifies mail servers for the domain
+  - `NS`: specifies authoritative name servers for the domain
+  - `TXT`: holds text information (often used for verification, SPF, DKIM)
 
 Monitoring and diagnostics:
 
-- `host <name>`
-- `dig`
+- `host <name>` to perform a simple lookup
+- `dig +trace <name>` to trace the full resolution path
+- `nslookup <name>`, older tool, similar to host
 
 ### Hypertext Transfer Protocol (HTTP)
 
-- based on TCP
+- HTTP is the foundation of data communication for the internet and the dominant protocol for modern web and APIs
+- based on TCP (HTTP/1.1, HTTP/2) or UDP (HTTP/3)
 - stateless: no persistent information about clients, but use of cookies to identify returning clients
-- persistent (default) or non-persistent connections
+- persistent (default in HTTP/1.1) or non-persistent connections
+- Request methods:
+    - `GET`: retrieve data
+    - `POST`: submit data to be processed
+    - `PUT`: update a resource
+    - `DELETE`: delete a resource
+- Status codes:
+    - `2xx`: Success (e.g., 200 OK)
+    - `3xx`: Redirection (e.g., 301 Moved Permanently)
+    - `4xx`: Client Error (e.g., 404 Not Found)
+    - `5xx`: Server Error (e.g., 500 Internal Server Error)
+- Versions:
+    - HTTP/1.1: text-based, sequential requests (head-of-line blocking)
+    - HTTP/2: binary, multiplexing (multiple requests over one connection), header compression
+    - HTTP/3: based on QUIC (UDP), faster connection setup, no TCP head-of-line blocking
 
-### MPEG-DASH
+### Dynamic Adaptive Streaming over HTTP (MPEG-DASH)
 
 - adaptive streaming over HTTP
+- video is broken into small chunks (e.g., 2-10 seconds) encoded at different bitrates/resolutions
+- client requests chunks sequentially using standard HTTP GET requests
+- client dynamically selects the best quality chunk based on current network conditions (bandwidth)
+- uses a manifest file (MPD - Media Presentation Description) to describe available streams and chunks
+- allows smooth playback with minimal buffering even with fluctuating network speeds
+- used by streaming services like Netflix, Amazon Prime Video, YouTube
 
-### Quick UDP Internet Connections (QUIC)-HTTP/2
+### Content Delivery Network (CDN)
 
-- TODO
-
-### Content Distribution Network (CDN)
-
-- TODO
+- network of geographically distributed servers
+- delivers content to users based on their geographic location
+- caches static content (e.g. images, videos) at "edge" servers close to the user
+- reduces latency and server load
+- improves availability and reliability
+- provides security features like DDoS protection
+- popular providers: Cloudflare, Akamai, Amazon CloudFront, Fastly
 
 ### Let's Encrypt
 
@@ -810,7 +856,7 @@ Monitoring and diagnostics:
 
 - put malware into a host
 - disrupt servers and network infrastructure (denial of service, or distributed denial of service attacks)
-- sniff packets
+- sniff packets (gain access to private information)
 - IP spoofing (identifying as another person or program by falsifying network data)
 
 ## Monitoring, diagnostics and debugging
