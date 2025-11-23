@@ -46,16 +46,43 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 
 ## Physical layer
 
-### Network interface
+Responsible for transmitting raw bits over a communication channel.
 
-- a device (e.g. Ethernet cards or WiFi adapters) that connect a device to a network
-- each interface has a unique MAC address and can be physical (e.g. an Ethernet card) or virtual (e.g. an interface for VMs)
-- a host can have multiple interfaces
+### Transmission media
 
-### Switch
+- Wired (guided):
+  - Twisted Pair: Copper wires twisted to reduce interference (typically up to 10 Gbps)
+  - Coaxial Cable: Copper core with shielding (e.g. cable TV, older Ethernet) (typically up to 10 Gbps)
+  - Fiber Optics: Glass/plastic strands transmitting light; high bandwidth, low attenuation, immune to electromagnetic interference (typically up to 100 Gbps)
+- Wireless (unguided):
+  - Radio waves: WiFi (WiFi 6E: typically 1-2 Gbps), Bluetooth (up to 3 Mbps), Cellular (4G: up to 100 Mbps, 5G: typically 100-500 Mbps)
+  - Microwaves: Line-of-sight communication
+  - Infrared: Short-range
 
-- a device that connects multiple devices within a local network, forwarding data only to the device intended to receive it
-- operate at the data link layer but are part of the physical infrastructure
+Real-world wireless transmission speed is typically lower due to interference, distance, and shared bandwidth; wired connections offer more consistent speeds and lower latency.
+
+### Signal encoding
+
+- Converts digital bits into physical signals for transmission
+- Encoding methods:
+  - Voltage levels: Different voltage levels represent 0s and 1s (e.g. Ethernet over copper)
+  - Light pulses: Presence/absence or intensity of light (e.g. fiber optics)
+  - Radio frequency modulation: Amplitude, frequency or phase modulation (e.g. WiFi)
+
+### Transmission modes
+
+- Simplex: One-way communication (e.g. radio station -> radio)
+- Half-duplex: Two-way, but one at a time (e.g. walkie-talkie, WiFi)
+- Full-duplex: Two-way simultaneously (e.g. telephone, modern Ethernet)
+
+### Devices
+
+- Repeater: Regenerates signal to extend range
+- Hub: Multi-port repeater; broadcasts data to all ports (obsolete, replaced by switches) (physical layer)
+- Modem: Modulates/Demodulates signals (Digital <-> Analog)
+- Network Interface Card (NIC): Hardware that connects a device to a network (e.g. Ethernet cards or WiFi adapters); operates at both physical and link layers
+  - Each interface has a unique MAC address (link-layer identifier)
+  - Can be physical (e.g. an Ethernet card) or virtual (e.g. an interface for VMs)
 
 ## Link layer (data link layer)
 
@@ -64,6 +91,11 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 - 2 types of link-layer channels
   - broadcast (connecting multiple hosts)
   - point-to-point (e.g. connecting single laptop to nearby Ethernet switch)
+
+### Devices
+
+- Bridge: Connects two network segments (link layer)
+- Switch: Connects multiple devices within a local network, forwarding data only to the device intended to receive it (link layer)
 
 ### Services
 
@@ -589,9 +621,10 @@ switch -> controller:
 A single chunk of data, called a segment, is wrapped in a IPv4 or IPv6 packet for transmission which add source and destination IP address, which in turn is wrapped in a data link frame (i.e. "envelopes in envelopes")
 
 The stack encompasses common protocols including:
-  - Internet control message protocol (ICMP)
-  - User Datagram Protocol (UDP)
-  - Transmission Control Protocol (TCP), with security via Transport Layer Security ([TLS])
+
+- Internet control message protocol (ICMP)
+- User Datagram Protocol (UDP)
+- Transmission Control Protocol (TCP), with security via Transport Layer Security ([TLS])
 
 [TLS]: https://en.wikipedia.org/wiki/Transport_Layer_Security
 
@@ -733,7 +766,7 @@ Monitoring and diagnostics:
 
 ### High-level network application design
 
-There are two main types of network applications, client/server and peer-to-peer (P2P). 
+There are two main types of network applications, client/server and peer-to-peer (P2P).
 Many applications combine elements of both types.
 
 #### Client/server
@@ -784,8 +817,8 @@ For example, [BitTorrent] or Skype (VoIP).
 - maps human-readable domain names (e.g. `www.google.com`) to an IP address
 - Hierarchical structure: Root servers (.) -> Top-Level Domain (TLD) servers (.com, .org) -> Authoritative name servers (google.com)
 - Query resolution:
-    - Recursive: Resolver asks server to do the work and return the final answer
-    - Iterative: Server returns the address of the next server to ask
+  - Recursive: Resolver asks server to do the work and return the final answer
+  - Iterative: Server returns the address of the next server to ask
 - Caching: Responses are cached at various levels (browser, OS, ISP) to improve performance (TTL determines cache duration); changes can take up to 48 hours to propagate across the internet
 - Usually uses UDP on port 53
 - Local `/etc/hosts` file overrides DNS lookups
@@ -811,19 +844,19 @@ Monitoring and diagnostics:
 - stateless: no persistent information about clients, but use of cookies to identify returning clients
 - persistent (default in HTTP/1.1) or non-persistent connections
 - Request methods:
-    - `GET`: retrieve data
-    - `POST`: submit data to be processed
-    - `PUT`: update a resource
-    - `DELETE`: delete a resource
+  - `GET`: retrieve data
+  - `POST`: submit data to be processed
+  - `PUT`: update a resource
+  - `DELETE`: delete a resource
 - Status codes:
-    - `2xx`: Success (e.g., 200 OK)
-    - `3xx`: Redirection (e.g., 301 Moved Permanently)
-    - `4xx`: Client Error (e.g., 404 Not Found)
-    - `5xx`: Server Error (e.g., 500 Internal Server Error)
+  - `2xx`: Success (e.g., 200 OK)
+  - `3xx`: Redirection (e.g., 301 Moved Permanently)
+  - `4xx`: Client Error (e.g., 404 Not Found)
+  - `5xx`: Server Error (e.g., 500 Internal Server Error)
 - Versions:
-    - HTTP/1.1: text-based, sequential requests (head-of-line blocking)
-    - HTTP/2: binary, multiplexing (multiple requests over one connection), header compression
-    - HTTP/3: based on QUIC (UDP), faster connection setup, no TCP head-of-line blocking
+  - HTTP/1.1: text-based, sequential requests (head-of-line blocking)
+  - HTTP/2: binary, multiplexing (multiple requests over one connection), header compression
+  - HTTP/3: based on QUIC (UDP), faster connection setup, no TCP head-of-line blocking
 
 ### Dynamic Adaptive Streaming over HTTP (MPEG-DASH)
 
