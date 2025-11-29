@@ -4,7 +4,7 @@ date: 2025-11-13T22:11:10+01:00
 draft: true
 ---
 
-The stack and the heap are two separate areas of memory used during program execution.
+The stack and the heap are two separate areas of memory used during program execution (runtime).
 They differ in how memory is managed, how fast it's to access, and the lifetime of the data stored.
 
 ## Stack
@@ -107,3 +107,24 @@ For example, Rust makes heavy use of fat pointers for Dynamically Sized Types (D
 
 - A simple reference to an integer (`&i32`) is a thin pointer.
 - A reference to a slice (`&[i32]`) is a fat pointer.
+
+## Other memory segments
+
+Besides the stack and heap, there are other memory segments where variables are allocated, particularly for data whose lifetime spans the entire program execution.
+
+### Text Segment (.text)
+
+- Stores the compiled machine code.
+- Holds read-only constants, such as string literals.
+- Typically marked as read-only for security.
+
+### Data Segment (.data)
+
+- Stores initialized global and static variables (those initialized to a non-zero value at compile time).
+- The initial values are copied directly from the program binary when the program loads.
+
+### BSS (Block Started by Symbol) Segment (.bss)
+
+- Stores uninitialized global and static variables (or those initialized explicitly to zero).
+- Logically allocated in the binary but contains no data, except file size.
+- Allocated and zero-initialized by the OS loader/runtime system at program start.
