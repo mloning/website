@@ -1,7 +1,6 @@
 ---
 title: "Stack and Heap"
 date: 2025-11-13T22:11:10+01:00
-last_modified: .Lastmod
 draft: true
 ---
 
@@ -61,6 +60,8 @@ The actual string data ("hello") is stored on the heap.
 
 ## Pointer
 
+### Raw pointer
+
 A (raw) pointer is the most basic type of pointer in programming languages like C, C++, and Rust, where they are called unsafe pointers.
 
 It is a variable that stores the memory address of some data.
@@ -78,7 +79,7 @@ If they fail to do so, it leads to:
 - Memory leaks: the memory is never freed, reducing available RAM.
 - Dangling pointers: the memory is freed, but the pointer still holds the address, pointing to invalid or reused data; dereferencing a dangling pointer causes undefined behavior (e.g. crashes or security vulnerabilities).
 
-## Smart pointer
+### Smart pointer
 
 A smart pointer is an abstract data type that mimics the behavior of a traditional raw pointer but adds extra features, most commonly automatic memory management and resource cleanup.
 
@@ -86,7 +87,9 @@ It's essentially a structure that owns a pointer and a block of memory on the he
 When the smart pointer itself goes out of scope on the stack, it automatically executes cleanup code (usually by calling its `Drop` implementation in Rust or its destructor in C++) to deallocate the memory it points to on the heap.
 This prevents memory leaks.
 
-### Smart pointers in Rust
+In C++, the general rule is to use a smart pointer (`std::unique_ptr` or `std::shared_ptr`) unless you have a specific, low-level requirement for a raw pointer.
+
+#### Smart pointers in Rust
 
 | Smart Pointer    | Purpose                                 | Description                                                                                                                                                                    |
 | :--------------- | :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -95,3 +98,12 @@ This prevents memory leaks.
 | **`Arc<T>`**     | **Thread-Safe Multiple Ownership**      | **Atomic Reference Counting**. Similar to `Rc<T>` but uses atomic operations, making it safe to share ownership **across different threads**.                                  |
 | **`RefCell<T>`** | **Interior Mutability (Single Thread)** | Allows mutation of data inside an otherwise **immutable** structure. The borrowing check happens at **runtime** and is often used with `Rc<T>`.                                |
 | **`Weak<T>`**    | **Non-Owning Reference**                | Used with `Rc<T>` to create a reference that **doesn't contribute to the reference count**. Essential for breaking **reference cycles** to prevent memory leaks.               |
+
+### Fat pointer
+
+A fat (or wide) pointer is a pointer that is twice the size of a normal (or thin) pointer because it stores the memory address along with metadata about the data being pointed to.
+
+For example, Rust makes heavy use of fat pointers for Dynamically Sized Types (DSTs), which are types whose size isn't fixed until runtime.
+
+- A simple reference to an integer (`&i32`) is a thin pointer.
+- A reference to a slice (`&[i32]`) is a fat pointer.
