@@ -2,22 +2,21 @@ baseURL =  "https://mloning.github.io/website/"
 languageCode =  "en-us"
 title =  "Markus Löning"
 theme =  "ezhil"
-copyright = "Copyright © 2024 Markus Löning"
-enableEmoji=true
+copyright = "Copyright © 2025 Markus Löning"
+enableEmoji = true
+enableGitInfo = true
 
 # Enable syntax highlighting.
 pygmentsstyle = "vs"
 pygmentscodefences = true
 # pygmentsOptions = "linenos=table"
 
+# Number of characters to show in summary.
+summaryLength = 20
+
 # Number of posts to show in recent posts list (Optional). Defaults to 10.
 [pagination]
 pagerSize = 10
-
-enableGitInfo = true
-
-# Number of characters to show in summary.
-summaryLength = 20
 
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
@@ -76,3 +75,6 @@ url = "https://www.linkedin.com/in/mloning/"
 
 # [taxonomies]
 #    tag = "tags"
+
+[frontmatter]
+lastmod = ["lastmod", ":git", "mtime", "date", "publishDate"]
