@@ -46,7 +46,8 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 
 ## Physical layer
 
-Responsible for transmitting raw bits over a communication channel.
+While upper layers deal with logic, software and data, the physical layer is concerned with the transmission of raw bit streams over a physical medium. 
+It bridges the gap between the digital and physical world (electricity, light, radio waves).
 
 ### Transmission media
 
@@ -87,11 +88,29 @@ Wired connections offer more consistent speeds and lower latency.
 
 ## Link layer (data link layer)
 
-- implemented on chip called network adapter or network interface controller (NIC)
-- mostly implemented in hardware (sending, receiving) with software components for assembling addressing information, activating network adapter hardware and communication with network layer (encapsulation/de-encapsulation)
-- 2 types of link-layer channels
-  - broadcast (connecting multiple hosts)
-  - point-to-point (e.g. connecting single laptop to nearby Ethernet switch)
+The link layer is responsible for node-to-node transfer of data across a physical link (hop-to-hop).
+It ensures data moves correctly from one device to the next one in the chain.
+
+### Key Responsibilities
+
+- Framing: it encapsulates network-layer packets with a header (containing source/destination MAC addresses and type/length) and trailer (CRC), defining frame boundaries.
+- Media Access Control (MAC): it acts as the "moderator" determining who is allowed to transmit on the cable or wireless frequency at any given moment to prevent collisions.
+- Error detection: it checks the integrity of the received frame (using a CRC/Checksum) to ensure bits weren't corrupted by electrical noise.
+
+The link layer is hop-to-hop rather than end-to-end. 
+It gets the data to the next device in the network, not the final destination (e.g. connecting single laptop to the nearby Ethernet switch).
+
+Link-layer functionality is primarily implemented in hardware on the network interface card (NIC) (fast bit sending/receiving), with software managing setup, addressing assembly and communication with the network layer (encapsulation/de-encapsulation).
+
+The link layer defines two main connection types:
+
+- Broadcast (shared media connecting multiple hosts)
+- Point-to-Point (a dedicated connection between two specific devices, like a laptop to a switch)
+
+The link layer is also often divided into two sub-layers:
+
+- Logical Link Control (LLC) layer: communication with the Network Layer (multiplexing)
+- Media Access Control (MAC) layer: addressing and channel access control
 
 ### Devices
 
@@ -100,153 +119,162 @@ Wired connections offer more consistent speeds and lower latency.
 
 ### Services
 
-services provided by link layer:
+Services provided by link layer:
 
-- framing (encapsulation/de-encapsulation) based on link-layer protocols
-- link access (MAC protocol) to coordinate frame transmission
-- reliable data transfer depending on protocol
-- error detection and correction due to signal attenuation or electromagnetic noise (corruption of transmitted bits)
+- Framing (encapsulation/de-encapsulation) based on link-layer protocols
+- Link access (MAC protocol) to coordinate frame transmission
+- Reliable data transfer depending on protocol (e.g. Ethernet provides unreliable data transfer while [PPP] can provide reliable data transfer)
+- Error detection and correction due to signal attenuation or electromagnetic noise (corruption of transmitted bits)
+
+[PPP]: https://en.wikipedia.org/wiki/Point-to-Point_Protocol
 
 ### Error detection and correction
 
-- error detection and correction bits (EDC)
-- challenge is to detect errors in received data D', relative to originally sent data D and EDC, given that we only have received D' and EDC', both of which may be corrupted due to in-transit bit flips
-- no perfect solution, but goal is to minimize probability of undetected erors for acceptable overhead
-- forward error correction (FEC) at receiver side avoiding re-transmission and related delays
-- parity checks
-  - extra parity bit to denote whether number of 1s in payload is even or odd
-  - but weak against multiple errors (cancelling each other out)
+- Error detection and correction bits (EDC)
+- Challenge is to detect errors in received data D', relative to originally sent data D and EDC, given that we only have received D' and EDC', both of which may be corrupted due to in-transit bit flips
+- No perfect solution, but goal is to minimize probability of undetected errors for acceptable overhead
+- Forward error correction (FEC) at receiver side avoiding re-transmission and related delays
+- Parity checks
+  - Extra parity bit to denote whether number of 1s in payload is even or odd
+  - But weak against multiple errors (cancelling each other out)
   - two-dimensional row and column parity to detect and correct errors, can correct single but not multiple errors
-- checksum methods
-  - internet checksum (RFC 1071)
-  - used in IP/TCP/UDP
-  - simple and fast compared to cyclical redundancy checks (CRC)
-- cyclical reduncancy checks (CRC)
-  - polynomial codes
+- Checksum methods
+  - Internet checksum (RFC 1071)
+  - Used in IP/TCP/UDP
+  - Simple and fast compared to cyclical redundancy checks (CRC)
+- Cyclical redundancy checks (CRC)
+  - Polynomial codes
 
-### Multiple acccess links and protocols
+### Multiple access links and protocols
 
-- point-to-point link (single sender and receiver), e.g. HDLC or PPP protocol
-- broadcast link (multiple senders and receivers), e.g. Ethernet/LAN
-- multiple access problem
-  - coordinate transmission of frames to not send frame at the same time (to avoid frame colliding and becoming inextricably tangled together)
-- desirable properties of solutions
-  - if one one node transmits data, the node has full throughput rate R bps
-  - if M nodes transmit data simultaneously, each node has roughly throughput rate R/M bps
-- 3 categories of mutiple access protocols
-  - channel partitioning
-  - random access
-  - taking turns
+- Point-to-point link (single sender and receiver), e.g. HDLC or PPP protocol
+- Broadcast link (multiple senders and receivers), e.g. Ethernet/LAN
+- Multiple access problem
+  - Coordinate transmission of frames to not send frame at the same time (to avoid frame colliding and becoming inextricably tangled together)
+- Desirable properties of solutions
+  - If one node transmits data, the node has full throughput rate R bps
+  - If M nodes transmit data simultaneously, each node has roughly throughput rate R/M bps
+- 3 categories of multiple access protocols
+  - Channel partitioning
+  - Random access
+  - Taking turns
 
 #### Channel partitioning protocols
 
-- time-division multiplexing (TDM)
-- frequency-division multiplexing (FDM)
-- code division multiple access (CDMA)
+- Time-division multiplexing (TDM)
+- Frequency-division multiplexing (FDM)
+- Code division multiple access (CDMA)
 
 #### Random access protocols
 
-- e.g. ALOHA, or slotted ALOHA
-- carrier sense multiple access (CSMA) with collision detection (CSMA/CD), e.g. Ethernet
-  - listen for active transmission and wait for free transmission slot
-  - stop transmission if collision detected and wait for some duration before re-trying transmission
-  - random wait duration or determiend by some algorithm (e.g. binary exponential backoff algorithm)
+- Carrier sense multiple access (CSMA) with collision detection (CSMA/CD), e.g. Ethernet
+  - Listen for active transmission and wait for free transmission slot
+  - Stop transmission if collision detected and wait for some duration before re-trying transmission
+  - Random wait duration or determined by some algorithm (e.g. binary exponential backoff algorithm)
 
 #### Taking turns protocols
 
-- polling protocol
-- master node coordinating turns (e.g. round robin)
-- token-passing protocol
+- Polling protocol
+- Master node coordinating turns (e.g. round robin)
+- Token-passing protocol
 - e.g. DOCSIS
 
-### Switched LAN
+### Link layer addressing
 
-- link-layer devices forwarding packets based on link-layer information
-- link-layer switches operate on link-layer frames, rather than network-layer address and routing algorithms (e.g. OSPF)
-
-#### Link layer addressing
-
-- each host or router interface (network adapter) has a globally unique link-layer address in addition to its IP address
-- link-layer switches do not have link-layer address associated with their interface
+- Each host or router interface (network adapter) has a globally unique link-layer address in addition to its IP address
+- Link-layer switches do not have link-layer address associated with their interface, they are invisible to the devices connected to it; they read the MAC address of the frame and forward it to the correct interface
 - MAC address
   - 6 bytes, 2^48 possible MAC addresses
-  - hexadecimal notation, with each byte a pair of hexadecimal numbers
-  - managed by IEEE and allocated to network adapter manufacturers
-  - address fixed for adapter, no matter where the adapter is moved
-  - flat address structure unlike hierarchical IP address (network prefix vs host)
-- sending adapter inserts its MAC address into link-layer frame before transmission
-- receiving adapter may receive frames not addressed to its own MAC address, which will be discarded without passing it up to the network-layer and interrupting the host
-- last address in 6-bytes space is broadcast MAC address consisting of 48 consecutive 1s, i.e. `FF-FF-FF-FF-FF-FF`
-- link-layer addressing work independently of network-layer addressing
-  - support for arbitrary network-layer protocol, not just IP (e.g. IPX or DECnet)
-  - operating without having to pass up frames to network layer and interrupt hosts
+  - Hexadecimal notation, with each byte a pair of hexadecimal numbers
+  - Managed by IEEE and allocated to network adapter manufacturers
+  - Address fixed for adapter, no matter where the adapter is moved
+  - Flat address structure unlike hierarchical IP address (network prefix vs host)
+- Sending adapter inserts its MAC address into link-layer frame before transmission
+- Receiving adapter may receive frames not addressed to its own MAC address, which will be discarded without passing it up to the network-layer and interrupting the host
+- Last address in 6-bytes space is broadcast MAC address consisting of 48 consecutive 1s, i.e. `FF-FF-FF-FF-FF-FF`
+- Link-layer addressing works independently of network-layer addressing
+  - Support for arbitrary network-layer protocol, not just IP (e.g. [IPX] or [DECnet])
+  - Operating without having to pass up frames to network layer and interrupt hosts
 
-#### [Address Resolution Protocol] (ARP)
-
-- maps LAN network-layer IP addresses to link-layer MAC addresses
-- similar to DNS mapping global application-layer host name to network-layer IP addresses
-- used when a device wants to communicate with another device on the same LAN and only knows its IP
-- only host/router interfaces in same IP subnet
-- each host or router has an ARP table mapping IP address to MAC address including time-to-live (TTL)
-- message protocol to update tables if table has no entry for IP address
-  - query packet with source and destination IP and MAC address sent to all hosts and routers on the same subnet via broadcast MAC address
-  - response packets if query a host's or router's MAC address matches with desired mapping
-
-[Address Resolution Protocol]: https://en.wikipedia.org/wiki/Address_Resolution_Protocol
-
-#### Ethernet
-
-- LAN protocol using ARP protocol
-- broadcast protocol: any frame transmitted can go to any other host in the LAN (broadcast domain)
-- every network interface has a unique identifier called the media access control (MAC) address
-- provides connectionless transmission service for network layer
-- unreliable data transfer as frames failing cyclical reduncancy checks (CRC) are dropped without acknowledgements or re-transmission mechanisms
-- Ethernet frame, 6 fields
-  - data: IP datagram, between 46 - 1500 bytes
-  - destination MAC address (6 bytes)
-  - source MAC address (6 bytes)
-  - type, e.g. IP protocol, ARP (like protocol field in IP datagram, used for de-encapsulation) (2 bytes)
-  - cyclic redundancy check (CRC) (4 bytes)
-  - preamble (8 bytes)
-- data smaller than 46 bytes is "stuffed", and "unstuffed" or decoded based on IP datagram length field
-- maximum transmission unit (MTU), typically 1500 bytes including headers
-- if a frame exceeds the MTU, it may be fragmented into multiple frames or dropped, depending on the protocol and device configuration, fragmentation increases the overhead
-- different Ethernet flavours (e.g. 10BASE-T)
+[IPX]: https://en.wikipedia.org/wiki/IPX
+[DECnet]: https://en.wikipedia.org/wiki/DECnet
 
 ### Local area network (LAN)
 
-- [LAN] is a network of trusted hosts
+- [LAN] is essentially a network of trusted hosts in a limited area, privately managed (e.g. a home or office); compare with wide-area network ([WAN]), a network of untrusted hosts in a large area, publicly managed (e.g. the Internet)
+- Devices on the same LAN can communicate with each other directly without going through a router
+- Devices can send messages to all other devices on the LAN (broadcast domain)
 
 [LAN]: https://en.wikipedia.org/wiki/Local_area_network
+[WAN]: https://en.wikipedia.org/wiki/Wide_area_network
 
-### Virtual LAN (VLAN)
+#### Switched LAN
 
-- a VLAN is a logical sub-group within a LAN that groups together devices as if they were on the same physical network
-- all hosts on the same VLAN can see each other
-- virtual LANs allow to separate LANs into multiple segments
-- adds extra tag to Ethernet frames indicating the VLAN they belong to
-- separate IP configuration
-- set up by network engineers on switches
-- useful for isolating network traffic for security (e.g. separating guest WiFi from internal company network)
+- Modern LANs use switches instead of hubs to improve performance (e.g. selective forwarding of frames, fewer collisions)
+- Switches learn MAC addresses by observing source addresses of incoming frames and building a forwarding table
+- Link-layer devices forwarding frames based on link-layer information (e.g. MAC address)
+- Link-layer switches operate on link-layer frames, rather than network-layer address and routing algorithms (e.g. OSPF)
+
+#### Ethernet
+
+- Link-layer protocol commonly used in LANs
+- Broadcast protocol: any frame transmitted can go to any other host in the LAN (broadcast domain)
+- Every network interface has a unique identifier called the media access control (MAC) address
+- Provides connectionless transmission service for network layer
+- Unreliable data transfer as frames failing cyclical redundancy checks (CRC) are dropped silently without acknowledgements or re-transmission mechanisms (for more on reliable data transfer, see transport layer section)
+- Ethernet frame, 6 fields
+  - Data: IP datagram, between 46 - 1500 bytes
+  - Destination MAC address (6 bytes)
+  - Source MAC address (6 bytes)
+  - Type, e.g. IP protocol, ARP (like protocol field in IP datagram, used for de-encapsulation) (2 bytes)
+  - Cyclic redundancy check (CRC) (4 bytes)
+  - Preamble (8 bytes), 7 bytes of alternating 1s and 0s for synchronization, followed by a 1-byte Start Frame Delimiter (SFD)
+- Data smaller than 46 bytes is padded and "unstuffed" or decoded based on IP datagram length field
+- Maximum transmission unit (MTU) refers to the maximum payload size, typically 1500 bytes for Ethernet; the total frame size including 14-byte Ethernet header and 4-byte CRC is 1518 bytes (or 1522 bytes with VLAN tag)
+- If a frame exceeds the MTU, it may be fragmented into multiple frames or dropped, depending on the protocol and device configuration, fragmentation increases the overhead
+- Different Ethernet flavours (e.g. 10BASE-T)
+
+#### Virtual LAN (VLAN)
+
+- A VLAN is a logical sub-group within a LAN that groups together devices as if they were on the same physical network
+- All hosts on the same VLAN can see each other
+- Virtual LANs allow to separate LANs into multiple segments
+- Adds extra tag to Ethernet frames indicating the VLAN they belong to
+- Separate IP configuration
+- Set up by network engineers on switches
+- Useful for isolating network traffic for security (e.g. separating guest WiFi from internal company network)
+
+#### [Address Resolution Protocol] (ARP)
+
+- Maps LAN network-layer IP addresses to link-layer MAC addresses
+- Similar to DNS mapping global application-layer host name to network-layer IP addresses
+- Used when a device wants to communicate with another device on the same LAN and only knows its IP address
+- Works only for devices in the same IP subnet (ARP uses broadcast, which doesn't cross subnet boundaries)
+- Each host or router has an ARP table mapping IP address to MAC address including time-to-live (TTL)
+- Message protocol to update tables if table has no entry for IP address
+  - Query packet with source and destination IP and MAC address sent to all hosts and routers on the same subnet via broadcast MAC address
+  - Response packets if query a host's or router's MAC address matches with desired mapping
+
+[Address Resolution Protocol]: https://en.wikipedia.org/wiki/Address_Resolution_Protocol
 
 ## Network layer: data plane
 
-- logical communication between network hosts
-- network management
-  - control vs data plane
-  - destination-based vs generalized forwarding
-  - software defined networking (SDN)
-- network devices (e.g. router)
+- Logical communication between network hosts
+- Network management
+  - Control vs data plane
+  - Destination-based vs generalized forwarding
+  - Software defined networking (SDN)
+- Network devices (e.g. router)
   - "match-plus-action" pattern (e.g. router matching a packet's destination IP address and forwarding it along the right path)
 
 ### Control vs data plane
 
-- control plane
-  - coordinate end-to-end routing, based on routing protocols
-  - compute forwarding tables using routing algorithms to determine optimal routing paths
-  - implemented in softare
-  - network-wide process
-- data plane
+- Control plane
+  - Coordinate end-to-end routing, based on routing protocols
+  - Compute forwarding tables using routing algorithms to determine optimal routing paths
+  - Implemented in software
+  - Network-wide process
+- Data plane
   - pre-router packet forwarding from (physical) input links to output links
   - using forwarding tables provided by control plane
   - implemented in hardware
