@@ -22,7 +22,7 @@ Typical questions include:
 
 Similar to how you would write your CV or cover letter, you want to give a concrete example for every skill you try to demonstrate.
 
-**How to pick examples**
+#### How to pick examples
 
 Pick examples that are:
 
@@ -31,7 +31,7 @@ Pick examples that are:
 - _Complex_, in terms of the stakeholders, core team, tech, timeline, resources, etc.
 - _Significant_, in terms of personal involvement/contribution
 
-**Use STAR++ to discuss example**
+#### Use STAR++ to discuss example
 
 Use the STAR++ structure in your answer (situation, task, action, result, learning, evolution):
 
@@ -81,7 +81,7 @@ I outline answers for some of them below.
 - https://candost.blog/importance-of-the-feedback/
 - https://candost.blog/the-must-have-skill-for-every-leader-listening-with-empathy/
 
-**Create the environment**
+#### Create the environment
 
 - State that you invite and welcome feedback
 - Repeatedly ask for critical feedback
@@ -91,7 +91,7 @@ I outline answers for some of them below.
 - In some situations, state intentions why you give feedback in a certain way (e.g. if public feedback, not to shame or embarrass others but so that everyone can learn and discuss)
 - Clarify how people want to receive feedback, positive and negative/redirecting
 
-**Give feedback**
+#### Give feedback
 
 - Depends on relationship and trust with person I want to give feedback to
 - Usually private, especially if personal or no little trust with other person ("criticise in private, praise in public")
@@ -110,14 +110,14 @@ I outline answers for some of them below.
 - [https://liamrosen.com/arguments.html](https://liamrosen.com/arguments.html?utm_source=pocket_reader)
 - [https://charity.wtf/2023/08/17/how-to-communicate-when-trust-is-low-without-digging-yourself-into-a-deeper-hole/](https://charity.wtf/2023/08/17/how-to-communicate-when-trust-is-low-without-digging-yourself-into-a-deeper-hole/?utm_source=pocket_reader)
 
-**Listen**
+#### Listen
 
 - Give the other person as much time as they need to give their feedback or explain their point of view without interrupting
 - Try to understand their needs and emotions, check your understanding with them
 - Summarise your understanding of what they said to them and check if you understood their point of view correctly
 - Ask for instructions on what you can do to change, to make things easier for the other person
 
-**Resolve**
+#### Resolve
 
 - Try to rebuild a relationship of trust, by repeatedly explaining your intentions, listening and cross-checking with them your understanding of their point of view
 - Spend more time with person to become more familiar with them
@@ -161,7 +161,7 @@ For a system-design interview, follow this structure:
 3. Refine (add detail, discuss trade-offs, iterate)
 4. Review (shortcomings, limitations, next steps)
 
-**Clarify**
+#### Clarify
 
 - Define functional requirements (restrict problem scope)
 - Define non-functional requirements (reliability, availability, scalability, security)
@@ -170,12 +170,12 @@ For a system-design interview, follow this structure:
 - Define product/system success metrics (read vs write heavy system)
 - Get buy-in from interviewers
 
-**Sketch**
+#### Sketch
 
 - Lay out basic components (e.g. client app, load balancer, backend web servers, database)
 - Get buy-in from interviewers
 
-**Refine**
+#### Refine
 
 - Datastore design
   - Considerations: access patterns, mutable/writable vs immutable/read-only data, read vs write heavy, read/write performance scaling for increasing data sizes
@@ -191,7 +191,7 @@ For a system-design interview, follow this structure:
 - Scaling
   - Vertical vs horizontal scaling
 
-**Review**
+#### Review
 
 - Summarise how design solves use cases
 - Discuss costs and potential cost trade-offs (cloud vs on-prem, cloud managed vs build-your-own)
@@ -228,25 +228,25 @@ Here are some general tips for the live coding interview.
 3. Implement (iterate quickly, explain your code)
 4. Review (limitations, possible improvements e.g. docs, tests, benchmarking)
 
-**Clarify**
+#### Clarify
 
 - Summarise
 - Ask questions about priorities (e.g. demonstrating best practices, design/structure, code memory/compute efficiency)
 - Consider edge cases
 
-**Plan**
+#### Plan
 
 - Add type annotations for key types if skeleton classes/functions are provided
 - Write skeleton classes/functions if not provided
 - Focus on data structure (e.g. array, hashmap, hashset, list)
 - Add `TODO` comments in skeleton code
 
-**Implement**
+#### Implement
 
 - Iterate quickly: get an end-to-end solution up and running as quickly as possible, then improve iteratively
 - Demonstrate best practices (docstrings, tests, assert statements for input checks, type annotation), giving a few examples is sufficient
 
-**Review**
+#### Review
 
 - Discuss algorithm memory and time complexity
 - Discuss strength/weaknesses
@@ -454,7 +454,7 @@ Adopting this mindset will make you a much stronger negotiator, and accordingly,
 
 ### Ten rules of job negotiation
 
-**1. Get everything in writing**
+#### 1. Get everything in writing
 
 Everything significant you discuss should have some kind of a paper trail.
 Often, the company won't even send you an official offer letter until a deal is finalised.
@@ -465,7 +465,7 @@ Just say:
 
 > "... just wanted to confirm I had all the details right."
 
-**2. Always keep the door open**
+#### 2. Always keep the door open
 
 Your recruiter will now say something along the lines of "so what do you think?"
 
@@ -480,7 +480,7 @@ Never give up your negotiating power until you're absolutely ready to make an in
 
 This means your job is to traverse as many of these decision points as possible without giving up the power to continue negotiating.
 
-**3. Information is power**
+#### 3. Information is power
 
 To protect your power in the negotiation, you must protect information as much as possible.
 
@@ -502,7 +502,7 @@ Example reply to first offer:
 > Right now I'm talking with a few other companies so I can't speak to the specific details of the offer until I'm done with the process and get closer to making a decision.
 > But I'm sure we'll be able to find a package that we're both happy with, because I really would love to be a part of the team.
 
-**4. Always be positive**
+#### 4. Always be positive
 
 Even if the offer is unattractive, it's important to remain positive and excited about the company.
 This is because your excitement is one of your most valuable assets in a negotiation.
@@ -512,7 +512,7 @@ So despite whatever is happening in the negotiation, give the company the impres
 
 Generally the most convincing thing to signal this is to reiterate you love the mission, the team, or the problem they're working on, and really want to see things work out.
 
-**5. Don't be the decision maker**
+#### 5. Don't be the decision maker
 
 Say:
 
@@ -523,7 +523,7 @@ Say:
 Even if you don't particularly care what your friends/family/husband/mother thinks, by mentioning them, you're no longer the only person the recruiter needs to win over.
 There's no point in them trying to bully and intimidate you; the "true decision-maker" is beyond their reach.
 
-**6. Have alternatives**
+#### 6. Have alternatives
 
 If you're already in the pipeline with other companies (which you should be if you're doing it right), you should proactively reach out and let them know that you've just received an offer.
 Try to build a sense of urgency.
@@ -581,7 +581,7 @@ Always emphasize the pros of your current company, your seniority, your impact, 
 
 Make your decision seem genuinely close for a strong BATNA.
 
-**7. Proclaim reasons for everything**
+#### 7. Proclaim reasons for everything
 
 Stating a reason makes any request feel important and understandable, both for yourself and for your negotiating partner.
 For example, you're not just being greedy; you're trying to fulfil your goals.
@@ -592,7 +592,7 @@ The more unobjectionable and sympathetic your reason, the better.
 - I need to take care of my brother and mother who live on a low income
 - I really want to buy a house in Paris within the next year; what can we do to improve the salary?
 
-**8. Be motivated by more than just money**
+#### 8. Be motivated by more than just money
 
 - how much training you get (new programming language, deep learning, etc)
 - what your first project will be
@@ -602,13 +602,13 @@ The more unobjectionable and sympathetic your reason, the better.
 - open-source work
 - company support for social events (hosting meetups, etc)
 
-**9. Understand what they value**
+#### 9. Understand what they value
 
 Do prior research on what they need.
 Ask questions at the end of each interview to better understand their needs.
 Understanding what the employer prioritises helps you identify where you have the most leverage and frame your demands in terms that resonate with them.
 
-**10. Be winnable**
+#### 10. Be winnable
 
 Be open, be honest (while protecting your information), be communicative.
 Be clear with your preferences and timelines.
@@ -651,7 +651,7 @@ Thank them for the negotiation.
 
 ### Negotiating compensation
 
-**How to give the first number**
+#### How to give the first number
 
 It's better to not give the first number.
 If unavoidable, appeal to an objective metric, such as industry standard, and emphasise that this is a starting point:
@@ -660,7 +660,7 @@ If unavoidable, appeal to an objective metric, such as industry standard, and em
 
 For reference salaries, see e.g. https://www.levels.fyi.
 
-**How to ask for more salary**
+#### How to ask for more salary
 
 Always state a reason why you're asking for more.
 
@@ -703,12 +703,12 @@ Here are a few more tips on how to handle recruiters throughout the interviewing
 
 Until you're ready to negotiate, your default mode should be "passive information gathering".
 
-**Be polite and gracious to a fault**
+#### Be polite and gracious to a fault
 
 If it's an offer call, thank them for the work they did to put your offer together and for advocating for you.
 If it's earlier in the process, thank them for their help so far.
 
-**Express genuine enthusiasm**
+#### Express genuine enthusiasm
 
 If it's an early call, express excitement about the company or the interview process if there's something idiosyncratically cool about it.
 If it's an offer call, express excitement for the team, the projects, the hiring manager, whatever it is.
@@ -718,7 +718,7 @@ Every offer will have something exciting about it.
 If the recruiter is making an offer, express enthusiasm and say that you need some time to process and/or talk to your family or partner.
 No one is realistically expecting you to react to major life decisions on the fly!
 
-**Email vs phone**
+#### Email vs phone
 
 Talking on the phone not only signals confidence, but more importantly, it allows you to build a strong relationship with your recruiter.
 Talking on the phone enables building a connection.
@@ -736,7 +736,7 @@ If you want to stick to email, be honest and ask for what you want.
 For negotiating offer, don't use the phone or text messages, use email.
 This is less casual and gives you more time to think/plan, and puts you on a more level playing field due to your lack of experience in conversations compared to a recruiter.
 
-**Handling exploding offers**
+#### Handling exploding offers
 
 Exploding offers are offers that expire within 24-72 hours.
 
@@ -777,7 +777,7 @@ If they push back and say this is the best they can do, then politely reply:
 Most companies will relent at this point.
 If they persist, don't be afraid to walk away.
 
-**For questions about compensation expectations at the beginning of the process**
+#### For questions about compensation expectations at the beginning of the process
 
 Reply by explaining your curious mindset during the interview process:
 
@@ -788,25 +788,25 @@ Reply by explaining your curious mindset during the interview process:
 > I'm more interested in learning whether this will be a good mutual fit.
 > If it is, I'm open to exploring any offer so long as it's competitive.
 
-**For when a recruiter provides you a salary range and asks you to comment on it at the beginning of the process**
+#### For when a recruiter provides you a salary range and asks you to comment on it at the beginning of the process
 
 > Thank you for sharing that with me.
 > Right now, I don't know enough about the opportunity to value it concretely.
 > If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works.
 > I promise not to accept other offers until I have a chance to discuss them with you.
 
-**For questions about compensation expectations at the end of the process**
+#### For questions about compensation expectations at the end of the process
 
 > It sounds like there's an offer coming, and I'm really excited about it.
 > I'm not sure exactly what number I'm looking for, but if you'd be able to share what an offer package might look like, then I will gladly iterate on it with you if needed and figure out something that works.
 > I promise not to accept other offers until I have a chance to discuss them with you.
 
-**For questions about where else you're interviewing at the beginning of the process**
+#### For questions about where else you're interviewing at the beginning of the process
 
 > I'm currently speaking with a few other companies and am at various stages with them.
 > I'll let you know if I get to the point where I have an exploding offer, and I promise not to accept other offers until I have a chance to discuss them with you.
 
-**For questions about where else you're interviewing at the end of the process**
+#### For questions about where else you're interviewing at the end of the process
 
 > I'm wrapping things up with a few companies and in process with a few more.
 > I promise to keep you in the loop, and I promise not to accept other offers until I have a chance to discuss them with you.
