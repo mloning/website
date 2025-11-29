@@ -11,7 +11,8 @@ pygmentscodefences = true
 # pygmentsOptions = "linenos=table"
 
 # Number of posts to show in recent posts list (Optional). Defaults to 10.
-paginate = 10
+[pagination]
+pagerSize = 10
 
 enableGitInfo = true
 
@@ -33,6 +34,7 @@ summaryLength = 20
 
     # Specify favicon (icons/i.png maps to static/icons/i.png). No favicon if not defined.
     # favicon = "icons/myicon.png"
+
 
     # Custom list of Javascript files to load. Just like custom CSS you can place js files under
     # `static/js` folder and specify path here as `js/script-name.js`. You can also specify full url,
