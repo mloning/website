@@ -110,7 +110,7 @@ For example, Rust makes heavy use of fat pointers for Dynamically Sized Types (D
 
 ## Other memory segments
 
-Besides the stack and heap, there are other memory segments where variables are allocated, particularly for data whose lifetime spans the entire program execution.
+Besides the stack and heap, there are other memory segments where variables are allocated, particularly for data whose lifetime spans the entire program execution (static memory).
 
 ### Text Segment (.text)
 
