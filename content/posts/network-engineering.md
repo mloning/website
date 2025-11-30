@@ -46,7 +46,7 @@ Upper layers are constrained by services provided by lower layers (e.g. physical
 
 ## Physical layer
 
-While upper layers deal with logic, software and data, the physical layer is concerned with the transmission of raw bit streams over a physical medium. 
+While upper layers deal with logic, software and data, the physical layer is concerned with the transmission of raw bit streams over a physical medium.
 It bridges the gap between the digital and physical world (electricity, light, radio waves).
 
 ### Transmission media
@@ -60,7 +60,7 @@ It bridges the gap between the digital and physical world (electricity, light, r
   - Microwaves: Line-of-sight communication
   - Infrared: Short-range
 
-Real-world wireless transmission speed is typically lower due to interference, distance and shared bandwidth. 
+Real-world wireless transmission speed is typically lower due to interference, distance and shared bandwidth.
 Wired connections offer more consistent speeds and lower latency.
 
 ### Signal encoding
@@ -97,7 +97,7 @@ It ensures data moves correctly from one device to the next one in the chain.
 - Media Access Control (MAC): it acts as the "moderator" determining who is allowed to transmit on the cable or wireless frequency at any given moment to prevent collisions.
 - Error detection: it checks the integrity of the received frame (using a CRC/Checksum) to ensure bits weren't corrupted by electrical noise.
 
-The link layer is hop-to-hop rather than end-to-end. 
+The link layer is hop-to-hop rather than end-to-end.
 It gets the data to the next device in the network, not the final destination (e.g. connecting single laptop to the nearby Ethernet switch).
 
 Link-layer functionality is primarily implemented in hardware on the network interface card (NIC) (fast bit sending/receiving), with software managing setup, addressing assembly and communication with the network layer (encapsulation/de-encapsulation).
@@ -244,7 +244,7 @@ Services provided by link layer:
 - Set up by network engineers on switches
 - Useful for isolating network traffic for security (e.g. separating guest WiFi from internal company network)
 
-#### [Address Resolution Protocol] (ARP)
+#### Address Resolution Protocol (ARP)
 
 - Maps LAN network-layer IP addresses to link-layer MAC addresses (interface between link layer and network layer)
 - Similar to DNS mapping global application-layer host name to network-layer IP addresses
@@ -254,8 +254,6 @@ Services provided by link layer:
 - Message protocol to update tables if table has no entry for IP address
   - Query packet with source and destination IP and MAC address sent to all hosts and routers on the same subnet via broadcast MAC address
   - Response packets if query a host's or router's MAC address matches with desired mapping
-
-[Address Resolution Protocol]: https://en.wikipedia.org/wiki/Address_Resolution_Protocol
 
 ## Network layer: data plane
 
@@ -270,12 +268,14 @@ Services provided by link layer:
 ### Control vs data plane
 
 Control plane
+
 - Coordinate end-to-end routing, based on routing protocols
 - Compute forwarding tables using routing algorithms to determine optimal routing paths
 - Implemented in software
 - Network-wide process
 
 Data plane
+
 - Pre-router packet forwarding from (physical) input links to output links
 - Using forwarding tables provided by control plane
 - Implemented in hardware
@@ -866,7 +866,7 @@ Why use messaging systems instead of direct HTTP calls?
 
 - Asynchronous "fire and forget" processing; producer continues immediately while consumer processes when ready, avoiding failures when services are busy or down
 - Queue buffers traffic spikes, allowing consumers to process at constant sustainable rate instead of being overwhelmed
-- Horizontal scaling with multiple workers sharing workload without load balancer 
+- Horizontal scaling with multiple workers sharing workload without load balancer
 
 ### Domain name system (DNS)
 
@@ -941,8 +941,8 @@ Monitoring and diagnostics:
 - Issues short-lived certificates (90 days) that encourage automation and regular renewal
 - ACME Protocol for automated certificate issuance and management
 - Domain validation challenges; to prove you control a domain, Let's Encrypt requires completing one of these challenges:
-   - HTTP-01: Let's Encrypt provides a token that must be served at a specific HTTP URL on your domain which Let's Encrypt queries to verify the token (`http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`)
-   - DNS-01: Let's Encrypt provides a token that must be placed in a DNS TXT record which Let's Encrypt verifies via a DNS query
+  - HTTP-01: Let's Encrypt provides a token that must be served at a specific HTTP URL on your domain which Let's Encrypt queries to verify the token (`http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`)
+  - DNS-01: Let's Encrypt provides a token that must be placed in a DNS TXT record which Let's Encrypt verifies via a DNS query
 - Certificate lifecycle; after domain validation, Let's Encrypt issues a certificate; ACME client automatically installs the certificate on your web server
 
 ## Security
