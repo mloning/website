@@ -35,14 +35,20 @@ Each layer only acts on its layer-specific headers, leaving the rest untouched.
 In practice, encapsulation and de-encapsulation is more complex: a message may be split up into multiple segments, which in turn are split up into multiple datagrams.
 
 The network edge consists of end systems (hosts) like computers and servers where applications run, while the network core is the mesh of routers and switches that interconnects them.
-Most complexity is designed to be in the network-edge devices (end systems), including the application and transport layer.
+Most complexity is designed to be in the network-edge devices (end systems), including the application and transport layer (see [End-to-end Principle]).
 Network-core devices, including everything from the network layer and below, are designed to be simple.
 
 Upper layers are constrained by services provided by lower layers (e.g. physical limitations like bandwith or transmission delay), but can build services on top to remedy lower-level limitations (e.g. TCP provides reliable data transfer on the transport layer on top of the unreliable network layer IPv4 protocol).
 
+Much of modern network engineering is defined by specific conventions adhered to by millions of networks around the world, rather than physical laws or an overarching, central design.
+Conventions are primarily defined by [Internet Engineering Task Force] (IETF) in [Request for Comments] (RFCs).
+
 [Open System Interconnection]: https://en.wikipedia.org/wiki/OSI_model
 [protocol stack]: https://en.wikipedia.org/wiki/Protocol_stack
 [encapsulation]: https://en.wikipedia.org/wiki/Encapsulation_(networking)
+[End-to-end Principle]: https://en.wikipedia.org/wiki/End-to-end_principle
+[Internet Engineering Task Force]: https://www.ietf.org/
+[Request for Comments]: https://en.wikipedia.org/wiki/Request_for_Comments
 
 ## Physical layer
 
