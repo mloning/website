@@ -1,7 +1,6 @@
 ---
 title: "Setting up a new macOS laptop"
 date: 2024-09-27T13:49:57+02:00
-last_modified: .Lastmod
 draft: false
 ---
 
@@ -16,6 +15,10 @@ Some things I configure manually, even though they could be automated:
 - Add sound icon in control center bar
 - Set trackpad "click on tap"
 - `defaults write -g ApplePressAndHoldEnabled -bool false`
+- Install Firefox
+  - Install extensions (AdBlock, Bitwarden, Rainbow)
+  - Set DuckDuckGo as the default search engine
+  - Sync bookmarks
 
 ## Install macOS command-line tools
 
