@@ -41,7 +41,7 @@ Network-core devices, including everything from the network layer and below, are
 Upper layers are constrained by services provided by lower layers (e.g. physical limitations like bandwith or transmission delay), but can build services on top to remedy lower-level limitations (e.g. TCP provides reliable data transfer on the transport layer on top of the unreliable network layer IPv4 protocol).
 
 Much of modern network engineering is defined by specific conventions adhered to by millions of networks around the world, rather than physical laws or an overarching, central design.
-Conventions are primarily defined by [Internet Engineering Task Force] (IETF) in [Request for Comments] (RFCs).
+Conventions are primarily defined by the [Internet Engineering Task Force] (IETF) in [Request for Comments] (RFCs).
 
 [Open System Interconnection]: https://en.wikipedia.org/wiki/OSI_model
 [protocol stack]: https://en.wikipedia.org/wiki/Protocol_stack
