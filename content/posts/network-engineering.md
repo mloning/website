@@ -246,7 +246,7 @@ Services provided by link layer:
 
 #### [Address Resolution Protocol] (ARP)
 
-- Maps LAN network-layer IP addresses to link-layer MAC addresses
+- Maps LAN network-layer IP addresses to link-layer MAC addresses (interface between link layer and network layer)
 - Similar to DNS mapping global application-layer host name to network-layer IP addresses
 - Used when a device wants to communicate with another device on the same LAN and only knows its IP address
 - Works only for devices in the same IP subnet (ARP uses broadcast, which doesn't cross subnet boundaries)
@@ -265,81 +265,86 @@ Services provided by link layer:
   - Destination-based vs generalized forwarding
   - Software defined networking (SDN)
 - Network devices (e.g. router)
-  - "match-plus-action" pattern (e.g. router matching a packet's destination IP address and forwarding it along the right path)
+  - "Match-plus-action" pattern (e.g. router matching a packet's destination IP address and forwarding it along the right path)
 
 ### Control vs data plane
 
-- Control plane
-  - Coordinate end-to-end routing, based on routing protocols
-  - Compute forwarding tables using routing algorithms to determine optimal routing paths
-  - Implemented in software
-  - Network-wide process
-- Data plane
-  - pre-router packet forwarding from (physical) input links to output links
-  - using forwarding tables provided by control plane
-  - implemented in hardware
-  - local to each router
+Control plane
+- Coordinate end-to-end routing, based on routing protocols
+- Compute forwarding tables using routing algorithms to determine optimal routing paths
+- Implemented in software
+- Network-wide process
+
+Data plane
+- Pre-router packet forwarding from (physical) input links to output links
+- Using forwarding tables provided by control plane
+- Implemented in hardware
+- Local to each router
 
 ### Router
 
-- network-layer device using network-layer information to forward packets, compare with link-layer switches
-- a device that converts one physical layer into another, e.g. home Ethernet to internet service provider (ISP) fibre cable
-- send traffic from one IP subset to another
-- default gateway for sending traffic to hosts outside LAN, e.g. when your host wants to reach hosts on the internet, it sends traffic to the router’s IP
+- Network-layer device using network-layer information to forward packets, compare with link-layer switches
+- Determines the path for data packets to travel across different networks based on IP address, creating a broadcast domain boundary
+- Send traffic from one IP subset to another
+- Default gateway for sending traffic to hosts outside LAN, e.g. when your host wants to reach hosts on the internet, it sends traffic to the router’s IP
 
 #### Components
+
+A router has the following components:
 
 - Physical input port
 - Switching fabric
 - Physical output port
-- routing processor (control-plane functions, e.g. router client for communicating with central control-plane server, or computing per-router forwarding tables)
-- implemented in hardware (operating on nanoseconds scale), e.g. assuming 100 Gbps throughput, the router only has 5.12 nanoseconds to process a 64-bytes IP datagram before the next one arrives
-- physical input/output ports are not to be confused with process-related port described as part of the transport layer
+- Routing processor (control-plane functions, e.g. router client for communicating with central control-plane server, or computing per-router forwarding tables)
+- Implemented in hardware (operating on nanoseconds scale), e.g. assuming 100 Gbps throughput, the router only has 5.12 nanoseconds to process a 64-bytes IP datagram before the next one arrives
+- Physical input/output ports are not to be confused with process-related port described as part of the transport layer
 
 #### Input port processing (destination-based forwarding)
 
-- selecting packet from input queue
-- physical and link-layer functions (de-encapsulation)
-- look up output port in forwarding table based on destination IP address, where the forwarding table is computed locally in the router using the router processor, or received from a remote central controller
-  - prefix matching of destination IP address (longest-prefix matching rule, i.e. most specific route that matches)
-  - look up performed in hardware, e.g. Ternary [Content Addressable Memory](https://en.wikipedia.org/wiki/Content-addressable_memory) (TCAM)
+- Selecting packet from input queue
+- Physical and link-layer functions (de-encapsulation)
+- Look up output port in forwarding table based on destination IP address, where the forwarding table is computed locally in the router using the router processor, or received from a remote central controller
+  - Prefix matching of destination IP address (longest-prefix matching rule, i.e. most specific route that matches)
+  - Look up performed in hardware, e.g. Ternary [Content Addressable Memory](https://en.wikipedia.org/wiki/Content-addressable_memory) (TCAM), which allows searching for data in a single clock cycle (hardware parallelism)
 
 #### Switching
 
-- connecting input and output ports
-- forward packets from input port to output port
-- switching methods (via memory, bus, interconnected network)
+- Connecting input and output ports
+- Forward packets from input port to output port
+- Switching methods (via memory, bus, inter-connected network)
 
 #### Output port processing
 
-- selecting packets from output queue for transmission (scheduling)
-- physical and link-layer functions (encapsulation)
+- Selecting packets from output queue for transmission (scheduling)
+- Physical and link-layer functions (encapsulation)
 
 #### Queuing
 
-- queuing occurs at input and output ports
-- packet loss will occur as queues exhaust router memory
-- input queuing means fabric switching not fast enough (head-of-line blocking)
-- output queuing means transmission rate not fast enough
-- queue management protocols
-  - drop arriving packets if queue is full ("drop tail")
-  - active queue management algorithms (e.g. Random Early Detection (RED), or [Explicit Congestion Notification](https://en.wikipedia.org/wiki/Explicit_Congestion_Notification) marking packet headers for TCP congestion control)
-- buffer sizing problem to find optimal buffer size (e.g. RFC 3439)
-  - larger buffer means less packet loss but longer delays
-- selecting packets from queue (scheduling)
-  - "first in, first out" (FIFO)
-  - priority queuing: categorizing packets according to priority depending on purpose identified by source and destination IP address and port, keeping separate FIFO queues for each category; mechanism to give certain companies priority access (jeopardizing net neutrality)
-  - weighted-fair queuing (WFQ) based on priority classes (round robin)
+- Queuing occurs at input and output ports
+- Packet loss will occur as queues exhaust router memory
+- Input queuing means fabric switching not fast enough (head-of-line blocking), i.e. a packet at the front of the queue waits for a specific output port, blocking packets behind it that want to go to free output ports
+- Output queuing means transmission rate not fast enough
+- Queue management protocols
+  - Drop arriving packets if queue is full ("drop tail")
+  - Active queue management algorithms (e.g. Random Early Detection (RED), or [Explicit Congestion Notification](https://en.wikipedia.org/wiki/Explicit_Congestion_Notification) marking packet headers for TCP congestion control)
+- Buffer sizing problem to find optimal buffer size (e.g. RFC 3439)
+  - Larger buffer means less packet loss but longer delays
+- Selecting packets from queue (scheduling)
+  - First in, first out (FIFO)
+  - Priority queuing: categorizing packets according to priority depending on purpose identified by source and destination IP address and port, keeping separate FIFO queues for each category; mechanism to give certain companies priority access (jeopardizing [net neutrality])
+  - Weighted-fair queuing (WFQ) based on priority classes (round robin)
+
+[net neutrality]: https://en.wikipedia.org/wiki/Net_neutrality
 
 ### Internet Protocol (IP)
 
-- unreliable, "best-effort" protocol
-  - potential packet loss (no delivery guarantee)
-  - no guaranteed in-order delivery
-  - potential packet error (corruption)
-  - no bandwith guarantee
-  - no guaranteed (maximum) end-to-end delay for packet delivery
-- every network host has at least one IP address
+- Unreliable, "best-effort" protocol
+  - Potential packet loss (no delivery guarantee)
+  - No guaranteed in-order delivery
+  - Potential packet error (corruption)
+  - No bandwith guarantee
+  - No guaranteed (maximum) end-to-end delay for packet delivery
+- Every network host has at least one IP address
 
 #### Monitoring and diagnostics
 
@@ -349,62 +354,68 @@ Services provided by link layer:
 
 - IP address format
   - 32-bit address
-  - dotted-decimal notation, consisting of 4 dot-separated groups of a single byte (i.e. 3 decimals ranging from 0 - 255), e.g. `203.0.113.84`, omitting leading zeros
-  - allowing a total of 2^32 distinct addresses from `0.0.0.0` to `255.255.255.255` (represented as all ones in binary)
+  - Dotted-decimal notation, consisting of 4 dot-separated groups of a single byte (i.e. 3 decimals ranging from 0 - 255), e.g. `203.0.113.84`, omitting leading zeros
+  - Allowing a total of 2^32 distinct addresses from `0.0.0.0` to `255.255.255.255` (represented as all ones in binary)
 
 #### Datagram
 
-- version, e.g. 4 or 6
-- header length (to handle variable number of options)
-- type of service (TOS), e.g. real-time application traffic (for prioritization)
-- datagram length (headers and payload)
-- identifier, flags, fragmentation offset (IPv6 no longer allows for fragmentation)
-- time-to-live (TTL), decreased by 1 each time the datagram is processed by a router to avoid ever-living packets due to routing loops
-- protocol, e.g. 6 (TCP) or 17 (UDP), connecting network layer with transport layer (similar to how a port number connects the transport layer with the application layer)
-- header checksum, used to detect errors, routers drop erroneous datagrams using error detection algorithms (RFC 1071), repeated error detection at both transport and network layer
-- source and destination IP address, destination IP address often determined by DNS lookup
-- options (removed in IPv6 for performance reasons)
-- payload, e.g. transport-layer UDP/TCP segment
+- Version, e.g. 4 or 6
+- Header length (to handle variable number of options)
+- Type of service (TOS), e.g. real-time application traffic (for prioritization)
+- Datagram length (headers and payload)
+- Identifier, flags, fragmentation offset (IPv6 no longer allows for fragmentation)
+- Time-to-live (TTL), decreased by 1 each time the datagram is processed by a router to avoid ever-living packets due to routing loops
+- Protocol, e.g. 6 (TCP) or 17 (UDP), connecting network layer with transport layer (similar to how a port number connects the transport layer with the application layer)
+- Header checksum, used to detect errors, routers drop erroneous datagrams using error detection algorithms (RFC 1071), repeated error detection at both transport and network layer
+- Source and destination IP address, destination IP address often determined by DNS lookup
+- Options (removed in IPv6 for performance reasons)
+- Payload, e.g. transport-layer UDP/TCP segment
 
-total of 20 bytes IPv4 headers + 20 bytes TCP headers
+Total of 20 bytes IPv4 headers + 20 bytes TCP headers
 
-### Addresing
+#### Fragmentation and Reassembly
 
-- to connect a host to a network, it needs a valid IP address and a subnet mask
-- technically, an IP address is associated with a network interface rather than a host (or router) containing that interface, where a network interface is the boundary between the host and the physical link
-- each interface on every device (e.g. host, router) in the global internet must have an IP address that is globally unique
-- to communicate beyond the LAN, a host needs a default gateway
-- hosts can only communicate directly with hosts on the same IP subnet, otherwise they need to go through a router, e.g. if host A is on `192.168.1.x` and host B is on `192.168.2.x`, their subnet masks `255.255.255.0` mean they’re in different subnets, so their traffic must be go through a router
-- to communicate with hosts on a different subnet, hosts must go through a router, even if they are on the same Ethernet
-- last IP address in a subnet is reserved for broadcasting (i.e. `255.255.255.255`), a message sent to the broadcast address is delivered to all hosts on the same subnet
-- every host has a logical loopback interface with IP address `127.0.0.1` (`localhost`), e.g. used for testing network software locally
-- classful addressing
+- If a datagram is larger than the MTU (Maximum Transmission Unit), the router fragments it; the MTU depends on the link layer protocol (e.g. Ethernet has an MTU of 1500 bytes).
+- Reassembly happens strictly at the destination host, not at intermediate routers (in IPv4).
+- Fragmentation is often used as an attack vector (fragment overlap attacks), which is why IPv6 removed it from routers.
+
+### Addressing
+
+- To connect a host to a network, it needs a valid IP address and a subnet mask
+- Technically, an IP address is associated with a network interface rather than a host (or router) containing that interface, where a network interface is the boundary between the host and the physical link
+- Each interface on every device (e.g. host, router) in the global internet must have an IP address that is globally unique
+- To communicate beyond the LAN, a host needs a default gateway
+- Hosts can only communicate directly with hosts on the same IP subnet, otherwise they need to go through a router, e.g. if host A is on `192.168.1.x` and host B is on `192.168.2.x`, their subnet masks `255.255.255.0` mean they’re in different subnets, so their traffic must be go through a router
+- To communicate with hosts on a different subnet, hosts must go through a router, even if they are on the same Ethernet
+- Last IP address in a subnet is reserved for broadcasting (i.e. `255.255.255.255`), a message sent to the broadcast address is delivered to all hosts on the same subnet
+- Every host has a logical loopback interface with IP address `127.0.0.1` (`localhost`), e.g. used for testing network software locally
+- Classful addressing
   - `a.b.c.d/x` (32-bit) where `x` can be 8 (class A), 16 (class B) or 24 (class C) but inefficient allocation for smaller organisations
     indicates the number of bits in the network prefix, with the remaining bits indicating the device inside the organisation
-  - subnet mask addressing, a subnet mask `255.255.255.0` (24-bits) means the first three numbers identify the network (network prefix), and the last number identifies the device inside that network (e.g. `192.168.1.42` is host `42` on network `192.168.1.0`)
+  - Subnet mask addressing, a subnet mask `255.255.255.0` (24-bits) means the first three numbers identify the network (network prefix), and the last number identifies the device inside that network (e.g. `192.168.1.42` is host `42` on network `192.168.1.0`)
 - Classless Interdomain Routing (CIDR) generalizes subnet addressing
   - `a.b.c.d/x` (32-bit) where `x` indicates the number of bits in the network prefix, with the remaining bits indicating the device inside the organisation (CIDR notation)
-  - organisations are typically assigned block of continuous IP addresses, i.e. a common network prefix
-  - routers outside of organisation only consider leading `x` bits of address (network prefix) during routing, reducing the size of the routing tables since a single entry for an entire organisation will be sufficient
+  - Organisations are typically assigned block of continuous IP addresses, i.e. a common network prefix
+  - Routers outside of organisation only consider leading `x` bits of address (network prefix) during routing, reducing the size of the routing tables since a single entry for an entire organisation will be sufficient
 
 ### IP address assignment
 
 - Internet Cooperation for Assigned Names and Numbers (ICANN) responsible for allocating blocks of IP addresses and managing DNS root servers
-- assigned block of IP addresses configured into router
+- Assigned block of IP addresses configured into router
 
 ### Dynamic Host Configuration Protocol (DHCP)
 
-- client-server protocol
-- automatically assigns temporary IP addresses to devices on a network, or same address for returning devices
-- mechanism to renew lease
-- cannot maintain IP address when connecting to a new subnet, e.g. cannot maintain a TCP connection in mobile applications
+- Client-server protocol
+- Automatically assigns temporary IP addresses to devices on a network, or same address for returning devices
+- Mechanism to renew lease
+- Cannot maintain IP address when connecting to a new subnet, e.g. cannot maintain a TCP connection in mobile applications
 
-protocol flow for assigning an IP address to a new host:
+Protocol flow for assigning an IP address to a new host:
 
-1. a new host send a UDP broadcast discovery message to `255.255.255.255:67` (port `67` is reserved for DHCP)
-2. server(s) respond with UDP broadcast offer message, containing proposed address, lease time and ID of the discovery message
-3. client sends request message choosing from received offer(s)
-4. server responds with acknowledgement
+1. A new host send a UDP broadcast discovery message to `255.255.255.255:67` (server listens on port `67`, client listens on port `68`)
+2. Server(s) respond with UDP broadcast offer message, containing proposed address, lease time and ID of the discovery message
+3. Client sends request message choosing from received offer(s)
+4. Server responds with acknowledgement
 
 ### Private IP addresses
 
@@ -413,161 +424,170 @@ protocol flow for assigning an IP address to a new host:
   - `172.16.0.0/12`
   - `192.168.0.0/16`
 
-### Network Address Translation (NAT) and Server Name Indication (SNI)
+### Network Address Translation (NAT)
 
-- publicly available IPv4 addresses are exhausted and IPv6 has not been fully adapted
+- Publicly available IPv4 addresses are exhausted and IPv6 has not been fully adapted
 - NAT allows multiple devices on a private network to share a single public IP address on the internet, thereby hiding internal network topologies
-- private addresses in LAN allocated by DHCP server in router
-- single public WAN (wide-arean network) IP address allocated by Internet Service Provider DHCP server to gateway router
-- the NAT device (e.g. a router) rewrites the source IP address and port of outgoing packets to its own public IP and keeps track of the mapping between LAN-side and WAN-side source IP address and port, so responses can be sent back to the correct device, e.g. at home your laptop (`192.168.0.2`) and phone (`192.168.0.3`) both connect to the internet through your router which uses NAT to translate their private IPs to its public IP (e.g. `203.0.113.5`), so websites only see requests coming from the router’s public address.
-- 16-bit port number means ca 60K simultaneous entries in NAT table for a single WAN-side IP address
-- NAT transversal
-- SNI lets a client tell the server which host it is trying to reach during the TLS handshake, allowing multiple TLS-secured domains to share an IP address
+- Private addresses in LAN allocated by DHCP server in router
+- Single public WAN (wide-arean network) IP address allocated by Internet Service Provider DHCP server to gateway router
+- The NAT device (e.g. a router) rewrites the source IP address and port of outgoing packets to its own public IP and keeps track of the mapping between LAN-side and WAN-side source IP address and port, so responses can be sent back to the correct device, e.g. at home your laptop (`192.168.0.2`) and phone (`192.168.0.3`) both connect to the internet through your router which uses NAT to translate their private IPs to its public IP (e.g. `203.0.113.5`), so websites only see requests coming from the router’s public address.
+- 16-bit port number means up to ca. 60K simultaneous entries in NAT table for a single WAN-side IP address
+- NAT traversal
 
 ### Proxies and firewalls
 
-- proxy accepts requests for internet resources on behalf of a client
-- firewalls usually involve some combination of proxy and NAT
+- Proxy accepts requests for internet resources on behalf of a client
+- Firewalls usually involve some combination of proxy and NAT
 
 ### IPv6
 
-- not enough available public addresses under IPv4
+- Not enough available public addresses under IPv4
 - IP address format
   - 128-bit address, consisting of 8 colon-separated groups of 4 hexadecimal characters, omitting leading zeros (e.g. `2001:0db8:85a3:0000:0000:8a2e:0370:7334` or shortened to `2001:db8:85a3::8a2e:370:7334`)
-- uses neighbor discovery (ND) instead of ARP
+- Uses neighbor discovery (ND) instead of ARP
 - ND is a set of protocols used in IPv6 to discover other devices on the same network, determine their link-layer addresses, find routers, and automatically configure addresses
 - `::1` (`localhost`) for logical loopback interface (equivalent to `127.0.0.1` in IPv4)
-- anycast address
-- flow labelling (e.g. for prioritizing realtime streaming)
-- unlike IPv4, IPv6 does not allow for fragmentation and reassembly at intermediate routers ("Packet too big" ICMP error message)
-- checksum error checking removed since it was redundant with transport-layer checking (e.g. UDP, TCP)
-- transition from IPv4 to IPv6 via tunneling, sending IPv6 datagram in payload of IPv4 datagram (RFC 4213)
+- Anycast address
+- Flow labelling (e.g. for prioritizing realtime streaming)
+- Unlike IPv4, IPv6 does not allow for fragmentation and reassembly at intermediate routers ("Packet too big" ICMP error message)
+- Checksum error checking removed since it was redundant with transport-layer checking (e.g. UDP, TCP)
+- Transition from IPv4 to IPv6 via tunneling, sending IPv6 datagram in payload of IPv4 datagram (RFC 4213)
 
 #### Datagram
 
-fields:
+Fields:
 
-- version (4 bit)
-- traffic class (8 bit)
-- flow label (20 bit)
-- payload length (16 bit)
+- Version (4 bit)
+- Traffic class (8 bit), differentiated into Differentiated Services (DiffServ) bits and ECN bits
+- Flow label (20 bit)
+- Payload length (16 bit)
 - next header (like protocol in IPv4)
 - hop limit (decremented by 1 by each router that forward the datagram)
-- source and destination IPv6 address
-- payload
+- Source and destination IPv6 address
+- Payload
+
+### Internet control message protocol (ICMP)
+
+- Based on IP (like TCP/UDP), ICMP messages are carried in IP datagram payload
+- Fields
+  - Type
+  - Code
+- E.g. ping send (type: 8, code: 0), ping reply (type: 0, code: 0)
+- Used for routing, network control, probing of availability and status, and error reporting, e.g. `ping` or `traceroute` (e.g. "port unreachable", "host unreachable")
+- Not used for transmitting application data
 
 ### Generalized forwarding and software defined networking (SDN)
 
-- traditionally, data and control plane functionality has been implemented monolithically in a router, but SDN introduces distinction between data and control plane (separate remote control service)
-- packet switches (rather than routers) making forwarding decision based on network-layer and link-layer packet headers
-- remote controller updates match-plus-action tables (e.g. OpenFlow protocol)
+- Traditionally, data and control plane functionality has been implemented monolithically in a router, but SDN introduces distinction between data and control plane (separate remote control service)
+- Packet switches (rather than routers) making forwarding decision based on network-layer and link-layer packet headers
+- Remote controller updates match-plus-action tables (e.g. OpenFlow protocol)
 
-OpenFlow protocol
+#### OpenFlow protocol
 
-- packet forwarding based on matching via flow table
-  - set of transport, network and link layer header field values for which an incoming packet will be matched
-  - set of counters that are updated as packets are matched to entries
-  - set of actions taken when a packet matches an entry
-    - drop packet
-    - forward packet to a (physical) output port
-    - copy packet and send to multiple output ports (broadcast/multicast)
-    - rewrite selected packet header fields
-- packet not matching any entry will be dropped, or sent to remote controller for further processing
-- use cases
-  - simple forwarding
-  - load balancing
-  - firewall
+- Packet forwarding based on matching via flow table
+  - Set of transport, network and link layer header field values for which an incoming packet will be matched
+  - Set of counters that are updated as packets are matched to entries
+  - Set of actions taken when a packet matches an entry
+    - Drop packet
+    - Forward packet to a (physical) output port
+    - Copy packet and send to multiple output ports (broadcast/multicast)
+    - Rewrite selected packet header fields
+- Packet not matching any entry will be dropped, or sent to remote controller for further processing
+- Use cases
+  - Simple forwarding
+  - Load balancing
+  - Firewall
 
 ### Middle boxes
 
-- a middle box is any intermediate device performing functions apart from standard functions of an IP router on the data path between source and desitination host
+- A middle box is any intermediate device performing functions apart from standard functions of an IP router on the data path between source and desitination host
 - NAT translation
-- security
-  - deep packet inspection (DPI)
+- Security
+  - Deep packet inspection (DPI)
   - Intrusion Detection System (IDS)
-  - firewall filtering based on packet headers
-- network performance enhancements
-  - packet compression
-  - caching
-  - load balancing
-- network function virtualization (NFV)
-- operate on data from all layers, e.g. NAT rewrites network-layer IP address and transport-layer port number, in-network firewalls blocks traffic using application, transport and network layer headers
+  - Firewall filtering based on packet headers
+- Network performance enhancements
+  - Packet compression
+  - Caching
+  - Load balancing
+- Network function virtualization (NFV)
+- Operate on data from all layers, e.g. NAT rewrites network-layer IP address and transport-layer port number, in-network firewalls blocks traffic using application, transport and network layer headers
 
 ## Network layer: control plane
 
-- centralized vs per-router control
-  - per-router control (router communication with other routers to compute forwarding table, e.g. OSPF, BGP)
-  - logically centralized control for network-wide logic for packet routing (e.g. update flow table) and network-layer service configuration and management
+- Centralized vs per-router control
+  - Per-router control (router communication with other routers to compute forwarding table, e.g. OSPF, BGP)
+  - Logically centralized control for network-wide logic for packet routing (e.g. update flow table) and network-layer service configuration and management
 
 ### Routing algorithms
 
-- goal is to determine sequence of routers from sender to receiver that minimizes costs (e.g. physical length, link speed, monetory costs)
-- mathematically expressed as cost optimization problem using graph with nodes representing routers and edges routers having varying costs
-- algorithm properties
-  - centralized: using complete, global information about the network graph, its connectivity and costs (e.g. link-state algorithm)
-  - decentralized: using incomplete, local information about neighbor nodes, each node iteratively estimates least-cost routes and shares its informations with neighbors (e.g. distance-vector algorithm)
-  - static: no (or slow) route changes (e.g. manually setting link/edge cost informtaion)
+- Goal is to determine sequence of routers from sender to receiver that minimizes costs (e.g. physical length, link speed, monetory costs)
+- Mathematically expressed as cost optimization problem using graph with nodes representing routers and edges routers having varying costs
+- Algorithm properties
+  - Centralized: using complete, global information about the network graph, its connectivity and costs (e.g. link-state algorithm)
+  - Decentralized: using incomplete, local information about neighbor nodes, each node iteratively estimates least-cost routes and shares its informations with neighbors (e.g. distance-vector algorithm)
+  - Static: no (or slow) route changes (e.g. manually setting link/edge cost informtaion)
   - dynamic: recomputed periodically or upon network graph change
   - load-sensitive: cost vary dynamically based on congestion
 
 #### Link-state broadcast algorithms (centralized)
 
-- each node broadcasts link state packets to all other notes containing the identities and costs associated with each of its attached links/edges
-- all nodes end up with identical and complete information about all other nodes and their associated costs
-- e.g. Dijkstra's algorithm (also called Prim's algorithm), computing least-cost route for each destination in network
+- Each node broadcasts link state packets to all other notes containing the identities and costs associated with each of its attached links/edges
+- All nodes end up with identical and complete information about all other nodes and their associated costs
+- E.g. Dijkstra's algorithm (also called Prim's algorithm), computing least-cost route for each destination in network
 
 #### Distance-vector algorithms (decentralized)
 
-- each node receives information from neighboring nodes, computes routes and re-distributes new information with neighbors (distributed)
-- algorithm run until no more information is exchanged between nodes (iterative)
-- does not require all nodes to operate in lock step (asynchronous)
+- Each node receives information from neighboring nodes, computes routes and re-distributes new information with neighbors (distributed)
+- Algorithm run until no more information is exchanged between nodes (iterative)
+- Does not require all nodes to operate in lock step (asynchronous)
 - Bellman-Ford equation
-- e.g. used in BGP, ISO IDRP, Novell IPX
+- E.g. used in BGP, ISO IDRP, Novell IPX
 
 ### Autonomous systems (AS) and intra-AS routing protocol
 
-- an AS is a group of routers under the same administrative control, with administrative autonomy from other ASs
-- all routers in AS run the same routing protocol and have information about each other
-- breaks internet into smaller scales to manage overhead of communicating, computing and storing routing information
-- handles destinations within the same AS, with entries in forwarding table determined by intra-AS routing protocol
+- An AS is a group of routers under the same administrative control, with administrative autonomy from other ASs
+- All routers in AS run the same routing protocol and have information about each other
+- Breaks internet into smaller scales to manage overhead of communicating, computing and storing routing information
+- Handles destinations within the same AS, with entries in forwarding table determined by intra-AS routing protocol
 
 #### Open-Shortest Path First (OSPF) protocol
 
-- widely used in Internet (also see IS-IS protocol)
-- publicly available protocol (open) (RFC 2328)
-- link-state protocol, based on Dijkstra's least-cost algorithm
-- link/edge weights can be set to 1 (equivalent to minimum-hop routing) or reflect link capacity
-- messages carried over IP
-- secure (e.g. MD5 authentification to prevent malicious updates of routing tables)
-- supports splitting traffic between multiple same-cost paths
-- integrated unicast and multicast routing (Multicast OSPF)
+- Widely used in Internet (also see IS-IS protocol)
+- Publicly available protocol (open) (RFC 2328)
+- Link-state protocol, based on Dijkstra's least-cost algorithm
+- Link/edge weights can be set to 1 (equivalent to minimum-hop routing) or reflect link capacity
+- Messages carried over IP
+- Secure (e.g. MD5 authentification to prevent malicious updates of routing tables)
+- Supports splitting traffic between multiple same-cost paths
+- Integrated unicast and multicast routing (Multicast OSPF)
 
 ### Inter-AS routing (among Internet Service Providers)
 
-> glues together thousands of Internet Service Providers in the Internet
+> Glues together thousands of Internet Service Providers in the Internet
 
-Border Gateway Protocol (BGP)
+#### Border Gateway Protocol (BGP)
 
-- obtains prefix reachability information from neighboring ASs
-- determines best route(s) to a specific prefix (BGP router selection algorithm)
-  - hot-potato-routing
-- handles destination outside of AS
-- as important for the Internet as IP itself
+- Obtains prefix reachability information from neighboring ASs
+- Determines best route(s) to a specific prefix (BGP router selection algorithm)
+  - Hot-potato-routing
+- Handles destination outside of AS
+- As important for the Internet as IP itself
 - decentralized
-- asynchronous, similar to distance-vector algorithm
-- external gateway routers (eBGP connections)
-  - connected to other ASs
-  - exchange information over TCP (port 179) with other external routers, sending messages to advertize their AS (prefix), including `AS_PATH` information containing the path taken by the message and `NEXT_HOP`
-  - propagate incoming messages to internal routers
-- internal routers (iBGP connections)
-  - propagate information inside AS
+- Asynchronous, similar to distance-vector algorithm
+- External gateway routers (eBGP connections)
+  - Connected to other ASs
+  - Exchange information over TCP (port 179) with other external routers, sending messages to advertize their AS (prefix), including `AS_PATH` information containing the path taken by the message and `NEXT_HOP`
+  - Propagate incoming messages to internal routers
+- Internal routers (iBGP connections)
+  - Propagate information inside AS
 
 ### IP Anycast
 
-- replicate same content on different servers in different geographical locations
-- have each user access content from the closest server
+- Replicate same content on different servers in different geographical locations
+- Have each user access content from the closest server
 
-example:
+Example:
 
 - 13 IP addresses for DNS root servers but multiple servers corresponding to each address, with DNS assigning same IP address to many of its servers
 - uses BGP to advertize this address from each server
@@ -576,19 +596,19 @@ example:
 
 ### Control plane
 
-- simple but fast switches (routers) executing match-plus-action (data plane)
-- servers and software determine and manage switches and their forwarding/flow tables
-- decouples network functionality from hardware, previously bundled together monolithically and embedded in switches/routers by vendor
-- now rich, open ecosystem of hardware, software and network control applications
+- Simple but fast switches (routers) executing match-plus-action (data plane)
+- Servers and software determine and manage switches and their forwarding/flow tables
+- Decouples network functionality from hardware, previously bundled together monolithically and embedded in switches/routers by vendor
+- Now rich, open ecosystem of hardware, software and network control applications
 
-components
+#### Components
 
 - SDN controller (logically centralized but physically distributed and scalable) maintains network-wide state information through APIs
 - SDN network control applications using controller API to specify and control SDN-enabled data-plane network devices (e.g. executing routing algorithms)
 
 #### Controller
 
-- operates as communication layer between controller and SND-enabled devices ("southboud interface"), e.g. OpenFlow
+- Operates as communication layer between controller and SND-enabled devices ("southboud interface"), e.g. OpenFlow
 - network-wide state management
 - interface to network control applications ("northbound interface")
   - read/write network state and flow tables in state-management layer so that they can act upon in response to events sent by devices
@@ -596,54 +616,44 @@ components
 
 #### OpenFlow API
 
-- message protocols based on TCP based (port 6653)
+- Message protocols based on TCP based (port 6653)
 
 controller -> switch:
 
-- set/query switch configuration parameters
-- modify-state: modify switch flow table entries
-- read-state: get statistics and counters from switch flow table entries
-- send-packet: send packet out of a specific port at the controlled switch
+- Set/query switch configuration parameters
+- Modify-state: modify switch flow table entries
+- Read-state: get statistics and counters from switch flow table entries
+- Send-packet: send packet out of a specific port at the controlled switch
 
 switch -> controller:
 
-- port-status: inform (physical) port status change
-- packet-in: send packet not matching any flow table entry to controller for further processing
-- flow-removed: confirm that flow table entry has been removed (e.g. due to timeout or as the result of a modify-state message)
-
-### Internet control message protocol (ICMP)
-
-- based on IP (like TCP/UDP), ICMP messages are carried in IP datagram payload
-- fields
-  - type
-  - code
-- e.g. ping send (type: 8, code: 0), ping reply (type: 0, code: 0)
-- used for routing, network control, probing of availability and status, and error reporting, e.g. `ping` or `traceroute` (e.g. "port unreachable", "host unreachable")
-- not used for transmitting application data
+- Port-status: inform (physical) port status change
+- Packet-in: send packet not matching any flow table entry to controller for further processing
+- Flow-removed: confirm that flow table entry has been removed (e.g. due to timeout or as the result of a modify-state message)
 
 ### Network management
 
-- manage network servers for configuring, monitoring, controlling network devices
-- manged devices (e.g. host, router, switch) with operational state (Management Information Base)
-- data
-  - configuration
-  - operational (e.g. list of neighbors)
-  - device statistics
-- network management agent (client) running in managed devices
-- network management protocol (e.g. application-layer Simple Network Management Protocol (SNMP v3), NETCONF/YANG)
+- Manage network servers for configuring, monitoring, controlling network devices
+- Manged devices (e.g. host, router, switch) with operational state (Management Information Base)
+- Data
+  - Configuration
+  - Operational (e.g. list of neighbors)
+  - Device statistics
+- Network management agent (client) running in managed devices
+- Network management protocol (e.g. application-layer Simple Network Management Protocol (SNMP v3), NETCONF/YANG)
 
 ## Transport layer
 
-- logical communication between processes (on different network hosts)
-- breaks down large chunks of application-layer data into smaller units called segments for network transmission (segmentation)
-- extend host-to-host communication (network layer) to process-to-process communication (multiplexing)
+- Logical communication between processes (on different network hosts)
+- Breaks down large chunks of application-layer data into smaller units called segments for network transmission (segmentation)
+- Extend host-to-host communication (network layer) to process-to-process communication (multiplexing)
 
 ### Principles for choosing transport layer protocols
 
-- reliability (reliable data transfer)
-- throughput guarantees: bandwith-sensitive vs adaptive applications
-- timing guarantees (latency, transmission delay)
-- security
+- Reliability (reliable data transfer)
+- Throughput guarantees: bandwith-sensitive vs adaptive applications
+- Timing guarantees (latency, transmission delay)
+- Security
 
 ### TCP/IP protocol stack
 
@@ -659,10 +669,10 @@ The stack encompasses common protocols including:
 
 ### UDP
 
-- thin wrapper around Internet Protocol (IP)
-- connectionless: no connection is established for transmitting packets
+- Thin wrapper around Internet Protocol (IP)
+- Connectionless: no connection is established for transmitting packets
 - UDP packet is fully identified by its 2-tuple of destination IP address and port
-- each packet is considered a discrete entity and has no relationship to other packets
+- Each packet is considered a discrete entity and has no relationship to other packets
 - unreliable
   - no in-order delivery (packets may not arrive in the order they were sent)
   - potential packet loss
@@ -673,16 +683,16 @@ The stack encompasses common protocols including:
 - Ethernet frame fragmentation can occur if UDP packets exceed the MTU, potentially leading to packet loss and application issues
 - supports unicast, broadcast and [multicast] messaging
 - also see [QUIC] protocol based on UDP
-- when a host receives an unexpected packet, i.e. when no receiver or server is running on the destination port, the host replies with a special packet (RST flag for TCP, ICMP datagram for UDP)
+- When a host receives an unexpected packet, i.e. when no receiver or server is running on the destination port, the host replies with a special packet (RST flag for TCP, ICMP datagram for UDP)
 
 [QUIC]: https://en.wikipedia.org/wiki/QUIC
 
 #### Segment structure
 
 - 5 fields: 4 headers with 2 bytes each (8 bytes in total) + payload
-  - source port (for sending unicast replies)
-  - destination port (multiplexing)
-  - length (in bytes, headers and payload)
+  - Source port (for sending unicast replies)
+  - Destination port (multiplexing)
+  - Length (in bytes, headers and payload)
   - checksum (for end-to-end transmission error checking for corruption during transmission by noise or while being stored/queued in router)
   - payload (application-layer data)
 - maximum segment size (MSS) to fit into a single Ethernet frame: 1472 (payload) + 8 (UDP headers) + 20 (IP headers) = 1500 bytes
@@ -694,9 +704,9 @@ The stack encompasses common protocols including:
 
 To achieve reliable data transfer, essential aspects include:
 
-- error detection (e.g. checksum)
-- receiver feedback to sender (e.g. acknowledgement message (ACK) for received packets)
-- re-transmission of lost packets (go-back-N or selective repeat)
+- Error detection (e.g. checksum)
+- Receiver feedback to sender (e.g. acknowledgement message (ACK) for received packets)
+- Re-transmission of lost packets (go-back-N or selective repeat)
 
 which require the following features:
 
@@ -707,10 +717,10 @@ which require the following features:
 
 ### TCP
 
-- connection-oriented: a logical connection is established between a sender and receiver for transmitting data
-  - logical connection maintained by state in endpoints (stateful)
-  - simultaneous two-way connection (duplex)
-  - single sender, single receiver (point-to-point)
+- Connection-oriented: a logical connection is established between a sender and receiver for transmitting data
+  - Logical connection maintained by state in endpoints (stateful)
+  - Simultaneous two-way connection (duplex)
+  - Single sender, single receiver (point-to-point)
 - TCP packet is fully identified by its 4-tuple of source and destination IP address and port
 - reliable ("every packet is tracked and assembled"):
   - receiver acknowledges every packet it receives and checks packet integrity using checksum
