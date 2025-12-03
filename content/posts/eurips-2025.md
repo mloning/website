@@ -14,3 +14,7 @@ Tuesday (ELLIS UnConference)
 - Learning Interpretable Hierarchical Dynamical Systems Models from Time Series Data (poster), modelling user specific parameters for time series, with applications on EEG data ([repo](https://github.com/DurstewitzLab/HierarchicalDSR))
 
 Wednesday (first conference day)
+
+- Is Limited Participant Diversity Impeding EEG-based Machine Learning? ([paper](https://arxiv.org/abs/2503.13497))
+- Framework for Emotion Evaluation using Physiological Signal Data ([repo](https://github.com/alchemy18/FEEL))
+- Brain Capture, easy-to-use, medical wet-electrode EEG device ([website](https://www.braincapture.dk/))
