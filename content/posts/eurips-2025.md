@@ -35,6 +35,7 @@ Thursday
   - statistical contract theory, how should the FDA test new drugs? randomized control trials, principal (FDA) vs agent (pharmaceutical company), asymmetric information, concept of a statistical contract
   - metrics for ML ecosystem, who knows more what a good metric would be for a hospital? hospital know better which metrics are good, but don't want to reveal them to the principal (health insurance, government), asymmetric information (see e.g. [paper](https://arxiv.org/abs/2402.14005))
   - problematic use of large pretrained models for science where we are mainly interested in new, out-of-distriubtion cases on which pretrained models don't perform well
+  - we should see ourselves as a new emerging engineering field based on ideas of statistical/inferential, algorithmic and economic ideas, think about what problems we're trying to solve, don't get distracted by hype around AI
 - The Art of (Artificial) Reasoning by Yejin Choi (NeurIPS keynote, speaker's [website](https://yejinc.github.io/), [TedTalk](https://www.ted.com/talks/yejin_choi_why_ai_is_incredibly_smart_and_shockingly_stupid))
 
 Friday
