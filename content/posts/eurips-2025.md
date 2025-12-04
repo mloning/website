@@ -23,6 +23,11 @@ Wednesday (first conference day)
 - NEED: Cross-Subject and Cross-Task Generalization for Video and Image Reconstruction from EEG Signals (presented at NeurIPS, [paper](https://openreview.net/pdf?id=L3aEdxJMHl))
 - From AI Research to Startups workshop; start-up/prototyping tools: https://replit.com/, https://n8n.io/, https://lovable.dev/, https://v0.app/, https://github.com/obra/superpowers
 
+Thursday 
+- Riemannian Flow Matching for Brain Connectivity Matrices ([repo](https://github.com/antoinecollas/DiffeoCFM))
+- Sequence Modeling with Spectral Mean Flows ([paper](https://arxiv.org/abs/2510.15366))
+- Sustainable, Low-Energy, and Fast AI Made in Europe by Sepp Hochreiter; keynote arguing we have reached diminishing returns for Transformer-based scaling and that there are more efficient solutions like his xLSTM model, and TiRex for time series forecasting 
+
 Concepts to investigate further:
 
 - fixed point iterations in state-space models and RNNs
