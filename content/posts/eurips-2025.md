@@ -23,10 +23,21 @@ Wednesday (first conference day)
 - NEED: Cross-Subject and Cross-Task Generalization for Video and Image Reconstruction from EEG Signals (presented at NeurIPS, [paper](https://openreview.net/pdf?id=L3aEdxJMHl))
 - From AI Research to Startups workshop; start-up/prototyping tools: https://replit.com/, https://n8n.io/, https://lovable.dev/, https://v0.app/, https://github.com/obra/superpowers
 
-Thursday 
+Thursday
+
 - Riemannian Flow Matching for Brain Connectivity Matrices ([repo](https://github.com/antoinecollas/DiffeoCFM))
 - Sequence Modeling with Spectral Mean Flows ([paper](https://arxiv.org/abs/2510.15366))
-- Sustainable, Low-Energy, and Fast AI Made in Europe by Sepp Hochreiter; keynote arguing we have reached diminishing returns for Transformer-based scaling and that there are more efficient solutions like his xLSTM model, and TiRex for time series forecasting 
+- Sustainable, Low-Energy, and Fast AI Made in Europe by Sepp Hochreiter; keynote arguing we have reached diminishing returns for Transformer-based scaling and that there are more efficient solutions like his xLSTM model, and TiRex for time series forecasting
+- https://eurips.cc/conference/posters/#poster:117226 (job opening with social science background)
+- A Collectivist, Economic Perspective on AI by Micheal Jordan (keynote)
+  - we should think about AI more in terms of economics (inter-personal relationships, incentives, contracts, markets, asymmetric information)
+  - "don't regulate the algorithm, regulate the equilibrium", game-theoretic analysis on which equilibria emerge under specific conditions, e.g. GDPR which he considers a failure because it sets a fixed level of privacy, not a minimum, and disproportionally favours large firms
+  - statistical contract theory, how should the FDA test new drugs? randomized control trials, principal (FDA) vs agent (pharmaceutical company), asymmetric information, concept of a statistical contract
+  - metrics for ML ecosystem, who knows more what a good metric would be for a hospital? hospital know better which metrics are good, but don't want to reveal them to the principal (health insurance, government), asymmetric information (see e.g. [paper](https://arxiv.org/abs/2402.14005))
+  - problematic use of large pretrained models for science where we are mainly interested in new, out-of-distriubtion cases on which pretrained models don't perform well
+- The Art of (Artificial) Reasoning by Yejin Choi (NeurIPS keynote, speaker's [website](https://yejinc.github.io/), [TedTalk](https://www.ted.com/talks/yejin_choi_why_ai_is_incredibly_smart_and_shockingly_stupid))
+
+Friday
 
 Concepts to investigate further:
 
