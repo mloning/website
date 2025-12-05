@@ -40,6 +40,8 @@ Thursday
 
 Friday
 
+- Learning long range dependencies through time reversal symmetry breaking ([paper](https://arxiv.org/abs/2506.05259))
+
 Concepts to investigate further:
 
 - fixed point iterations in state-space models and RNNs
