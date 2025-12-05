@@ -1,15 +1,14 @@
 ---
-title: "Learning Rust"
+title: Learning Rust
 date: 2025-01-11T12:08:32+01:00
-last_modified: .Lastmod
-draft: true
+draft: false
 ---
-
 ## Resources
 
 - https://doc.rust-lang.org/book/
 - [Programming Rust: Fast, Safe Systems Development](https://www.goodreads.com/book/show/25550614-programming-rust)
 - [Effective Rust](https://www.lurklurk.org/effective-rust/title-page.html)
+- [Video](https://m.youtube.com/watch?v=rAl-9HwD858&t=4s) by Jon Gjengset on lifetime annotations 
 
 ## Projects
 
@@ -22,7 +21,7 @@ draft: true
 
 - [Command-line Rust](https://github.com/kyclark/command-line-rust)
 - https://en.wikipedia.org/wiki/Dining_philosophers_problem
-- Gossip Gloomers Distributed Systems Challenge
+- Gossip Gloomers Distributed Systems Challenge ([video](https://m.youtube.com/watch?v=gboGyccRVXI&t=11457s&pp=0gcJCSMKAYcqIYzv))
 - Implement signal processing filters in Rust
 - Online multi-player game (e.g. https://github.com/sgoedecke/socket-io-game/)
 
