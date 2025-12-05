@@ -41,6 +41,12 @@ Thursday
 Friday
 
 - Learning long range dependencies through time reversal symmetry breaking ([paper](https://arxiv.org/abs/2506.05259))
+- Uncertainty in the LLM era - Science, more than scale by Gaël Varoquaux (keynote)
+  - report trade-offs in computer science, including resource efficiency
+  - research fixation on scale disempowers a large group of GPU-poor researchers, compute-rich actors set social norms for more compute
+  - bubble dynamics in AI, based on promises rather than results
+  - research and technology is not value-neutral (see contextual values in https://plato.stanford.edu/entries/scientific-objectivity/)
+  - uncertainty quantification for black-box models, strictly proper scoring rules, epistemic (model-based) vs aleatoric (inherent in data generating process or available data) uncertainty, epistemic loss decomposition into calibration and grouping loss
 
 Concepts to investigate further:
 
