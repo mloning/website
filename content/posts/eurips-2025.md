@@ -9,12 +9,14 @@ Here are my notes, mostly focusing on time series analysis, EEG and other biosig
 
 Tuesday (ELLIS UnConference)
 
+ELLIS is a European research network for AI.
+
 - Klaus-Rudolf Kladny "Aligning Generative Models with Reality", causal backtracking
 - Shih-Chii Liu (ETH and University of Zurich): Brain-inspired dynamic sparsity for neuromorphic AI; voice commands, low-power speech decoding, end-to-end hardware/software systems
 - Nasir Ahmad (Radboud University Nijmegen): Two steps forward and no steps back: Training neural networks in noisy hardware without backward passes; starting with observation of relative cheapness of neural network inference to training, weight/layer/node perturbation learning as alternative to back propagation, utilizing information from multiple forward passes for each training update; utilizing gradient information to inform search direction; would allow perturbing models at inference and aggregating results across servers (decentralised, federated training); however, backward pass is only about twice as expensive as forward pass;
 - Learning Interpretable Hierarchical Dynamical Systems Models from Time Series Data (poster), modelling user specific parameters for time series, with applications on EEG data ([repo](https://github.com/DurstewitzLab/HierarchicalDSR))
 
-Wednesday (first conference day)
+Wednesday (first main conference day)
 
 - Is Limited Participant Diversity Impeding EEG-based Machine Learning? ([paper](https://arxiv.org/abs/2503.13497))
 - Framework for Emotion Evaluation using Physiological Signal Data ([repo](https://github.com/alchemy18/FEEL))
@@ -41,6 +43,10 @@ Thursday
 Friday
 
 - Learning long range dependencies through time reversal symmetry breaking ([paper](https://arxiv.org/abs/2506.05259))
+
+Saturday (workshops)
+
+- Multimodal Representation Learning for Healthcare workshop ([website](https://multimodal-rep-learning-for-health.github.io/))
 
 Concepts to investigate further:
 
