@@ -3,21 +3,24 @@ title: Learning Rust
 date: 2025-01-11T12:08:32+01:00
 draft: false
 ---
+
 ## Resources
 
-- https://doc.rust-lang.org/book/
+- Why Rust? See [Considering Rust](http://youtube.com/watch?v=DnT-LUQgc7s) by Jon Gjengset
+- [Rust Book](https://doc.rust-lang.org/book/)
 - [Programming Rust: Fast, Safe Systems Development](https://www.goodreads.com/book/show/25550614-programming-rust)
 - [Effective Rust](https://www.lurklurk.org/effective-rust/title-page.html)
-- [Video](https://m.youtube.com/watch?v=rAl-9HwD858&t=4s) by Jon Gjengset on lifetime annotations 
+- [Video](https://m.youtube.com/watch?v=rAl-9HwD858&t=4s) by Jon Gjengset on lifetime annotations
 
 ## Projects
 
+- ZMQ-based real-time streaming with UDP broadcast stream discovery
 - https://github.com/mloning/first-steps-in-rust (based on free [book](https://doc.rust-lang.org/book/))
 - https://github.com/mloning/uno-rs
 - https://github.com/mloning/rocket-rs
 - https://github.com/mloning/zero2prod-rs (based on [book](https://www.zero2prod.com))
 
-## Ideas for projects
+### Ideas for projects
 
 - [Command-line Rust](https://github.com/kyclark/command-line-rust)
 - https://en.wikipedia.org/wiki/Dining_philosophers_problem
