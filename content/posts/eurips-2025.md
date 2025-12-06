@@ -44,7 +44,7 @@ ELLIS is a European research network for AI.
 
 - Learning long range dependencies through time reversal symmetry breaking ([paper](https://arxiv.org/abs/2506.05259))
 - Uncertainty in the LLM era - Science, more than scale by Gaël Varoquaux (keynote)
-  - As computer scientests, we should report trade-offs in computer science, including resource efficiency
+  - As computer scientists, we should report trade-offs, including resource efficiency
   - Research fixation on scale disempowers a large group of GPU-poor researchers, compute-rich actors set social norms for more compute
   - Bubble dynamics in AI, based on promises rather than results
   - Research and technology is not value-neutral (see contextual values in https://plato.stanford.edu/entries/scientific-objectivity/)
@@ -52,9 +52,11 @@ ELLIS is a European research network for AI.
 
 ## Saturday (workshops)
 
-- Multimodal Representation Learning for Healthcare workshop ([website](https://multimodal-rep-learning-for-health.github.io/))
+Multimodal Representation Learning for Healthcare workshop ([website](https://multimodal-rep-learning-for-health.github.io/))
 
-## Concepts to investigate further:
+- Multimodal Alignment for Synthetic Clinical Time Series
+- iMML: A Python package for multi-modal learning with incomplete data ([repo](https://github.com/ocbe-uio/imml), related [paper](https://arxiv.org/abs/2302.12247))
+## Concepts to investigate further
 
 - Fixed point iterations in state-space models (SSM) and RNNs
 - Flow matching
