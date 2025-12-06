@@ -56,6 +56,7 @@ Multimodal Representation Learning for Healthcare workshop ([website](https://mu
 
 - Multimodal Alignment for Synthetic Clinical Time Series
 - iMML: A Python package for multi-modal learning with incomplete data ([repo](https://github.com/ocbe-uio/imml), related [paper](https://arxiv.org/abs/2302.12247))
+- NAP: Attention-Based Late Fusion for Automatic Sleep Staging ([paper](https://multimodal-rep-learning-for-health.github.io/papers/10_NAP_Attention_Based_Late_Fu.pdf)), multi-modal EEG/EMG/EOG attention-basee modelling 
 ## Concepts to investigate further
 
 - Fixed point iterations in state-space models (SSM) and RNNs
