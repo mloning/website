@@ -5,7 +5,7 @@ draft: false
 ---
 
 I went to EurIPS 2025 in Copenhagen, the first edition of the European version of NeurIPS.
-Here are some notes, mainly about topics related to my current work: time series analysis, EEG and other biosignals.
+My notes are mainly about topics related to my current work, time series analysis and biosignals.
 
 ## Tuesday (ELLIS UnConference)
 
@@ -23,7 +23,7 @@ ELLIS is a European research network for AI.
 - Brain Capture, easy-to-use, medical wet-electrode EEG device ([website](https://www.braincapture.dk/))
 - Adaptive Bayesian Intelligence and the Road to Sustainable AI by Emtiyaz Khan; keynote on Bayesian Learning Principles to keep memory of most important examples during training and improve information
 - NEED: Cross-Subject and Cross-Task Generalization for Video and Image Reconstruction from EEG Signals (presented at NeurIPS, [paper](https://openreview.net/pdf?id=L3aEdxJMHl))
-- From AI Research to Startups workshop; start-up/prototyping tools: https://replit.com/, https://n8n.io/, https://lovable.dev/, https://v0.app/, https://github.com/obra/superpowers
+- From AI Research to Startups workshop; generative AI tools for prototyping: https://replit.com/, https://n8n.io/, https://lovable.dev/, https://v0.app/, https://github.com/obra/superpowers
 
 ## Thursday
 
@@ -50,14 +50,16 @@ ELLIS is a European research network for AI.
   - Research and technology is not value-neutral (see contextual values in https://plato.stanford.edu/entries/scientific-objectivity/)
   - Uncertainty quantification for black-box models, strictly proper scoring rules, epistemic (model-based) vs aleatoric (inherent in data generating process or available data) uncertainty, epistemic loss decomposition into calibration and grouping loss
 
-## Saturday (workshops)
+## Workshops (weekend)
 
 Multimodal Representation Learning for Healthcare workshop ([website](https://multimodal-rep-learning-for-health.github.io/))
-
 - Multimodal Alignment for Synthetic Clinical Time Series
-- iMML: A Python package for multi-modal learning with incomplete data ([repo](https://github.com/ocbe-uio/imml), related [paper](https://arxiv.org/abs/2302.12247))
+- iMML: A Python package for multi-modal learning with incomplete data ([repo](https://github.com/ocbe-uio/imml)); related [paper](https://arxiv.org/abs/2302.12247) on redundancy estimation for multi-modal data; mostly limited to tabular data, but may be easy to extend to time series
 - NAP: Attention-Based Late Fusion for Automatic Sleep Staging ([paper](https://multimodal-rep-learning-for-health.github.io/papers/10_NAP_Attention_Based_Late_Fu.pdf)), multi-modal EEG/EMG/EOG attention-basee modelling 
+
+Workshop on Principles of Generative Modeling ([website](https://sites.google.com/view/prigm-eurips-2025/home))
 ## Concepts to investigate further
 
 - Fixed point iterations in state-space models (SSM) and RNNs
 - Flow matching
+- Diffusion models
