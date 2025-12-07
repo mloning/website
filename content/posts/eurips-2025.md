@@ -3,8 +3,8 @@ title: "Eurips 2025"
 date: 2025-12-02T11:33:55+01:00
 draft: false
 ---
-I went to EurIPS 2025 in Copenhagen, the first edition of the European version of NeurIPS.
-My notes are mainly about topics related to my current work, time series analysis and biosignals.
+I attended EurIPS 2025 in Copenhagen, the first edition of the European version of NeurIPS.
+My notes are mainly about topics related to my current work, that is, time series analysis and biosignals.
 ## Tuesday (ELLIS UnConference)
 ELLIS is a European research network for AI.
 
@@ -49,7 +49,12 @@ Multimodal Representation Learning for Healthcare workshop ([website](https://mu
 Workshop on Principles of Generative Modeling ([website](https://sites.google.com/view/prigm-eurips-2025/home))
 - FrèqFlow: Long-term forecasting using lightweight flow matching
 - GRITS: Iterative Graphical Imputation for Multivariate Time Series (Samuel Joray)
-- Diffusion Language Models: Problem Solving and Reasoning (Anej Svete)
+- Diffusion Language Models: Problem Solving and Reasoning (Anej Svete); 
+	- Transformer-based masked diffusion models with multiple denoising/demasking steps
+	- In training, iteratively mask input text using a special mask token, and learn steps to demask text
+	- For inference, pass prompt plus space with mask tokens for response, with early stopping; iterating over a two-step process: (1) use predictor/denoiser model component to predict tokens for all masks, and then (2) planner component to decide which token(s) to unmask first (e.g. based on predictors confidence), iterating until all tokens are demasked or some other stopping criterion is met
+	- Padded, looped transformers, which include padded tokens in input sequence, are closely related to masked diffusion models
+	- Masked diffusion models can do sequential chain-of-thought reasoning, but also enable parallel reasoning
 ## Interesting ideas
 - Fixed point iterations in state-space models (SSM) and RNNs
 - Flow matching
