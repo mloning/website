@@ -48,9 +48,10 @@ Multimodal Representation Learning for Healthcare workshop ([website](https://mu
 
 Workshop on Principles of Generative Modeling ([website](https://sites.google.com/view/prigm-eurips-2025/home))
 - FrèqFlow: Long-term forecasting using lightweight flow matching
-- Continual test-time adaptation/learning, which updates a pretrained model on a non-stationary stream of unlabelled test data to handle changing distribution shifts during deployment ([paper](https://arxiv.org/pdf/2006.10726), [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Continual_Test-Time_Domain_Adaptation_CVPR_2022_paper.pdf))
 - GRITS: Iterative Graphical Imputation for Multivariate Time Series (Samuel Joray)
-## Concepts to investigate further
+- Diffusion Language Models: Problem Solving and Reasoning (Anej Svete)
+## Interesting ideas
 - Fixed point iterations in state-space models (SSM) and RNNs
 - Flow matching
 - Diffusion models, score matching
+- Continual test-time adaptation/learning, which updates a pretrained model on a non-stationary stream of unlabelled test data to handle changing distribution shifts during deployment ([paper](https://arxiv.org/pdf/2006.10726), [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Continual_Test-Time_Domain_Adaptation_CVPR_2022_paper.pdf))
