@@ -1,27 +1,23 @@
 ---
-title: "Job interviewing"
+title: Job interviewing
 date: 2025-11-16T14:15:09+02:00
-last_modified: .Lastmod
 draft: false
 ---
-
 Here are some notes from my experience searching for new jobs and interviewing with various companies.
 
 It's largely a summary of books, blog posts and conversations I've had, some of it copied directly from there (see the extra resources I link in each section).
-
 ## Cultural-fit interview
 
 The cultural fit interview assesses whether you align with the company's values and how you work with teams: your soft skills, communication, collaboration, and approach to problem solving.
+
 Typical questions include:
 
-- "Tell me about a time when ..."
-- "Put yourself in this situation; what would you do?"
-- "What's your general approach to doing X?"
-
+- Tell me about a time when ...
+- Put yourself in this situation; what would you do?
+- What's your general approach to doing X?
 ### Discuss specific examples
 
 Similar to how you would write your CV or cover letter, you want to give a concrete example for every skill you try to demonstrate.
-
 #### How to pick examples
 
 Pick examples that are:
@@ -30,35 +26,30 @@ Pick examples that are:
 - _Large in scope_, important to the business, strategic, involves lots of stakeholders, significant revenue or user impact
 - _Complex_, in terms of the stakeholders, core team, tech, timeline, resources, etc.
 - _Significant_, in terms of personal involvement/contribution
-
-#### Use STAR++ to discuss example
+#### Use STAR++
 
 Use the STAR++ structure in your answer (situation, task, action, result, learning, evolution):
 
-Situation - what was the situation you had to deal with
-
+*Situation* - what was the situation you had to deal with
 - the strategic driving factors for the project
 - how you got involved - did you come up with the project? pick it up when it was a flaming hot mess?
 - who was involved - leaders, stakeholders, customers, core team members
 
-Task - what was the task you were given to do
-
+*Task* - what was the task you were given to do
 - success criteria - how was success defined? explain how complex the project was
 - why was it complex - new tech? huge scope? tight timeline? massive team? powerful stakeholders? financial impact?
 
-Action - what action did you take
-
+*Action* - what action did you take
 - what you did to drive success - specific actions you took
 - issues that came up - people, tech, implementation, partners, infra, etc
 - conflicts that arose - executive sponsors, team members, your boss?
 
-Result - what happened as a result of your action
-
+*Result* - what happened as a result of your action
 - this should include final outcomes for the stated success criteria as well as longer-term success and strategic / business impact
 
-(+) Learning - what you have learnt
+(+) *Learning* - what you have learnt
 
-(+) Evolution - how you evolved your approach and incorporated learnings in a future situation
+(+) *Evolution* - how you evolved your approach and incorporated learnings in a future situation
 
 ### Example questions
 
@@ -76,6 +67,7 @@ I outline answers for some of them below.
 
 ### Question: How do I share feedback?
 
+Some articles I found useful:
 - [https://www.grahammann.net/book-notes/radical-candor-kim-scott](https://www.grahammann.net/book-notes/radical-candor-kim-scott)
 - [https://hellojames.co.uk/writing/better-feedback/](https://hellojames.co.uk/writing/better-feedback/)
 - https://candost.blog/importance-of-the-feedback/
@@ -105,6 +97,7 @@ I outline answers for some of them below.
 
 ### Question: How do I manage personal conflict?
 
+Some articles I found useful:
 - [https://chelseatroy.com/2019/10/21/listening-part-1-introduction/](https://chelseatroy.com/2019/10/21/listening-part-1-introduction/)
 - [https://thought.is/the-myth-of-the-good-listener/](https://thought.is/the-myth-of-the-good-listener/)
 - [https://liamrosen.com/arguments.html](https://liamrosen.com/arguments.html?utm_source=pocket_reader)

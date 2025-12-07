@@ -1,7 +1,6 @@
 ---
-title: "How to Negotiate for a New Job"
+title: How to Negotiate for a New Job
 date: 2024-02-18T12:56:20+01:00
-last_modified: .Lastmod
 draft: true
 ---
 
