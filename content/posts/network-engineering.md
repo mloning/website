@@ -521,26 +521,26 @@ Fields:
 
 ## Network layer: control plane
 
-- Centralized vs per-router control
-  - Per-router control (router communication with other routers to compute forwarding table, e.g. OSPF, BGP)
-  - Logically centralized control for network-wide logic for packet routing (e.g. update flow table) and network-layer service configuration and management
+Centralized vs per-router control
+- Per-router control (router communication with other routers to compute forwarding table, e.g. OSPF, BGP)
+- Logically centralized control for network-wide logic for packet routing (e.g. update flow table) and network-layer service configuration and management
 
 ### Routing algorithms
 
-- Goal is to determine sequence of routers from sender to receiver that minimizes costs (e.g. physical length, link speed, monetory costs)
+- Goal is to determine sequence of routers from sender to receiver that minimizes costs (e.g. physical length, link speed, monetary costs)
 - Mathematically expressed as cost optimization problem using graph with nodes representing routers and edges routers having varying costs
 - Algorithm properties
   - Centralized: using complete, global information about the network graph, its connectivity and costs (e.g. link-state algorithm)
   - Decentralized: using incomplete, local information about neighbor nodes, each node iteratively estimates least-cost routes and shares its informations with neighbors (e.g. distance-vector algorithm)
-  - Static: no (or slow) route changes (e.g. manually setting link/edge cost informtaion)
+  - Static: routes change very slowly over time, often result of human intervention (e.g. manually configuring static routes)
   - dynamic: recomputed periodically or upon network graph change
   - load-sensitive: cost vary dynamically based on congestion
 
 #### Link-state broadcast algorithms (centralized)
 
 - Each node broadcasts link state packets to all other notes containing the identities and costs associated with each of its attached links/edges
-- All nodes end up with identical and complete information about all other nodes and their associated costs
-- E.g. Dijkstra's algorithm (also called Prim's algorithm), computing least-cost route for each destination in network
+- All nodes end up with identical and complete information about all other nodes and their associated costs (within the same area)
+- Dijkstra's Shortest Path First (SPF) algorithm, computing least-cost route for each destination in network
 
 #### Distance-vector algorithms (decentralized)
 
@@ -548,7 +548,7 @@ Fields:
 - Algorithm run until no more information is exchanged between nodes (iterative)
 - Does not require all nodes to operate in lock step (asynchronous)
 - Bellman-Ford equation
-- E.g. used in BGP, ISO IDRP, Novell IPX
+- RIP (Routing Information Protocol), EIGRP (Enhanced Interior Gateway Routing Protocol), ISO IDRP, Novell IPX
 
 ### Autonomous systems (AS) and intra-AS routing protocol
 
@@ -564,7 +564,7 @@ Fields:
 - Link-state protocol, based on Dijkstra's least-cost algorithm
 - Link/edge weights can be set to 1 (equivalent to minimum-hop routing) or reflect link capacity
 - Messages carried over IP
-- Secure (e.g. MD5 authentification to prevent malicious updates of routing tables)
+- Secure (e.g. MD5 authentication to prevent malicious updates of routing tables)
 - Supports splitting traffic between multiple same-cost paths
 - Integrated unicast and multicast routing (Multicast OSPF)
 
@@ -579,11 +579,11 @@ Fields:
   - Hot-potato-routing
 - Handles destination outside of AS
 - As important for the Internet as IP itself
-- decentralized
-- Asynchronous, similar to distance-vector algorithm
+- Decentralized
+- Path vector protocol (based on distance-vector concepts but evolved to include `AS_PATH` attribute to prevent routing loops)
 - External gateway routers (eBGP connections)
   - Connected to other ASs
-  - Exchange information over TCP (port 179) with other external routers, sending messages to advertize their AS (prefix), including `AS_PATH` information containing the path taken by the message and `NEXT_HOP`
+  - Exchange information over TCP (port 179) with other external routers, sending messages to advertise their AS (prefix), including `AS_PATH` information containing the path taken by the message and `NEXT_HOP`
   - Propagate incoming messages to internal routers
 - Internal routers (iBGP connections)
   - Propagate information inside AS
@@ -596,16 +596,17 @@ Fields:
 Example:
 
 - 13 IP addresses for DNS root servers but multiple servers corresponding to each address, with DNS assigning same IP address to many of its servers
-- uses BGP to advertize this address from each server
+- Uses BGP to advertise this address from each server
 - BGP router treats multiple adverts as providing different paths to the same location when in fact they are adverts for different paths to different locations
-- BGP selects least-cost route as defined in BGP route selection algorithm, i.e. usually the closest server
+- BGP selects least-cost route as defined in BGP route selection algorithm, i.e. usually the closest server in terms of BGP hops/network topology (which usually correlates with geography but not always)
 
-### Control plane
+### Software-Defined Networking (SDN)
 
 - Simple but fast switches (routers) executing match-plus-action (data plane)
 - Servers and software determine and manage switches and their forwarding/flow tables
 - Decouples network functionality from hardware, previously bundled together monolithically and embedded in switches/routers by vendor
-- Now rich, open ecosystem of hardware, software and network control applications
+- Enables vendor agnosticism using generic, off-the-shelf hardware ("white box switching") and automation via APIs, e.g. Python/Ansible rather than manual CLI
+- Rich, open ecosystem of hardware, software and network control applications
 
 #### Components
 
@@ -615,23 +616,23 @@ Example:
 #### Controller
 
 - Operates as communication layer between controller and SND-enabled devices ("southboud interface"), e.g. OpenFlow
-- network-wide state management
-- interface to network control applications ("northbound interface")
-  - read/write network state and flow tables in state-management layer so that they can act upon in response to events sent by devices
-- e.g. ONOS, OpenDaylight
+- Network-wide state management
+- Interface to network control applications ("northbound interface")
+  - Read/write network state and flow tables in state-management layer so that they can act upon in response to events sent by devices
+- Examples: ONOS, OpenDaylight
 
 #### OpenFlow API
 
-- Message protocols based on TCP based (port 6653)
+The OpenFlow API provides message protocols based on TCP based (port 6653).
 
-controller -> switch:
+Controller -> switch (Southbound interface):
 
 - Set/query switch configuration parameters
 - Modify-state: modify switch flow table entries
 - Read-state: get statistics and counters from switch flow table entries
 - Send-packet: send packet out of a specific port at the controlled switch
 
-switch -> controller:
+Switch -> controller (Northbound interface):
 
 - Port-status: inform (physical) port status change
 - Packet-in: send packet not matching any flow table entry to controller for further processing
@@ -714,12 +715,12 @@ To achieve reliable data transfer, essential aspects include:
 - Receiver feedback to sender (e.g. acknowledgement message (ACK) for received packets)
 - Re-transmission of lost packets (go-back-N or selective repeat)
 
-which require the following features:
+These aspects require the following features:
 
-- packet sequence numbers
-- timers (e.g. timeouts for ACK reception before re-transmission)
-- pipelining (sending multiple packets) (compare with inefficient stop-and-wait technique, waiting for ACK before sending next packet)
-- maximum segment lifetime (MSL) of a segment in transit to prevent the re-use of sequence numbers within a segment's assumed network lifetime, thereby avoiding ambiguity from old, duplicate segments.
+- Packet sequence numbers
+- Timers (e.g. timeouts for ACK reception before re-transmission)
+- Pipelining (sending multiple packets) (compare with inefficient stop-and-wait technique, waiting for ACK before sending next packet)
+- Maximum segment lifetime (MSL) of a segment in transit to prevent the re-use of sequence numbers within a segment's assumed network lifetime, thereby avoiding ambiguity from old, duplicate segments.
 
 ### TCP
 
@@ -728,12 +729,12 @@ which require the following features:
   - Simultaneous two-way connection (duplex)
   - Single sender, single receiver (point-to-point)
 - TCP packet is fully identified by its 4-tuple of source and destination IP address and port
-- reliable ("every packet is tracked and assembled"):
-  - receiver acknowledges every packet it receives and checks packet integrity using checksum
-  - sender re-sends packets that are not acknowledged
-  - packet ordering is guaranteed at reception using packet numbering (the packet sequence may be scrambled during transmission is restored at reception using sequence numbers)
-- network congestion control, dynamically matching sender and receiver speed to preempt router queue overflow and packet drops/re-transmission
-- flow control, matching sender and receiver speed to prevent a faster sender from overwhelming a slow receiver by limiting the amount of unacknowledged data the sender can transmit (see [Network congestion control])
+- Reliable ("every packet is tracked and assembled"):
+  - Receiver acknowledges every packet it receives and checks packet integrity using checksum
+  - Sender re-sends packets that are not acknowledged
+  - Packet ordering is guaranteed at reception using packet numbering (the packet sequence may be scrambled during transmission is restored at reception using sequence numbers)
+- Network congestion control, dynamically matching sender and receiver speed to preempt router queue overflow and packet drops/re-transmission
+- Flow control, matching sender and receiver speed to prevent a faster sender from overwhelming a slow receiver by limiting the amount of unacknowledged data the sender can transmit (see [Network congestion control])
 - 3-way handshake to establish a connection (one SYN and ACK in each direction)
   - A: Send SYN - A (client) sends a request to initiate a connection to Host B (server), sent from a randomly assigned local port to the server's specific listening port.
   - B: Send SYN-ACK - B receives the SYN packet and, if it accepts the connection, responds to A with a packet containing both SYN and ACK flags.
@@ -751,47 +752,47 @@ which require the following features:
 
 #### Segment structure
 
-- fields include headers (usually 20 bytes, maximum 40 bytes including all options) and payload, extending the fields used in UDP
-  - source port (2 bytes)
-  - destination port (2 bytes)
-  - checksum (2 bytes)
-  - sequence numbers (4 bytes, max 2^32 unique sequence numbers, reliability/re-transmission)
-  - receive window (2 bytes, flow control)
-  - data offset (4 bits, header lengths in bytes)
-  - acknowledgement number (4 bytes, reliability)
-  - options field (usually empty)
-  - flags (e.g. ACK, SYN)
-- maximum segment size (MSS) for payload to fit into a single Ethernet frame: 1460 (payload) + 20 (TCP headers) + 20 (IPv4 headers) = 1500 bytes
+- Fields include headers (usually 20 bytes, maximum 40 bytes including all options) and payload, extending the fields used in UDP
+  - Source port (2 bytes)
+  - Destination port (2 bytes)
+  - Checksum (2 bytes)
+  - Sequence numbers (4 bytes, max 2^32 unique sequence numbers, reliability/re-transmission)
+  - Receive window (2 bytes, flow control)
+  - Data offset (4 bits, header lengths in bytes)
+  - Acknowledgement number (4 bytes, reliability)
+  - Options field (usually empty)
+  - Flags (e.g. ACK, SYN)
+- Maximum segment size (MSS) for payload to fit into a single Ethernet frame: 1460 (payload) + 20 (TCP headers) + 20 (IPv4 headers) = 1500 bytes
 
 ### Network congestion control
 
 Costs of congested networks
 
-- large queuing delays in routers
-- re-transmission for dropped packets due to router queue overflow
-- unnecessary re-transmissions due to timeouts for acknowledgement messages (ACK)
-- wasted transmission capacity in previous links/router when a packet is dropped at a later stage
+- Large queuing delays in routers
+- Re-transmission for dropped packets due to router queue overflow
+- Unnecessary re-transmissions due to timeouts for acknowledgement messages (ACK)
+- Wasted transmission capacity in previous links/router when a packet is dropped at a later stage
 
 Control strategies
 
-- end-to-end congestion control, e.g. TCP using timeouts as congestion indicators and optimization algorithms for adjusting transmission speed (e.g. Reno, Cubic, BBR)
-- network-assisted congestion control, with routers provide feedback regarding congestion state, even before packet loss occurs
-  - direct feedback to sender
-  - mark packets in router, which are sent on to the receiver, which then informs the sender
+- End-to-end congestion control, e.g. TCP using timeouts as congestion indicators and optimization algorithms for adjusting transmission speed (e.g. Reno, Cubic, BBR)
+- Network-assisted congestion control, with routers provide feedback regarding congestion state, even before packet loss occurs
+  - Direct feedback to sender
+  - Mark packets in router, which are sent on to the receiver, which then informs the sender
 
 ### Ports
 
 > If the subnet mask is like the stream name and the IP address like the house number, then the port is like a room number.
 
-- logical address to identify a (receiving or sending) process on a host, and to enable multiple, simultaneous connections on the same host (multiplexing)
+- Logical address to identify a (receiving or sending) process on a host, and to enable multiple, simultaneous connections on the same host (multiplexing)
 - 16-bit number, ranging from 0 to 65535, total of 65536 ports
-- reserved port number ranges (see Internet Assigned Number Authority ([IANA]))
-  - well-known ports (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
-  - other services (1024 - 49151)
-  - dynamically assigned (ephemeral) ports for user applications/connections (49152 - 65535)
-- every connection (or packet) goes from a source address (IP and port) to a destination address
-- source and destination address together uniquely identify connections
-- connects transport layer with application layer
+- Reserved port number ranges (see Internet Assigned Number Authority ([IANA]))
+  - Well-known ports (0 - 1023), e.g. 21 FTP, 22 SSH, 80 HTTP, 443 HTTPS (privileged, require root access)
+  - Other services (1024 - 49151)
+  - Dynamically assigned (ephemeral) ports for user applications/connections (49152 - 65535)
+- Every connection (or packet) goes from a source address (IP and port) to a destination address
+- Source and destination address together uniquely identify connections
+- Connects transport layer with application layer
 
 Monitoring and diagnostics:
 
@@ -802,12 +803,12 @@ Monitoring and diagnostics:
 
 ### Quick UDP Internet Connections (QUIC) (HTTP/3)
 
-- transport layer network protocol designed by Google
-- built on top of UDP rather than TCP
-- reduces latency compared to TCP by reducing round-trip times (RTT) during connection setup (0-RTT handshakes)
-- solves the head-of-line blocking problem present in TCP/HTTP2; in TCP, if one packet is lost, all subsequent packets are delayed until the lost packet is retransmitted, even if they belong to different streams; QUIC allows independent streams, so a lost packet only affects the stream it belongs to
-- used as the underlying transport for HTTP/3
-- includes built-in encryption (TLS 1.3) by default
+- Transport layer network protocol designed by Google
+- Built on top of UDP rather than TCP
+- Reduces latency compared to TCP by reducing round-trip times (RTT) during connection setup (0-RTT handshakes)
+- Solves the head-of-line blocking problem present in TCP/HTTP2; in TCP, if one packet is lost, all subsequent packets are delayed until the lost packet is retransmitted, even if they belong to different streams; QUIC allows independent streams, so a lost packet only affects the stream it belongs to
+- Used as the underlying transport for HTTP/3
+- Includes built-in encryption (TLS 1.3) by default
 
 ## Application layer
 
@@ -841,23 +842,23 @@ For example, [BitTorrent], Skype (VoIP), brokerless messaging systems (e.g. [Zer
 
 ### Sockets
 
-- software interface between application and transport layer
-- virtual, low-level programming abstraction representing an instance of a communication endpoint defined by a domain (e.g. `AF_INET` for IPv4), IP address, port number, and transport protocol (e.g. `SOCK_DGRAM` for UDP)
-- defined by the [socket API] (e.g. `socket()`, `connect()`, `listen()`, `accept()`, `send()`, `receive()`)
-- used to implement higher-level protocols (e.g. TCP or UDP)
-- exposed in higher-level languages, e.g. see [Python socket guide]
-- a process can open multiple sockets
-- a socket can accept multiple connections (as long as they are unique in terms of source and destination IP address and port number)
-- sockets are non-competing consumers of broadcast messages, when creating multiple socket instances on the same host and port number, each socket will receive a copy of the broadcast message sent to that port
-- besides network sockets, there are other sockets for inter-process communication called Unix Domain sockets (`AF_UNIX` or `AF_LOCAL`) which bypass the network stack
+- Software interface between application and transport layer
+- Virtual, low-level programming abstraction representing an instance of a communication endpoint defined by a domain (e.g. `AF_INET` for IPv4), IP address, port number, and transport protocol (e.g. `SOCK_DGRAM` for UDP)
+- Defined by the [socket API] (e.g. `socket()`, `connect()`, `listen()`, `accept()`, `send()`, `receive()`)
+- Used to implement higher-level protocols (e.g. TCP or UDP)
+- Exposed in higher-level languages, e.g. see [Python socket guide]
+- A process can open multiple sockets
+- A socket can accept multiple connections (as long as they are unique in terms of source and destination IP address and port number)
+- Sockets are non-competing consumers of broadcast messages, when creating multiple socket instances on the same host and port number, each socket will receive a copy of the broadcast message sent to that port
+- Besides network sockets, there are other sockets for inter-process communication called Unix Domain sockets (`AF_UNIX` or `AF_LOCAL`) which bypass the network stack
 
 [Python socket guide]: https://docs.python.org/3.13/howto/sockets.html
 [socket API]: https://en.wikipedia.org/wiki/Berkeley_sockets
 
 #### Bind (server) and connect (client)
 
-- a server binds to a particular port to specify where it will listen for incoming client connections (`bind()`), making its service available for clients under a specific address; after binding, it will listen for incoming connection requests (`listen()`)
-- a client connects to a server using the server's IP address and bound port (`connect()`)
+- A server binds to a particular port to specify where it will listen for incoming client connections (`bind()`), making its service available for clients under a specific address; after binding, it will listen for incoming connection requests (`listen()`)
+- A client connects to a server using the server's IP address and bound port (`connect()`)
 
 ### Messaging systems
 
@@ -927,18 +928,18 @@ Monitoring and diagnostics:
 - client requests chunks sequentially using standard HTTP GET requests
 - client dynamically selects the best quality chunk based on current network conditions (bandwidth)
 - uses a manifest file (MPD - Media Presentation Description) to describe available streams and chunks
-- allows smooth playback with minimal buffering even with fluctuating network speeds
-- used by streaming services like Netflix, Amazon Prime Video, YouTube
+- Allows smooth playback with minimal buffering even with fluctuating network speeds
+- Used by streaming services like Netflix, Amazon Prime Video, YouTube
 
 ### Content Delivery Network (CDN)
 
-- network of geographically distributed servers
-- delivers content to users based on their geographic location
-- caches static content (e.g. images, videos) at "edge" servers close to the user
-- reduces latency and server load
-- improves availability and reliability
-- provides security features like DDoS protection
-- popular providers: Cloudflare, Akamai, Amazon CloudFront, Fastly
+- Network of geographically distributed servers
+- Delivers content to users based on their geographic location
+- Caches static content (e.g. images, videos) at "edge" servers close to the user
+- Reduces latency and server load
+- Improves availability and reliability
+- Provides security features like DDoS protection
+- Popular providers: Cloudflare, Akamai, Amazon CloudFront, Fastly
 
 ### [Let's Encrypt](https://letsencrypt.org/)
 
