@@ -522,6 +522,7 @@ Fields:
 ## Network layer: control plane
 
 Centralized vs per-router control
+
 - Per-router control (router communication with other routers to compute forwarding table, e.g. OSPF, BGP)
 - Logically centralized control for network-wide logic for packet routing (e.g. update flow table) and network-layer service configuration and management
 
@@ -954,10 +955,19 @@ Monitoring and diagnostics:
 
 ## Security
 
-- put malware into a host
-- disrupt servers and network infrastructure (denial of service, or distributed denial of service attacks)
-- sniff packets (gain access to private information)
-- IP spoofing (identifying as another person or program by falsifying network data)
+- 3 factors of authentification
+  - Something you know (e.g. a password)
+  - Something you have (e.g. a hardware security key like YubiKey)
+  - Something you are (e.g. fingerprint or face recognition)
+- 3 pillars of information security
+  - Confidentiality (not disclosed to unauthorized entities)
+  - Integrity (not modified by unauthorized entities)
+  - Availability (information is available when needed)
+- Ways to compromise a network system
+  - Put malware into a host
+  - Disrupt servers and network infrastructure (denial of service, or distributed denial of service attacks)
+  - Sniff packets (gain access to private information)
+  - IP spoofing (identifying as another person or program by falsifying network data)
 
 ## Monitoring, diagnostics and debugging
 
