@@ -15,3 +15,7 @@ draft: true
 - https://github.com/tokio-rs/mini-redis/blob/master/src/server.rs (tokio-rs example)
 - https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/
 - https://sunshowers.io/posts/cancelling-async-rust/
+- async runtime and work stealing
+- keep processing short between await statements
+- green threads/async tasks
+- tokio-console for async profiling and debugging 
