@@ -7,9 +7,10 @@ Some of my favourite films:
 
 - Boyhood
 - The Silence of Others
-- Inland Empire
+- Inland Empire by David Lynch
 - [The Spirit of the Beehive](https://en.wikipedia.org/wiki/The_Spirit_of_the_Beehive)
 - Metal y Melancolía
 - [Chronique des Années de Braise](https://en.wikipedia.org/wiki/Chronicle_of_the_Years_of_Fire)
 - [Aftersun](https://en.wikipedia.org/wiki/Aftersun)
 - [The Stories We Tell](https://en.wikipedia.org/wiki/Stories_We_Tell)
+- [Visages, Villages](https://en.wikipedia.org/wiki/Faces_Places_(film)) by Agnès Varda
