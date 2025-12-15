@@ -3,14 +3,21 @@ title: Learning Rust
 date: 2025-01-11T12:08:32+01:00
 draft: false
 ---
-
-## Resources
+## General resources
 
 - Why Rust? See [Considering Rust](http://youtube.com/watch?v=DnT-LUQgc7s) by Jon Gjengset
 - [Rust Book](https://doc.rust-lang.org/book/)
 - [Programming Rust: Fast, Safe Systems Development](https://www.goodreads.com/book/show/25550614-programming-rust)
 - [Effective Rust](https://www.lurklurk.org/effective-rust/title-page.html)
+
+## Lifetimes
+
+As a Rust beginner, I understood lifetimes backwards, thinking `<'a>` means I'm declaring a lifetime which I then use. 
+What that actually declares is a placeholder for a lifetime the compiler will attempt to find wherever that variable or function is used, just as it would attempt to find a valid type for a generic type `<T>` at the points of usage.
+In this sense, lifetimes and generics are similar concepts: code is generic over some lifetimes just as it can be generic over some type.
+
 - [Video](https://m.youtube.com/watch?v=rAl-9HwD858&t=4s) by Jon Gjengset on lifetime annotations
+- [Common Lifetime Misconceptions](https://github.com/pretzelhammer/rust-blog/blob/master/posts/common-rust-lifetime-misconceptions.md) ([HackerNews thread](https://news.ycombinator.com/item?id=46270882))
 
 ## Projects
 
