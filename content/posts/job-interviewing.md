@@ -3,9 +3,12 @@ title: Job interviewing
 date: 2025-11-16T14:15:09+02:00
 draft: false
 ---
+
 Here are some notes from my experience searching for new jobs and interviewing with various companies.
 
-It's largely a summary of books, blog posts and conversations I've had, some of it copied directly from there (see the extra resources I link in each section).
+It's largely a summary of books, blog posts and conversations I've had, some of it copied directly from there (see the resources I link in each section).
+While some principles are general, I’m specifically looking at ML and software engineering.
+
 ## Cultural-fit interview
 
 The cultural fit interview assesses whether you align with the company's values and how you work with teams: your soft skills, communication, collaboration, and approach to problem solving.
@@ -15,9 +18,11 @@ Typical questions include:
 - Tell me about a time when ...
 - Put yourself in this situation; what would you do?
 - What's your general approach to doing X?
+
 ### Discuss specific examples
 
 Similar to how you would write your CV or cover letter, you want to give a concrete example for every skill you try to demonstrate.
+
 #### How to pick examples
 
 Pick examples that are:
@@ -26,30 +31,35 @@ Pick examples that are:
 - _Large in scope_, important to the business, strategic, involves lots of stakeholders, significant revenue or user impact
 - _Complex_, in terms of the stakeholders, core team, tech, timeline, resources, etc.
 - _Significant_, in terms of personal involvement/contribution
+
 #### Use STAR++
 
 Use the STAR++ structure in your answer (situation, task, action, result, learning, evolution):
 
-*Situation* - what was the situation you had to deal with
+_Situation_ - what was the situation you had to deal with
+
 - the strategic driving factors for the project
 - how you got involved - did you come up with the project? pick it up when it was a flaming hot mess?
 - who was involved - leaders, stakeholders, customers, core team members
 
-*Task* - what was the task you were given to do
+_Task_ - what was the task you were given to do
+
 - success criteria - how was success defined? explain how complex the project was
 - why was it complex - new tech? huge scope? tight timeline? massive team? powerful stakeholders? financial impact?
 
-*Action* - what action did you take
+_Action_ - what action did you take
+
 - what you did to drive success - specific actions you took
 - issues that came up - people, tech, implementation, partners, infra, etc
 - conflicts that arose - executive sponsors, team members, your boss?
 
-*Result* - what happened as a result of your action
+_Result_ - what happened as a result of your action
+
 - this should include final outcomes for the stated success criteria as well as longer-term success and strategic / business impact
 
-(+) *Learning* - what you have learnt
+(+) _Learning_ - what you have learnt
 
-(+) *Evolution* - how you evolved your approach and incorporated learnings in a future situation
+(+) _Evolution_ - how you evolved your approach and incorporated learnings in a future situation
 
 ### Example questions
 
@@ -68,6 +78,7 @@ I outline answers for some of them below.
 ### Question: How do I share feedback?
 
 Some articles I found useful:
+
 - [https://www.grahammann.net/book-notes/radical-candor-kim-scott](https://www.grahammann.net/book-notes/radical-candor-kim-scott)
 - [https://hellojames.co.uk/writing/better-feedback/](https://hellojames.co.uk/writing/better-feedback/)
 - https://candost.blog/importance-of-the-feedback/
@@ -98,6 +109,7 @@ Some articles I found useful:
 ### Question: How do I manage personal conflict?
 
 Some articles I found useful:
+
 - [https://chelseatroy.com/2019/10/21/listening-part-1-introduction/](https://chelseatroy.com/2019/10/21/listening-part-1-introduction/)
 - [https://thought.is/the-myth-of-the-good-listener/](https://thought.is/the-myth-of-the-good-listener/)
 - [https://liamrosen.com/arguments.html](https://liamrosen.com/arguments.html?utm_source=pocket_reader)
@@ -345,11 +357,11 @@ This will reveal perhaps what the hardest challenge will be, and where you could
 
 ### Startup: Does the company have product-market fit?
 
-- "Do you ever question if you have product-market fit?"
-- "When did you reach product-market fit? How did you know?"
-- "What do you need to do to get to product-market fit?"
-- "What's your revenue? What was it a year ago?"
-- "How many daily active users do you have?"
+- Do you ever question if you have product-market fit?
+- When did you reach product-market fit? How did you know?
+- What do you need to do to get to product-market fit?
+- What's your revenue? What was it a year ago?
+- How many daily active users do you have?
 
 This is the single most important thing a company can do to survive and grow. It's ok if these answers show you the founder doesn't have [product-market fit](https://posthog.com/blog/product-market-fit-game). In this case, figure out if they will get to a yes. Unless you want to join a sinking ship, of course\!
 
@@ -367,7 +379,7 @@ If there is no product-market fit, but you think the team could find it, it's ve
 
 ### Startup: What does the financial situation look like? How much runway does the company have? Does their spending look within reason?
 
-- "Are you [default alive](http://www.paulgraham.com/aord.html)?"
+- Are you [default alive](http://www.paulgraham.com/aord.html)?
 
 This means that the company whilst not profitable, is growing fast enough that it will become profitable ahead of running out of money.
 
@@ -378,9 +390,9 @@ This means:
 
 There are exceptions. For example, very low revenue numbers may lead to unrealistic growth rates – if I went from $1 to $2 of revenue yesterday, I'd be pretty darn rich if I kept that growth rate up.
 
-- "What's your runway?"
-- "What assumptions are you making to calculate this?"
-- "What are your fundraising plans?"
+- What's your runway?
+- What assumptions are you making to calculate this?
+- What are your fundraising plans?
 
 If a company doesn't have product-market fit, spending should be minimal so there's as much time as possible to find it. Spending a lot and having a big team just makes it harder to change direction rapidly.
 
