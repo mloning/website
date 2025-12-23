@@ -51,6 +51,8 @@ Other books I enjoyed reading:
 - [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
 - [Rue des boutiques obscures] by Patrick Modiano, 2014 winner of the Literature Nobel Prize
 - [Triste Tigre] by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
+- L'Amant n'y Marguerite Duras
+- Kiffe kiffe demain by Faïza Guène
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
