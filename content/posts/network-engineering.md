@@ -1,10 +1,8 @@
 ---
-title: "Network engineering"
+title: Network engineering
 date: 2025-07-24T23:07:58+02:00
-last_modified: .Lastmod
 draft: false
 ---
-
 ## Intro
 
 I recently had to think more about network engineering.
@@ -837,7 +835,7 @@ For example, HTTP web servers.
 - No central server with fixed IP, peers discover and connect to each other
 - Direct client-to-client communication
 
-For example, [BitTorrent], Skype (VoIP), brokerless messaging systems (e.g. [ZeroMQ]).
+For example, [BitTorrent], Skype (VoIP), brokerless messaging systems (e.g. [ZeroMQ]), message broadcasting.
 
 [BitTorrent]: https://en.wikipedia.org/wiki/BitTorrent
 
@@ -942,6 +940,22 @@ Monitoring and diagnostics:
 - Provides security features like DDoS protection
 - Popular providers: Cloudflare, Akamai, Amazon CloudFront, Fastly
 
+## Security
+
+- 3 factors of authentification
+  - Something you know (e.g. a password)
+  - Something you have (e.g. a hardware security key like YubiKey)
+  - Something you are (e.g. fingerprint or face recognition)
+- 3 pillars of information security
+  - Confidentiality (not disclosed to unauthorized entities), including endpoint authentication and authorization 
+  - Integrity (not modified by unauthorized entities)
+  - Availability (information is available when needed)
+- Ways to compromise a network system
+  - Put malware into a host
+  - Disrupt servers and network infrastructure (denial of service, or distributed denial of service attacks)
+  - Sniff packets (gain access to private information)
+  - IP spoofing (identifying as another person or program by falsifying network data)
+
 ### [Let's Encrypt](https://letsencrypt.org/)
 
 - A free, automated and open certificate authority (CA) run by the nonprofit Internet Security Research Group (ISRG) to replace costly, manual CAs and enable widespread HTTPS adoption
@@ -952,22 +966,6 @@ Monitoring and diagnostics:
   - HTTP-01: Let's Encrypt provides a token that must be served at a specific HTTP URL on your domain which Let's Encrypt queries to verify the token (`http://<YOUR_DOMAIN>/.well-known/acme-challenge/<TOKEN>`)
   - DNS-01: Let's Encrypt provides a token that must be placed in a DNS TXT record which Let's Encrypt verifies via a DNS query
 - Certificate lifecycle; after domain validation, Let's Encrypt issues a certificate; ACME client automatically installs the certificate on your web server
-
-## Security
-
-- 3 factors of authentification
-  - Something you know (e.g. a password)
-  - Something you have (e.g. a hardware security key like YubiKey)
-  - Something you are (e.g. fingerprint or face recognition)
-- 3 pillars of information security
-  - Confidentiality (not disclosed to unauthorized entities)
-  - Integrity (not modified by unauthorized entities)
-  - Availability (information is available when needed)
-- Ways to compromise a network system
-  - Put malware into a host
-  - Disrupt servers and network infrastructure (denial of service, or distributed denial of service attacks)
-  - Sniff packets (gain access to private information)
-  - IP spoofing (identifying as another person or program by falsifying network data)
 
 ## Monitoring, diagnostics and debugging
 
