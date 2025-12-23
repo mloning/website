@@ -859,21 +859,6 @@ For example, [BitTorrent], Skype (VoIP), brokerless messaging systems (e.g. [Zer
 - A server binds to a particular port to specify where it will listen for incoming client connections (`bind()`), making its service available for clients under a specific address; after binding, it will listen for incoming connection requests (`listen()`)
 - A client connects to a server using the server's IP address and bound port (`connect()`)
 
-### Messaging systems
-
-Network messaging systems can be categorized by architecture (centralized vs. decentralized) and data model (transient queues vs. persistent logs).
-
-- Brokerless (P2P): direct producer-to-consumer communication for speed and low latency (e.g. [ZeroMQ])
-- Brokered: central broker manages message routing, retries and distribution (smart broker/dumb consumer) (e.g. RabbitMQ, MQTT)
-- Log-based: high-volume data pipelines with append-only, persistent log storage (dumb broker/smart consumer) (e.g. Apache Kafka)
-- Cloud-native serverless queues: managed services via HTTP APIs with no infrastructure management (e.g. AWS SQS, Azure Service Bus)
-
-Why use messaging systems instead of direct HTTP calls?
-
-- Asynchronous "fire and forget" processing; producer continues immediately while consumer processes when ready, avoiding failures when services are busy or down
-- Queue buffers traffic spikes, allowing consumers to process at constant sustainable rate instead of being overwhelmed
-- Horizontal scaling with multiple workers sharing workload without load balancer
-
 ### Domain name system (DNS)
 
 - maps human-readable domain names (e.g. `www.google.com`) to an IP address
@@ -939,6 +924,27 @@ Monitoring and diagnostics:
 - Improves availability and reliability
 - Provides security features like DDoS protection
 - Popular providers: Cloudflare, Akamai, Amazon CloudFront, Fastly
+
+### Messaging systems
+
+Network messaging systems can be categorized by architecture (centralized vs. decentralized) and data model (transient queues vs. persistent logs).
+
+- Brokerless (P2P): direct producer-to-consumer communication for speed and low latency (e.g. [ZeroMQ])
+- Brokered: central broker manages message routing, retries and distribution (smart broker/dumb consumer) (e.g. RabbitMQ, MQTT)
+- Log-based: high-volume data pipelines with append-only, persistent log storage (dumb broker/smart consumer) (e.g. Apache Kafka)
+- Cloud-native serverless queues: managed services via HTTP APIs with no infrastructure management (e.g. AWS SQS, Azure Service Bus)
+
+Why use messaging systems instead of direct HTTP calls?
+
+- Asynchronous "fire and forget" processing; producer continues immediately while consumer processes when ready, avoiding failures when services are busy or down
+- Queue buffers traffic spikes, allowing consumers to process at constant sustainable rate instead of being overwhelmed
+- Horizontal scaling with multiple workers sharing workload without load balancer
+
+### Clock synchronization
+
+Distributed systems often involve processing  timestamp from different clocks, and being able to treat them as if they come from a single, unified time source.
+
+The most common protocol for synchronizing clocks is [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
 ## Security
 
