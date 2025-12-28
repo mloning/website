@@ -944,7 +944,9 @@ Why use messaging systems instead of direct HTTP calls?
 
 Distributed systems often involve processing  timestamp from different clocks, and being able to treat them as if they come from a single, unified time source.
 
-The most common protocol for synchronizing clocks is [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
+The most common protocol for synchronizing clocks is [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol). 
+
+Also check out this [blog post](https://arpitbhayani.me/blogs/clock-sync-nightmare/).
 
 ## Security
 
