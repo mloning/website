@@ -1,10 +1,8 @@
 ---
-title: "Cleaning up storage on macOS"
+title: Cleaning up storage on macOS
 date: 2024-12-20T16:58:20+01:00
-last_modified: .Lastmod
 draft: false
 ---
-
 ## Using macOS storage manager
 
 - Go to System Settings, Storage
@@ -25,3 +23,7 @@ Directories to focus on:
 
 - `/Library/`
 - `~/`, particularly `~/Library/ApplicationSupport/` for application cache (e.g. Slack, Zoom)
+
+Other tools for manually searching:
+
+- https://www.brendangregg.com/blog/2017-02-06/flamegraphs-vs-treemaps-vs-sunburst.html (also see https://www.brendangregg.com/blog/2017-02-05/file-system-flame-graph.html)
