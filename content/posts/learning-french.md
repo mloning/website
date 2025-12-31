@@ -1,7 +1,6 @@
 ---
 title: "Learning French"
 date: 2024-04-30T11:17:44+02:00
-last_modified: .Lastmod
 draft: false
 ---
 
@@ -88,7 +87,7 @@ Series:
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
 - [Loups Garous](<https://fr.wikipedia.org/wiki/Loups-garous_(%C3%A9mission_de_t%C3%A9l%C3%A9vision)>), reality-TV game show for the [Werewolf game](https://en.wikipedia.org/wiki/The_Werewolves_of_Millers_Hollow)
-- [Engrenages](https://fr.wikipedia.org/wiki/Engrenages_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e))
+- [Engrenages](<https://fr.wikipedia.org/wiki/Engrenages_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)>)
 
 Films:
 
@@ -104,12 +103,13 @@ Films:
 
 ### Resources
 
-- [Anki] vocab flashcards with the mobile app and this basic [community deck], but nothing beats creating your own flashcards; also check out [Mochi](https://mochi.cards/)
+- Vocab flashcards for learning with [spaced repititions], e.g. using [Anki] with the mobile app and this basic [community deck], or [Mochi](https://mochi.cards/), but nothing beats creating your own handwritten flashcards
 - [Leo trainer] for words I look up and want to remember in my daily interactions
 - [Bescherelle grammar book], concise description of French grammar, without any exercises
 - [Bescherelle verb conjugation book]
 - [kwiziq], online learning platform
 
+[spaced repititions]: https://gwern.net/spaced-repetition#flashcard-sources
 [Anki]: https://apps.ankiweb.net/index.html
 [community deck]: https://ankiweb.net/shared/info/893324022
 [Leo trainer]: https://dict.leo.org/trainer/index.php
@@ -140,7 +140,7 @@ The French language has lots of concepts and rules that make it complicated, her
 - additional pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
 - passe compose with etre and avoir
 - complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
-- que le participe passé ne s'accord pas avec le COD, sauf dans les [exceptions](https://www.linkedin.com/posts/alexandrelebrun_je-suis-venu-ici-sur-linkedin-pour-parler-activity-7388107867372888064-w0wu) 
+- que le participe passé ne s'accord pas avec le COD, sauf dans les [exceptions](https://www.linkedin.com/posts/alexandrelebrun_je-suis-venu-ici-sur-linkedin-pour-parler-activity-7388107867372888064-w0wu)
 
 ## Interesting things
 
