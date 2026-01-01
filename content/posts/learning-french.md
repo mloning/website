@@ -93,6 +93,7 @@ Films:
 
 - [Anatomie d'une Chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
 - [Le Monde du Silence](<https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film)>)
+- [La Panthère des Neiges](<https://fr.wikipedia.org/wiki/La_Panth%C3%A8re_des_neiges_(film)>) and [Le Chant des Forêts](https://www.vincentmunier.com/portfolio/le-chant-des-forets/) de Vincent Munier
 - [Notre Corps](https://fr.wikipedia.org/wiki/Notre_corps)
 - Le Dîner de Cons
 - Les Trois Frères
