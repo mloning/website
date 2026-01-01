@@ -6,3 +6,6 @@ draft: true
 
 - https://fr.audiofanzine.com/petites-annonces/
 - https://www.zikinf.com/
+- https://www.superprof.fr/
+- https://www.apprentus.fr/
+- https://philharmoniedeparis.fr/fr/petites-annonces
