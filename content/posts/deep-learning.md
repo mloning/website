@@ -1,9 +1,10 @@
 ---
-title: "Learning Deep Learning"
+title: Learning Deep Learning
 date: 2024-06-14T18:02:58+02:00
-last_modified: .Lastmod
 draft: true
 ---
+https://karpathy.ai/zero-to-hero.html
+
 
 * PyTorch Image Model library https://pypi.org/project/timm/
 
