@@ -3,8 +3,10 @@ title: Learning Deep Learning
 date: 2024-06-14T18:02:58+02:00
 draft: true
 ---
-https://karpathy.ai/zero-to-hero.html
-https://github.com/obround/mytorch
+https://karpathy.ai/zero-to-hero.html; https://news.ycombinator.com/item?id=46485090
+
+https://github.com/obround/mytorch; https://matthodges.com/posts/2022-08-06-neural-network-from-scratch-python-numpy/
+
 https://joe-antognini.github.io/ml/jax-tic-tac-toe
 
 
