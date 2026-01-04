@@ -4,6 +4,8 @@ date: 2024-06-14T18:02:58+02:00
 draft: true
 ---
 https://karpathy.ai/zero-to-hero.html
+https://github.com/obround/mytorch
+https://joe-antognini.github.io/ml/jax-tic-tac-toe
 
 
 * PyTorch Image Model library https://pypi.org/project/timm/
