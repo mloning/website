@@ -37,7 +37,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/in
 Add `brew` command to path:
 
 ```bash
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/mloning/.zprofile
+echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mloning/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
