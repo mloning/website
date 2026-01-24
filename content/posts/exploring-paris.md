@@ -12,6 +12,7 @@ draft: false
 - Fête National (Bastille Day)
 - Bal des Pompiers
 - Fête de la Lune
+- [Les nuits de la lecture](https://www.nuitsdelalecture.fr/)
 
 ## Restaurants
 
@@ -65,6 +66,7 @@ Most museums in Paris are free on some occasions, including:
 - Théâtre Paris-Villette
 - L'Essaïon
 - [Theatre du Soleil](https://theatre-du-soleil.fr)
+- [Théâtre ouvert](https://www.theatre-ouvert.com/) (contemporary, experimental productions)
 
 ## Other cultural spaces
 
