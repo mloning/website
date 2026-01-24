@@ -3,6 +3,7 @@ title: "Setting up a new macOS laptop"
 date: 2024-09-27T13:49:57+02:00
 draft: false
 ---
+
 I recently had to set up a new macOS laptop and wanted to take some notes so that I can do it more quickly the next time.
 This [blog post](https://simoncw.com/posts/dev-setup-mac-python-rust/) was very useful.
 
@@ -27,16 +28,16 @@ xcode-select --install
 
 ## Install homebrew
 
-Install Homebrew:
+Install [Homebrew](https://brew.sh/):
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Add `brew` command to path:
 
 ```bash
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/mloning/.zprofile
+echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mloning/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
