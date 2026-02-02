@@ -3,7 +3,6 @@ title: "Electrical Engineering of EEG"
 date: 2026-02-01T16:55:39+01:00
 draft: true
 ---
-
 ## Introduction
 
 I have recently worked more on EEG ([Electroencephalography](https://en.wikipedia.org/wiki/Electroencephalography)) sensing technology and EEG data.
@@ -143,3 +142,8 @@ Without a reference, the amplifier has no way to subtract out the environmental 
 - hardware or software to filter out unwanted frequencies
 - high-pass filter to remove DC offset or slow drift
 - low-pass filter to remove high-frequency components from muscle movements ([EMG](https://en.wikipedia.org/wiki/Electromyography))
+
+Resources 
+- Bioelectromagnetism: History, Foundations and Applications
+- https://www.bem.fi
+- Medical Instrumentation: Application and Design
