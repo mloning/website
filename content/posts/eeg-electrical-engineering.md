@@ -144,6 +144,7 @@ Without a reference, the amplifier has no way to subtract out the environmental 
 - low-pass filter to remove high-frequency components from muscle movements ([EMG](https://en.wikipedia.org/wiki/Electromyography))
 
 Resources 
+- Electric Fields of the Brain: The Neurophysics of EEG
 - Bioelectromagnetism: History, Foundations and Applications
 - https://www.bem.fi
 - Medical Instrumentation: Application and Design
