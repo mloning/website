@@ -3,6 +3,7 @@ title: "Electrical Engineering of EEG"
 date: 2026-02-01T16:55:39+01:00
 draft: true
 ---
+
 ## Introduction
 
 I have recently worked more on EEG ([Electroencephalography](https://en.wikipedia.org/wiki/Electroencephalography)) sensing technology and EEG data.
@@ -119,10 +120,18 @@ Without a reference, the amplifier has no way to subtract out the environmental 
 ## Analog-to-digital converter (ADC)
 
 - The continuous brain signal is chopped up into digital numbers which can be processed by a computer.
+- analog EEG signals are very faint (ca 10-100µV, 0.01-0.1mV), and susceptible to electromagnetic interference (e.g. a Bluetooth burst can induce a noise signal of 1-10mV depending on distance, 100x stronger than the analog EEG signal)
+- digital signals are more robust (series of high-voltage pulses for 0/1 bits (0=0V, 1=1.8V)), and some interference won't flip a bit
+
 - properties
   - sampling rate, typically between 250 and 1000 Hz (samples per second)
   - precision
   - TODO what's a typical digital precision?
+- multiple ADCs (e.g. one per electrode)
+  - single ADC samples each channel sequentially, requires high-frequency electrode switching and introduces small sampling skew
+  - mulitple ADC can sample truly simultaneously, but requires synchronization
+  - multiple low-speed ADCs one for each electrode less power hungry than a single high-speed one iterating over all electrodes
+  -
 
 ## How to measure impedance
 
@@ -143,8 +152,10 @@ Without a reference, the amplifier has no way to subtract out the environmental 
 - high-pass filter to remove DC offset or slow drift
 - low-pass filter to remove high-frequency components from muscle movements ([EMG](https://en.wikipedia.org/wiki/Electromyography))
 
-Resources 
+Resources
+
 - Electric Fields of the Brain: The Neurophysics of EEG
+- https://alanmacy.com/book/the-handbook-of-human-physiological-recording/
 - Bioelectromagnetism: History, Foundations and Applications
 - https://www.bem.fi
 - Medical Instrumentation: Application and Design
