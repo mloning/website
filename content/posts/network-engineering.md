@@ -679,16 +679,16 @@ The stack encompasses common protocols including:
 - Connectionless: no connection is established for transmitting packets
 - UDP packet is fully identified by its 2-tuple of destination IP address and port
 - Each packet is considered a discrete entity and has no relationship to other packets
-- unreliable
-  - no in-order delivery (packets may not arrive in the order they were sent)
-  - potential packet loss
-  - error detection using checksums, but no automatic error correction
-- low overhead due to simplicity (compared to TCP)
-- used when speed is more important than reliability, e.g. in application tolerant to packet loss including DNS, DHCP, voice over IP or real-time streaming (video, audio, gaming)
+- Unreliable
+  - No in-order delivery (packets may not arrive in the order they were sent)
+  - Potential packet loss
+  - Error detection using checksums, but no automatic error correction
+- Low overhead due to simplicity (compared to TCP)
+- Used when speed is more important than reliability, e.g. in application tolerant to packet loss including DNS, DHCP, voice over IP or real-time streaming (video, audio, gaming)
 - UDP packets are usually filtered out at the network boundary due to security concerns (e.g. [IP address spoofing])
 - Ethernet frame fragmentation can occur if UDP packets exceed the MTU, potentially leading to packet loss and application issues
-- supports unicast, broadcast and [multicast] messaging
-- also see [QUIC] protocol based on UDP
+- Supports unicast, broadcast and [multicast] messaging
+- Also see [QUIC] protocol based on UDP
 - When a host receives an unexpected packet, i.e. when no receiver or server is running on the destination port, the host replies with a special packet (RST flag for TCP, ICMP datagram for UDP)
 
 [QUIC]: https://en.wikipedia.org/wiki/QUIC
@@ -699,9 +699,9 @@ The stack encompasses common protocols including:
   - Source port (for sending unicast replies)
   - Destination port (multiplexing)
   - Length (in bytes, headers and payload)
-  - checksum (for end-to-end transmission error checking for corruption during transmission by noise or while being stored/queued in router)
-  - payload (application-layer data)
-- maximum segment size (MSS) to fit into a single Ethernet frame: 1472 (payload) + 8 (UDP headers) + 20 (IP headers) = 1500 bytes
+  - Checksum (for end-to-end transmission error checking for corruption during transmission by noise or while being stored/queued in router)
+  - Payload (application-layer data)
+- Maximum segment size (MSS) to fit into a single Ethernet frame: 1472 (payload) + 8 (UDP headers) + 20 (IP headers) = 1500 bytes
 
 [IP address spoofing]: https://en.wikipedia.org/wiki/IP_address_spoofing
 [multicast]: https://en.wikipedia.org/wiki/Multicast
@@ -861,7 +861,7 @@ For example, [BitTorrent], Skype (VoIP), brokerless messaging systems (e.g. [Zer
 
 ### Domain name system (DNS)
 
-- maps human-readable domain names (e.g. `www.google.com`) to an IP address
+- Maps human-readable domain names (e.g. `www.google.com`) to an IP address
 - Hierarchical structure: Root servers -> Top-Level Domain (TLD) servers (.com, .org) -> Authoritative name servers (google.com)
 - Query resolution:
   - Recursive: resolver asks server to do the work and return the final answer
@@ -884,6 +884,7 @@ Monitoring and diagnostics:
 - `dig +trace <name>` to trace the full resolution path
 - `nslookup <name>`, older tool, similar to host
 
+For more details, check out this [blog post](https://www.bhusalmanish.com.np/blog/posts/dns-explained.html).
 ### Hypertext Transfer Protocol (HTTP)
 
 - HTTP is the foundation of data communication for the internet and the dominant protocol for modern web and APIs
