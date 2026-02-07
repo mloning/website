@@ -3,7 +3,6 @@ title: Exploring Paris
 date: 2025-05-18T00:14:14+02:00
 draft: false
 ---
-
 ## Festivals
 
 - [Fête de la musique](https://fetedelamusique.culture.gouv.fr/)
