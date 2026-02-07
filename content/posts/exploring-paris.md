@@ -16,7 +16,7 @@ draft: false
 
 ## Restaurants
 
-- [Le Petit Budlo](https://www.gillespudlowski.com/388513/livres/le-petit-pudlo-des-bistrots-2024-25) (bistro guide)
+- [Le Petit Pudlo](https://www.gillespudlowski.com/388513/livres/le-petit-pudlo-des-bistrots-2024-25) (bistro guide)
 - [Les Pieds dans le Plat](https://www.gillespudlowski.com/) (gastronomic blog)
 
 ## Cinemas
@@ -25,11 +25,6 @@ draft: false
 - Grand Rex (apparently biggest theatre in Europe, venue for premieres and film festivales, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/))
 - Cinéma en plein air dans le Parc de la Villette
 - Cinéma Pathé Palace (very comfortable but expensive)
-
-## Monuments
-
-- Sainte Chapelle
-- Notre Dame
 
 ## Museums
 
@@ -75,6 +70,7 @@ Most museums in Paris are free on some occasions, including:
 - [104](https://www.104.fr) (open cultural space, expositions)
 - Le Lucernaire (theatre, cinema)
 - [La Vache Bleue](https://www.lavachebleue.fr/) (concert, cinema)
+- [Montmartre aux Artistes](https://maps.app.goo.gl/EtMgd1Ty6c7AEfNB8)
 
 ## Shops
 
@@ -102,3 +98,4 @@ Most museums in Paris are free on some occasions, including:
 ## Other resources
 
 - https://www.paris.fr/quefaire
+
