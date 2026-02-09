@@ -119,7 +119,7 @@ Run: `sudo pihole -up`.
 
 More recently, I came across this [Hackernews thread] which mentions some interesting alternatives, including [AdGuard Home] and [NextDNS].
 
-For a more comprehensive setup, see [this blog post](https://psyonik.tech/posts/a-guide-for-wireguard-vpn-setup-with-pi-hole-adblock-and-unbound-dns/)
+For a more comprehensive setup, see [this blog post](https://psyonik.tech/posts/a-guide-for-wireguard-vpn-setup-with-pi-hole-adblock-and-unbound-dns/).
 
 [Hackernews thread]: https://news.ycombinator.com/item?id=41970318
 [AdGuard Home]: https://adguard.com/en/adguard-home/overview.html
