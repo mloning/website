@@ -3,7 +3,7 @@ title: Exploring Paris
 date: 2025-05-18T00:14:14+02:00
 draft: false
 ---
-## Festivals
+## Festivals & events
 
 - [Fête de la musique](https://fetedelamusique.culture.gouv.fr/)
 - Ganesha festival (Temple of Sri Manicka Vinayakar Alayam)
@@ -11,6 +11,7 @@ draft: false
 - Bal des Pompiers
 - Fête de la Lune
 - [Les nuits de la lecture](https://www.nuitsdelalecture.fr/)
+- [Paris sous les étoiles](https://www.afastronomie.fr/paris) 
 
 ## Restaurants
 
