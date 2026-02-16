@@ -3,8 +3,7 @@ title: Job interviewing
 date: 2025-11-16T14:15:09+02:00
 draft: false
 ---
-
-Here are some notes from my experience searching for new jobs and interviewing with various companies.
+LoHere are some notes from my experience searching for new jobs and interviewing with various companies.
 
 It's largely a summary of books, blog posts and conversations I've had, some of it copied directly from there (see the resources I link in each section).
 While some principles are general, I’m specifically looking at ML and software engineering.
@@ -656,6 +655,7 @@ Thank them for the negotiation.
 
 ### Negotiating compensation
 
+https://adatosystems.com/2026/02/16/blog-how-not-to-answer-the-salary-question/
 #### How to give the first number
 
 It's better to not give the first number.
@@ -663,8 +663,31 @@ If unavoidable, appeal to an objective metric, such as industry standard, and em
 
 > I know that the average software engineer in Silicon Valley makes roughly 120K a year salary, so I think that's a good place to start.
 
-For reference salaries, see e.g. https://www.levels.fyi.
+Be prepared to justify your range. For reference salaries, see e.g. https://www.levels.fyi.
 
+#### For questions about compensation expectations at the beginning of the process
+
+Reply by explaining your curious mindset during the interview process:
+
+> At this point, I don't feel equipped to throw out a number because I'd like to find out more about the opportunity first – right now, I simply don't have the data to be able to say something concrete.
+> If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works. I promise not to accept other offers until I have a chance to discuss them with you.
+
+> I don't have any particular numbers in mind.
+> I'm more interested in learning whether this will be a good mutual fit.
+> If it is, I'm open to exploring any offer so long as it's competitive.
+
+#### For when a recruiter provides you a salary range and asks you to comment on it at the beginning of the process
+
+> Thank you for sharing that with me.
+> Right now, I don't know enough about the opportunity to value it concretely.
+> If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works.
+> I promise not to accept other offers until I have a chance to discuss them with you.
+
+#### For questions about compensation expectations at the end of the process
+
+> It sounds like there's an offer coming, and I'm really excited about it.
+> I'm not sure exactly what number I'm looking for, but if you'd be able to share what an offer package might look like, then I will gladly iterate on it with you if needed and figure out something that works.
+> I promise not to accept other offers until I have a chance to discuss them with you.
 #### How to ask for more salary
 
 Always state a reason why you're asking for more.
@@ -781,30 +804,6 @@ If they push back and say this is the best they can do, then politely reply:
 
 Most companies will relent at this point.
 If they persist, don't be afraid to walk away.
-
-#### For questions about compensation expectations at the beginning of the process
-
-Reply by explaining your curious mindset during the interview process:
-
-> At this point, I don't feel equipped to throw out a number because I'd like to find out more about the opportunity first – right now, I simply don't have the data to be able to say something concrete.
-> If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works. I promise not to accept other offers until I have a chance to discuss them with you.
-
-> I don't have any particular numbers in mind.
-> I'm more interested in learning whether this will be a good mutual fit.
-> If it is, I'm open to exploring any offer so long as it's competitive.
-
-#### For when a recruiter provides you a salary range and asks you to comment on it at the beginning of the process
-
-> Thank you for sharing that with me.
-> Right now, I don't know enough about the opportunity to value it concretely.
-> If you end up making me an offer, I would be more than happy to iterate on it if needed and figure out something that works.
-> I promise not to accept other offers until I have a chance to discuss them with you.
-
-#### For questions about compensation expectations at the end of the process
-
-> It sounds like there's an offer coming, and I'm really excited about it.
-> I'm not sure exactly what number I'm looking for, but if you'd be able to share what an offer package might look like, then I will gladly iterate on it with you if needed and figure out something that works.
-> I promise not to accept other offers until I have a chance to discuss them with you.
 
 #### For questions about where else you're interviewing at the beginning of the process
 
