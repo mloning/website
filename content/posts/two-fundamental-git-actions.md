@@ -1,7 +1,6 @@
 ---
-title: "Two Fundamental Git Actions"
+title: Two Fundamental Git Actions
 date: 2023-12-29T23:20:08+01:00
-last_modified: .Lastmod
 draft: true
 ---
 
