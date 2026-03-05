@@ -89,15 +89,15 @@ This prevents memory leaks.
 
 In C++, the general rule is to use a smart pointer (`std::unique_ptr` or `std::shared_ptr`) unless you have a specific, low-level requirement for a raw pointer.
 
-#### Smart pointers in Rust
+#### Smart pointers in Rust and C++
 
-| Smart Pointer    | Purpose                                 | Description                                                                                                                                                                    |
-| :--------------- | :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`Box<T>`**     | **Single Ownership**                    | Stores data on the **heap**. Used when you need to store large or unknown-sized data and want **one owner**. Cleans up memory automatically when it goes out of scope.         |
-| **`Rc<T>`**      | **Multiple Ownership (Immutable)**      | **Reference Counting**. Allows **multiple parts** of code to share ownership of the same data (which is immutable). Data is freed only when the reference count drops to zero. |
-| **`Arc<T>`**     | **Thread-Safe Multiple Ownership**      | **Atomic Reference Counting**. Similar to `Rc<T>` but uses atomic operations, making it safe to share ownership **across different threads**.                                  |
-| **`RefCell<T>`** | **Interior Mutability (Single Thread)** | Allows mutation of data inside an otherwise **immutable** structure. The borrowing check happens at **runtime** and is often used with `Rc<T>`.                                |
-| **`Weak<T>`**    | **Non-Owning Reference**                | Used with `Rc<T>` to create a reference that **doesn't contribute to the reference count**. Essential for breaking **reference cycles** to prevent memory leaks.               |
+| Rust             | C++                   | Purpose                                 | Description                                                                                                                                                                    |
+| :--------------- | :-------------------- | :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`Box<T>`**     | **`std::unique_ptr`** | **Single Ownership**                    | Stores data on the **heap**. Used when you need to store large or unknown-sized data and want **one owner**. Cleans up memory automatically when it goes out of scope.         |
+| **`Rc<T>`**      |                       | **Multiple Ownership (Immutable)**      | **Reference Counting**. Allows **multiple parts** of code to share ownership of the same data (which is immutable). Data is freed only when the reference count drops to zero. |
+| **`Arc<T>`**     | **`std::shared_ptr`** | **Thread-Safe Multiple Ownership**      | **Atomic Reference Counting**. Similar to `Rc<T>` but uses atomic operations, making it safe to share ownership **across different threads**.                                  |
+| **`RefCell<T>`** |                       | **Interior Mutability (Single Thread)** | Allows mutation of data inside an otherwise **immutable** structure. The borrowing check happens at **runtime** and is often used with `Rc<T>`.                                |
+| **`Weak<T>`**    | **`std::weak_ptr`**   | **Non-Owning Reference**                | Used with `Rc<T>` to create a reference that **doesn't contribute to the reference count**. Essential for breaking **reference cycles** to prevent memory leaks.               |
 
 ### Fat pointer
 
