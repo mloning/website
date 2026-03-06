@@ -12,13 +12,13 @@ Also see my post on [exploring Paris](https://www.mloning.com/posts/exploring-pa
 
 - [Radio France], different radio stations and podcasts (e.g. [France Inter], [France Info] or [France Culture]); for French-only music, see [Fip - Sacré Français]
 - [Radio France Internationale](https://www.rfi.fr/fr/), e.g. [Journal en français facile](https://francaisfacile.rfi.fr/fr/podcasts/journal-en-fran%C3%A7ais-facile/)
-- [ByteFM] programs [France, en confidance] and [What the France] about French music, moderated in German
+- [ByteFM] programs [France, en confidence] and [What the France] about French music, moderated in German
 
 [Radio France]: https://www.radiofrance.fr/
 [France Inter]: https://www.radiofrance.fr/franceinter
 [France Info]: https://www.francetvinfo.fr/en-direct/radio.html
 [France Culture]: https://www.radiofrance.fr/franceculture
-[France, en confidance]: https://www.byte.fm/sendungen/la-france-en-confidence/
+[France, en confidence]: https://www.byte.fm/sendungen/la-france-en-confidence/
 [ByteFM]: https://www.byte.fm/
 [Fip - Sacré Français]: https://www.radiofrance.fr/fip/radio-sacre-francais
 [What the France]: https://www.byte.fm/sendungen/what-the-france/
@@ -91,6 +91,7 @@ Series:
 
 Films:
 
+- [10e chamber, instants d'audiences](https://fr.wikipedia.org/wiki/10e_chambre,_instants_d%27audience)
 - [Anatomie d'une Chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
 - [Le Monde du Silence](<https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film)>)
 - [La Panthère des Neiges](<https://fr.wikipedia.org/wiki/La_Panth%C3%A8re_des_neiges_(film)>) and [Le Chant des Forêts](https://www.vincentmunier.com/portfolio/le-chant-des-forets/) de Vincent Munier
@@ -104,13 +105,13 @@ Films:
 
 ### Resources
 
-- Vocab flashcards for learning with [spaced repititions], e.g. using [Anki] with the mobile app and this basic [community deck], or [Mochi](https://mochi.cards/), but nothing beats creating your own handwritten flashcards
+- Vocab flashcards for learning with [spaced repetitions], e.g. using [Anki] with the mobile app and this basic [community deck], or [Mochi](https://mochi.cards/), but nothing beats creating your own handwritten flashcards
 - [Leo trainer] for words I look up and want to remember in my daily interactions
 - [Bescherelle grammar book], concise description of French grammar, without any exercises
 - [Bescherelle verb conjugation book]
 - [kwiziq], online learning platform
 
-[spaced repititions]: https://gwern.net/spaced-repetition#flashcard-sources
+[spaced repetitions]: https://gwern.net/spaced-repetition#flashcard-sources
 [Anki]: https://apps.ankiweb.net/index.html
 [community deck]: https://ankiweb.net/shared/info/893324022
 [Leo trainer]: https://dict.leo.org/trainer/index.php
@@ -138,10 +139,10 @@ In my case, choosing a Qualiop-certified school was a requirement for getting my
 The French language has lots of concepts and rules that make it complicated, here are some I struggled with.
 
 - [h aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais), which stops the usual vowel contraction and liaison
-- additional pronous "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
+- additional pronouns "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
 - passe compose with etre and avoir
-- complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de mesure
-- que le participe passé ne s'accord pas avec le COD, sauf dans les [exceptions](https://www.linkedin.com/posts/alexandrelebrun_je-suis-venu-ici-sur-linkedin-pour-parler-activity-7388107867372888064-w0wu)
+- complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de measure
+- que le participate passé ne s'accord pas avec le COD, sauf dans les [exceptions](https://www.linkedin.com/posts/alexandrelebrun_je-suis-venu-ici-sur-linkedin-pour-parler-activity-7388107867372888064-w0wu)
 
 ## Interesting things
 
