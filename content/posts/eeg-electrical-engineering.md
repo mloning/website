@@ -218,13 +218,18 @@ A standard handheld multimeter usually uses a 16-bit to 24-bit ADC, meaning it h
 
 ## Resources
 
+- The Art of Electronics by Horowitz and Hill
+- simulators: https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html, https://www.falstad.com/circuit/
+- https://www.allaboutcircuits.com/textbook/
 - Electric Fields of the Brain: The Neurophysics of EEG
 - https://alanmacy.com/book/the-handbook-of-human-physiological-recording/
 - Bioelectromagnetism: History, Foundations and Applications
 - https://www.bem.fi
 - Medical Instrumentation: Application and Design
 - basic electrical engineering intros
-  - https://www.youtube.com/playlist?list=PLhy2nHJciTED7xA_u5OyUj7oDEFf3BuZY
+  - https://www.youtube.com/c/Theengineeringmindset/videos
+  - https://www.youtube.com/watch?v=vn4J8RcMGrM&list=PLr_CZLgMkHeWFl1uf5yR2ouhIh00ycHn9
+  - https://www.youtube.com/playlist?list=PLvOlSehNtuHtWlH0UOZNtOn-FlFCn1GYw
 
 ## Questions
 
