@@ -38,3 +38,4 @@ Cognitive debt
 - https://simonwillison.net/2026/Feb/15/cognitive-debt/
 - https://martinfowler.com/fragments/2026-02-13.html
 - https://margaretstorey.com/blog/2026/02/09/cognitive-debt/
+- https://fazy.medium.com/agentic-coding-ais-adolescence-b0d13452f981 (verification debt)
