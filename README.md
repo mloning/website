@@ -5,8 +5,9 @@ My personal website built with [Hugo] and a modified [Ezhil] theme.
 [Hugo]: https://gohugo.io
 [Ezhil]: https://github.com/mloning/ezhil
 
-## Local development
+## Develop
 
+- Install [just](https://github.com/casey/just)
 - `gh repo clone https://github.com/mloning/website . -- --recurse-submodules` to clone the repo with the theme as a [git submodule]
 - `git submodule update --init --recursive --remote` to update the theme from the git submodule
 - `./run.sh server` to start the Hugo server with hot reloading
