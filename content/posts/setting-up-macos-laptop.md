@@ -48,6 +48,7 @@ brew install \
   alacritty \
   bat \
   bitwarden \
+  duckdb \
   eza \
   fd \
   fzf \
@@ -58,6 +59,7 @@ brew install \
   llvm \
   neovim \
   node \
+  nushell \
   ripgrep \
   stow \
   tldr \
