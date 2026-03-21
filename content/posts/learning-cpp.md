@@ -3,7 +3,15 @@ title: Learning C++
 date: 2025-05-14T08:47:02+02:00
 draft: false
 ---
+
+## Best practices
+
+- Strict compiler settings (`-pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Wshadow -Werror -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Woverloaded-virtual -Wpointer-arith -Wundef -Wno-unused -Wno-unused-parameter -Wlogical-op -Wdouble-promotion`)
+- Static analysis (linters, formatters)
+- Dynamic analysis (sanitizers)
+
 ## Learning resources
+
 For discussions, see: https://news.ycombinator.com/item?id=16535886, https://www.reddit.com/r/cpp_questions/comments/rxx0z5/best_resources_to_learn_c/
 
 - Book "Effective Modern C++" by Scott Meyers
@@ -12,12 +20,20 @@ For discussions, see: https://news.ycombinator.com/item?id=16535886, https://www
   - https://www.studyplan.dev/cpp
 - Basic tutorials:
   - Back to basics videos from CppCon: https://www.youtube.com/user/CppCon/search?query=back%20to%20basics
+    - https://www.youtube.com/watch?v=NReDubvNjRg (getting started)
+    - https://www.youtube.com/watch?v=MwoAM3sznS0 or https://www.youtube.com/watch?v=7_H4qzhWbnQ (unit testing)
+    - https://www.youtube.com/watch?v=qgszy9GquRs (debugging)
   - https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb
   - https://cplusplus.com/
+  - [C++ Coding with Neovim](https://www.youtube.com/watch?v=nzRnWUjGJl8)
 - Cheat sheet: https://hackingcpp.com/cpp/cheat_sheets.html; discussion: https://news.ycombinator.com/item?id=30579884
 - Short overview: https://learnxinyminutes.com/c++/
 
 ## Other resources
+
+- https://en.cppreference.com/w/
+- https://cppinsights.io/ and https://compiler-explorer.com/ to under lower-level details of the compiler
+- User groups https://isocpp.org/wiki/faq/user-groups-worldwide
 - C++ build process: https://github.com/green7ea/blog/blob/master/cpp-build-process/README.md; discussion: https://news.ycombinator.com/item?id=18454140
   - linking process: https://youtu.be/dOfucXtyEsU?si=shOVX7xs0KzOYWQA
 - Working with legacy C++ code base: https://news.ycombinator.com/item?id=39549486
@@ -27,6 +43,7 @@ For discussions, see: https://news.ycombinator.com/item?id=16535886, https://www
 - C++ to Rust book: https://cel.cs.brown.edu/crp/
 
 ## Discussions on C++, its problems and future
+
 - https://news.ycombinator.com/item?id=32905885; original post: https://x.com/markrussinovich/status/1571995117233504257
 - https://www.babaei.net/blog/rust-devs-think-we-are-hopeless-lets-prove-them-wrong-with-cpp-memory-leaks/
 - https://m.youtube.com/watch?v=7DCO-IISBnc
