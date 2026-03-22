@@ -12,7 +12,7 @@ For a deeper explanation, see [The Bits Between the Bits: How We Get to main()](
 Best practices:
 
 - Use a package manager (e.g. `conan`)
-- Use [CMake](https://cmake.org/) with Ninja (for an overview of CMake best practices, see [Pragmatic CMake](https://www.youtube.com/watch?v=NDfTwOvWIao))
+- Use [CMake](https://cmake.org/) with Ninja (for CMake best practices, see [Professional CMake](https://crascit.com/professional-cmake/) or [Pragmatic CMake](https://www.youtube.com/watch?v=NDfTwOvWIao))
 - Strict compiler settings: at least `-Wall -Wextra -Werror`, preferably also `-Wpedantic -Wcast-align -Wno-unused -Wshadow -Woverloaded-virtual`, and ideally with `-Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion`
 - Static analysis: linters, formatters (e.g. `clang-tidy` and `clang-format`)
 - Dynamic analysis: sanitizers, at least [ASan](https://clang.llvm.org/docs/AddressSanitizer.html) and [UBSan](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html) (e.g. `g++ -fsanitize=address,undefined -g -O1`)
