@@ -21,7 +21,7 @@ Best practices:
 
 - Book "Effective Modern C++" by Scott Meyers
 - Online tutorials:
-  - [Learn C++](https://www.learncpp.com/cpp-tutorial/), very comprehensive tutorial for the C++ language
+  - [Learn C++](https://www.learncpp.com/cpp-tutorial/), very comprehensive tutorial for the C++ language itself, but without discussing the wider ecosystem like existing testing frameworks or toolchains
   - https://www.studyplan.dev/cpp
   - [Video tutorials](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) focused on game development
   - https://learnxinyminutes.com/c++/, very concise introduction
