@@ -46,6 +46,7 @@ Below are some highlights.
   - [C++ Coding with Neovim](https://www.youtube.com/watch?v=nzRnWUjGJl8)
 - [It's Complicated](https://www.youtube.com/watch?v=tTexD26jIN4) (Kate Gregory, Meeting C++ 2017 Keynote)
 - [10 Core Guidelines You Need to Start Using Now](https://www.youtube.com/watch?v=XkDEzfpdcSg) (Kate Gregory, CppCon 2017)
+- [Undefined Behavior in C++: What Every Programmer Should Know and Fear](https://www.youtube.com/watch?v=k9N8OrhrSZw) (Fedor Pikus, CppCon 2023)
 
 ### Other resources
 
