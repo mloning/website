@@ -25,6 +25,7 @@ Some tips on how to get the best out of Claude Code:
 
 - [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
 - [Getting Good Results from Claude Code](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/)
+- [Anatomy of the Claude folder](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder) (user/project settings; rules, skills, commands)
 
 I try to capture as much as possible the things that work for me in my [settings](https://github.com/mloning/dotfiles/tree/main/claude/).
 
