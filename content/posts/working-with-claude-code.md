@@ -26,6 +26,7 @@ Some tips on how to get the best out of Claude Code:
 - [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
 - [Getting Good Results from Claude Code](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/)
 - [Anatomy of the Claude folder](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder) (user/project settings; rules, skills, commands)
+- [Custom sounds](https://openpeon.com/) for agent events like task completions, errors and permission prompts
 
 I try to capture as much as possible the things that work for me in my [settings](https://github.com/mloning/dotfiles/tree/main/claude/).
 
@@ -36,6 +37,7 @@ Some reviews of using Claude Code:
 - [The Magic of Claude Code](https://www.alephic.com/writing/the-magic-of-claude-code) ([HN thread](https://news.ycombinator.com/item?id=45437893))
 - [Six Weeks of Claude Code](https://blog.puzzmo.com/posts/2025/07/30/six-weeks-of-claude-code/) ([HN thread](https://news.ycombinator.com/item?id=44746621))
 - [First Attempt Will Be 95% Garbage](https://www.sanity.io/blog/first-attempt-will-be-95-garbage) ([HN thread](https://news.ycombinator.com/item?id=45107962))
+- [The first 40 months of the AI era](https://news.ycombinator.com/item?id=47557185)
 
 Generally, at this stage, it seems like coding agents are:
 
