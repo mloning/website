@@ -44,20 +44,22 @@ Below are some highlights.
   - [Unit Testing in C++](https://www.youtube.com/watch?v=MwoAM3sznS0) (2024) or [Testing in C++](https://www.youtube.com/watch?v=7_H4qzhWbnQ) (2023)
   - [Debugging](https://www.youtube.com/watch?v=qgszy9GquRs)
   - [C++ Coding with Neovim](https://www.youtube.com/watch?v=nzRnWUjGJl8)
-- [It's Complicated](https://www.youtube.com/watch?v=tTexD26jIN4) (Kate Gregory, Meeting C++ 2017 Keynote)
-- [10 Core Guidelines You Need to Start Using Now](https://www.youtube.com/watch?v=XkDEzfpdcSg) (Kate Gregory, CppCon 2017)
-- [Undefined Behavior in C++: What Every Programmer Should Know and Fear](https://www.youtube.com/watch?v=k9N8OrhrSZw) (Fedor Pikus, CppCon 2023)
 
 ### Other resources
 
+- [cplusplus.com](https://cplusplus.com/), community tutorials, forum and blog posts
 - [Cheat sheet](https://hackingcpp.com/cpp/cheat_sheets.html) with [HackerNews thread](https://news.ycombinator.com/item?id=30579884)
 - Well-written C++ repos: [nlohmann/json](https://github.com/nlohmann/json)
+- Example best-practices repository [bemanproject/exemplar](https://github.com/bemanproject/exemplar)
 
 ## Other resources
 
-- Example best-practices repository [bemanproject/exemplar](https://github.com/bemanproject/exemplar)
+- [It's Complicated](https://www.youtube.com/watch?v=tTexD26jIN4) (Kate Gregory, Meeting C++ 2017 Keynote)
+- [10 Core Guidelines You Need to Start Using Now](https://www.youtube.com/watch?v=XkDEzfpdcSg) (Kate Gregory, CppCon 2017)
+- [Undefined Behavior in C++: What Every Programmer Should Know and Fear](https://www.youtube.com/watch?v=k9N8OrhrSZw) (Fedor Pikus, CppCon 2023)
+- [Crafting the Code You Don’t Write: Sculpting Software in an AI World](https://www.youtube.com/watch?v=v6OyVjQpjjc) (Daisy Hollman, CppCon 2025)
+- [Learning To Stop Writing C++ Code (and Why You Won’t Miss It)](https://www.youtube.com/watch?v=mpGx-_uLPDM) (Daisly Holman, ACCU 2025)
 - [You've just inherited a legacy C++ codebase, now what?](https://gaultier.github.io/blog/you_inherited_a_legacy_cpp_codebase_now_what.html), great blog post on working with a legacy C++ code base, but most tips apply to any language; also see the related [HackerNews thread](https://news.ycombinator.com/item?id=39549486) and the [blog post](https://medium.com/@ramunarasinga/git-blame-ignore-revs-to-ignore-bulk-formatting-changes-f20ac23e6155) on how to ignore large formatting changes using [.git-blame-ignore-revs](https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revltrevgt)
-- [cplusplus.com](https://cplusplus.com/), community tutorials, forum and blog posts
 - [cppreference.com](https://en.cppreference.com/), language reference
 - [C++ Insights](https://cppinsights.io/) and [Compiler Explorer](https://compiler-explorer.com/) to better understand the compiled code and how the compiler works
 - [ISO C++ User Groups](https://isocpp.org/wiki/faq/user-groups-worldwide) to find user groups around the world

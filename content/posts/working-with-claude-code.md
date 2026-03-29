@@ -26,6 +26,12 @@ Some tips on how to get the best out of Claude Code:
 - [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
 - [Getting Good Results from Claude Code](https://www.dzombak.com/blog/2025/08/getting-good-results-from-claude-code/)
 - [Anatomy of the Claude folder](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder) (user/project settings; rules, skills, commands)
+- [Crafting the Code You Don’t Write: Sculpting Software in an AI World](https://www.youtube.com/watch?v=v6OyVjQpjjc) (Daisy Hollman, CppCon 2025)
+- [Learning To Stop Writing C++ Code (and Why You Won’t Miss It)](https://www.youtube.com/watch?v=mpGx-_uLPDM) (Daisly Holman, ACCU 2025)
+- Coverage-guided test code generation
+
+Some useful extensions:
+
 - [Custom sounds](https://openpeon.com/) for agent events like task completions, errors and permission prompts
 
 I try to capture as much as possible the things that work for me in my [settings](https://github.com/mloning/dotfiles/tree/main/claude/).
@@ -38,10 +44,12 @@ Some reviews of using Claude Code:
 - [Six Weeks of Claude Code](https://blog.puzzmo.com/posts/2025/07/30/six-weeks-of-claude-code/) ([HN thread](https://news.ycombinator.com/item?id=44746621))
 - [First Attempt Will Be 95% Garbage](https://www.sanity.io/blog/first-attempt-will-be-95-garbage) ([HN thread](https://news.ycombinator.com/item?id=45107962))
 - [The first 40 months of the AI era](https://news.ycombinator.com/item?id=47557185)
+- [Panel: What We Learned About AI Tools For C++ Engineers](https://www.youtube.com/watch?v=XPyGQm6-lsI) (CppCon 2025)
 
 Generally, at this stage, it seems like coding agents are:
 
 - Not very good at writing code on their own unless it's simple; generated code often needs to be reviewed and edited for correctness, design and style
+- Good at writing tests
 - Very good at debugging
 - Good at brainstorming
 
