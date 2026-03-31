@@ -48,6 +48,7 @@ brew install \
   alacritty \
   bat \
   bitwarden \
+  btop \
   duckdb \
   eza \
   fd \
@@ -57,6 +58,7 @@ brew install \
   htop \
   jq \
   llvm \
+  lua \
   neovim \
   node \
   nushell \
