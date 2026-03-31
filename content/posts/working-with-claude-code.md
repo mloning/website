@@ -29,6 +29,7 @@ Some tips on how to get the best out of Claude Code:
 - [Crafting the Code You Don’t Write: Sculpting Software in an AI World](https://www.youtube.com/watch?v=v6OyVjQpjjc) (Daisy Hollman, CppCon 2025)
 - [Learning To Stop Writing C++ Code (and Why You Won’t Miss It)](https://www.youtube.com/watch?v=mpGx-_uLPDM) (Daisly Holman, ACCU 2025)
 - Coverage-guided test code generation
+- [ccusage](https://github.com/ryoppippi/ccusage) for usage and cost tracking; runs without installation, e.g. `npx ccusage@latest daily`
 
 Some useful extensions:
 
