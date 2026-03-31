@@ -63,9 +63,11 @@ Below are some highlights.
 - [ISO C++ User Groups](https://isocpp.org/wiki/faq/user-groups-worldwide) to find user groups around the world
 - [Low-latency C++ patterns](https://news.ycombinator.com/item?id=40908273)
 - [C++ to Rust Phrasebook](https://cel.cs.brown.edu/crp/)
+- [Comprehensive C++ Hashmap Benchmarks 2022](https://martin.ankerl.com/2022/08/27/hashmap-bench-01/)
 
 ## C++ shortcomings and its future
 
+- [C++26 is done: ISO C++ standards meeting Trip Report](https://news.ycombinator.com/item?id=47565365) HackerNews thread
 - [Why I don't spend time with Modern C++ anymore](https://news.ycombinator.com/item?id=11720659)
 - [Linus Torvalds on C++](https://harmful.cat-v.org/software/c++/linus)
 - [C++ is an absolute blast](https://news.ycombinator.com/item?id=42495135)
