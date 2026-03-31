@@ -3,6 +3,7 @@ title: Network engineering
 date: 2025-07-24T23:07:58+02:00
 draft: false
 ---
+
 ## Intro
 
 I recently had to think more about network engineering.
@@ -36,7 +37,7 @@ The network edge consists of end systems (hosts) like computers and servers wher
 Most complexity is designed to be in the network-edge devices (end systems), including the application and transport layer (see [End-to-end Principle]).
 Network-core devices, including everything from the network layer and below, are designed to be simple.
 
-Upper layers are constrained by services provided by lower layers (e.g. physical limitations like bandwith or transmission delay), but can build services on top to remedy lower-level limitations (e.g. TCP provides reliable data transfer on the transport layer on top of the unreliable network layer IPv4 protocol).
+Upper layers are constrained by services provided by lower layers (e.g. physical limitations like bandwidth or transmission delay), but can build services on top to remedy lower-level limitations (e.g. TCP provides reliable data transfer on the transport layer on top of the unreliable network layer IPv4 protocol).
 
 Much of modern network engineering is defined by specific conventions adhered to by millions of networks around the world, rather than physical laws or an overarching, central design.
 Conventions are primarily defined by the [Internet Engineering Task Force] (IETF) in [Request for Comments] (RFCs).
@@ -346,7 +347,7 @@ A router has the following components:
   - Potential packet loss (no delivery guarantee)
   - No guaranteed in-order delivery
   - Potential packet error (corruption)
-  - No bandwith guarantee
+  - No bandwidth guarantee
   - No guaranteed (maximum) end-to-end delay for packet delivery
 - Every network host has at least one IP address
 
@@ -448,8 +449,8 @@ Protocol flow for assigning an IP address to a new host:
 - Not enough available public addresses under IPv4
 - IP address format
   - 128-bit address, consisting of 8 colon-separated groups of 4 hexadecimal characters, omitting leading zeros (e.g. `2001:0db8:85a3:0000:0000:8a2e:0370:7334` or shortened to `2001:db8:85a3::8a2e:370:7334`)
-- Uses neighbor discovery (ND) instead of ARP
-- ND is a set of protocols used in IPv6 to discover other devices on the same network, determine their link-layer addresses, find routers, and automatically configure addresses
+- Uses neighbor discovery (AND) instead of ARP
+- AND is a set of protocols used in IPv6 to discover other devices on the same network, determine their link-layer addresses, find routers, and automatically configure addresses
 - `::1` (`localhost`) for logical loopback interface (equivalent to `127.0.0.1` in IPv4)
 - Anycast address
 - Flow labelling (e.g. for prioritizing realtime streaming)
@@ -504,7 +505,7 @@ Fields:
 
 ### Middle boxes
 
-- A middle box is any intermediate device performing functions apart from standard functions of an IP router on the data path between source and desitination host
+- A middle box is any intermediate device performing functions apart from standard functions of an IP router on the data path between source and destination host
 - NAT translation
 - Security
   - Deep packet inspection (DPI)
@@ -530,7 +531,7 @@ Centralized vs per-router control
 - Mathematically expressed as cost optimization problem using graph with nodes representing routers and edges routers having varying costs
 - Algorithm properties
   - Centralized: using complete, global information about the network graph, its connectivity and costs (e.g. link-state algorithm)
-  - Decentralized: using incomplete, local information about neighbor nodes, each node iteratively estimates least-cost routes and shares its informations with neighbors (e.g. distance-vector algorithm)
+  - Decentralized: using incomplete, local information about neighbor nodes, each node iteratively estimates least-cost routes and shares its information with neighbors (e.g. distance-vector algorithm)
   - Static: routes change very slowly over time, often result of human intervention (e.g. manually configuring static routes)
   - dynamic: recomputed periodically or upon network graph change
   - load-sensitive: cost vary dynamically based on congestion
@@ -657,7 +658,7 @@ Switch -> controller (Northbound interface):
 ### Principles for choosing transport layer protocols
 
 - Reliability (reliable data transfer)
-- Throughput guarantees: bandwith-sensitive vs adaptive applications
+- Throughput guarantees: bandwidth-sensitive vs adaptive applications
 - Timing guarantees (latency, transmission delay)
 - Security
 
@@ -885,6 +886,7 @@ Monitoring and diagnostics:
 - `nslookup <name>`, older tool, similar to host
 
 For more details, check out this [blog post](https://www.bhusalmanish.com.np/blog/posts/dns-explained.html).
+
 ### Hypertext Transfer Protocol (HTTP)
 
 - HTTP is the foundation of data communication for the internet and the dominant protocol for modern web and APIs
@@ -943,20 +945,20 @@ Why use messaging systems instead of direct HTTP calls?
 
 ### Clock synchronization
 
-Distributed systems often involve processing  timestamp from different clocks, and being able to treat them as if they come from a single, unified time source.
+Distributed systems often involve processing timestamp from different clocks, and being able to treat them as if they come from a single, unified time source.
 
-The most common protocol for synchronizing clocks is [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol). 
+The most common protocol for synchronizing clocks is [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
 Also check out this [blog post](https://arpitbhayani.me/blogs/clock-sync-nightmare/).
 
 ## Security
 
-- 3 factors of authentification
+- 3 factors of authentication
   - Something you know (e.g. a password)
   - Something you have (e.g. a hardware security key like YubiKey)
   - Something you are (e.g. fingerprint or face recognition)
 - 3 pillars of information security
-  - Confidentiality (not disclosed to unauthorized entities), including endpoint authentication and authorization 
+  - Confidentiality (not disclosed to unauthorized entities), including endpoint authentication and authorization
   - Integrity (not modified by unauthorized entities)
   - Availability (information is available when needed)
 - Ways to compromise a network system
@@ -1053,6 +1055,7 @@ Many of the above macOS tools are also available on Linux.
 - Networking for System Administrators by Michael Lucas (intro level)
 - TCP/IP Illustrated: The Protocols, Volume 1 (classic text), or The Illustrated Network: How TCP/IP Works in a Modern Network (modern adaptation)
 - CS 144: Introduction to Computer Networking ([current course](https://cs144.github.io/), [website](https://online.stanford.edu/courses/cs144-introduction-computer-networking))
-- https://www.ducktyped.org/p/why-is-it-called-a-cloud-if-its-not (blog post series on AWS networking and virtual private cloud)
+- [Why is it called a cloud if it's not](https://www.ducktyped.org/p/why-is-it-called-a-cloud-if-its-not (blog post series on AWS networking and virtual private cloud)
+- [How to turn anything into a router](https://nbailey.ca/post/router/) ([HackerNews thread](https://news.ycombinator.com/item?id=47574034))
 
 For more recommendations, see this [HackerNews thread](https://news.ycombinator.com/item?id=38918418).
