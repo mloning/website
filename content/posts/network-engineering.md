@@ -1057,5 +1057,6 @@ Many of the above macOS tools are also available on Linux.
 - CS 144: Introduction to Computer Networking ([current course](https://cs144.github.io/), [website](https://online.stanford.edu/courses/cs144-introduction-computer-networking))
 - [Why is it called a cloud if it's not](https://www.ducktyped.org/p/why-is-it-called-a-cloud-if-its-not (blog post series on AWS networking and virtual private cloud)
 - [How to turn anything into a router](https://nbailey.ca/post/router/) ([HackerNews thread](https://news.ycombinator.com/item?id=47574034))
+- [A Survey of the 7 Configuration Changes That Turn a Multi-homed Linux Host into a Switch/Router](https://patrickmccanna.net/7-configuration-changes-that-turn-a-multi-homed-host-into-a-switch-router/)
 
 For more recommendations, see this [HackerNews thread](https://news.ycombinator.com/item?id=38918418).
