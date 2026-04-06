@@ -46,15 +46,16 @@ Some reviews of using Claude Code:
 - [First Attempt Will Be 95% Garbage](https://www.sanity.io/blog/first-attempt-will-be-95-garbage) ([HN thread](https://news.ycombinator.com/item?id=45107962))
 - [The first 40 months of the AI era](https://news.ycombinator.com/item?id=47557185)
 - [Panel: What We Learned About AI Tools For C++ Engineers](https://www.youtube.com/watch?v=XPyGQm6-lsI) (CppCon 2025)
+- [Eight years of wanting, three months of building with AI](https://lalitm.com/post/building-syntaqlite-ai/) ([HN thread](https://news.ycombinator.com/item?id=47648828)), very balanced take on coding agents
 
 Generally, at this stage, it seems like coding agents are:
 
-- Not very good at writing code on their own unless it's simple; generated code often needs to be reviewed and edited for correctness, design and style
+- Not very good at writing code on their own unless it's simple or well specified; generated code often needs to be reviewed and edited for correctness, design and style
 - Good at writing tests
 - Very good at debugging
-- Good at brainstorming
+- Very good at brainstorming
 
-Junior engineers will struggle with reviewing and editing the code, while senior engineers will mostly benefit from coding agents, but sometimes waste their time by using an agent instead of writing the code themselves.
+While junior engineers will struggle with reviewing and editing the code, senior engineers will mostly benefit from coding agents, but sometimes waste their time by using an agent instead of writing the code themselves.
 
 ## Risks of using Claude Code
 
