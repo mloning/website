@@ -67,3 +67,7 @@ With the increased speed of writing code, our cognitive debt in understanding th
 - [Martin Folwer on Cognitive Debt](https://martinfowler.com/fragments/2026-02-13.html)
 
 A similar idea is [Verification Debt](https://fazy.medium.com/agentic-coding-ais-adolescence-b0d13452f981), where we struggle to keep up with verifying and testing the generate code.
+
+## Related resources
+
+- [OpenRouter](https://openrouter.ai/) provides a unified interface for LLMs ([HN thread](https://news.ycombinator.com/item?id=47700972))
