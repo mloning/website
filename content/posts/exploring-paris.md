@@ -3,6 +3,7 @@ title: Exploring Paris
 date: 2025-05-18T00:14:14+02:00
 draft: false
 ---
+
 ## Festivals & events
 
 - [Fête de la musique](https://fetedelamusique.culture.gouv.fr/)
@@ -11,7 +12,8 @@ draft: false
 - Bal des Pompiers
 - Fête de la Lune
 - [Les nuits de la lecture](https://www.nuitsdelalecture.fr/)
-- [Paris sous les étoiles](https://www.afastronomie.fr/paris) 
+- [Paris sous les étoiles](https://www.afastronomie.fr/paris)
+- [Festival de cinema Peruivien](https://www.festivalcinemaperuvienparis.fr)
 
 ## Restaurants
 
@@ -21,7 +23,7 @@ draft: false
 ## Cinemas
 
 - [Louxor cinema](https://www.cinemalouxor.fr) (excellent selection of original-language films, well curated, nice roof-top bar)
-- Grand Rex (apparently biggest theatre in Europe, venue for premieres and film festivales, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/))
+- Grand Rex (apparently biggest theatre in Europe, venue for premieres and film festivals, e.g. [Montagne en Scene](https://www.montagne-en-scene.com/))
 - Cinéma en plein air dans le Parc de la Villette
 - Cinéma Pathé Palace (very comfortable but expensive)
 
@@ -73,7 +75,7 @@ Most museums in Paris are free on some occasions, including:
 
 ## Shops
 
-- [Tonton Outdoor](https://www.tonton-outdoor.com/) (not as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but good selection and knowlegeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7))
+- [Tonton Outdoor](https://www.tonton-outdoor.com/) (not as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but good selection and knowledgeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7))
 
 ## Swimming pools
 
@@ -97,4 +99,3 @@ Most museums in Paris are free on some occasions, including:
 ## Other resources
 
 - https://www.paris.fr/quefaire
-
