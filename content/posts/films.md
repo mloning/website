@@ -3,6 +3,7 @@ title: My favourite films
 date: 2025-07-23T22:25:57+02:00
 draft: true
 ---
+
 Some of my favourite films:
 
 - Boyhood
@@ -13,4 +14,9 @@ Some of my favourite films:
 - [Chronique des Années de Braise](https://en.wikipedia.org/wiki/Chronicle_of_the_Years_of_Fire)
 - [Aftersun](https://en.wikipedia.org/wiki/Aftersun)
 - [The Stories We Tell](https://en.wikipedia.org/wiki/Stories_We_Tell)
-- [Visages, Villages](https://en.wikipedia.org/wiki/Faces_Places_(film)) by Agnès Varda
+- [Visages, Villages](<https://en.wikipedia.org/wiki/Faces_Places_(film)>) by Agnès Varda
+
+Films I watched that I want to remember
+
+- [Pucallpa la Europea](https://es.wikipedia.org/wiki/Pucallpa_la_Europea) (Santi)
+- [Runa Simi](https://www.imdb.com/title/tt36591452/) (Augusto and Fernando)
