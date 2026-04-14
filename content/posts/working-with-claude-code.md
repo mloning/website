@@ -71,3 +71,4 @@ A similar idea is [Verification Debt](https://fazy.medium.com/agentic-coding-ais
 ## Related resources
 
 - [OpenRouter](https://openrouter.ai/) provides a unified interface for LLMs ([HN thread](https://news.ycombinator.com/item?id=47700972))
+- [Ruflo](https://github.com/ruvnet/ruflo), agent orchestration platform
