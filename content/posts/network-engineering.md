@@ -260,6 +260,19 @@ Services provided by link layer:
   - Query packet with source and destination IP and MAC address sent to all hosts and routers on the same subnet via broadcast MAC address
   - Response packets if query a host's or router's MAC address matches with desired mapping
 
+### Bluetooth Low Energy (BLE) L2CAP
+
+[L2CAP] (Logical Link Control and Adaptation Protocol) is the link-layer protocol in the Bluetooth stack responsible for segmentation, reassembly and multiplexing of higher-layer data over Bluetooth connections.
+
+- Segmentation and reassembly: L2CAP segments larger payloads (Service Data Units) into smaller Protocol Data Units (PDUs) that fit within the Bluetooth link's MTU, and reassembles them at the receiver
+- Credit-based flow control: the receiver grants "credits" (send permits) to the sender, preventing buffer overflow, matching sender speed to receiver capacity
+- Transport modes:
+  - Basic L2CAP mode (unacknowledged): no acknowledgements, no retransmissions of dropped packets, no flow control (analogous to UDP, fire-and-forget delivery with minimal overhead, used for simple, latency-sensitive data)
+  - Enhanced Credit-Based Flow Control mode (acknowledged): retransmissions of dropped packets, credit-based flow control (closer to TCP)
+  - In-order delivery: PDUs inherently arrive in order in all modes
+
+[L2CAP]: https://en.wikipedia.org/wiki/List_of_Bluetooth_protocols#Logical_link_control_and_adaptation_protocol_(L2CAP)
+
 ## Network layer: data plane
 
 - Logical communication between network hosts
