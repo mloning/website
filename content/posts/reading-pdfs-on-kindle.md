@@ -17,3 +17,4 @@ More recently, I discovered on [Hackernews](https://news.ycombinator.com/item?id
 
 - [KOReader](https://koreader.rocks/)
 - [Kobo](https://fr.kobobooks.com/collections/ereaders)
+- [I'm never buying another Kindle, and neither should you](https://www.androidauthority.com/amazon-kindle-2026-3657863/) ([thread](https://news.ycombinator.com/item?id=47835775))
