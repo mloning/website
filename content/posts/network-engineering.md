@@ -273,6 +273,8 @@ Services provided by link layer:
 
 [L2CAP]: https://en.wikipedia.org/wiki/List_of_Bluetooth_protocols#Logical_link_control_and_adaptation_protocol_(L2CAP)
 
+For more details, see [Bluetooth Low Energy Primer](https://www.bluetooth.com/bluetooth-le-primer/).
+
 ## Network layer: data plane
 
 - Logical communication between network hosts
