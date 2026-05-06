@@ -41,6 +41,8 @@ I try to capture as much as possible the things that work for me in my [settings
 
 Some reviews of using Claude Code:
 
+- [Appearing Productive In The Workplace](https://nooneshappy.com/article/appearing-productive-in-the-workplace/)
+- [Let's Talk about LLMs](https://www.b-list.org/weblog/2026/apr/09/llms/)
 - [The Magic of Claude Code](https://www.alephic.com/writing/the-magic-of-claude-code) ([HN thread](https://news.ycombinator.com/item?id=45437893))
 - [Six Weeks of Claude Code](https://blog.puzzmo.com/posts/2025/07/30/six-weeks-of-claude-code/) ([HN thread](https://news.ycombinator.com/item?id=44746621))
 - [First Attempt Will Be 95% Garbage](https://www.sanity.io/blog/first-attempt-will-be-95-garbage) ([HN thread](https://news.ycombinator.com/item?id=45107962))
