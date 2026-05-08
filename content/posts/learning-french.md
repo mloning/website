@@ -88,6 +88,7 @@ Series:
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
 - [Loups Garous](<https://fr.wikipedia.org/wiki/Loups-garous_(%C3%A9mission_de_t%C3%A9l%C3%A9vision)>), reality-TV game show for the [Werewolf game](https://en.wikipedia.org/wiki/The_Werewolves_of_Millers_Hollow)
 - [Engrenages](<https://fr.wikipedia.org/wiki/Engrenages_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)>)
+- [Class Act](<https://en.wikipedia.org/wiki/Class_Act_(French_TV_series)>), mini-series about Bernard Tapie
 
 Films:
 
