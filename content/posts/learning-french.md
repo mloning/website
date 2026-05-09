@@ -88,15 +88,20 @@ Series:
 
 - [Le Bureau des Légendes](https://fr.wikipedia.org/wiki/Le_Bureau_des_l%C3%A9gendes)
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
-- [Class Act](<https://en.wikipedia.org/wiki/Class_Act_(French_TV_series)>), mini-series about Bernard Tapie
+- [Tapie], mini-series about Bernard Tapie
+- [Oussekine](https://en.wikipedia.org/wiki/Oussekine)
 - [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
 - [Engrenages](<https://fr.wikipedia.org/wiki/Engrenages_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)>)
 - [Loups Garous](<https://fr.wikipedia.org/wiki/Loups-garous_(%C3%A9mission_de_t%C3%A9l%C3%A9vision)>), reality-TV game show for the [Werewolf game](https://en.wikipedia.org/wiki/The_Werewolves_of_Millers_Hollow)
 
+[Tapie]: https://en.wikipedia.org/wiki/Class_Act_(French_TV_series)
+
 Films:
 
 - [10e chamber, Instants d'Audiences](https://fr.wikipedia.org/wiki/10e_chambre,_instants_d%27audience)
-- [Anatomie d'une Chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
+- [Anatomie d'une Chute]
+- [Petite Mamam](https://en.wikipedia.org/wiki/Petite_Maman)
+- [Girlhood](<https://en.wikipedia.org/wiki/Girlhood_(film)>)
 - [Le Monde du Silence](<https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film)>)
 - [La Panthère des Neiges](<https://fr.wikipedia.org/wiki/La_Panth%C3%A8re_des_neiges_(film)>) and [Le Chant des Forêts](https://www.vincentmunier.com/portfolio/le-chant-des-forets/) de Vincent Munier
 - [Notre Corps](https://fr.wikipedia.org/wiki/Notre_corps)
@@ -104,6 +109,23 @@ Films:
 - Les Trois Frères
 - La Vérité si je mens !
 - La Haine
+- [To Be and to Have](https://en.wikipedia.org/wiki/To_Be_and_to_Have)
+- [The Diving Bell and the Butterfly](<https://en.wikipedia.org/wiki/The_Diving_Bell_and_the_Butterfly_(film)>)
+- [I've Loved You So Long](https://en.wikipedia.org/wiki/I%27ve_Loved_You_So_Long)
+- [A Prophet](https://en.wikipedia.org/wiki/A_Prophet)
+- [Of Gods and Men](<https://en.wikipedia.org/wiki/Of_Gods_and_Men_(film)>)
+- [Two Days, One Night](https://en.wikipedia.org/wiki/Two_Days,_One_Night)
+- [Dheepan](https://en.wikipedia.org/wiki/Dheepan)
+- [Elle](<https://en.wikipedia.org/wiki/Elle_(film)>)
+- [The Apartment](<https://en.wikipedia.org/wiki/The_Apartment_(1996_film)>)
+
+[Anatomie d'une Chute]: https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute
+
+When trying to find a new film sor series to watch, I'm looking through these sources:
+
+- [César Awards](https://en.wikipedia.org/wiki/C%C3%A9sar_Awards)
+- [BAFTA TV Award for Best International Programme](https://en.wikipedia.org/wiki/British_Academy_Television_Award_for_Best_International_Programme) (e.g. [Tapie])
+- [BAFTA Award for Best Film Not in the English Language](https://en.wikipedia.org/wiki/BAFTA_Award_for_Best_Film_Not_in_the_English_Language#2020s) (e.g. [Anatomie d'une Chute])
 
 ## Study
 

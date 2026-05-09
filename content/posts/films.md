@@ -20,3 +20,8 @@ Films I watched that I want to remember
 
 - [Pucallpa la Europea](https://es.wikipedia.org/wiki/Pucallpa_la_Europea) (Santi)
 - [Runa Simi](https://www.imdb.com/title/tt36591452/) (Augusto and Fernando)
+
+Some of my favourite series:
+
+- Chernobyl
+- Underground Railroad
