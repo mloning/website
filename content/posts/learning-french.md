@@ -4,7 +4,8 @@ date: 2024-04-30T11:17:44+02:00
 draft: false
 ---
 
-I've started learning French. Here are some resources I found useful.
+I've started learning French.
+Here are some resources I found useful.
 
 Also see my post on [exploring Paris](https://www.mloning.com/posts/exploring-paris/).
 
@@ -39,6 +40,7 @@ Beginner-friendly books:
 
 - [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it dated and stereotypical)
 - [L'Étranger] by Albert Camus, relatively easy to read
+- [Exercises de Style](https://fr.wikipedia.org/wiki/Exercices_de_style) by Raymond Queneau, re-tells the same story in 99 different styles (also see [OuLiPo](https://fr.wikipedia.org/wiki/Oulipo))
 
 [The Petit Nicolas]: https://www.petitnicolas.com/
 [L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
@@ -48,17 +50,18 @@ I've also enjoyed listening to the audio book while reading the book at the same
 Other books I enjoyed reading:
 
 - [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
-- [Rue des boutiques obscures] by Patrick Modiano, 2014 winner of the Literature Nobel Prize
-- [Triste Tigre] by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
-- L'Amant n'y Marguerite Duras
-- Kiffe kiffe demain by Faïza Guène
+- [Rue des Boutiques Obscures] by Patrick Modiano, 2014 winner of the Literature Nobel Prize
+- Triste Tigre by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
+- L'Amant by Marguerite Duras
+- Kiffe Kiffe Demain by Faïza Guène
+- La Nuit au Coeur by Nathacha Appanah
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
 [L'interview de 9h20 podcast]: https://www.radiofrance.fr/franceinter/podcasts/l-interview-de-9h20/l-itw-de-9h20-du-lundi-26-aout-2024-5320509
 [Kwibuka song]: https://open.spotify.com/track/7JklXqyFfw59LqyeloWmNC
 [Butare song]: https://open.spotify.com/track/79KGGIlt8A6ZsOjmdM0LsX
-[Rue des boutiques obscures]: https://www.goodreads.com/book/show/192377.Rue_des_boutiques_obscures
+[Rue des Boutiques Obscures]: https://www.goodreads.com/book/show/192377.Rue_des_boutiques_obscures
 
 When trying to pick a new book to read, I look at the recent winners of French literary awards, for example:
 
@@ -83,16 +86,16 @@ Here are some I've enjoyed watching or that were recommended to me:
 
 Series:
 
-- [Le Bureau des légendes](https://fr.wikipedia.org/wiki/Le_Bureau_des_l%C3%A9gendes)
+- [Le Bureau des Légendes](https://fr.wikipedia.org/wiki/Le_Bureau_des_l%C3%A9gendes)
 - [Dix pour Cent](https://fr.wikipedia.org/wiki/Dix_pour_cent)
-- [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
-- [Loups Garous](<https://fr.wikipedia.org/wiki/Loups-garous_(%C3%A9mission_de_t%C3%A9l%C3%A9vision)>), reality-TV game show for the [Werewolf game](https://en.wikipedia.org/wiki/The_Werewolves_of_Millers_Hollow)
-- [Engrenages](<https://fr.wikipedia.org/wiki/Engrenages_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)>)
 - [Class Act](<https://en.wikipedia.org/wiki/Class_Act_(French_TV_series)>), mini-series about Bernard Tapie
+- [Lupin](<https://fr.wikipedia.org/wiki/Lupin_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2021)>)
+- [Engrenages](<https://fr.wikipedia.org/wiki/Engrenages_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)>)
+- [Loups Garous](<https://fr.wikipedia.org/wiki/Loups-garous_(%C3%A9mission_de_t%C3%A9l%C3%A9vision)>), reality-TV game show for the [Werewolf game](https://en.wikipedia.org/wiki/The_Werewolves_of_Millers_Hollow)
 
 Films:
 
-- [10e chamber, instants d'audiences](https://fr.wikipedia.org/wiki/10e_chambre,_instants_d%27audience)
+- [10e chamber, Instants d'Audiences](https://fr.wikipedia.org/wiki/10e_chambre,_instants_d%27audience)
 - [Anatomie d'une Chute](https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute)
 - [Le Monde du Silence](<https://fr.wikipedia.org/wiki/Le_Monde_du_silence_(film)>)
 - [La Panthère des Neiges](<https://fr.wikipedia.org/wiki/La_Panth%C3%A8re_des_neiges_(film)>) and [Le Chant des Forêts](https://www.vincentmunier.com/portfolio/le-chant-des-forets/) de Vincent Munier
@@ -126,9 +129,9 @@ Mostly in Paris:
 
 - Language courses by the Paris municipalty ([website](https://www.paris.fr/pages/apprendre-le-francais-a-paris-7915)) -- very cheap but high demand
 - Conversation groups in Paris' public libraries ([website](https://bibliotheques.paris.fr/atelier-de-conversation.aspx))
-- https://latelier9.com/ -- relatively cheap, small groups, casual
-- https://languageteams.com/ -- [Qualiopi]-certified, relatively expensive
-- https://www.alliancefr.org/en/
+- [L'Atelier 9](https://latelier9.com/) -- relatively cheap, small groups, casual
+- [Language Teams](https://languageteams.com/) -- [Qualiopi]-certified, relatively expensive but well organized
+- [Alliance Française](https://www.alliancefr.org/en/)
 
 There is [Qualiopi], a national quality certificate for organisations that teach or offer services related to professional development.
 In my case, choosing a Qualiop-certified school was a requirement for getting my language course reimbursed by my employer.
@@ -139,17 +142,17 @@ In my case, choosing a Qualiop-certified school was a requirement for getting my
 
 The French language has lots of concepts and rules that make it complicated, here are some I struggled with.
 
-- [h aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais), which stops the usual vowel contraction and liaison
-- additional pronouns "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
-- passe compose with etre and avoir
-- complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de measure
-- que le participate passé ne s'accord pas avec le COD, sauf dans les [exceptions](https://www.linkedin.com/posts/alexandrelebrun_je-suis-venu-ici-sur-linkedin-pour-parler-activity-7388107867372888064-w0wu)
+- [H aspiré](https://fr.wikipedia.org/wiki/H_aspir%C3%A9_en_fran%C3%A7ais), which stops the usual vowel contraction and liaison
+- Additional pronouns "y" and "en", and some short expressions like "t'y peux rien" or "t'y es pour rien"
+- Passe compose with etre and avoir
+- Complément d'object direct (COD), complément d'object indirect (COI) and other related, but different compléments like complément de measure
+- Que le participate passé ne s'accord pas avec le COD, sauf dans les [exceptions](https://www.linkedin.com/posts/alexandrelebrun_je-suis-venu-ici-sur-linkedin-pour-parler-activity-7388107867372888064-w0wu)
 
 ## Interesting things
 
 Some things I stumbled upon while learning French:
 
-- fin de semaine –– the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
-- septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
-- [talkie-walkie](https://fr.wikipedia.org/wiki/Talkie-walkie) instead of walkie-talkie
-- [ne pas casser trois pattes à un canard](https://fr.wiktionary.org/wiki/ne_pas_casser_trois_pattes_%C3%A0_un_canard)
+- Fin de semaine –– the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
+- Septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
+- [Talkie-walkie](https://fr.wikipedia.org/wiki/Talkie-walkie) instead of walkie-talkie
+- [Ne pas casser trois pattes à un canard](https://fr.wiktionary.org/wiki/ne_pas_casser_trois_pattes_%C3%A0_un_canard)
