@@ -11,16 +11,20 @@ My skill library:
 
 - Repo review (architecture review, refactor to decrease coupling, simplify interfaces, consistent naming, identifying opportunities to reduce tech debt, improve test coverage, clean up stale comments/docs, improve readability)
 - Branch review (change set against `main`)
-- PR submission (MCP or `gh pr create` with PR description)
-- PR review (change set + PR description/comments and linked resources like Jira tickets)
+- Submit PR (MCP or `gh pr create` with PR description, link Jira issue)
+- Review PR (change set + PR description/comments and linked resources like Jira tickets)
 - PR reply (verify and address review comments)
-- Merge conflict resolution (git)
-- Planning
-- Brainstorming (pre-planning, conceptual ideation, web search, literature review)
+- Sync (git sync + merge conflicts + push)
+- Resolve git merge conflicts
+- Plan (detailed questions)
+- Brainstorm (pre-planning, conceptual ideation, web search, literature review)
 - Code (best practices; principles, naming)
 - Write tests (arrange, act, assert; red-green development)
-- Debug (root cause analysis)
+- Write docs (prefer verbs, avoid weasel words)
+- Write Jira issue (find epic)
+- Debug (root cause analysis, analyse available info, state hypotheses, instrument, test hypotheses, iteratively rule out possible causes)
 - Dev (autonomous brainstorming/critique -> planning/critique -> execution/review cycles, PR submission; ask only when really stuck; using max effort level, cross-agent Claude/Codex review, verification via build/tests/linting)
+- Explain (concise, data flow, walk through example)
 
 For varying degrees of scope and agent autonomy 
 
