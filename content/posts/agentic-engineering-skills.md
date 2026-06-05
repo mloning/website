@@ -9,7 +9,7 @@ Skills are reusable workflows
 
 My skill library:
 
-- Repo review (design/architecture)
+- Repo review (architecture review, refactor to decrease coupling, simplify interfaces, consistent naming, identifying opportunities to reduce tech debt, improve test coverage, clean up stale comments/docs, improve readability)
 - Branch review (change set against `main`)
 - PR submission (MCP or `gh pr create` with PR description)
 - PR review (change set + PR description/comments and linked resources like Jira tickets)
@@ -17,10 +17,10 @@ My skill library:
 - Merge conflict resolution (git)
 - Planning
 - Brainstorming (pre-planning, conceptual ideation, web search, literature review)
-- Code (best practices)
-- Write tests (arrange, act, assert)
+- Code (best practices; principles, naming)
+- Write tests (arrange, act, assert; red-green development)
 - Debug (root cause analysis)
-- Dev (autonomous brainstorming/critique -> planning/critique -> execution/review cycles, PR submission; using max effort level, cross-agent Claude/Codex review, verification via build/tests/linting)
+- Dev (autonomous brainstorming/critique -> planning/critique -> execution/review cycles, PR submission; ask only when really stuck; using max effort level, cross-agent Claude/Codex review, verification via build/tests/linting)
 
 For varying degrees of scope and agent autonomy 
 
