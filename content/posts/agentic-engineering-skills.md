@@ -21,8 +21,8 @@ My skill library:
 - Code (best practices; principles, naming)
 - Write tests (arrange, act, assert; red-green development)
 - Write docs (prefer verbs, avoid weasel words)
-- Write Jira issue (find epic)
-- Debug (root cause analysis, analyse available info, state hypotheses, instrument, test hypotheses, iteratively rule out possible causes)
+- Write Jira issue (assign to most relevant epic)
+- Debug (systematic debugging, root cause analysis, analyse available info, state hypotheses, instrument, test hypotheses, iteratively rule out possible causes)
 - Dev (autonomous brainstorming/critique -> planning/critique -> execution/review cycles, PR submission; ask only when really stuck; using max effort level, cross-agent Claude/Codex review, verification via build/tests/linting)
 - Explain (concise, data flow, walk through example)
 
@@ -30,11 +30,18 @@ For varying degrees of scope and agent autonomy
 
 Skill usage:
 
-- reusable between Claude Code and Codex
-- implicit vs explicit vs auto
-- composable
+- Reusable between agentic harnesses like Claude Code and Codex
+- Implicit vs explicit (vs auto)
+- Composable
 
 Related resources:
 
 - https://www.saturnci.com/my-agent-skill-for-test-driven-development.html
 - https://github.com/mattpocock/skills
+- https://github.com/vercel-labs/skills (npx skills CLI)
+- https://www.skills.sh/
+- https://skillsmp.com/
+- https://github.com/affaan-m/ECC
+- https://github.com/obra/superpowers
+- https://github.com/openclaw/openclaw/tree/main/.agents/skills
+- https://github.com/hesreallyhim/awesome-claude-code
