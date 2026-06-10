@@ -3,6 +3,7 @@ title: "Agentic Engineering Skills"
 date: 2026-06-05T14:23:23+01:00
 draft: true
 ---
+
 Nondeterministic tools, can be modified, tweaked and used in many different ways, requires making the tools your own, mastering the tool; difficult while models and agent harness itself are still evolving rapidly
 
 Skills are reusable workflows
@@ -17,6 +18,7 @@ My skill library:
 - Sync (git sync + merge conflicts + push)
 - Resolve git merge conflicts
 - Plan (detailed questions)
+- Review plan (critique)
 - Brainstorm (pre-planning, conceptual ideation, web search, literature review)
 - Code (best practices; principles, naming)
 - Write tests (arrange, act, assert; red-green development)
@@ -24,9 +26,9 @@ My skill library:
 - Write Jira issue (assign to most relevant epic)
 - Debug (systematic debugging, root cause analysis, analyse available info, state hypotheses, instrument, test hypotheses, iteratively rule out possible causes)
 - Dev (autonomous brainstorming/critique -> planning/critique -> execution/review cycles, PR submission; ask only when really stuck; using max effort level, cross-agent Claude/Codex review, verification via build/tests/linting)
-- Explain (concise, data flow, walk through example)
+- Explain (be concise; describe data flow; describe sequence of function calls; walk through simple example; give minimal, reproducible example)
 
-For varying degrees of scope and agent autonomy 
+For varying degrees of scope and agent autonomy
 
 Skill usage:
 
