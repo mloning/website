@@ -19,7 +19,7 @@ My skill library:
 - Resolve git merge conflicts
 - Plan (detailed questions)
 - Review plan (critique)
-- Brainstorm (pre-planning, conceptual ideation, web search, literature review)
+- Research (pre-planning, conceptual ideation, web search, literature review)
 - Code (best practices; principles, naming)
 - Write tests (arrange, act, assert; red-green development)
 - Write docs (prefer verbs, avoid weasel words)
@@ -27,12 +27,13 @@ My skill library:
 - Debug (systematic debugging, root cause analysis, analyse available info, state hypotheses, instrument, test hypotheses, iteratively rule out possible causes)
 - Dev (autonomous brainstorming/critique -> planning/critique -> execution/review cycles, PR submission; ask only when really stuck; using max effort level, cross-agent Claude/Codex review, verification via build/tests/linting)
 - Explain (be concise; describe data flow; describe sequence of function calls; walk through simple example; give minimal, reproducible example)
-
-For varying degrees of scope and agent autonomy
-
+ 
 Skill usage:
 
-- Reusable between agentic harnesses like Claude Code and Codex
+- Skills from low to high agent autonomy 
+- Control of depth of work and speed/cost, sometimes I want a quick implementation, sometimes a fully cross-checked plan-based implementation 
+- Cross-agent collaboration 
+- Reusable for different agents like Claude Code and Codex
 - Implicit vs explicit (vs auto)
 - Composable
 
