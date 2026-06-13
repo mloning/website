@@ -31,6 +31,7 @@ My skill library:
 Skill usage:
 
 - Skills from low to high agent autonomy 
+- Parallelization using sub-agents
 - Control of depth of work and speed/cost, sometimes I want a quick implementation, sometimes a fully cross-checked plan-based implementation 
 - Cross-agent collaboration 
 - Reusable for different agents like Claude Code and Codex
