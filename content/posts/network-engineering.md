@@ -864,11 +864,28 @@ For example, [BitTorrent], Skype (VoIP), brokerless messaging systems (e.g. [Zer
 - Exposed in higher-level languages, e.g. see [Python socket guide]
 - A process can open multiple sockets
 - A socket can accept multiple connections (as long as they are unique in terms of source and destination IP address and port number)
-- Sockets are non-competing consumers of broadcast messages, when creating multiple socket instances on the same host and port number, each socket will receive a copy of the broadcast message sent to that port
+- Multiple sockets can bind to the same host and port if they opt in with `SO_REUSEADDR` or `SO_REUSEPORT`; how an incoming message is then shared between them depends on the message type (see port reuse below)
 - Besides network sockets, there are other sockets for inter-process communication called Unix Domain sockets (`AF_UNIX` or `AF_LOCAL`) which bypass the network stack
 
 [Python socket guide]: https://docs.python.org/3.13/howto/sockets.html
 [socket API]: https://en.wikipedia.org/wiki/Berkeley_sockets
+
+#### Port reuse (`SO_REUSEADDR` and `SO_REUSEPORT`)
+
+By default, only one socket can bind to a given address and port; a second `bind()` fails with `EADDRINUSE`. Two socket options relax this:
+
+- `SO_REUSEADDR`: mainly lets a socket bind to a port still lingering in `TIME_WAIT` (e.g. to restart a server quickly); the other socket need not set the flag
+- `SO_REUSEPORT`: lets multiple sockets bind to the exact same address and port, provided every socket sets the flag
+
+Once multiple sockets share a port, how an incoming UDP datagram is delivered depends on its type:
+
+- Broadcast/multicast: non-competing consumers, the kernel delivers a copy to every bound socket; for multicast, to every socket that joined the group
+- Unicast: competing consumers, the datagram is delivered to exactly one socket; on Linux, `SO_REUSEPORT` selects the socket via a hash of the packet's 4-tuple (source/destination IP and port), so all packets of one flow reach the same socket; this is a load-balancing mechanism used to spread traffic across worker processes (e.g. nginx); for TCP, the incoming `SYN` is hashed to one listening socket, which then owns the connection
+
+Caveats:
+
+- For multicast addresses, Linux treats `SO_REUSEADDR` and `SO_REUSEPORT` identically; multicast receivers typically use `SO_REUSEADDR` for portability
+- BSD/macOS also allow an overlapping bind of the wildcard address (`0.0.0.0`) and a specific IP on the same port (with `SO_REUSEADDR`), delivering each unicast packet to the most specific match; Linux does not allow this wildcard/specific overlap (only two different non-wildcard addresses may share a port)
 
 #### Bind (server) and connect (client)
 
