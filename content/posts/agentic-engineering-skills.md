@@ -17,9 +17,11 @@ My skill library:
 - PR reply (verify and address review comments)
 - Sync (git sync + merge conflicts + push)
 - Resolve git merge conflicts
+- Brainstorm (pre-planning, conceptual ideation, web search, pros/cons of alternatives)
+- Spec / specify requirements (pre-planning, scoping, exact requirements)
 - Plan (detailed questions)
-- Review plan (critique)
-- Research (pre-planning, conceptual ideation, web search, literature review)
+- Review plan (critique plan, review against spec)
+- Research (scope, literature review)
 - Code (best practices; principles, naming)
 - Write tests (arrange, act, assert; red-green development)
 - Write docs (prefer verbs, avoid weasel words)
@@ -30,7 +32,7 @@ My skill library:
  
 Skill usage:
 
-- Skills from low to high agent autonomy 
+- Skills from low to high agent autonomy (review every step vs dangerously skip permissions in a sandbox) 
 - Parallelization using sub-agents
 - Control of depth of work and speed/cost, sometimes I want a quick implementation, sometimes a fully cross-checked plan-based implementation 
 - Cross-agent collaboration 
@@ -41,6 +43,7 @@ Skill usage:
 Related resources:
 
 - https://www.saturnci.com/my-agent-skill-for-test-driven-development.html
+- https://www.thoughtfultechnologist.com/p/automating-myself-out-of-development
 - https://github.com/mattpocock/skills
 - https://github.com/vercel-labs/skills (npx skills CLI)
 - https://www.skills.sh/
@@ -49,3 +52,4 @@ Related resources:
 - https://github.com/obra/superpowers
 - https://github.com/openclaw/openclaw/tree/main/.agents/skills
 - https://github.com/hesreallyhim/awesome-claude-code
+- https://github.com/DanMcInerney/architect-loop (research)
