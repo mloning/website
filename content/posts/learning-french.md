@@ -36,25 +36,28 @@ Newspapers:
 - [Brut](https://www.brut.media/fr) (trendy, progressive, social media)
 - [Mediapart](https://www.mediapart.fr/) (independent and investigative journalism, behind paywall)
 
-Beginner-friendly books:
+Books:
 
 - [The Petit Nicolas], a series of easy-to-read books with a sense of humour (some of it dated and stereotypical)
+- Kiffe Kiffe Demain by Faïza Guène
 - [L'Étranger] by Albert Camus, relatively easy to read
 - [Exercises de Style](https://fr.wikipedia.org/wiki/Exercices_de_style) by Raymond Queneau, re-tells the same story in 99 different styles (also see [OuLiPo](https://fr.wikipedia.org/wiki/Oulipo))
+- [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
+- [Rue des Boutiques Obscures] by Patrick Modiano, 2014 winner of the Literature Nobel Prize
+- Triste Tigre by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
+- La Nuit au Coeur by Nathacha Appanah, 2025 winner of the [Prix Femina]
+- L'Amant by Marguerite Duras, one of my favourite books
+- La vie devant soi by Romain Gary (Signé Ajar) (the only author to win the Prix Goncourt twice)
+- Les Racines du ciel by Romain Gary
+- Veiller sure elle by Jean-Baptiste Andrea
+- L'Anomalie by Hervé Le Tellier
+- Trésor caché by Pascal Quignard
+- La Maladie de la mort by Marguerite Duras
 
 [The Petit Nicolas]: https://www.petitnicolas.com/
 [L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
 
 I've also enjoyed listening to the audio book while reading the book at the same time.
-
-Other books I enjoyed reading:
-
-- [Jacaranda] by Gaël Faye, the 2024 winner of the [Prix Renaudot] ([Le Book Club interview], [L'interview de 9h20 podcast], [Kwibuka song], [Butare song])
-- [Rue des Boutiques Obscures] by Patrick Modiano, 2014 winner of the Literature Nobel Prize
-- Triste Tigre by Neige Sinno, 2023 winner of the [Prix Femina] and [Prix Goncourt des Lycéens]
-- L'Amant by Marguerite Duras
-- Kiffe Kiffe Demain by Faïza Guène
-- La Nuit au Coeur by Nathacha Appanah
 
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
@@ -121,7 +124,7 @@ Films:
 
 [Anatomie d'une Chute]: https://fr.wikipedia.org/wiki/Anatomie_d%27une_chute
 
-When trying to find a new film sor series to watch, I'm looking through these sources:
+When trying to find a new film or series to watch, I'm looking through these sources:
 
 - [César Awards](https://en.wikipedia.org/wiki/C%C3%A9sar_Awards)
 - [BAFTA TV Award for Best International Programme](https://en.wikipedia.org/wiki/British_Academy_Television_Award_for_Best_International_Programme) (e.g. [Tapie])

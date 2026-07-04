@@ -14,6 +14,7 @@ draft: false
 - [Les nuits de la lecture](https://www.nuitsdelalecture.fr/)
 - [Paris sous les étoiles](https://www.afastronomie.fr/paris)
 - [Festival de cinema Peruivien](https://www.festivalcinemaperuvienparis.fr)
+- [Fête de la Goutte d'Or] with the [Paris African Cup](https://www.instagram.com/pac18__/)
 
 ## Restaurants
 
@@ -79,8 +80,8 @@ Most museums in Paris are free on some occasions, including:
 
 ## Swimming pools
 
-- Piscine Georges Hermant (50m)
-- Piscine Georges Vallerey (50m)
+- Piscine Georges Hermant (50m, open air during the summer)
+- Piscine Georges Vallerey (50m, open roof on warm days)
 - Piscine Keller (50m)
 - Centre Aquatique Olympique (50m, in Saint-Denis)
 - Piscine de la Butte aux Cailles (33m)
