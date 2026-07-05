@@ -3,3 +3,11 @@ repos:
     rev: v1.29.0
     hooks:
       - id: typos
+  - repo: local
+    hooks:
+      - id: lychee
+        name: lychee (link checker)
+        language: system
+        entry: lychee --offline
+        files: ^content/.*\.md$ # only scan your Hugo markdown files
+        pass_filenames: true

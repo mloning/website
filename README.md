@@ -9,8 +9,9 @@ My personal website built with [Hugo] and a modified [Ezhil] theme.
 
 Initial setup:
 
-- Install [just](https://github.com/casey/just)
+- `brew install pre-commit just lychee` (macOS)
 - `gh repo clone https://github.com/mloning/website . -- --recurse-submodules` to clone the repo with the theme as a [git submodule]
+- `pre-commit install --install-hooks`
 
 Workflows:
 
