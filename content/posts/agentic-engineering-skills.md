@@ -1,5 +1,5 @@
 ---
-title: "Agentic Engineering Skills"
+title: "Agentic engineering and skills"
 date: 2026-06-05T14:23:23+01:00
 draft: false
 ---
