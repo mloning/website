@@ -35,6 +35,7 @@ Newspapers:
 
 - [Brut](https://www.brut.media/fr) (trendy, progressive, social media)
 - [Mediapart](https://www.mediapart.fr/) (independent and investigative journalism, behind paywall)
+- [Le Monde Diplomatique](https://www.monde-diplomatique.fr/) (monthly journal)
 
 Books:
 
@@ -53,12 +54,12 @@ Books:
 - L'Anomalie by Hervé Le Tellier
 - Trésor caché by Pascal Quignard
 - La Maladie de la mort by Marguerite Duras
-
-[The Petit Nicolas]: https://www.petitnicolas.com/
-[L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
+- Les Ombres errantes (Dernier Royaume, tome I) by Pascal Quignard
 
 I've also enjoyed listening to the audio book while reading the book at the same time.
 
+[The Petit Nicolas]: https://www.petitnicolas.com/
+[L'Étranger]: https://fr.wikipedia.org/wiki/L%27%C3%89tranger
 [Jacaranda]: https://www.goodreads.com/book/show/212924295-jacaranda
 [Le Book Club interview]: https://www.radiofrance.fr/franceculture/podcasts/le-book-club/reconstructions-rwandaises-avec-gael-faye-5139570
 [L'interview de 9h20 podcast]: https://www.radiofrance.fr/franceinter/podcasts/l-interview-de-9h20/l-itw-de-9h20-du-lundi-26-aout-2024-5320509
@@ -66,7 +67,7 @@ I've also enjoyed listening to the audio book while reading the book at the same
 [Butare song]: https://open.spotify.com/track/79KGGIlt8A6ZsOjmdM0LsX
 [Rue des Boutiques Obscures]: https://www.goodreads.com/book/show/192377.Rue_des_boutiques_obscures
 
-When trying to pick a new book to read, I look at the recent winners of French literary awards, for example:
+When trying to pick a new book to read, you can look at the recent winners of French literary awards, for example:
 
 - [Prix Goncourt] (and [Prix Goncourt des Lycéens])
 - [Prix Renaudot]
@@ -75,12 +76,34 @@ When trying to pick a new book to read, I look at the recent winners of French l
 - Le Prix Médicis
 - Le Prix Interallié
 
-For these books it's easy to find related materials, like reviews, interviews, podcasts and audiobooks.
+Another good sources are prestigious publishing houses, for example:
+
+- [Les Éditions de Minuit](https://leseditionsdeminuit.fr/)
+
+For these books it's also easy to find related materials, like reviews, interviews, podcasts and audiobooks.
 
 [Prix Femina]: https://fr.wikipedia.org/wiki/Prix_Femina
 [Prix Renaudot]: https://fr.wikipedia.org/wiki/Prix_Renaudot
 [Prix Goncourt]: https://fr.wikipedia.org/wiki/Prix_Goncourt
 [Prix Goncourt des Lycéens]: https://en.wikipedia.org/wiki/Prix_Goncourt_des_Lyc%C3%A9ens
+
+Other interesting authors I came across, thanks to my French teacher:
+
+- Alain Badiou, philosopher
+- Annie Ernaux, writer, literature Nobel price in 2022 (e.g. Les Années)
+- Charles Baudelaire, poet (e.g. Les Fleurs du Mal, [Enivrez-vous](https://fr.wikipedia.org/wiki/Enivrez-vous))
+- Edgar Morin, modern philosopher and sociologist (interconnectedness, complexity)
+- Eric Vuillard, writer and film maker (e.g. 14 Juillet, Conquistadors)
+- Guy Debord (e.g. La Sociéte du Spectacle)
+- Jacques Derrida, philosopher
+- Jacques Prévert, poet (e.g. Déjeuner du matin)
+- Laurent Mauvignier, writer (e.g. Des Hommes)
+- Marcel Proust, writer
+- Michel Foucault, philosopher, historian and social theorist (power, institutions, knowledge)
+- Pascal Quignard, writer (e.g. Dernier Royaume, Il n'y a pas de place pour la mort)
+- Pierre Bourdiere, sociologist (class, culture, social inequality)
+- Raymond Queneau, writer
+- Victor Hugo (Les Misérables, Notre-Dame de Paris)
 
 ## Watch
 
@@ -130,6 +153,13 @@ When trying to find a new film or series to watch, I'm looking through these sou
 - [BAFTA TV Award for Best International Programme](https://en.wikipedia.org/wiki/British_Academy_Television_Award_for_Best_International_Programme) (e.g. [Tapie])
 - [BAFTA Award for Best Film Not in the English Language](https://en.wikipedia.org/wiki/BAFTA_Award_for_Best_Film_Not_in_the_English_Language#2020s) (e.g. [Anatomie d'une Chute])
 
+Other French photographers and film makers:
+
+- Raymond Depardon (La Vie Moderne, 10e Chamber)
+- Agnes Varda
+- [JR](<https://fr.wikipedia.org/wiki/JR_(artiste)>)
+- Luc Beson (Jeanne d'Arc, Leon)
+
 ## Study
 
 ### Resources
@@ -158,8 +188,7 @@ Mostly in Paris:
 - [Language Teams](https://languageteams.com/) -- [Qualiopi]-certified, relatively expensive but well organized
 - [Alliance Française](https://www.alliancefr.org/en/)
 
-There is [Qualiopi], a national quality certificate for organisations that teach or offer services related to professional development.
-In my case, choosing a Qualiop-certified school was a requirement for getting my language course reimbursed by my employer.
+There is [Qualiopi], a national quality certificate for organisations that teach or offer services related to professional development, which may be a requirement for getting a language course reimbursed by your employer.
 
 [Qualiopi]: https://travail-emploi.gouv.fr/qualiopi-marque-de-certification-qualite-des-prestataires-de-formation
 
@@ -177,7 +206,7 @@ The French language has lots of concepts and rules that make it complicated, her
 
 Some things I stumbled upon while learning French:
 
-- Fin de semaine –– the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
+- Fin de semaine -- the more logical version of weekend, used in Quebec, also not the same as fin de la semaine
 - Septante, huitante and nonante -- the more logical forms of soixante-dix, quatre-vingts and quatre-vingts-dix
 - [Talkie-walkie](https://fr.wikipedia.org/wiki/Talkie-walkie) instead of walkie-talkie
 - [Ne pas casser trois pattes à un canard](https://fr.wiktionary.org/wiki/ne_pas_casser_trois_pattes_%C3%A0_un_canard)
