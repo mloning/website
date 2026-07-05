@@ -29,3 +29,14 @@ On project scoping and objectives:
 > don't go trying to create a subset of Python [...] Do your own thing. That way, you can evolve your system at your own pace and in your own direction, without being chained by expectations that your language should have to match the performance, feature set, or library ecosystem of another implementation.
 
 https://pointersgonewild.com/2024/04/20/the-alternative-implementation-problem/
+
+conceptual thinking:
+
+- https://news.ycombinator.com/item?id=46587844
+- https://fs.blog/mental-models/
+
+design by contract:
+
+- use of `assert` statements to check pre-conditions
+- unit tests to check post-conditions
+- try to avoid `AssertionError` in try-except blocks, be aware of `python -O` and `python -OO` which removes assert statements

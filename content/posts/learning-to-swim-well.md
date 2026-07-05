@@ -1,12 +1,12 @@
 ---
-title: "Swimming"
+title: "Learning to swim well"
 date: 2026-04-12T23:53:53+02:00
 draft: true
 ---
 
-smooth is fast
+"Fast swimming is easier than slow swimming" (Akka von Kebnekaise, The Wonderful Adventures of Nils Holgersson)
 
-"Schnell schwimmen ist leichter als langsam swimming" (Akka von Kebnekaise, Nils Holgersson)
+smooth is fast
 
 ## Freestyle
 
@@ -23,7 +23,11 @@ Rotation: 30-40%, focus on initializing rotation from hip/core
 
 2-beat kick timing:
 
-When your left hand enters the water, your right leg kicks. When your right hand enters the water, your left leg kicks. If you aim to time the kick with the hand entry, the rest will fall naturally in place. But this is for a hip-driven freestyle with a 2-beat kick and should be seen as a guideline. (https://www.reddit.com/r/Swimming/comments/132recx/kick_timing/)
+- When your left hand enters the water, your right leg kicks.
+- When your right hand enters the water, your left leg kicks.
+
+If you aim to time the kick with the hand entry, the rest will fall naturally in place.
+But this is for a hip-driven freestyle with a 2-beat kick and should be seen as a guideline. (https://www.reddit.com/r/Swimming/comments/132recx/kick_timing/)
 
 ## Flip turn
 

@@ -7,11 +7,17 @@ My personal website built with [Hugo] and a modified [Ezhil] theme.
 
 ## Develop
 
+Initial setup:
+
 - Install [just](https://github.com/casey/just)
 - `gh repo clone https://github.com/mloning/website . -- --recurse-submodules` to clone the repo with the theme as a [git submodule]
+
+Workflows:
+
 - `git submodule update --init --recursive --remote` to update the theme from the git submodule
 - `just run-dev-server` to start the Hugo server with hot reloading
 - `just create-new-post <name>` to create a new draft in `./content/posts/<name>.md`
+- `hugo list drafts | duckdb -c "SELECT path FROM read_csv_auto('/dev/stdin')"` list draft posts
 - Use `Cmd` + `Shift` + `R` to force reload the cache in Firefox
 
 [git submodule]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
