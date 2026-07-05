@@ -13,7 +13,7 @@ draft: true
 - MLflow for experiment tracking
 
 During development and model training, I often want to inspect models, to understand how data is being transformed and how training progresses.
-This usually involves adding auxilliary code into the models for logging and visualizing parameters and data.
+This usually involves adding auxiliary code into the models for logging and visualizing parameters and data.
 This code is usually deep inside models, and specific to the algorithm we're trying to inspect.
 
 While for production runs, we want to skip model inspection, during development and training we want to easily toggle it on.

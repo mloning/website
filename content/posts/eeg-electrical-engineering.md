@@ -30,7 +30,7 @@ EEG is the measurement of differences in electrical potential (voltage) between 
 These voltages differences are the result of ionic current flow within neurons, and glial cells, in the brain.
 The measured scalp voltages are primarily in the 200nV-200uV amplitude range, 0.01–100Hz frequency range, and are typically simultaneously recorded at multiple sites on the scalp.
 
-This requires electrodes and related hardware and electronics that is extremely senstive to pick up the faint electrical signals of the brain, filter out the electrical noise, and convert them into something that can by analysed.
+This requires electrodes and related hardware and electronics that is extremely sensitive to pick up the faint electrical signals of the brain, filter out the electrical noise, and convert them into something that can by analysed.
 
 The hardware involves a number of components:
 
@@ -152,7 +152,7 @@ Without a reference, the differential amplifier cannot measure the biopotential 
   - TODO what's a typical digital precision?
 - multiple ADCs (e.g. one per electrode)
   - single ADC samples each channel sequentially, requires high-frequency electrode switching and introduces small sampling skew
-  - mulitple ADC can sample truly simultaneously, but requires synchronization
+  - multiple ADC can sample truly simultaneously, but requires synchronization
   - multiple low-speed ADCs one for each electrode less power hungry than a single high-speed one iterating over all electrodes
 
 ### Inner workings of ADC digitization

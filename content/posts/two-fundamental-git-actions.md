@@ -4,7 +4,7 @@ date: 2023-12-29T23:20:08+01:00
 draft: true
 ---
 
-I recently read a [blog post] by [graphite] about rebase vs merge commits which made me re-think my usual git worklow.
+I recently read a [blog post] by [graphite] about rebase vs merge commits which made me re-think my usual git workflow.
 
 [graphite]: https://graphite.dev/
 [blog post]: https://graphite.dev/blog/why-ban-merge-commits
@@ -37,7 +37,7 @@ usage: `git sync`
 - `git merge` or `git rebase` from up-to-date default branch
 - `git pull` and `git push` to sync with remote branch
 
-These two commands would cover most of my daily git worklow
+These two commands would cover most of my daily git workflow
 
 ## Advanced usage: stacked PRs
 
