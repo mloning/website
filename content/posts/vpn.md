@@ -3,6 +3,7 @@ title: "Using a VPN"
 date: 2024-11-24T22:18:17+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["tools"]
 ---
 
 I started using [NordVPN], a few alternatives also looked interesting, including [ExpressVPN].

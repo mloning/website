@@ -2,6 +2,7 @@
 title: Learning C++
 date: 2025-05-14T08:47:02+02:00
 draft: false
+tags: ["learning"]
 ---
 
 ## Build process

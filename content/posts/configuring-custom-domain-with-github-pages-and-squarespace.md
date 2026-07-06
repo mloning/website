@@ -3,6 +3,7 @@ title: "Configuring a custom domain with Github Pages and Squarespace"
 date: 2023-12-28T11:52:52+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["tools"]
 ---
 
 To show my website on my custom domain, I had to configure GitHub Pages, my static site hosting service, and Squarespace, my domain hosting service.

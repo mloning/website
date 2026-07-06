@@ -2,6 +2,7 @@
 title: Search and replace in multiple files using vim
 date: 2024-12-24T09:35:15+01:00
 draft: false
+tags: ["tools"]
 ---
 I'm using Neovim with [AstroNvim], and the key maps below will be different depending on your setup.
 You can find my configuration [here](https://github.com/mloning/dotfiles).

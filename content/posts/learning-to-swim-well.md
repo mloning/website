@@ -2,6 +2,7 @@
 title: "Learning to swim well"
 date: 2026-04-12T23:53:53+02:00
 draft: true
+tags: ["learning"]
 ---
 
 "Fast swimming is easier than slow swimming" (Akka von Kebnekaise, The Wonderful Adventures of Nils Holgersson)

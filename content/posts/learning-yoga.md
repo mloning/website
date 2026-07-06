@@ -3,6 +3,7 @@ title: "Learning Yoga"
 date: 2025-02-12T09:24:37+01:00
 last_modified: .Lastmod
 draft: true
+tags: ["learning"]
 ---
 
 - Shambu Alex Spitzl ([Yoga Vidya Bayreuth])

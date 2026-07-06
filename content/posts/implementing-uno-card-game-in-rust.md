@@ -3,6 +3,7 @@ title: "Implementing the Uno card game in Rust"
 date: 2024-03-09T00:06:13+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["engineering"]
 ---
 
 After having [implemented](https://github.com/mloning/uno-py/) the Uno card game in Python, I decided to [rewrite](https://github.com/mloning/uno-rs) it in Rust. 

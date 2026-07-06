@@ -2,6 +2,7 @@
 title: EurIPS 2025
 date: 2025-12-02T11:33:55+01:00
 draft: false
+tags: ["ai", "conferences"]
 ---
 I attended EurIPS 2025 in Copenhagen, the first edition of the European version of NeurIPS.
 My notes are mainly about topics related to my current work, that is, time series analysis and biosignals.

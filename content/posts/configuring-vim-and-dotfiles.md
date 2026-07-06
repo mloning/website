@@ -3,6 +3,7 @@ title: "Configuring Vim and dotfiles"
 date: 2024-04-13T18:24:12+02:00
 last_modified: .Lastmod
 draft: false
+tags: ["tools"]
 ---
 
 I switched to [Neovim] some years ago and have really enjoyed working with it ever since.

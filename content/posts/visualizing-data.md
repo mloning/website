@@ -2,6 +2,7 @@
 title: "Visualizing data"
 date: 2026-03-18T18:44:32+01:00
 draft: true
+tags: ["engineering"]
 ---
 
 - Tukey (Exploratory Data Analysis)

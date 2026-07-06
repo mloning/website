@@ -3,6 +3,7 @@ title: "Writing well"
 date: 2025-01-12T11:54:52+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["learning"]
 ---
 
 Here are some resources for writing well.

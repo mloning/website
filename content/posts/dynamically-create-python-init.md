@@ -3,6 +3,7 @@ title: "Dynamically create code in Python"
 date: 2025-08-29T23:25:57+02:00
 last_modified: .Lastmod
 draft: true
+tags: ["engineering"]
 ---
 
 ## Dynamically create class constructor (init)

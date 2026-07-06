@@ -2,6 +2,7 @@
 title: "Blutschuld de Georg Trakl: Une tentative de traduction en français"
 date: 2026-07-05T22:52:43+02:00
 draft: false
+tags: ["french", "literature"]
 ---
 
 ## Blutschuld (1909) -- version originale allemande

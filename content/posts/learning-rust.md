@@ -2,6 +2,7 @@
 title: Learning Rust
 date: 2025-01-11T12:08:32+01:00
 draft: false
+tags: ["learning"]
 ---
 ## General resources
 

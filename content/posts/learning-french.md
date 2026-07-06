@@ -2,6 +2,7 @@
 title: "Learning French"
 date: 2024-04-30T11:17:44+02:00
 draft: false
+tags: ["french", "learning", "literature"]
 ---
 
 I've started learning French.

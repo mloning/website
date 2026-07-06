@@ -2,6 +2,7 @@
 title: "Juggling"
 date: 2026-04-12T19:10:06+02:00
 draft: false
+tags: ["learning"]
 ---
 
 I first learned to juggle three balls at university, together with a group of friends during our exam period.

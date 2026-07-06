@@ -3,6 +3,7 @@ title: "How to name things"
 date: 2025-01-16T18:07:07+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["engineering"]
 ---
 
 In software engineering (and machine learning), we often need to name things to refer to them more easily in our discussions -- be it projects, products or servers.

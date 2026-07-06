@@ -2,6 +2,7 @@
 title: Exploring Paris
 date: 2025-05-18T00:14:14+02:00
 draft: false
+tags: ["travel"]
 ---
 
 ## Festivals & events

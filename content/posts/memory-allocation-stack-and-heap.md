@@ -2,6 +2,7 @@
 title: "Stack and Heap"
 date: 2025-11-13T22:11:10+01:00
 draft: true
+tags: ["engineering"]
 ---
 
 The stack and the heap are two separate areas of memory used during program execution (runtime).

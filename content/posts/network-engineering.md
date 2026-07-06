@@ -2,6 +2,7 @@
 title: Network engineering
 date: 2025-07-24T23:07:58+02:00
 draft: false
+tags: ["engineering"]
 ---
 
 ## Intro

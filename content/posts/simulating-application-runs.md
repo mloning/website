@@ -2,6 +2,7 @@
 title: "Simulating application runs"
 date: 2026-03-26T20:59:00+01:00
 draft: false
+tags: ["engineering"]
 ---
 
 ## Dry runs

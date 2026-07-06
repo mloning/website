@@ -2,6 +2,7 @@
 title: Job interviewing
 date: 2025-11-16T14:15:09+02:00
 draft: false
+tags: ["career"]
 ---
 Here are some notes from my experience searching for new jobs and interviewing with various companies.
 

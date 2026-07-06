@@ -2,6 +2,7 @@
 title: "Using tmux"
 date: 2026-04-14T22:39:48+02:00
 draft: false
+tags: ["tools"]
 ---
 
 ## What's tmux?

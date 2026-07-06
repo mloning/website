@@ -3,6 +3,7 @@ title: "Logging in a multiprocessing context in Python"
 date: 2024-12-02T09:38:37+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["engineering"]
 ---
 
 Configuring loggers in a Python application with multiprocessing isn't straightforward.

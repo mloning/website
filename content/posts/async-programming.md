@@ -2,6 +2,7 @@
 title: "Async Programming"
 date: 2025-12-09T21:05:06+01:00
 draft: true
+tags: ["engineering"]
 ---
 
 - https://www.youtube.com/watch?v=o2ob8zkeq2s

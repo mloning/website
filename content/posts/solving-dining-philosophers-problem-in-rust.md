@@ -3,6 +3,7 @@ title: "Solving Dining Philosophers Problem in Rust"
 date: 2024-11-10T16:09:57+01:00
 last_modified: .Lastmod
 draft: true
+tags: ["engineering"]
 ---
 
 https://en.wikipedia.org/wiki/Dining_philosophers_problem

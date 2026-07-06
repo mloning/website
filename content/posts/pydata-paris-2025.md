@@ -2,6 +2,7 @@
 title: "Pydata Paris 2025"
 date: 2025-10-02T11:58:15+02:00
 draft: false
+tags: ["ai", "conferences"]
 ---
 
 - `quarto` for publication-ready reports and presentations (see e.g. https://github.com/paddyroddy/talks)

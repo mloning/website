@@ -3,6 +3,7 @@ title: "Software Design"
 date: 2025-01-03T15:49:02+01:00
 last_modified: .Lastmod
 draft: true
+tags: ["engineering"]
 ---
 
 > every piece of software should be a black box with a pin-hole for input and an even smaller pin-hole for output

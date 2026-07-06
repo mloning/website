@@ -3,6 +3,7 @@ title: EuroRust 2025
 date: 2025-10-11T11:58:15+02:00
 last_modified: .Lastmod
 draft: false
+tags: ["engineering", "conferences"]
 ---
 
 I attended my first Rust conference, [EuroRust 2025](https://eurorust.eu/2025/) in Paris.

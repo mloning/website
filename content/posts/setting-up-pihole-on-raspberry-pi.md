@@ -2,6 +2,7 @@
 title: "Setting up Pi-hole on Raspberry Pi"
 date: 2024-04-27T23:59:05+02:00
 draft: false
+tags: ["tools"]
 ---
 
 [Pi-hole]: https://pi-hole.net/

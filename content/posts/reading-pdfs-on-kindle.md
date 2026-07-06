@@ -3,6 +3,7 @@ title: "Reading PDFs on the Kindle"
 date: 2024-11-10T16:51:58+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["tools"]
 ---
 
 While [sending a PDF file to your Kindle](https://www.amazon.com/sendtokindle) is easy, depending on the PDF format, being able to read it well in the Kindle format can be a challenge.

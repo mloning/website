@@ -2,6 +2,7 @@
 title: Run pre-commit retrospectively on all changed files in a PR
 date: 2020-10-02T16:10:57+02:00
 draft: false
+tags: ["engineering"]
 ---
 When I was developing [sktime], we had set up automated checks for printing and formatting only after some time. Rather than fixing our entire code base in one go, we decided to roll out the changes slowly, and only enforce them  for the changed files on a PR.
 

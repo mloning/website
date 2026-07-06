@@ -1,6 +1,7 @@
 ---
 title: "Installing fish shell with Starship"
 date: 2026-01-10T20:45:23+01:00
+tags: ["tools"]
 ---
 
 I had heard good things about [fish] and after using [oh-my-zsh] for a long time, I wanted to give it a try with [Starship].

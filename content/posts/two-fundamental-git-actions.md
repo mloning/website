@@ -2,6 +2,7 @@
 title: Two Fundamental Git Actions
 date: 2023-12-29T23:20:08+01:00
 draft: true
+tags: ["engineering"]
 ---
 
 I recently read a [blog post] by [graphite] about rebase vs merge commits which made me re-think my usual git workflow.

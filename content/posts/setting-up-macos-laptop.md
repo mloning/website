@@ -2,6 +2,7 @@
 title: "Setting up a new macOS laptop"
 date: 2024-09-27T13:49:57+02:00
 draft: false
+tags: ["tools"]
 ---
 
 I recently had to set up a new macOS laptop and wanted to take some notes so that I can do it more quickly the next time.

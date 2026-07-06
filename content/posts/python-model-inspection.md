@@ -3,6 +3,7 @@ title: "Python Model Inspection"
 date: 2025-08-16T12:03:32+02:00
 last_modified: .Lastmod
 draft: true
+tags: ["ai", "engineering"]
 ---
 
 ## Problem

@@ -2,6 +2,7 @@
 title: "Agentic engineering and skills"
 date: 2026-06-05T14:23:23+01:00
 draft: false
+tags: ["ai", "engineering"]
 ---
 
 AI agents like Claude Code or Codex are non-deterministic tools, which can be modified, tweaked and used in many different ways.

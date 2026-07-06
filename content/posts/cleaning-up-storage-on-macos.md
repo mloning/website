@@ -2,6 +2,7 @@
 title: Cleaning up storage on macOS
 date: 2024-12-20T16:58:20+01:00
 draft: false
+tags: ["tools"]
 ---
 ## Using macOS storage manager
 

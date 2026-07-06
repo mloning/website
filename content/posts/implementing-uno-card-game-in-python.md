@@ -3,6 +3,7 @@ title: "Implementing the Uno card game in Python"
 date: 2023-12-20T19:16:09+01:00
 last_modified: .Lastmod
 draft: false
+tags: ["engineering"]
 ---
 
 A friend of mine recently implemented the card game [Uno] as a programming exercise in Python and asked me for feedback. I thought it's a good idea to try it myself and then compare notes. 

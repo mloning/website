@@ -2,6 +2,7 @@
 title: "Working with Claude Code"
 date: 2026-03-07T14:58:15+01:00
 draft: false
+tags: ["ai", "engineering"]
 ---
 
 Notes and links about Claude Code and agentic engineering.
