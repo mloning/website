@@ -47,14 +47,19 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
+name = "Posts"
 url = "/posts"
 weight = 2
 
 [[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 4
 
 # Social media links which shows up on site header.
 # Uses feather icons for icons. You can [search icon names from here](https://feathericons.com/).
@@ -73,8 +78,8 @@ name = "Linkedin"
 icon = "linkedin"
 url = "https://www.linkedin.com/in/mloning/"
 
-# [taxonomies]
-#    tag = "tags"
+[taxonomies]
+    tag = "tags"
 
 [frontmatter]
 lastmod = ["lastmod", ":git", "mtime", "date", "publishDate"]
