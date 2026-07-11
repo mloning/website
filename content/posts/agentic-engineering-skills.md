@@ -9,7 +9,7 @@ AI agents like Claude Code or Codex are non-deterministic tools, which can be mo
 Using them effectively requires mastering them and making them your own to some degree, even when agents and the LLMs they rely on are still evolving.
 
 Skill are one way to reuse prompts (besides, for example, defining custom agents or `AGENTS.md` files).
-I started writing my own skills, based on popular skill libraries like [obra/superpowers](https://github.com/obra/superpowers), mainly to:
+I started writing my own skills, partly based on popular skill libraries like [obra/superpowers](https://github.com/obra/superpowers), mainly because I wanted to:
 
 - have more tailored skills for my common workflows,
 - learn more about prompt engineering,
@@ -20,7 +20,7 @@ For now, I ended up with the following skills (see on [GitHub](https://github.co
 - Review repo (architecture review, refactor to decrease coupling, simplify interfaces, consistent naming, identifying opportunities to reduce tech debt, improve test coverage, clean up stale comments/docs, improve readability)
 - Review local changes (change set against `main`)
 - Submit PR (MCP or `gh pr create` with PR description, link Jira issue)
-- Review PR (change set + PR description/comments and linked resources like Jira tickets)
+- Review PR (change set + PR description/comments and linked resources like Jira tickets, from with different perspectives)
 - Reply to PR review (verify and address review comments)
 - Brainstorm (pre-planning, scoping, conceptual ideation, web search, pros/cons of alternatives, outputs a precise spec)
 - Plan (based on spec, implementation plan in the context of the existing code base, further questioning)
@@ -37,14 +37,14 @@ Skills let me easily change how agents operate, including:
 
 - Autonomy (review every step vs autonomously implement a full feature; may require different permissions modes and sandboxing)
 - Parallelization using independent sub-agents
-- Control of depth of work and speed/cost (e.g. sometimes I want a quick implementation, sometimes a fully cross-checked plan-based implementation)
-- Cross-agent collaboration (e.g. agent teams)
+- Control of work depth and speed/cost (e.g. sometimes I want a quick fix, sometimes a fully cross-checked plan-based implementation)
+- Cross-agent collaboration (e.g. agent teams or [dynamic workflows](https://code.claude.com/docs/en/workflows))
 
 There a few things to keep in mind when writing skills:
 
 - Reusable for different agents like Claude Code and Codex
 - Implicit vs explicit (vs auto) invocation rules (e.g. I don't always want agents to use certain skills, mainly to have more control over depth of work vs speed)
-- Composable (e.g. a skill to autonomously develop something may invoke a skill to plan the changes first)
+- Composable (e.g. a skill to autonomously develop something may first invoke a skill to plan the change)
 
 Related resources:
 
