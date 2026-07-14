@@ -16,6 +16,7 @@ tags: ["travel"]
 - [Paris sous les étoiles](https://www.afastronomie.fr/paris)
 - [Festival de cinema Peruivien](https://www.festivalcinemaperuvienparis.fr)
 - [Fête de la Goutte d'Or](https://gouttedorenfete.org/) with the [Paris African Cup](https://www.instagram.com/pac18__/)
+- [Festival Rhizomes](https://www.festivalrhizomes.fr/#)
 
 ## Restaurants
 
