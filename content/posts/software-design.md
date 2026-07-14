@@ -41,3 +41,16 @@ design by contract:
 - use of `assert` statements to check pre-conditions
 - unit tests to check post-conditions
 - try to avoid `AssertionError` in try-except blocks, be aware of `python -O` and `python -OO` which removes assert statements
+
+software quality
+
+- https://anthonyhobday.com/blog/20260410#the-six-signals-of-quality-in-software
+
+domain driven design
+
+matt pollock
+ubiquitous language skill
+the design concept
+domain driven design
+
+- The Design of Design: Essays from a Computer Scientist by Frederick P. Brooks Jr.
