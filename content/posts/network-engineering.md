@@ -261,16 +261,32 @@ Services provided by link layer:
   - Query packet with source and destination IP and MAC address sent to all hosts and routers on the same subnet via broadcast MAC address
   - Response packets if query a host's or router's MAC address matches with desired mapping
 
-### Bluetooth Low Energy (BLE) L2CAP
+### Bluetooth Low Energy (BLE)
 
-[L2CAP] (Logical Link Control and Adaptation Protocol) is the link-layer protocol in the Bluetooth stack responsible for segmentation, reassembly and multiplexing of higher-layer data over Bluetooth connections.
+The BLE stack splits link-layer duties across two sub-layers: the Link Layer (LL), which manages the physical connection and provides reliable over-the-air delivery, and [L2CAP] (Logical Link Control and Adaptation Protocol), which sits on top and handles segmentation, reassembly and multiplexing of higher-layer data. Reliability lives in the LL, one layer below L2CAP.
 
-- Segmentation and reassembly: L2CAP segments larger payloads (Service Data Units) into smaller Protocol Data Units (PDUs) that fit within the Bluetooth link's MTU, and reassembles them at the receiver
-- Credit-based flow control: the receiver grants "credits" (send permits) to the sender, preventing buffer overflow, matching sender speed to receiver capacity
-- Transport modes:
-  - Basic L2CAP mode (unacknowledged): no acknowledgements, no retransmissions of dropped packets, no flow control (analogous to UDP, fire-and-forget delivery with minimal overhead, used for simple, latency-sensitive data)
-  - Enhanced Credit-Based Flow Control mode (acknowledged): retransmissions of dropped packets, credit-based flow control (closer to TCP)
-  - In-order delivery: PDUs inherently arrive in order in all modes
+#### L2CAP
+
+L2CAP multiplexes higher-layer protocols over a BLE connection using channels identified by a channel ID (CID).
+
+- Segmentation and reassembly: L2CAP segments larger payloads (Service Data Units, SDUs) into smaller Protocol Data Units (PDUs) that fit the link's MTU, and reassembles them at the receiver
+- Multiplexing: different higher-layer protocols map to different channels (CIDs)
+- Channel types:
+  - Fixed channels, e.g. ATT/GATT traffic (notifications included) runs over the fixed channel CID `0x0004` in Basic Mode
+  - Connection-oriented channels (dynamic CIDs), which can use LE Credit-Based or Enhanced Credit-Based Flow Control modes
+- Basic Mode has no L2CAP-level acknowledgement, retransmission or flow control (fire-and-forget at this layer)
+- The acknowledged, flow-controlled modes apply only to connection-oriented channels, never to the fixed ATT channel
+- Credit-based flow control (on connection-oriented channels): the receiver grants "credits" (send permits) to the sender, matching sender speed to receiver capacity to prevent buffer overflow
+
+#### Link Layer reliability
+
+L2CAP Basic Mode looks unreliable, but the Link Layer beneath it provides non-configurable, reliable, in-order delivery of each L2CAP PDU over the air:
+
+- Every Data Physical Channel PDU carries a 1-bit sequence number (SN) and next-expected sequence number (NESN)
+- The peer implicitly acknowledges each PDU via NESN; an unacknowledged PDU is retransmitted on the next connection event, and keeps being retransmitted until acknowledged or the supervision timeout expires
+- There is no "unreliable" LL mode for connection data in BLE, which is why L2CAP Basic Mode needs no retransmission of its own
+
+So Basic L2CAP means that while no packets are lost over the air, packets can be lost at the sender when the outgoing buffers are full.
 
 [L2CAP]: https://en.wikipedia.org/wiki/List_of_Bluetooth_protocols#Logical_link_control_and_adaptation_protocol_(L2CAP)
 
