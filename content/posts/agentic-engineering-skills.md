@@ -59,3 +59,4 @@ Related resources:
 - https://github.com/openclaw/openclaw/tree/main/.agents/skills
 - https://github.com/hesreallyhim/awesome-claude-code
 - https://github.com/DanMcInerney/architect-loop (research)
+- [Steps of AI Adoption by Boris Cherny](https://claude.ai/code/artifact/bfdfaef9-bc62-4dfe-ba9e-c58a26c9accf)
