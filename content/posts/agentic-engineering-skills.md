@@ -60,3 +60,5 @@ Related resources:
 - https://github.com/hesreallyhim/awesome-claude-code
 - https://github.com/DanMcInerney/architect-loop (research)
 - [Steps of AI Adoption by Boris Cherny](https://claude.ai/code/artifact/bfdfaef9-bc62-4dfe-ba9e-c58a26c9accf)
+- https://github.com/cursor/plugins/blob/main/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md
+- https://github.com/DietrichGebert/ponytail/blob/main/skills/ponytail/SKILL.md
