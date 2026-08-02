@@ -66,15 +66,22 @@ Most museums in Paris are free on some occasions, including:
 - L'Essaïon
 - [Theatre du Soleil](https://theatre-du-soleil.fr)
 - [Théâtre ouvert](https://www.theatre-ouvert.com/) (contemporary, experimental productions)
+# Music
 
+- Cabaret Sauvage
+- Virage Paris
+- La Bellevilloise
+- Café Chéri (after midnight)
+- La Machine du Moulin Rouge
+- Philharmonie de Paris (concerts)
 ## Other cultural spaces
 
 - La Cigale (concerts, theatre)
-- Philharmonie de Paris (concerts)
 - [104](https://www.104.fr) (open cultural space, expositions)
 - Le Lucernaire (theatre, cinema)
 - [La Vache Bleue](https://www.lavachebleue.fr/) (concert, cinema)
 - [Montmartre aux Artistes](https://maps.app.goo.gl/EtMgd1Ty6c7AEfNB8)
+- La Station - Gare des Mines
 
 ## Shops
 
