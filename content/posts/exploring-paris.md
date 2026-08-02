@@ -48,6 +48,7 @@ tags: ["travel"]
 - [Palais de la Porte Dorée](https://www.palais-portedoree.fr/)
 - Maison Gainsbourg
 - Maison La Roche de Le Corbusier
+- Musée du Quai Branly - Jacques Chirac
 
 Most museums in Paris are free on some occasions, including:
 
@@ -66,6 +67,7 @@ Most museums in Paris are free on some occasions, including:
 - L'Essaïon
 - [Théâtre du Soleil](https://theatre-du-soleil.fr)
 - [Théâtre ouvert](https://www.theatre-ouvert.com/) (contemporary, experimental productions)
+
 # Music
 
 - Cabaret Sauvage
@@ -74,6 +76,7 @@ Most museums in Paris are free on some occasions, including:
 - Café Chéri (after midnight)
 - La Machine du Moulin Rouge
 - Philharmonie de Paris (concerts)
+
 ## Other cultural spaces
 
 - La Cigale (concerts, theatre)
