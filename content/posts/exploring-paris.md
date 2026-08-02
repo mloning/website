@@ -14,7 +14,7 @@ tags: ["travel"]
 - Fête de la Lune
 - [Les nuits de la lecture](https://www.nuitsdelalecture.fr/)
 - [Paris sous les étoiles](https://www.afastronomie.fr/paris)
-- [Festival de cinema Peruivien](https://www.festivalcinemaperuvienparis.fr)
+- [Festival de cinema Peruvien](https://www.festivalcinemaperuvienparis.fr)
 - [Fête de la Goutte d'Or](https://gouttedorenfete.org/) with the [Paris African Cup](https://www.instagram.com/pac18__/)
 - [Festival Rhizomes](https://www.festivalrhizomes.fr/#)
 
@@ -64,7 +64,7 @@ Most museums in Paris are free on some occasions, including:
 - L'Étoile du Nord
 - Théâtre Paris-Villette
 - L'Essaïon
-- [Theatre du Soleil](https://theatre-du-soleil.fr)
+- [Théâtre du Soleil](https://theatre-du-soleil.fr)
 - [Théâtre ouvert](https://www.theatre-ouvert.com/) (contemporary, experimental productions)
 # Music
 
