@@ -89,6 +89,7 @@ Most museums in Paris are free on some occasions, including:
 ## Shops
 
 - [Tonton Outdoor](https://www.tonton-outdoor.com/) (not as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but good selection and knowledgeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7))
+- [Le Monde d'Observation](https://www.maison-astronomie.com), telescopes and binoculars
 
 ## Swimming pools
 
