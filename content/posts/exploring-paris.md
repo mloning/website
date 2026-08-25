@@ -14,7 +14,7 @@ tags: ["travel"]
 - Fête de la Lune
 - [Les nuits de la lecture](https://www.nuitsdelalecture.fr/)
 - [Paris sous les étoiles](https://www.afastronomie.fr/paris)
-- [Festival de cinema Peruivien](https://www.festivalcinemaperuvienparis.fr)
+- [Festival de cinema Peruvien](https://www.festivalcinemaperuvienparis.fr)
 - [Fête de la Goutte d'Or](https://gouttedorenfete.org/) with the [Paris African Cup](https://www.instagram.com/pac18__/)
 - [Festival Rhizomes](https://www.festivalrhizomes.fr/#)
 
@@ -48,6 +48,7 @@ tags: ["travel"]
 - [Palais de la Porte Dorée](https://www.palais-portedoree.fr/)
 - Maison Gainsbourg
 - Maison La Roche de Le Corbusier
+- Musée du Quai Branly - Jacques Chirac
 
 Most museums in Paris are free on some occasions, including:
 
@@ -64,21 +65,31 @@ Most museums in Paris are free on some occasions, including:
 - L'Étoile du Nord
 - Théâtre Paris-Villette
 - L'Essaïon
-- [Theatre du Soleil](https://theatre-du-soleil.fr)
+- [Théâtre du Soleil](https://theatre-du-soleil.fr)
 - [Théâtre ouvert](https://www.theatre-ouvert.com/) (contemporary, experimental productions)
+
+# Music
+
+- Cabaret Sauvage
+- Virage Paris
+- La Bellevilloise
+- Café Chéri (after midnight)
+- La Machine du Moulin Rouge
+- Philharmonie de Paris (concerts)
 
 ## Other cultural spaces
 
 - La Cigale (concerts, theatre)
-- Philharmonie de Paris (concerts)
 - [104](https://www.104.fr) (open cultural space, expositions)
 - Le Lucernaire (theatre, cinema)
 - [La Vache Bleue](https://www.lavachebleue.fr/) (concert, cinema)
 - [Montmartre aux Artistes](https://maps.app.goo.gl/EtMgd1Ty6c7AEfNB8)
+- La Station - Gare des Mines
 
 ## Shops
 
 - [Tonton Outdoor](https://www.tonton-outdoor.com/) (not as big as [Globetrotter](https://www.globetrotter.de/) in Germany, but good selection and knowledgeable staff, e.g. [here](https://maps.app.goo.gl/E9sxUM9qqv4GWAJe7))
+- [Le Monde d'Observation](https://www.maison-astronomie.com), telescopes and binoculars
 
 ## Swimming pools
 
