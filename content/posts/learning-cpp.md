@@ -65,6 +65,7 @@ Below are some highlights.
 - [Low-latency C++ patterns](https://news.ycombinator.com/item?id=40908273)
 - [C++ to Rust Phrasebook](https://cel.cs.brown.edu/crp/)
 - [Comprehensive C++ Hashmap Benchmarks 2022](https://martin.ankerl.com/2022/08/27/hashmap-bench-01/)
+- https://arxiv.org/pdf/2608.23228 (mold linker)
 
 ## C++ shortcomings and its future
 
@@ -84,7 +85,7 @@ Below are some highlights.
 
 ## My notes
 
-Some loose notes from reading and working through some tutorials:
+Some notes from reading and working through some tutorials:
 
 - Disable [function overloading and implicit conversions](https://www.learncpp.com/cpp-tutorial/introduction-to-function-overloading/), for example using the `explicit` keyword and strict clang settings (`cppcoreguidelines-explicit-virtual-functions`, `google-explicit-constructor`, `cppcoreguidelines-narrowing-conversions`)
 - Use `const` almost everywhere, for input arguments to functions and when initializing variables (see John Carmack's [tweet](https://x.com/ID_AA_Carmack/status/1983593511703474196) and Jason Turner's [guide](https://github.com/cpp-best-practices/cppbestpractices/blob/master/04-Considering_Safety.md#const-as-much-as-possible))
