@@ -21,3 +21,7 @@ poses
 - Eka Pada Bakasana (one-arm crow, one-arm forearm stand)
 - scorpion
 - tree balance
+- wheel
+- one-legged wheel
+- peacock 
+- triangle twisted to other side
