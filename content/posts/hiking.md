@@ -28,7 +28,7 @@ I prefer travelling as light as possible, carrying only the bare minimum.
 - Light, energy-dense snacks (e.g. nuts)
 - toothbrush+toothpaste 
 - plastic water bottle (3+ liters)
-- binoculars (animals/bird watching)
+- binoculars (wildlife watching, best past time during breaks)
 - map (paper or digital)
 - sun glasses 
 - sun screen 
@@ -60,6 +60,7 @@ In addition, you may carry some medication:
 - travel medic pack?
 - any other personal meds
 
+
 ## Hikes 
 
 Some tours I enjoyed:
@@ -69,7 +70,7 @@ Some tours I enjoyed:
 - Berliner Höhenweg (Schönbichler Horn)
 - Tour de Taillefer (patou)
 - GR20 Corse (only the North, punaise)
-- Cornwall Coaspath, wild camping 
+- Cornwall Coast path, wild camping 
 - Jurassic Coast (Lizard point)
 - Lake District, wild camping 
 - Hadrian's Wall, wild camping 
