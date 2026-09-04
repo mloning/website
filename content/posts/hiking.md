@@ -31,6 +31,7 @@ I prefer travelling as light as possible, carrying only the bare minimum.
 - binoculars (animals/bird watching)
 - map (paper or digital)
 - sun glasses 
+- sun screen 
 - cash
 - phone (for map or emergency)
 - backpack
@@ -38,7 +39,7 @@ I prefer travelling as light as possible, carrying only the bare minimum.
 - gloves on cold days or high altitude 
 - scarf/loop
 
-For day trips or refuge stays, this is all I like to take with me. No books, flipflops or other nice things to have which I always regret during most of the day when I have to carry them.
+For day trips or refuge stays, this is all I like to take with me. No books, flipflops or other nice things to have once you arrived, but which I always regret during most of the day when I have to carry them.
 
 If camping:
 
@@ -49,12 +50,11 @@ If camping:
 - lighter
 - pot
 - spork
-- quickly boilable food (e.g. couscous, oats)
+- quickly boilable food, best if you mix them at home with your own spices, nuts, dried fruits and veg (e.g. couscous, oats)
 
 In addition, you may carry some medication:
 
 - Blister patches
-- Sun screen 
 - Ibuprofen 
 - stomach?
 - travel medic pack?
@@ -64,18 +64,19 @@ In addition, you may carry some medication:
 
 Some tours I enjoyed:
 
-- Santa Cruz trail in Peru, camping 
+- Santa Cruz trail in Peru, wild camping 
 - Choquequirao (atajo)
 - Berliner Höhenweg (Schönbichler Horn)
 - Tour de Taillefer (patou)
 - GR20 Corse (only the North, punaise)
-- Cornwall Coaspath
+- Cornwall Coaspath, wild camping 
 - Jurassic Coast (Lizard point)
-- Lake District 
-- Hadrian's Wall
-- Peak District
+- Lake District, wild camping 
+- Hadrian's Wall, wild camping 
+- Peak District, wild camping
 - Pleisenspitze, Hohe Munde (ran out of water), and other day trips in the Alps
-- North York Moors 
+- North York Moors (Cleveland Way)
+- Snowdonia 
 
 ## Links
 
