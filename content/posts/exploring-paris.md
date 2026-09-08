@@ -49,6 +49,7 @@ tags: ["travel"]
 - Maison Gainsbourg
 - Maison La Roche de Le Corbusier
 - Musée du Quai Branly - Jacques Chirac
+- Cité de la Musique
 
 Most museums in Paris are free on some occasions, including:
 
