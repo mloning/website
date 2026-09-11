@@ -1,17 +1,15 @@
 ---
 title: Hiking
 date: 2026-09-04T19:58:15+01:00
-draft: true
+draft: false
 tags:
   - travel
 ---
-I like hiking, I'm not an expert but here are some things Iearned.
+I like hiking, I'm not an expert but here are some things I Iearned.
 
 ## Pack list
 
-For summer/spring/autumn hikes in Europe or similar climates
-
-I prefer travelling as light as possible, carrying only the bare minimum.
+I prefer travelling as light as possible, carrying only the bare minimum; mostly applies to summer/spring/autumn hikes in Europe or similar climates:
 
 - Flash light/head lamp
 - Small microfiber towel
@@ -56,12 +54,15 @@ In addition, you may carry some medication:
 
 - Blister patches
 - Ibuprofen 
-- stomach?
-- travel medic pack?
 - any other personal meds
 
+## Hikes
 
-## Hikes 
+Some hikes I'd love to do:
+
+- [Camí des Cavalls](https://www.camidecavalls.com) on Menorca
+- GR54, Grand Tour des Écrins
+- Tour de Mont Blanc 
 
 Some tours I enjoyed:
 
@@ -83,4 +84,4 @@ Some tours I enjoyed:
 
 Some other resources I found helpful:
 
-- travelling light blog post
+- https://walkingtheworld.substack.com/p/how-to-travel
