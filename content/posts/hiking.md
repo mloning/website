@@ -10,12 +10,13 @@ I like hiking, I'm not an expert but here are some things I Iearned.
 
 ## Pack list
 
-I prefer travelling as light as possible, carrying only the bare minimum; mostly applies to summer/spring/autumn hikes in Europe or similar climates:
+I prefer travelling as light as possible, carrying only the bare minimum.
+The list mostly applies to hikes during European summer, spring or autumn, or similar conditions:
 
-- Flash light/head lamp
+- Small flash light/head lamp (or phone)
 - Small microfiber towel
-- Standard cotton sport socks, better than any woolen hiking socks, 2 pairs, can be washed when necessary
-- underwear, 2 sets, can be washed when necessary
+- Underwear, 2 sets, so one set can be washed when necessary
+- Standard cotton sport socks, better than any woolen hiking socks, 2 pairs
 - Linen shirt, very breathable, dries as quickly as synthetic shirts and natural feel on skin, easy to wash
 - Hat (depending on temperature)
 - Hiking boots with ankle support (or trail running shoes if you trust your ability to catch yourself from a misstep, loose rock or slip)
@@ -25,41 +26,44 @@ I prefer travelling as light as possible, carrying only the bare minimum; mostly
 - Fleece jacket (I like them with a hood for better sun cover, extra layer against wind/cold)
 - Rain/wind jacket
 - Light, energy-dense snacks (e.g. nuts)
-- toothbrush+toothpaste
-- plastic water bottle (3+ liters)
-- binoculars (wildlife watching, best past time during breaks)
-- map (paper or digital)
-- sun glasses
-- sun screen
-- cash
-- phone (for map or emergency)
-- backpack
-- biodegradable soap (for longer trips)
-- gloves on cold days or high altitude
-- scarf/loop
+- Toothbrush + toothpaste
+- Plastic water bottle (3+ liters)
+- Binoculars (wildlife watching, best past time during breaks)
+- Map (paper or digital on watch/phone)
+- Sun glasses
+- Sun screen
+- Cash
+- Phone (for map or emergency)
+- Backpack
+- Biodegradable soap (for longer trips)
+- Gloves on cold days or high altitude
+- Scarf/loop
+- Biodegradable soap (hard, or if liquid in a small screw-top container)
+- Dry bag(s) (or zippable plastic bags) to keep the most important things dry; I prefer dry bags over external backpack covers
 
-For day trips or refuge stays, this is all I like to take with me. No books, flipflops or other nice things to have once you arrived, but which I always regret during most of the day when I have to carry them.
+For day trips or refuge stays, this is all I like to take with me.
+No books, flipflops or other nice-to-haves, which I always regret carrying all day.
 
 If camping:
 
-- sleeping bag (+inlet )
-- camping mat
-- tent
-- gas cooker + gas
-- lighter
-- pot
-- spork
-- quickly boilable food, best if you mix them at home with your own spices, nuts, dried fruits and veg (e.g. couscous, oats)
+- Sleeping bag (+ inlet)
+- Camping mat
+- Tent
+- Gas cooker + gas
+- Lighter/matches
+- Pot
+- Spork
+- Dry, energy-dense, quickly boilable food, e.g. couscous or oats, best if you prepare it at home with your own supplements, spices, nuts, dried fruits & veg
 
-In addition, you may carry some medication:
+In addition, you may want to bring a first-aid kit:
 
 - Blister patches
 - Ibuprofen
-- any other personal meds
+- Any other personal meds
 
 ## Hikes
 
-Some tours I enjoyed, in no particular order:
+Some tours I enjoyed:
 
 - Santa Cruz trail in Peru (wild camping, Punta Union pass at 4,750m)
 - Choquequirao (atajo, Incan ruins)
@@ -75,7 +79,7 @@ Some tours I enjoyed, in no particular order:
 - North York Moors (Cleveland Way)
 - Eryri/Snowdonia (Yr Wyddfa/Snowdon)
 
-Some hikes I'd still love to do:
+Some hikes I'd love to do:
 
 - [Camí des Cavalls](https://www.camidecavalls.com) on Menorca
 - GR54, Grand Tour des Écrins
