@@ -9,7 +9,9 @@ tags: ["learning"]
 
 For an introduction to the build process, see [The C++ Build Process Explained](https://github.com/green7ea/blog/blob/master/cpp-build-process/README.md) and the related [HackerNews thread](https://news.ycombinator.com/item?id=18454140).
 For a deeper explanation, see [The Bits Between the Bits: How We Get to main()](https://www.youtube.com/watch?v=dOfucXtyEsU).
+
 For a real-time visualisation of the build process, see [this post](https://danielchasehooper.com/posts/syscall-build-snooping/).
+For understanding compiled code, see [cppinsights](https://github.com/andreasfertig/cppinsights).
 
 Best practices:
 
