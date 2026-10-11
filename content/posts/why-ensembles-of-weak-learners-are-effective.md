@@ -1,5 +1,5 @@
 ---
-title: "New"
+title: "Why ensembles of weak classifiers are effective"
 date: 2026-09-23T22:49:02+02:00
 draft: true
 tags: [ml, math]
