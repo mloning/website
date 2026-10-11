@@ -50,6 +50,7 @@ tags: ["travel"]
 - Maison La Roche de Le Corbusier
 - Musée du Quai Branly - Jacques Chirac
 - Cité de la Musique
+- Musée d'Archéologie Nationale
 
 Most museums in Paris are free on some occasions, including:
 
@@ -110,6 +111,14 @@ Most museums in Paris are free on some occasions, including:
 - Paris Women in Machine Learning & Data Science (meetups)
 - AI Alliance (meetups)
 - Rust Paris (meetups)
+
+## Walking / hiking
+
+- Chevreuse Valley, Saint-Rémy-lès-Chevreuse, terminal of RER B
+- Forêt domaniale de Saint-Germain, ancient royal forest, RER A + Musée d'Archéologie Nationale
+- Forêt de Rambouillet, RER C
+- Massif des Trois Forêts (Chantilly, Halatte, and Ermenonville) inside the Oise-Pays de France Regional Natural Park, RER D
+- Château de Fontainebleau
 
 ## Other resources
 
