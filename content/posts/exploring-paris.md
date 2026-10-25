@@ -120,6 +120,8 @@ Most museums in Paris are free on some occasions, including:
 - Massif des Trois Forêts (Chantilly, Halatte, and Ermenonville) inside the Oise-Pays de France Regional Natural Park, RER D
 - Château de Fontainebleau
 
+There are various groups for walking, for example [Randonneurs d’Île-de-France](https://rifrando.fr).
+
 ## Other resources
 
 - https://www.paris.fr/quefaire
