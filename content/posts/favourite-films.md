@@ -4,6 +4,10 @@ date: 2025-07-23T22:25:57+02:00
 draft: true
 ---
 
+Films I want to watch:
+
+- [L'Enfant](<https://en.wikipedia.org/wiki/L%27Enfant_(film)>) and [Rosetta](<https://en.wikipedia.org/wiki/Rosetta_(film)>), same directors as Jeunes Mères
+
 Some of my favourite films:
 
 - [Chronique des Années de Braise](https://en.wikipedia.org/wiki/Chronicle_of_the_Years_of_Fire) (Algerian war of independence)
@@ -25,5 +29,6 @@ Some of my favourite series:
 
 Films I watched that I want to remember
 
+- [Jeunes Mères](https://en.wikipedia.org/wiki/Young_Mothers)
 - [Pucallpa la Europea](https://es.wikipedia.org/wiki/Pucallpa_la_Europea) (Santi)
 - [Runa Simi](https://www.imdb.com/title/tt36591452/) (Augusto and Fernando, translating Disney films into Quechua)
