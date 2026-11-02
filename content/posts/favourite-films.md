@@ -26,6 +26,7 @@ Some of my favourite series:
 
 - Chernobyl (historical drama about the Chernobyl disaster)
 - Underground Railroad (slavery in the US)
+- Derry Girls
 
 Films I watched that I want to remember
 
