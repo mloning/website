@@ -21,8 +21,6 @@ Some of my favourite films:
 - [The Stories We Tell](https://en.wikipedia.org/wiki/Stories_We_Tell) (documentary about family relationships and secrets)
 - [Visages, Villages](<https://en.wikipedia.org/wiki/Faces_Places_(film)>) by Agnès Varda
 - Volver by Almodóvar
-- Girlhood, by Celine Sciamma
-- [Everyone Else](https://en.wikipedia.org/wiki/Everyone_Else) by Maren Ade
 
 Some of my favourite series:
 

@@ -91,3 +91,4 @@ Some hikes I'd love to do:
 Some other resources I found helpful:
 
 - https://walkingtheworld.substack.com/p/how-to-travel
+- https://vitalik.eth.limo/general/2022/06/20/backpack.html
