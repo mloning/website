@@ -6,6 +6,11 @@ draft: true
 tags: ["engineering"]
 ---
 
+design docs:
+
+- should be developed like a logical argument/syllogism, from premise to conclusion
+- problem statement/requirements (factual premises), principles (normative premises), design/proposal (conclusion)
+
 > every piece of software should be a black box with a pin-hole for input and an even smaller pin-hole for output
 
 ---
