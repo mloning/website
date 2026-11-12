@@ -33,10 +33,10 @@ tags: ["travel"]
 ## Museums
 
 - Atelier des Lumières (immersive digital experiences)
-- Cinémathèque française
+- Cinémathèque Française
 - Crypte Archéologique de l'İle de la Cité
-- Fondation Cartier pour l'art contemporain
-- Institut du monde arabe
+- Fondation Cartier pour l'Art Contemporain
+- Institut du Monde Arabe
 - Jeu de Paume
 - L'institut Giacometti
 - Maison Européenne de la Photographie
@@ -51,6 +51,7 @@ tags: ["travel"]
 - Musée du Quai Branly - Jacques Chirac
 - Cité de la Musique
 - Musée d'Archéologie Nationale
+- Musée Marmottan Monet
 
 Most museums in Paris are free on some occasions, including:
 
