@@ -21,6 +21,10 @@ Some of my favourite films:
 - [The Stories We Tell](https://en.wikipedia.org/wiki/Stories_We_Tell) (documentary about family relationships and secrets)
 - [Visages, Villages](<https://en.wikipedia.org/wiki/Faces_Places_(film)>) by Agnès Varda
 - Volver by Almodóvar
+- Das Lehrerzimmer 
+- Herr Bachmann und seine Klasse
+- Sound of Metal
+- [La Panthère des Neiges](<https://fr.wikipedia.org/wiki/La_Panth%C3%A8re_des_neiges_(film)>) and [Le Chant des Forêts](https://www.vincentmunier.com/portfolio/le-chant-des-forets/) de Vincent Munier
 
 Some of my favourite series:
 
