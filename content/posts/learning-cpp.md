@@ -94,3 +94,4 @@ Some notes from reading and working through some tutorials:
 - Use `constexpr` (or `consteval`) for everything that can be computed at compile time
 - Use `[nodiscard]` for not forgetting about a return value
 - Use `noexcept` for performance optimization
+- [clice](https://docs.clice.io/clice/guide/what-is-clice), [HN thread](https://news.ycombinator.com/item?id=50508715)
